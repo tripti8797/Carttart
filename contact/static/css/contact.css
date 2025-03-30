@@ -1,0 +1,376 @@
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+    padding: 20px;
+    background-image: url('../images/backdrop.jpg');
+    background-position: bottom;
+    scroll-behavior: smooth;
+}
+
+.box {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+    height: 500px;
+    margin-top: 2rem;
+}
+
+.box h5 {
+    font-size: 1.2rem;
+    color: #2ba24c;
+    margin-bottom: 10px;
+}
+
+.box h2 {
+    font-size: 2rem;
+    color: #0c431c;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 710px;
+}
+
+.form-group1, .form-group2 {
+    display: flex;
+    gap: 20px;
+}
+
+.form-group1 > div, .form-group2 > div {
+    flex: 1;
+    position: relative;
+}
+
+.form-group3 {
+    position: relative;
+}
+
+.form-group4{
+    position: relative;
+    margin:0 20px;
+    display: flex;
+    justify-content: center;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px 10px 10px 40px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+
+form .form-group3 textarea {
+    resize: none;
+    height: 110px;
+    color: #999;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    border-color: black;
+}
+
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.i-place {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #888;
+}
+
+i.fa-regular.fa-message {
+    margin-top: 4rem;
+    margin-left: 41rem;
+}
+
+/* Button Styles */
+button[type="submit"] {
+    background-color: #2ba24c;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    /* margin-top: 8rem; */
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #095804;
+}
+
+
+/* Responsive Styles */
+@media screen and (max-width: 769px)  {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #2ba24c;
+        position: absolute;
+        top: 45px;
+        right: 0;
+        padding: 20px;
+        width: 100%;
+      }
+    
+    
+      .nav-links ul {
+        flex-direction: column;
+        left: 100px;
+        width: 50%;
+    
+      }
+    
+      .nav-links ul li {
+        margin: 10px 0;
+      }
+    
+      .nav-links.show {
+        display: flex;
+      }
+    
+      .hamburger {
+        display: contents;
+      }
+
+    form{
+        width: 650px;
+    }
+    
+    .box{
+        margin-top: 4.5rem;
+        height: 474px;
+        width: 100%;
+    }
+
+    .box h2{
+        font-size: 1.3rem;
+    }
+
+    .box h5{
+        font-size: 1.2rem;
+    }
+
+    i.fa-regular.fa-message {
+        margin-left: 38rem;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+    
+      .footer-section {
+        margin-bottom: 20px;
+      }
+    
+      .footer-logo {
+        margin: 40px 0;
+      }
+  
+      .footer-container {
+        background:#2ba24c;
+      }
+      
+      .footer-section1 h3 {
+        color: #f4f4f4;
+      }
+      
+      .footer-section1 ul li {
+        color: #f4f4f4;
+      }
+    
+      /* Footer Container Adjustments */
+      .footer-container {
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+      }
+    
+      /* Column Styling for Smaller Screens */
+      .col {
+        flex: 1 1 100%;
+        min-width: 100%;
+        padding: 10px;
+      }
+    
+      /* Social Icons Layout for Small Screens */
+      .social-icons {
+        flex-direction: row;
+        justify-content: center;
+      }
+    
+      .social-icon i {
+        font-size: 18px;
+        padding: 12px;
+      }
+  
+      button{
+        top: 40%;
+      }
+}
+
+@media screen and (max-width: 689px) {
+    form{
+        width: 625px;
+    }
+
+    i.fa-regular.fa-message {
+        margin-left: 32rem;
+    }
+
+}
+
+@media screen and (max-width: 700px){
+    form{
+        width: 569px;
+    }
+
+    i.fa-regular.fa-message {
+        margin-left: 28rem;
+    }
+
+}
+
+
+@media screen and (max-width: 600px){
+    form{
+        width: 469px;
+    }
+
+    i.fa-regular.fa-message {
+        margin-left: 26rem;
+    }
+
+}
+
+@media screen and (max-width: 500px){
+    form{
+        width: 369px;
+    }
+
+    i.fa-regular.fa-message {
+        margin-left: 20rem;
+    }
+
+}
+
+@media screen and (max-width: 426px) {
+    header {
+        width: 100%;
+    }
+    .nav-links {
+        /* display: flex; */
+        list-style: none;
+        gap: 15px;
+        margin-left: auto;
+        margin-top: 10px;
+        padding: 20px;
+      }
+      
+    form{
+        width: 318px;
+    }
+    .box{
+        width: 100%;
+        height: 584px;
+        margin-top: 3.5rem;
+    }
+    .box h5{
+        font-size: 1rem;
+    }
+    .form-group1, .form-group2 {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    i.fa-regular.fa-message {
+        margin-left: 17rem;
+    }
+    
+}
+
+@media screen and (max-width: 376px){
+    header{
+        width: 100%;
+    }
+
+    form {
+        width: 300px;
+    }
+
+    .box{
+        width: 100%;
+        margin-top: 2rem;
+        height:590px;
+    }
+
+    .box h2{
+        font-size: 1.15rem;
+    }
+    
+    .box h5 {
+        font-size: 0.9rem;
+    }
+
+    i.fa-regular.fa-message {
+        margin-left: 16rem;
+    }
+}
+
+@media screen and (max-width: 320px){
+    header{
+        width: 100%;
+    }
+
+    form {
+        width: 250px;
+    }
+
+    .box{
+        width: 100%;
+        margin-top: 3rem;
+        height: 590px;
+    }
+
+    .box h2{
+        font-size: 1.1rem;
+    }
+    
+    .box h5 {
+        font-size: 0.9rem;
+    }
+
+    i.fa-regular.fa-message {
+        margin-left: 13rem;
+    }
+}

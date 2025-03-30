@@ -1,0 +1,233 @@
+{% extends 'base.html' %} 
+{% load static %}
+
+{% block title %}Welcome|Carttart-Healthcare{% endblock %} 
+{% block logo_image %}{% static 'images/h-g-logo.png' %}{% endblock logo_image %}
+
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/healthcare.css' %}" />
+
+ <!-- Hero Section with Video Background -->
+ <section class="hero">
+    <video autoplay muted loop id="hero-video">
+      <source src="{% static 'videos/health_banner3.mp4' %}" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <div class="hero-content">
+      <h1>Redefining Wellness</h1>
+      <p>Your Trusted Partner In Healthcare.</p>
+    </div>
+  </section>
+
+  <!-- MAIN CONTENT2 -->
+  <main id="content">
+    <section class="bakgground">
+      <div class="boxcontainer">
+        <div class="main-content">
+          <!-- First Image and Content -->
+          <div class="card_main">
+            <div class="container_card">
+              <div class="container_card_content">
+                <h1 class="card-title2">BIOTECHNOLOGY</h1>
+                <h5 class="card-description1">
+                  Biotechnology is the application of science and technology
+                  to develop products and processes for improving human life.
+                  It combines biology, chemistry, and engineering to create
+                  solutions in healthcare, agriculture, and industry. From
+                  developing vaccines to creating genetically modified crops,
+                  biotechnology has revolutionized many fields. It plays a
+                  crucial role in addressing global challenges like food
+                  security and disease control. Digital Payment Image
+                </h5>
+              </div>
+              <!-- <div class="container_card_pofilephoto2"> -->
+                <div class="container_card_pofilephoto2">
+                  <img src="{% static 'images/healthcare_img.jpeg' %}" class="profile-img2" alt="Fighting" />
+                </div>
+                <!-- <img src="global.png" class="profile-img" alt="Real-Time Strategy" /> -->
+              <!-- </div> -->
+            </div>
+          </div>
+
+          <!-- Second Image and Content -->
+          <div class="card_main2">
+            <div class="container_card">
+              <div class="container_card_pofilephoto1">
+                <img src="{% static 'images/bio1.jpg' %}" class="profile-img" alt="Fighting" />
+              </div>
+              <div class="container_card_content2">
+                <h1 class="card-title">LIFE SCIENCE</h1>
+                <h5 class="card-description2">
+                  Life Science is the study of living organisms, including
+                  their structure, function, growth, and evolution. It
+                  explores the complexities of life, from microscopic cells to
+                  entire ecosystems. This field encompasses various
+                  disciplines like biology, zoology, and genetics,
+                  contributing to advancements in healthcare, agriculture, and
+                  environmental conservation.
+                </h5>
+              </div>
+            </div>
+          </div>
+          <!-- Collage -->
+          <div class="box">
+            <div class="box-content">
+              <h1>SERVICES WE OFFER</h1>
+              <p>
+                We offer a comprehensive range of services designed to meet your
+                healthcare needs, including laboratory tests that provide essential
+                diagnostic information, a selection of medications to support your
+                treatment, and the ability to place orders with a valid prescription.
+                Additionally, our online doctor consultation service allows you to
+                connect with healthcare professionals conveniently, ensuring you
+                receive expert advice and guidance from the comfort of your home.
+              </p>
+            </div>
+
+            <div class="collage">
+              <!-- Square Grid -->
+              <div class="square-grid">
+                <!-- Div 1 -->
+                <div class="div1">
+                  <h2>LAB TESTS</h2>
+                  <img src="{% static 'images/lab_test3.jpg' %}" alt="Lab Tests" />
+                  <button class="image-button">Learn More</button>
+                </div>
+                <!-- Div 2 -->
+                <div class="div2">
+                  <h2>MEDICINES</h2>
+                  <img src="{% static 'images/med.jpg' %}" alt="Medicines" />
+                  <button class="image-button">Learn More</button>
+                </div>
+                <!-- Div 3 -->
+                <div class="div3">
+                  <h2>ONLINE DOCTOR CONSULTATION</h2>
+                  <img src="{% static 'images/odc.jpg' %}" alt="Online Doctor Consultation" />
+                  <button class="image-button">Learn More</button>
+                </div>
+                <!-- Div 4 -->
+                <div class="div4">
+                  <h2>ORDER WITH PRESCRIPTION</h2>
+                  <img src="{% static 'images/owp2.jpg' %}" alt="Order With Prescription" />
+                  <button class="image-button">Learn More</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Third Image and Content -->
+          <div class="card_main2">
+            <div class="container_card">
+              <div class="container_card_pofilephoto1" id="pc_image">
+                <img src="{% static 'images/personal_care.jpg' %}" class="profile-img" alt="Fighting" />
+              </div>
+              <div class="container_card_content2">
+                <h1 class="card-title">PERSONAL CARE</h1>
+                <h5 class="card-description2">
+                  Personal care is about nurturing your well-being with products
+                  designed for every need, from skincare to hygiene. Explore
+                  solutions for women, men, babies, and oral health, ensuring
+                  comprehensive care for all. Prioritize health and confidence
+                  with tailored personal care essentials.
+                </h5>
+              </div>
+            </div>
+          </div>
+
+          <!-- Forth Image and Content -->
+          <div class="card_main">
+            <div class="container_card">
+              <div class="container_card_content">
+                <h1 class="card-title2">SEASONAL CARE</h1>
+                <h5 class="card-description1">
+                  Seasonal care focuses on tailored solutions to help you stay
+                  healthy and comfortable, no matter the weather. From skincare to
+                  immunity boosters, it’s all about adapting to seasonal needs.
+                  Seasonal care focuses on tailored solutions to help you stay
+                  healthy and comfortable, no matter the weather. From skincare to
+                  immunity boosters, it’s all about adapting to seasonal needs.
+                </h5>
+              </div>
+              <!-- <div id="sc_image" class="container_card_pofilephoto2"> -->
+                <div class="container_card_pofilephoto2">
+                  <img src="{% static 'images/seasonal_care.webp' %}" class="profile-img2" alt="Fighting" />
+                </div>
+                <!-- <img src="global.png" class="profile-img" alt="Real-Time Strategy" /> -->
+              <!-- </div> -->
+            </div>
+          </div>
+
+          <!-- Fifth Image and Content -->
+          <div class="card_main2">
+            <div class="container_card">
+              <div id="ac_image" class="container_card_pofilephoto1">
+                <img src="{% static 'images/ayurvedic_care3.jpg' %}" class="profile-img" alt="Fighting" />
+              </div>
+              <div class="container_card_content2">
+                <h1 class="card-title">AYURVEDIC CARE</h1>
+                <h5 class="card-description2">
+                  Ayurvedic care brings the essence of nature and tradition to
+                  your wellness journey with herbal, holistic remedies. Experience
+                  balance and vitality through time-tested solutions crafted for
+                  mind and body harmony. Embrace a healthier lifestyle with the
+                  perfect fusion of Ayurveda and modern innovation.
+                </h5>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sixth Image and Content -->
+          <div class="card_main">
+            <div class="container_card">
+              <div class="container_card_content">
+                <h1 class="card-title2">FITNESS</h1>
+                <h5 class="card-description1">
+                  Fitness is about achieving balance and strength through a
+                  healthy, active lifestyle. Fuel your goals with top-quality
+                  supplements and tools that boost energy, endurance, and
+                  recovery. Stay committed to your journey with personalized
+                  solutions for overall wellness and peak performance.
+                </h5>
+              </div>
+              <div class="container_card_pofilephoto2">
+                <!-- <div class="profile-img"> -->
+                  <img src="{% static 'images/fitness2.jpg' %}" class="profile-img2" alt="Fighting" />
+                <!-- </div> -->
+                <!-- <img src="global.png" class="profile-img" alt="Real-Time Strategy" /> -->
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!--Dynamic blog Card Section -->
+  <div class="latest-card">
+    <div class="Scroll">
+        <h2>Love Yourself, You Deserve It!</h2>
+        <div class="card-grid">
+            {% for blog in blogs %}
+            <div class="card {% if forloop.first %}active{% endif %}">
+                {% if blog.image %}
+                    <img src="{{ blog.image.url }}" alt="{{ blog.title }}" />
+                {% else %}
+                    <img src="{% static 'images/blog_images/default_blog_image.jpg' %}" alt="{{ blog.title }}" />
+                {% endif %}
+                <div class="card-content">
+                    <h3>{{ blog.title }}</h3>
+                    <p>{{ blog.short_description|default:blog.content|truncatewords:30|safe }}</p>
+                </div>
+                <a href="{% url 'healthcare_blog_detail' blog.slug %}" class="read-more">Explore More</a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+  </div>
+
+<script src="{% static 'js/healthcare.js' %}"></script>
+{% endblock content %}

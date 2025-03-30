@@ -1,0 +1,263 @@
+{% extends 'base.html' %} 
+{% load static %}
+
+{% block title%}Welcome|Carttart-Energy{%endblock%} 
+{% block logo_image %}{% static 'images/y-g-logo.png' %}{% endblock logo_image %}
+{% block content %}
+
+<link rel="stylesheet" href="{% static 'css/energy.css' %}" />
+
+<!-- Hero Section with Video Background -->
+<section class="hero">
+    <video autoplay muted loop id="hero-video">
+        <source src="{% static 'videos/energy.mp4' %}" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="hero-content">
+        <h1>Conserve energy for a better tomorrow</h1>
+        <p>Explore the world of creativity and innovation.</p>
+    </div>
+</section>
+
+<!-- MAIN CONTENT2 -->
+<main id="content">
+    <section class="bakgground">
+        <div class="boxcontainer">
+            <div class="main-content">
+                <!-- First Image and Content -->
+                <div class="card_main">
+                    <div class="container_card">
+                        <div class="container_card_content">
+                            <h1 class="card-title2"> GLOBAL ENERGY </h1>
+                            <h5 class="card-description1">
+                                Global Energy represents the interconnected network of energy
+                                production, distribution, and consumption that powers economies
+                                worldwide. In marketing, the focus is on sustainability, innovation,
+                                and meeting the growing demand for clean energy solutions. Companies
+                                emphasize their commitment to reducing carbon footprints, transitioning
+                                to renewable sources, and ensuring energy security. By showcasing advancements
+                                in technology, such as smart grids and energy storage systems, marketers appeal
+                                to eco-conscious consumers and businesses seeking reliable, cost-effective 
+                                energy solutions. The narrative often revolves around a greener future, energy
+                                independence, and the role of global collaboration in addressing climate challenges.
+                            </h5>
+                        </div>
+                        <div class="container_card_pofilephoto2">
+                            <img
+                                src="{% static 'images/global.jpg' %}"
+                                class="profile-img2"
+                                alt="Global Energy" />
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Second Image and Content -->
+                <div class="card_main2">
+                    <div class="container_card">
+                        <div class="container_card_pofilephoto1">
+                            <img
+                                src="{% static 'images/electrical.png' %}"
+                                class="profile-img2"
+                                alt="Electrical Energy" />
+                        </div>
+                        <div class="container_card_content2">
+                            <h1 class="card-title">ELECTRICAL ENERGY</h1>
+                            <h5 class="card-description2">
+                                Electrical energy is the lifeblood of modern society, powering everything 
+                                from homes and businesses to cutting-edge technologies like electric vehicles 
+                                and smart devices. Marketing strategies focus on the transition to renewable 
+                                sources such as solar, wind, and hydroelectric power, emphasizing clean, reliable, 
+                                and affordable energy. Companies showcase advancements in energy storage, grid 
+                                modernization, and decentralized power systems to appeal to tech-savvy consumers 
+                                and businesses. The messaging often highlights the role of electrical energy in driving 
+                                innovation, reducing emissions, and enabling a sustainable future, making it a key 
+                                selling point for environmentally conscious audiences.
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-content">
+                <!-- First Image and Content -->
+                <div class="card_main">
+                    <div class="container_card">
+                        <div class="container_card_content">
+                            <h1 class="card-title2">  THERMAL ENERGY </h1>
+                            <h5 class="card-description1">
+                                Thermal energy is the total kinetic energy of particles within a substance, resulting from 
+                                their movement. It increases with temperature and is transferred through conduction, 
+                                convection, or radiation. Thermal energy is essential for heating homes, cooking food, and 
+                                industrial processes like metal smelting. It is generated by burning fuels, geothermal 
+                                sources, or friction. Steam turbines in power plants convert thermal energy into electricity, 
+                                highlighting its role in modern energy production. Managing thermal energy efficiently is 
+                                crucial for energy conservation and environmental sustainability, as excessive heat production 
+                                can lead to waste and increased carbon emissions.
+                            </h5>
+                        </div>
+                        <div class="container_card_pofilephoto2">
+                            <img
+                                src="{% static 'images/thermal-3.png' %}"
+                                class="profile-img2"
+                                alt="Thermal Energy" />
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Second Image and Content -->
+                <div class="card_main2">
+                    <div class="container_card">
+                        <div class="container_card_pofilephoto1">
+                            <img
+                                src="{% static 'images/chemical-4.png' %}"
+                                class="profile-img2"
+                                alt="Chemical Energy" />
+                        </div>
+                        <div class="container_card_content2">
+                            <h1 class="card-title">CHEMICAL ENERGY</h1>
+                            <h5 class="card-description2">
+                                Chemical energy is stored in the bonds of atoms and molecules, 
+                                released during chemical reactions. It is found in fuels like 
+                                gasoline, food, and batteries. When chemical bonds break, energy 
+                                is released in forms such as heat or light. This energy powers 
+                                essential processes like combustion in engines, metabolism in 
+                                living organisms, and electricity generation in batteries. 
+                                Chemical energy plays a vital role in industries, transportation, 
+                                and daily life. From burning wood for warmth to fueling rockets, 
+                                chemical energy remains an indispensable part of modern civilization, 
+                                driving countless applications that sustain and improve human life.
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-content">
+                <!-- First Image and Content -->
+                <div class="card_main">
+                    <div class="container_card">
+                        <div class="container_card_content">
+                            <h1 class="card-title2">FOSSIL FUEL</h1>
+                            <h5 class="card-description1">
+                                Fossil fuels, including coal, oil, and natural gas, formed from ancient organic 
+                                matter over millions of years. They are the primary energy source for electricity, 
+                                transportation, and industry. When burned, they release energy but also emit 
+                                carbon dioxide, contributing to climate change. Fossil fuels have powered global 
+                                economies for centuries, enabling industrialization and technological advancements. 
+                                However, their non-renewable nature and environmental impact drive the search for 
+                                cleaner alternatives like renewable energy. Transitioning from fossil fuels to 
+                                sustainable sources is crucial for reducing pollution, conserving resources, and 
+                                mitigating climate change for future generations.
+                            </h5>
+                        </div>
+                        <div class="container_card_pofilephoto2">
+                            <img
+                                src="{% static 'images/fossil-5.jpg' %}"
+                                class="profile-img2"
+                                alt="Fossil Fuel" />
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Second Image and Content -->
+                <div class="card_main2">
+                    <div class="container_card">
+                        <div class="container_card_pofilephoto1">
+                            <img
+                                src="{% static 'images/nuclear-6.jpg' %}"
+                                class="profile-img2"
+                                alt="Nuclear Energy" />
+                        </div>
+                        <div class="container_card_content2">
+                            <h1 class="card-title">NUCLEAR ENERGY</h1>
+                            <h5 class="card-description2">
+                                Nuclear energy comes from the nucleus of atoms, released through fission or fusion. 
+                                In nuclear fission, heavy elements like uranium split, producing massive energy used 
+                                in power plants. Fusion, occurring in the sun, combines lighter nuclei, releasing 
+                                even greater energy. Nuclear power provides a reliable electricity source with 
+                                low greenhouse gas emissions. However, it requires strict safety measures due 
+                                to radiation risks and radioactive waste disposal. Despite challenges, advancements 
+                                in nuclear technology continue to improve efficiency and safety. It remains a 
+                                promising energy source for meeting growing demands while reducing dependence on fossil fuels.
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Collage -->
+<div class="box">
+    <div class="box-content">
+        <h1>Power of Renewables</h1>
+        <p>Renewable energy is derived from wind, solar, hydro, and other natural sources. 
+            Unlike fossil fuels, which deplete over time and harm the environment, 
+            renewables offer a clean, inexhaustible energy supply that reduces carbon 
+            emissions and combats climate change. Businesses and governments investing in renewable technologies benefit 
+            from lower long-term energy costs, energy independence, and job creation in green industries. 
+            Advances in battery storage and smart grid technology are making renewables more reliable 
+            than ever, addressing the challenge of intermittent supply. As global demand for energy rises, transitioning 
+            to renewables ensures a sustainable, resilient future—one where energy is abundant, 
+            affordable, and aligned with planetary health. The power of renewables isn't just 
+            in the energy they produce, but in the brighter, cleaner future they make possible.
+        </p>
+    </div>
+
+    <div class="collage">
+        <!-- Square Grid -->
+        <div class="square-grid">
+            <!-- Div 1 -->
+            <div class="div1">
+                <img src="{% static 'images/hydro-slider.jpg' %}" alt="Hydro Energy">
+                <div class="image-text">Hydro Energy</div>
+                <button class="image-button">Learn More</button>
+            </div>
+            <!-- Div 2 -->
+            <div class="div2">
+                <img src="{% static 'images/wind.jpeg' %}" alt="Wind Energy">
+                <div class="image-text">Wind Energy</div>
+                <button class="image-button">Learn More</button>
+            </div>
+            <!-- Div 3 -->
+            <div class="div3">
+                <img src="{% static 'images/light-collage.png' %}" alt="Light Energy">
+                <div class="image-text">Light Energy</div>
+                <button class="image-button">Learn More</button>
+            </div>
+            <!-- Div 4 -->
+            <div class="div4">
+                <img src="{% static 'images/solar-collage.png' %}" alt="Solar Energy">
+                <div class="image-text">Solar Energy</div>
+                <button class="image-button">Learn More</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <!--Dynamic blog Card Section -->
+  <div class="latest-card">
+    <div class="Scroll">
+        <h2>Love Yourself, You Deserve It!</h2>
+        <div class="card-grid">
+            {% for blog in blogs %}
+            <div class="card {% if forloop.first %}active{% endif %}">
+                {% if blog.image %}
+                    <img src="{{ blog.image.url }}" alt="{{ blog.title }}" />
+                {% else %}
+                    <img src="{% static 'images/blog_images/default_blog_image.jpg' %}" alt="{{ blog.title }}" />
+                {% endif %}
+                <div class="card-content">
+                    <h3>{{ blog.title }}</h3>
+                    <p>{{ blog.short_description|default:blog.content|truncatewords:30|safe }}</p>
+                </div>
+                <a href="{% url 'energy_blog_detail' blog.slug %}" class="read-more">Explore More</a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+  </div>
+
+<script src="{% static 'js/energy.js' %}"></script>
+{% endblock content %}

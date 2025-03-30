@@ -1,0 +1,282 @@
+{% extends 'base.html' %} 
+{% load static %}
+
+{% block title %}Welcome|Carttart-Tours & Travels{% endblock %} 
+{% block logo_image %}{% static 'images/b-f-logo.png' %}{% endblock logo_image %}
+
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/tours.css' %}" />
+
+<!-- Hero Section with Video Background -->
+<section class="hero">
+    <video autoplay muted loop id="hero-video">
+      <source src="{% static 'videos/tour_banner3.mp4' %}" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <div class="hero-content">
+      <h1>Explore The World</h1>
+      <p>Journey To Adventure, Comfort And Memories.</p>
+    </div>
+  </section>
+
+  <!-- MAIN CONTENT2 -->
+  <main id="content">
+    <section class="bakgground">
+      <div class="boxcontainer">
+        <div class="main-content">
+          <!-- First Image and Content -->
+          <div class="card_main">
+            <div class="container_card">
+              <div class="container_card_content">
+                <h1 class="card-title2">PRIVATE TOURS</h1>
+                <h5 class="card-description1">
+                  Craft your journey, discover your destination. Private
+                  tours, your way.Experience luxury and personalized attention
+                  with our exclusive private tours. Enjoy the freedom to
+                  explore at your own pace, with a dedicated guide catering to
+                  your interests and needs. Whether it's a cultural tour or a
+                  scenic getaway, we ensure a memorable and hassle-free
+                  experience. Book your private tour today and make your
+                  journey one-of-a-kind!
+                </h5>
+              </div>
+              <div class="container_card_pofilephoto2">
+                <div class="profile-img">
+              <img src="{% static 'images/private_tour2.jpg' %}" class="profile-img2" alt="Fighting" />
+            </div>
+                <!-- <img src="global.png" class="profile-img" alt="Real-Time Strategy" /> -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Second Image and Content -->
+          <div class="card_main2">
+            <div class="container_card">
+              <div class="container_card_pofilephoto1">
+                <img src="{% static 'images/walk_tour2.jpg' %}" class="profile-img2" alt="Walk Tour" />
+              </div>
+              <div class="container_card_content2">
+                <h1 class="card-title">WALK TOURS</h1>
+                <h5 class="card-description2">
+                  Step into the heart of your destination with our engaging
+                  walking tours. Explore hidden gems, iconic landmarks, and
+                  local favorites with expert guides who bring the history,
+                  culture, and stories to life. Whether you're a history
+                  enthusiast or a casual explorer, our walking tours offer a
+                  deeper connection to the places you visit. Join us for an
+                  unforgettable journey on foot and see your destination like
+                  never before!Uncover the city, one step at a time. Explore
+                  beyond the maps..
+                </h5>
+              </div>
+            </div>
+          </div>
+        
+        
+
+      <!-- Collage -->
+      <div class="box">
+        <div class="box-content">
+          <h1>CULTURAL AND HERITAGE TOURISM</h1>
+          <p>
+            We offer a comprehensive range of services designed to meet your
+            healthcare needs, including laboratory tests that provide
+            essential diagnostic information, a selection of medications to
+            support your treatment, and the ability to place orders with a
+            valid prescription. Additionally, our online doctor consultation
+            service allows you to connect with healthcare professionals
+            conveniently, ensuring you receive expert advice and guidance from
+            the comfort of your home.
+          </p>
+        </div>
+
+        <div class="collage">
+          <!-- Square Grid -->
+          <div class="square-grid">
+            <!-- Div 1 -->
+            <div class="div1">
+              <img src="{% static 'images/C&H.jpg' %}" alt="CULTURAL AND HERITAGE TOURISM" />
+              <button class="image-button">Learn More</button>
+            </div>
+            <!-- Div 2 -->
+            <div class="div2">
+              <img src="{% static 'images/c&H2.jpeg' %}" alt="Medicines" />
+              <button class="image-button">Learn More</button>
+            </div>
+            <!-- Div 3 -->
+            <div class="div3">
+              <img src="{% static 'images/C&H3.jpeg' %}" alt="Online Doctor Consultation" />
+              <button class="image-button">Learn More</button>
+            </div>
+            <!-- Div 4 -->
+            <div class="div4">
+              <img src="{% static 'images/C&H4.jpeg' %}" alt="Order With Prescription" />
+              <button class="image-button">Learn More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Third Image and Content -->
+      <div class="card_main2">
+        <div class="container_card">
+          <div class="container_card_pofilephoto1" id="pc_image">
+            <img src="{% static 'images/hotels.png' %}" class="profile-img2" alt="Fighting" />
+          </div>
+          <div class="container_card_content2">
+            <h1 class="card-title">HOTELS</h1>
+            <h5 class="card-description2">
+              Experience comfort and luxury with our handpicked selection of
+              hotels. Whether you're looking for a cozy retreat or a lavish
+              stay, we offer accommodations that cater to every traveler’s
+              needs. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Incidunt reiciendis atque assumenda nam animi mollitia vel, eos
+              possimus ipsa hic perferendis doloribus maxime minima ut, id
+              totam! Itaque excepturi totam asperiores quis culpa quisquam,
+              facilis quod, nam commodi, non tempore voluptas enim magni. Nemo
+              consequuntur magni, cumque assumenda odit atque corrupti
+              sapiente repudiandae est, officia quo natus quas ab. Saepe
+              minima illo eligendi. Sequi praesentium dolores atque, esse
+              magni animi!
+            </h5>
+          </div>
+        </div>
+      </div>
+
+      <!-- Forth Image and Content -->
+      <div class="card_main">
+        <div class="container_card">
+          <div class="container_card_content">
+            <h1 class="card-title2">WILDLIFE TOURS</h1>
+            <h5 class="card-description1">
+              Get up close with nature on our thrilling wildlife tours.
+              Witness the majesty of wildlife in their natural habitat, from
+              safaris to bird watching, we ensure an unforgettable adventure.
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla
+              nemo veritatis vitae nostrum nesciunt amet incidunt, tenetur
+              voluptatem labore perspiciatis molestias reiciendis laboriosam
+              dignissimos magni modi eligendi architecto voluptate, repellat
+              tempora odio. Fugit velit, facere repudiandae iste cum facilis
+              ea quis nihil pariatur iure neque quos dicta illum. Perferendis,
+              dolores!
+            </h5>
+          </div>
+          <div id="sc_image" class="container_card_pofilephoto2">
+            <div class="profile-img">
+              <img src="{% static 'images/wildlife.jpg' %}" class="profile-img2" alt="Fighting" />
+            </div>
+            <!-- <img src="global.png" class="profile-img" alt="Real-Time Strategy" /> -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Fifth Image and Content -->
+      <div class="card_main2">
+        <div class="container_card">
+          <div id="ac_image" class="container_card_pofilephoto1">
+            <img src="{% static 'images/TS.jpg' %}" class="profile-img2" alt="Fighting" />
+          </div>
+          <div class="container_card_content2">
+            <h1 class="card-title">TRAVEL SERVICES</h1>
+            <h5 class="card-description2">
+              Let us turn your dream vacation into reality! With expert
+              planning and hassle-free arrangements, your perfect trip is just
+              a click away. Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Quasi doloremque voluptates mollitia exercitationem
+              numquam! Et a commodi quaerat qui quos quam maiores numquam
+              similique reprehenderit quidem dolores, quia magni explicabo
+              error voluptatum. Doloremque commodi nobis, non aliquam earum
+              porro veniam natus iure unde assumenda dolores? Ducimus, cum
+              voluptatem! Similique et dolore sint quod excepturi vitae
+              maiores voluptatem ?
+            </h5>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sixth Image and Content -->
+      <div class="card_main">
+        <div class="container_card">
+          <div class="container_card_content">
+            <h1 class="card-title2">HOLIDAY PACKAGES</h1>
+            <h5 class="card-description1">
+              Escape to paradise with our all-inclusive holiday packages
+              designed for relaxation and adventure. From breathtaking
+              destinations to seamless itineraries, our packages offer the
+              perfect blend of comfort, luxury, and excitement. Enjoy
+              top-notch accommodations, guided activities, and everything you
+              need for a stress-free vacation. Start your dream vacation now
+              and let us take care of the detailsmagnam quia qui sunt neque
+              explicabo ipsum voluptate ut commodi nemo consequuntur pariatur
+              accusamus incidunt, voluptatibus, veniam asperiores aut.
+              Exercitationem eos veniam totam fugiat quae accusantium
+              voluptatum hic incidunt tempora animi commodi omnis voluptates
+              obcaecati perferendis tempore, illo recusandae laborum,
+              distinctio soluta doloribus!
+            </h5>
+          </div>
+          <div class="container_card_pofilephoto2">
+            <div class="profile-img">
+              <img src="{% static 'images/holiday.jpeg' %}" class="profile-img2" alt="Fighting" />
+            </div>
+            <!-- <img src="global.png" class="profile-img" alt="Real-Time Strategy" /> -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Seventh Image and Content -->
+      <div class="card_main2">
+        <div class="container_card">
+          <div id="ac_image" class="container_card_pofilephoto1">
+            <img src="{% static 'images/guide.jpg' %}" class="profile-img2" alt="Fighting" />
+          </div>
+          <div class="container_card_content2">
+            <h1 class="card-title">TRAVEL GUIDE</h1>
+            <h5 class="card-description2">
+              Guides may help you in exploring Agra & around in a better way .
+              Guides will also tell you about excursions, attraction, things
+              to see , activities to enjoy , best itineraries as per your
+              timings & much more. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Doloremque similique itaque optio, earum,
+              obcaecati est magni, dolore ut adipisci soluta voluptatibus nemo
+              eligendi nulla. Cupiditate corrupti, cum ad, voluptatem
+              accusantium sapiente aspernatur laboriosam architecto facere non
+              esse, suscipit asperiores! Laboriosam amet cum voluptate tenetur
+              quod voluptatibus corrupti cumque illo voluptatum.
+            </h5>
+          </div>
+        </div>
+      </div>
+
+      </div>
+      </div>
+    </section>
+  </main>
+
+  <!--Dynamic blog Card Section -->
+  <div class="latest-card">
+    <div class="Scroll">
+        <h2>Love Yourself, You Deserve It!</h2>
+        <div class="card-grid">
+            {% for blog in blogs %}
+            <div class="card {% if forloop.first %}active{% endif %}">
+                {% if blog.image %}
+                    <img src="{{ blog.image.url }}" alt="{{ blog.title }}" />
+                {% else %}
+                    <img src="{% static 'images/blog_images/default_blog_image.jpg' %}" alt="{{ blog.title }}" />
+                {% endif %}
+                <div class="card-content">
+                    <h3>{{ blog.title }}</h3>
+                    <p>{{ blog.short_description|default:blog.content|truncatewords:30|safe }}</p>
+                </div>
+                <a href="{% url 'tours_blog_detail' blog.slug %}" class="read-more">Explore More</a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+  </div>
+
+
+<script src="{% static 'js/tours.js' %}"></script>
+{% endblock content %}

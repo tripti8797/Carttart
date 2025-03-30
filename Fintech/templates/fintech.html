@@ -1,0 +1,220 @@
+{% extends 'base.html' %} 
+{% load static %}
+
+{% block title %}Welcome|Carttart-Fintech{% endblock %} 
+{% block logo_image %}{% static 'images/b-f-logo.png' %}{% endblock logo_image %}
+
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/fintech.css' %}" />
+
+<!-- Hero Section with Video Background -->
+<section class="hero">
+    <video autoplay muted loop id="hero-video">
+        <source src="{% static 'videos/fintech.mp4' %}" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="hero-content">
+        <h1>Fintech, Future-Ready.</h1>
+        <p>Innovative financial solutions for a smarter, seamless digital economy.</p>
+    </div>
+</section>
+
+<!-- MAIN CONTENT -->
+<main id="content">
+    <section class="bakgground">
+        <div class="boxcontainer">
+            <div class="main-content">
+                <!-- Digital Payment Section -->
+                <div class="card_main">
+                    <div class="container_card">
+                        <div class="container_card_pofilephoto2">
+                            <img src="{% static 'images/payment-1.jpg' %}" class="profile-img2" alt="Digital payment illustration">
+                        </div>
+                        <div class="container_card_content">
+                            <h1 class="card-title2">DIGITAL PAYMENT</h1>
+                            <h5 class="card-description1">
+                                Digital payment systems have revolutionized how we conduct financial transactions 
+                                in the modern era. These innovative platforms enable seamless money transfers, 
+                                instant purchases, and secure online transactions without physical currency.
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Digital Banking Section -->
+                <div class="card_main2">
+                    <div class="container_card">
+                        <div class="container_card_content2">
+                            <h1 class="card-title">DIGITAL BANKING</h1>
+                            <h5 class="card-description2">
+                                Digital banking has transformed traditional financial services into accessible, 
+                                24/7 solutions available through smartphones and computers. These platforms provide 
+                                complete banking functionality without physical branches.
+                            </h5>
+                        </div>
+                        <div class="container_card_pofilephoto1">
+                            <img src="{% static 'images/banking-2.png' %}" class="profile-img2" alt="Digital banking interface">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-content">
+                <!-- Cryptocurrency Section -->
+                <div class="card_main">
+                    <div class="container_card">
+                        <div class="container_card_pofilephoto2">
+                            <img src="{% static 'images/crypto-3.png' %}" class="profile-img2" alt="Cryptocurrency illustration">
+                        </div>
+                        <div class="container_card_content">
+                            <h1 class="card-title2">CRYPTOCURRENCY</h1>
+                            <h5 class="card-description1">
+                                Cryptocurrency is a digital or virtual currency that uses blockchain technology for secure, 
+                                decentralized transactions. Unlike traditional money, it operates without central banks, 
+                                enabling peer-to-peer transfers with lower fees and faster processing.
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Investment Platform Section -->
+                <div class="card_main2">
+                    <div class="container_card">
+                        <div class="container_card_content2">
+                            <h1 class="card-title">INVESTMENT PLATFORM</h1>
+                            <h5 class="card-description2">
+                                Investment platforms like Robinhood, ETrade, and mutual fund apps democratize wealth-building 
+                                by offering easy access to stocks, bonds, ETFs, and cryptocurrencies.
+                            </h5>
+                        </div>
+                        <div class="container_card_pofilephoto1">
+                            <img src="{% static 'images/investment-4.jpg' %}" class="profile-img2" alt="Investment platform interface">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-content">
+                <!-- Insurance Section -->
+                <div class="card_main">
+                    <div class="container_card">
+                        <div class="container_card_pofilephoto2">
+                            <img src="{% static 'images/insurance-5.png' %}" class="profile-img2" alt="Insurance technology illustration">
+                        </div>
+                        <div class="container_card_content">
+                            <h1 class="card-title2">INSURANCE</h1>
+                            <h5 class="card-description1">
+                                The insurance industry is evolving with digital innovations like AI, IoT, and big data. 
+                                Insurtech companies offer personalized policies, instant claims processing, and usage-based 
+                                premiums.
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Digital Lending Section -->
+                <div class="card_main2">
+                    <div class="container_card">
+                        <div class="container_card_content2">
+                            <h1 class="card-title">DIGITAL LENDING</h1>
+                            <h5 class="card-description2">
+                                Digital lending platforms use AI, machine learning, and big data to streamline loan approvals, 
+                                reducing paperwork and processing time.
+                            </h5>
+                        </div>
+                        <div class="container_card_pofilephoto1">
+                            <img src="{% static 'images/lending-4.png' %}" class="profile-img2" alt="Digital lending interface">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-content">
+                <!-- Accounting Section -->
+                <div class="card_main">
+                    <div class="container_card">
+                        <div class="container_card_pofilephoto2">
+                            <img src="{% static 'images/accounting-5.png' %}" class="profile-img2" alt="Accounting software illustration">
+                        </div>
+                        <div class="container_card_content">
+                            <h1 class="card-title2">ACCOUNTING AND BOOKING</h1>
+                            <h5 class="card-description1">
+                                Modern accounting and booking software automates financial record-keeping, reducing 
+                                human errors and improving efficiency.
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Financial Education Collage -->
+<div class="box">
+    <div class="box-content">
+        <h1>FINANCIAL EDUCATION</h1>
+        <p>
+            Financial education is the cornerstone of sound money management, 
+            empowering individuals with the knowledge to make informed decisions 
+            about saving, investing, budgeting, and debt management.
+        </p>
+    </div>
+
+    <div class="collage">
+        <!-- Square Grid -->
+        <div class="square-grid">
+            <!-- Budgeting -->
+            <div class="div1">
+                <img src="{% static 'images/budgeting.png' %}" alt="Budgeting concepts">
+                <div class="image-text">Budgeting</div>
+                <button class="image-button">Learn More</button>
+            </div>
+            <!-- Saving -->
+            <div class="div2">
+                <img src="{% static 'images/saving.png' %}" alt="Saving strategies">
+                <div class="image-text">Saving</div>
+                <button class="image-button">Learn More</button>
+            </div>
+            <!-- Tax Literacy -->
+            <div class="div3">
+                <img src="{% static 'images/tax.webp' %}" alt="Tax education">
+                <div class="image-text">Tax Literacy</div>
+                <button class="image-button">Learn More</button>
+            </div>
+            <!-- Debt Management -->
+            <div class="div4">
+                <img src="{% static 'images/debt.png' %}" alt="Debt management">
+                <div class="image-text">Debt Management</div>
+                <button class="image-button">Learn More</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+ <!--Dynamic blog Card Section -->
+ <div class="latest-card">
+    <div class="Scroll">
+        <h2>Love Yourself, You Deserve It!</h2>
+        <div class="card-grid">
+            {% for blog in blogs %}
+            <div class="card {% if forloop.first %}active{% endif %}">
+                {% if blog.image %}
+                    <img src="{{ blog.image.url }}" alt="{{ blog.title }}" />
+                {% else %}
+                    <img src="{% static 'images/blog_images/default_blog_image.jpg' %}" alt="{{ blog.title }}" />
+                {% endif %}
+                <div class="card-content">
+                    <h3>{{ blog.title }}</h3>
+                    <p>{{ blog.short_description|default:blog.content|truncatewords:30|safe }}</p>
+                </div>
+                <a href="{% url 'fintech_blog_detail' blog.slug %}" class="read-more">Explore More</a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+  </div>
+
+<script src="{% static 'js/fintech.js' %}"></script>
+{% endblock content %}

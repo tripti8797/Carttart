@@ -1,0 +1,18 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maintenance Mode</title>
+    <link rel="stylesheet" href="{% static '/CSS/maintenance.css' %}">
+</head>
+<body>
+    <div class="maintenance-container">
+            <img src="{% static 'images/maintainence.jpg' %}" alt="Maintenance Logo">
+        <h1>Under Maintenance!</h1>
+        <p>Please check back later.</p>
+        <button class="go-back"><a href="{% url 'healthcare' %}">Go Back</a></button>
+    </div>
+</body>
+</html>

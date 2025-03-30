@@ -1,0 +1,120 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- Link External CSS -->
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    
+</head>
+<body>
+    <!-- Navbar -->
+    <header id="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="{% url 'home' %}">
+                    <img src="{% block logo_image %}{% endblock logo_image %}" alt="healthcare">
+                </a>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li class="sub-menu">
+                    <a>Services<i class="arrow down"></i></a>
+                    <ul class="sub-menu-item">
+                        <li><a href="{% url 'healthcare' %}">Health care</a></li>
+                        <li><a href="{% url 'realestate' %}">Realestate</a></li>
+                        <li><a href="{% url 'fintech' %}">Fintech</a></li>
+                        <li><a href="{% url 'energy' %}">Energy</a></li>
+                        <li><a href="{% url 'commerce' %}" >E-Commerce</a></li>
+                        <li><a href="{% url 'sports' %}">E-Sports</a></li>
+                        <li><a href="{% url 'tours' %}">Tours & Travels</a></li>
+                    </ul>
+                </li>
+                <li class="sub-menu">
+                    <a href="{% url 'about' %}">About</a>
+                </li>
+                <li><a href="#footer">Contact Us</a></li>
+                <a href="{% url 'contact' %}"><li class="Get">
+                    <div class="nav-item" id="Get">
+                        Get In Touch
+                    </div>
+                </li></a>
+            </ul>
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    {% block content %}
+    {% endblock %}
+
+    <!-- Footer -->
+    <div class="footer-container" id="footer">
+        <footer class="footer">
+            <div class="footer-section">
+                <h3 class="head">Useful Links</h3>
+                <ul>
+                    <li><a href="{% url 'healthcare' %}">Health Care</a></li>
+                    <li><a href="{% url 'realestate' %}">Realstate</a></li>
+                    <li><a href="{% url 'fintech' %}">Fintech</a></li>
+                    <li><a href="{% url 'energy' %}">Energy</a></li>
+                    <li><a href="{% url 'commerce' %}">E-Commerce</a></li>
+                    <li><a href="{% url 'sports' %}">E-Sports</a></li>
+                    <li><a href="{% url 'tours' %}">Tours & Travels</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3 class="head">Policy</h3>
+                <ul>
+                    <li><a href="{% url 'privacy_policy' %}">Privacy Policy</a></li>
+                    <li><a href="{% url 'privacy_policy' %}">Terms & Conditions</a></li>
+                    <li><a href="{% url 'privacy_policy' %}">Child Policy</a></li>
+                    <li><a href="{% url 'privacy_policy' %}">Testimonial</a></li>
+                    <li><a href="{% url 'privacy_policy' %}">Career</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3 class="head">Feedback</h3>
+                <ul>
+                    <li><a href="https://facebook.com" target="_blank">Facebook <i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="https://twitter.com" target="_blank">Twitter <i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="https://instagram.com" target="_blank">Instagram <i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://linkedin.com" target="_blank">Linkedin <i class="fa-brands fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section1" id="CU">
+                <h3 class="head">Contact Us</h3>
+                <ul>
+                    <li><strong>Phone:</strong> +91 9355032333</li>
+                    <li><strong>Email:</strong> info@carttart.com</li>
+                    <li><strong>Address:</strong> G1, Plot no. A-61, Sector-16, <br>
+                    Noida, Gautam Buddh Nagar, U.P.- 201301</li>
+                </ul>
+            </div>
+            <div class="footer-logo">
+                <a href="#navbar"><img src="{% static 'images/footer-logo.png' %}" alt="Footer Logo"></a>
+            </div>
+        </footer>
+
+        <div class="copyright">
+            &copy; 2024 Carttart Commerce (P).Ltd. All rights reserved.
+        </div>
+    </div>
+
+
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>

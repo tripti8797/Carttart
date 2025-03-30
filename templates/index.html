@@ -1,0 +1,370 @@
+{% extends 'base.html' %} 
+{% load static %}
+
+{% block title %}Welcome|Carttart-Home{% endblock %} 
+{% block logo_image %}{% static 'images/h-g-logo.png' %}{% endblock logo_image %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/styles.css' %}"/>
+
+<!-- Slider -->
+<div class="slide-container">
+  <!-- Image Container -->
+  <div class="image-container">
+    <div class="slide">
+      <img src="{% static 'images/healthcare.png' %}" alt="Healthcare" class="active">
+      <div class="image-overlay">
+        <p class="overlay-text">Revolutionizing healthcare technology.</p>
+        <a href="{% url 'healthcare' %}">
+        <button class="explore-button">Explore More</button></a>
+      </div>
+    </div>
+    
+    <div class="slide">
+      <img src="{% static 'images/realestate.png' %}" alt="Realestate">
+      <div class="image-overlay">
+        <p class="overlay-text">Modern solutions for real estate.</p>
+        <a href="{% url 'realestate' %}">
+        <button class="explore-button">Explore More</button></a>
+      </div>
+    </div>
+    
+    <div class="slide">
+      <img src="{% static 'images/fintech.png' %}" alt="Fintech">
+      <div class="image-overlay">
+        <p class="overlay-text">Innovative financial technologies.</p>
+        <a href="{% url 'fintech' %}">
+        <button class="explore-button">Explore More</button></a>
+      </div>
+    </div>
+    
+    <div class="slide">
+      <img src="{% static 'images/energy.png' %}" alt="Energy">
+      <div class="image-overlay">
+        <p class="overlay-text">Sustainable energy solutions.</p>
+        <a href="{% url 'energy' %}">
+        <button class="explore-button">Explore More</button></a>
+      </div>
+    </div>
+    
+    <div class="slide">
+      <img src="{% static 'images/E-commerce.png' %}" alt="E-Commerce">
+      <div class="image-overlay">
+        <p class="overlay-text">Next-gen e-commerce platforms.</p>
+        <a href="{% url 'commerce' %}">
+        <button class="explore-button">Explore More</button></a>
+      </div>
+    </div>
+    
+    <div class="slide">
+      <img src="{% static 'images/e-sports.png' %}" alt="E-Sports">
+      <div class="image-overlay">
+        <p class="overlay-text">Competitive gaming redefined.</p>
+        <a href="{% url 'sports' %}">
+        <button class="explore-button">Explore More</button></a>
+      </div>
+    </div>
+    
+    <div class="slide">
+      <img src="{% static 'images/tour.png' %}" alt="Tours">
+      <div class="image-overlay">
+        <p class="overlay-text">Unforgettable travel experiences.</p>
+        <a href="{% url 'tours' %}">
+        <button class="explore-button">Explore More</button></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section Selector -->
+  <div class="section-selector">
+    <div class="section" data-image="solar-slider.jpg">
+      <div class="sec-img">
+        <img src="{% static 'images/health-insurance 1.png' %}" alt="Health Insurance">
+      </div>
+      <div class="sec-text">Healthcare</div>
+    </div>
+    <div class="section" data-image="hydro-slider.jpg">
+      <div class="sec-img">
+        <img src="{% static 'images/price 1.png' %}" alt="price">
+      </div>
+      <div class="sec-text">Realestate</div>
+    </div>
+    <div class="section" data-image="wind-slider.jpg">
+      <div class="sec-img">
+        <img src="{% static 'images/bag 1.png' %}" alt="bag">
+      </div>
+      <div class="sec-text">Fintech</div>
+    </div>
+    <div class="section" data-image="electromagnetic-slider.jpg">
+      <div class="sec-img">
+        <img src="{% static 'images/factory 1.png' %}" alt="factory">
+      </div>
+      <div class="sec-text">Energy</div>
+    </div>
+    <div class="section" data-image="chemical-slider.jpg">
+      <div class="sec-img">
+        <img src="{% static 'images/grocery-store 1.png' %}" alt="grocery-store">
+      </div>
+      <div class="sec-text">E-Commerce</div>
+    </div>
+    <div class="section" data-image="electromagnetic-slider.jpg">
+      <div class="sec-img">
+        <img src="{% static 'images/game-console 1.png' %}" alt="game">
+      </div>
+      <div class="sec-text">E-Sports</div>
+    </div>
+    <div class="section" data-image="chemical-slider.jpg">
+      <div class="sec-img">
+        <img src="{% static 'images/traveling 1.png' %}" alt="travel">
+      </div>
+      <div class="sec-text">Tours & Travels</div>
+    </div>
+  </div>
+</div>
+
+<!-- Card Section -->
+<div class="card">
+  <div class="card-topic">
+    <h2>Your Trusted Partner in Business Growth & Marketing Excellence</h2>
+    <p>We empower businesses with strategic consulting and result-driven marketing solutions</p>
+  </div>
+  <div class="card-container">
+    <!-- Business Consultancy Card -->
+    <div class="crd">
+      <div class="card-head">
+        <p>Business Consultancy</p>
+        <img src="{% static 'images/line.png' %}" alt="line">
+      </div>
+      <div class="card-img">
+        <img src="{% static 'images/Untitled design 1.png' %}" alt="card-1">
+      </div>
+      <div class="card-para">
+        <p>We provide expert business advisory to help you make informed decisions, streamline operations, and enhance profitability.</p>
+      </div>
+    </div>
+
+    <!-- Digital Marketing Card -->
+    <div class="crd">
+      <div class="card-head" id="card-head">
+        <p>Digital Marketing</p>
+        <img src="{% static 'images/line.png' %}" alt="line">
+      </div>
+      <div class="card-img">
+        <img src="{% static 'images/hand-holding-smartphone-social-media-concept 1.png' %}" alt="card-2">
+      </div>
+      <div class="card-para">
+        <p>Our digital marketing strategies drive engagement and increase visibility across all platforms.</p>
+      </div>
+    </div>
+
+    <div class="crd">
+      <div class="card-head" id="card-head">
+        <p>Branding & Design</p>
+        <img src="{% static 'images/line.png' %}" alt="line">
+      </div>
+      <div class="card-img">
+        <img src="{% static 'images/branding-strategy-marketing-business-graphic-design 1.png' %}" alt="card-1">
+      </div>
+      <div class="card-para">
+        <p>From compelling visuals and strategic messaging to a strong digital presence, we ensure your brand stands out in a competitive market.</p>
+      </div>
+    </div>
+  
+    <!-- Technology Solutions Card -->
+    <div class="crd">
+      <div class="card-head">
+        <p>Technology Solutions</p>
+        <img src="{% static 'images/line.png' %}" alt="line">
+      </div>
+      <div class="card-img">
+        <img src="{% static 'images/standard-quality-control-collage-concept 1.png' %}" alt="card-2">
+      </div>
+      <div class="card-para">
+        <p>Enhance your business operations with cutting-edge technology solutions, AI-driven automation and cloud integration.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<main>
+  <section class="business-section">
+    <div class="card_content" id="card_content1">
+      <div class="section-header">
+        <img src="{% static 'images/point-1.png' %}" alt="business-icon">
+        <h2 class="section-title">Business Formation & Compliance</h2>
+      </div>
+      <h1>Effortless Company Formation & Regulatory Success!</h1>
+      <p>Starting a business can be overwhelming, but with our expert assistance, you can establish your company smoothly and ensure compliance with all legal regulations. We provide end-to-end support in company formation, business registration, taxation, and company secretary services. Whether you're a startup or an established business looking to restructure, our services ensure that your business stays compliant, risk-free, and legally sound.</p>
+    </div>
+    <div class="box-img1">
+      <img src="{% static 'images/Group 11.png' %}" alt="Business Formation">
+    </div>
+  </section>
+
+  <section class="finance-section">
+    <div class="box-img">
+      <img class="business-image" src="{% static 'images/card-2.svg' %}" alt="Finance Work">
+    </div>
+    <div class="card_content" id="card_content2">
+      <div class="section-header2">
+        <img src="{% static 'images/point-2.png' %}" alt="business-icon">
+        <h2 class="section-title">Financial Management & Advisory</h2>
+      </div>
+      <h1>Smart Accounting, Secure Finances, Strategic Growth</h1>
+      <p>Managing finances effectively is the backbone of any successful business. Our expert financial management services include bookkeeping, accounting, taxation, auditing, and banking advisory. We help businesses maintain accurate financial records, optimize cash flow, and comply with tax regulations. Our internal audit and advisory solutions provide deeper financial insights, helping you make data-driven decisions and prevent financial risks.</p>
+    </div>
+  </section>
+
+  <section class="marketing-section">
+    <div class="section-header">
+      <img src="{% static 'images/point-3.png' %}" alt="business-icon">
+      <h2 class="section-title">Digital Marketing & Lead Generation</h2>
+    </div>
+    <h1>Attract, Convert & Grow with Proven Strategies!</h1>
+    <div class="marketing-grid">
+      <div class="marketing-box" id="marketing-box1">
+        <div class="circle-img">           
+          <img src="{% static 'images/seo 1.png' %}" alt="SEO & Website Optimization">
+        </div>
+        <h3>SEO & Website Optimization</h3>
+        <p>Boost your online visibility with expert SEO strategies, including keyword optimization, technical SEO, content marketing.</p>
+      </div>
+
+      <div class="marketing-box" id="marketing-box2">
+        <div class="circle-img">
+          <img src="{% static 'images/social-media 1.png' %}" alt="Social Media Marketing & Branding">
+        </div>
+        <h3>Social Media Marketing & Branding</h3>
+        <p>Engage and grow your audience across platforms with a strong social media presence.</p>
+      </div>
+
+      <div class="marketing-box" id="marketing-box1">
+        <div class="circle-img">
+          <img src="{% static 'images/customer-acquisition 1.png' %}" alt="Lead Generation & Conversion">
+        </div>
+        <h3>Lead Generation & Conversion</h3>
+        <p>Generate high-quality leads and conversions through data-driven marketing strategies and optimization.</p>
+      </div>
+
+      <div class="marketing-box" id="marketing-box2">
+        <div class="circle-img">
+          <img src="{% static 'images/seo (1) 1.png' %}" alt="Strategy Optimization">
+        </div>
+        <h3>Strategy Optimization</h3>
+        <p>Maximize your marketing success with data-driven insights. We analyze campaign performance, track key metrics for continuous improvement.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="govt-section">
+    <div class="govt-img-section">
+      <img class="govt-image" src="{% static 'images/govt.svg' %}" alt="govt">
+    </div>
+    <div class="card_content" id="card_content2">
+      <div class="section-header2">
+        <img src="{% static 'images/point-4.png' %}" alt="business-icon">
+        <h2 class="section-title">Funding & Investment Solutions</h2>
+      </div>
+      <h1>Unlock Government Grants and Smart Investments</h1> 
+      <div class="main-check">
+        <div class="govt">
+          <img src="{% static 'images/check 1.png' %}" alt="check-1">
+          <div class="govt-content">
+            <h3>Government Grants & Schemes</h3>
+            <p>We assist businesses in identifying and applying for government funding programs, ensuring eligibility compliance and maximizing financial support.</p>
+          </div>
+        </div>
+
+        <div class="govt">
+          <img src="{% static 'images/check 1.png' %}" alt="check-1">
+          <div class="govt-content">
+            <h3>Investment Advisory</h3>
+            <p>Our experts provide strategic guidance on investment opportunities, helping businesses make informed decisions.</p>
+          </div>
+        </div>
+
+        <div class="govt">
+          <img src="{% static 'images/check 1.png' %}" alt="check-1">
+          <div class="govt-content">
+            <h3>Financial Planning & Strategy</h3>
+            <p>We offer tailored financial planning solutions, including budgeting, capital allocation, and risk management, to ensure long-term financial stability.</p>
+          </div>
+        </div>
+
+        <div class="govt">
+          <img src="{% static 'images/check 1.png' %}" alt="check-1">
+          <div class="govt-content">
+            <h3>Loan & Funding Assistance</h3>
+            <p>Get access to business loans, venture capital, and other financing options with our support in preparing strong proposals</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div class="grow">
+  <h1>Lets Grow Business Together!</h1>
+  <p class="grow-para">Achieve sustainable business growth with expert guidance, strategic planning, and innovative solutions. Our goal is to help you scale efficiently, maximize opportunities, and stay ahead of the competition in the market.</p>
+  <div class="grow-bottom">
+    <a href="#"><button>Get in touch</button></a>
+    <div class="happy-clients">
+      <img src="{% static 'images/happy.svg' %}" alt="Happy Clients">
+      <div class="sub-content">
+        <div class="star">
+          <i class="fa-solid fa-star"></i>
+          <p class="hundered">100+</p>
+        </div>
+        <p class="sub-content-para">Happy Clients</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Success -->
+<div class="success-container">
+  <div class="success-section">
+    <h2>Proven Success<br> Measurable Impact</h2>
+    <img src="{% static 'images/line.png' %}" alt="line">
+    <p>Numbers speak louder than words! Our expert consulting services have transformed businesses, optimized strategies, sustainable growth.</p>
+  </div>
+
+  <div class="stats-section">
+    <div class="stat-box">
+      <div class="blue">
+        <h4>2K+</h4>
+      </div>
+      <div class="blu">
+        <p>Businesses Transformed with Our Expert Consulting</p>
+      </div>
+    </div>
+
+    <div class="stat-box">
+      <div class="yellow">
+        <h4>90%</h4>
+      </div>
+      <div class="ylo">
+        <p>Success Rate in Business Growth & Strategy Execution</p>
+      </div>
+    </div>
+    <div class="stat-box">
+      <div class="green">
+        <h4>4.8/5</h4>
+      </div>
+      <div class="grn">
+        <p>Client Satisfaction Rating Across All Services</p>
+      </div>
+    </div>
+    <div class="stat-box">
+      <div class="red">
+        <h4>100%</h4>
+      </div>
+      <div class="rd">
+        <p>Compliance & Risk Management Assurance</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="{% static 'js/script.js' %}"></script>
+{% endblock %}
