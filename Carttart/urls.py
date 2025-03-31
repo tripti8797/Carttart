@@ -14,10 +14,10 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-from django.contrib import admin  # Import Django admin
-from django.urls import path, include  # Import path and include for URL routing
-from django.conf import settings  # Import settings to access static and media file settings
-from django.conf.urls.static import static  # Import function to serve static/media files in development
+from django.contrib import admin
+from django.urls import path, include
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),  # Admin panel route
@@ -29,13 +29,9 @@ urlpatterns = [
     path('commerce/', include('Commerce.urls')),  # Commerce app routing
     path('sports/', include('Sports.urls')),  # Sports app routing
     path('tours/', include('Tours.urls')),  # Tours app routing
-    path('contact/', include('contact.urls')),  # Contact app routing (Ensure lowercase if app is named `contact`)
-    path('blog/', include("blog.urls")),
-
+    path('contact/', include('contact.urls')),  # Contact app routing
+    path('blog/', include("blog.urls")),  # Blog app routing
 ]
 
-
-# Serve static and media files during development
 if settings.DEBUG:
-    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) # static files handling
-    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)  # media files handling
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

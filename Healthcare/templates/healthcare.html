@@ -206,28 +206,30 @@
     </section>
   </main>
 
-  <!--Dynamic blog Card Section -->
-  <div class="latest-card">
-    <div class="Scroll">
-        <h2>Love Yourself, You Deserve It!</h2>
-        <div class="card-grid">
-            {% for blog in blogs %}
-            <div class="card {% if forloop.first %}active{% endif %}">
-                {% if blog.image %}
-                    <img src="{{ blog.image.url }}" alt="{{ blog.title }}" />
-                {% else %}
-                    <img src="{% static 'images/blog_images/default_blog_image.jpg' %}" alt="{{ blog.title }}" />
-                {% endif %}
-                <div class="card-content">
-                    <h3>{{ blog.title }}</h3>
-                    <p>{{ blog.short_description|default:blog.content|truncatewords:30|safe }}</p>
-                </div>
-                <a href="{% url 'healthcare_blog_detail' blog.slug %}" class="read-more">Explore More</a>
+<!-- healthcare.html -->
+<div class="latest-card">
+  <div class="Scroll">
+      <h2>Love Yourself, You Deserve It!</h2>
+      <div class="card-grid">
+        {% for blog in blogs %}
+        <div class="card {% if forloop.first %}active{% endif %}">
+            {% if blog.image %}
+                <img src="{{ blog.image.url }}" alt="{{ blog.title }}" />
+            {% else %}
+                <img src="{% static 'images/blog_images/default_blog_image.jpg' %}" alt="{{ blog.title }}" />
+            {% endif %}
+            <div class="card-content">
+                <h3>{{ blog.title }}</h3>
+                <p>{{ blog.short_description|default:blog.content|truncatewords:30|safe }}</p>
             </div>
-            {% endfor %}
+            <a href="{% url 'healthcare_blog_detail' blog.slug %}" class="read-more">Explore More</a>
         </div>
-    </div>
+      {% empty %}
+          <p>No healthcare blogs available right now.</p>
+      {% endfor %}
+      </div>
   </div>
+</div>
 
 <script src="{% static 'js/healthcare.js' %}"></script>
 {% endblock content %}
