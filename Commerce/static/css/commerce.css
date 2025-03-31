@@ -803,7 +803,7 @@
   
   
   
-     /* MEDIA QUERIES FOR RESPONSIVENESS */
+    /* MEDIA QUERIES FOR RESPONSIVENESS */
     @media(max-width: 1024px){
       .box{
         display: block;
@@ -816,6 +816,14 @@
       .profile-img2 {
         height: 299px;
     }
+    .hero-content p {
+      font-size: 18px;
+      margin-bottom: -13px;
+  }
+  .hero-content h1 {
+    font-size: 40px;
+    margin-bottom: 11px;
+}
     
   /* .collage{
     width: 100%;
@@ -894,9 +902,7 @@
           justify-items: center;
           padding-bottom: 2%;
         }
-        .footer-logo img {
-          width: 23%;
-        }
+        
         
         .nav-links {
           display: none;
@@ -907,6 +913,25 @@
           right: 0;
           width: 100%;
         }
+        .nav-links a{
+          color:white;
+        }
+      .arrow{
+       
+        border-bottom: solid white;
+        border-right: solid white;
+      }
+    
+      .Get .nav-item {
+        background: white;
+        color: var(--yellow);
+      }
+      .nav-links{
+        background-color: var(--yellow);
+      }
+      .sub-menu-item{
+        background-color: var(--yellow);
+      }
       
       
         .nav-links ul {
@@ -952,6 +977,14 @@
         .profile-img2 {
           height: 378px;
       }
+      .hero-content p {
+        font-size: 14px;
+        margin-bottom: -20px;
+    }
+    .hero-content h1 {
+      font-size: 26px;
+      margin-bottom: 9px;
+  }
       .card-description1, .card-description2 {
         font-size: 17px;
     }
@@ -975,6 +1008,9 @@
       flex-direction: column;
       align-items: center;
       text-align: center;
+    }
+    .footer-logo img {
+      width: 23%;
     }
   
     .footer-section {
@@ -1064,29 +1100,29 @@
       object-fit: cover;
   }
   .div1 button{
-    top: 34.4%;
+    top: 47.7%;
     width: 21%;
     margin-left: -11%;
   }
   .div2 button{
-    top: 34.4%;
+    top: 47.7%;
     margin-left: -11%;
           width: 21%;
   }
   .div3 button{
-    top: 38.4%;
+    top: 69.4%;
     margin-left: -11%;
     width: 21%;
   }
   .div4 button{
-    top: 38.4%;
-    margin-left: -13%;
+    top: 69.4%;
+    margin-left: -11%;
   }
   .image-button{
     font-size: 11px;
   }
   .collage{
-    height: 466px;
+    height: 364px;
     width: 90%;
   }
   .div1{
@@ -1170,22 +1206,22 @@
     width: 200px;
   }
   .div1 button{
-    top: 35.777%;
+    top: 45.7%;
     width: 21%;
     margin-left: -11%;
   }
   .div2 button{
-    top: 35.777%;
+    top: 45.7%;
     margin-left: -11%;
           width: 21%;
   }
   .div3 button{
-    top: 38.9%;
+    top: 62.7%;
     margin-left: -11%;
     width: 21%;
   }
   .div4 button{
-    top: 38.9%;
+    top: 62.7%;
     margin-left: -11%;
     width: 21%;
   }
@@ -1244,22 +1280,22 @@
     width: 194px;
   }
   .div1 button{
-    top: 36.77%;
+    top: 50.6%;
     margin-left: -13%;
     width: 25%;
   }
   .div2 button {
-    top: 36.77%;
+    top: 50.6%;
     margin-left: -13%;
     width: 25%;
   }
   .div3 button{
-    top: 39.7%;
-    margin-left: -13%;
-    width: 25%;
+    top: 66%;
+        margin-left: -11%;
+        width: 21%;
   }
   .div4 button{
-    top: 39.7%;
+    top: 66%;
     margin-left: -13%;
     width: 25%;
   }
