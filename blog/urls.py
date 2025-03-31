@@ -34,7 +34,11 @@ urlpatterns = [
     
     # Blog creation and management
     path("form/", views.form, name="form"),
+    path("manage-blogs/", views.manage_blogs, name="manage_blogs"),
     path("toggle_blog_status/<int:blog_id>/", views.toggle_blog_status, name="toggle_blog_status"),
     path("edit_blog/<int:blog_id>/", views.edit_blog, name="edit_blog"),
     path("delete_blog/<int:blog_id>/", views.delete_blog, name="delete_blog"),
 ]
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

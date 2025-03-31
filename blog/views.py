@@ -111,11 +111,17 @@ def form(request):
                 )
 
         messages.success(request, 'Blog created successfully!')
-        return redirect(reverse(f'{blog_type}_blog_list'))
+        return redirect('manage_blogs')
 
     # Render the form template for GET requests
-    blogs = Blog.objects.all()
-    return render(request, 'form.html', {'blogs': blogs})
+    return render(request, 'form.html')
+
+def manage_blogs(request):
+    """
+    View to manage all blogs (list, toggle status, edit, delete)
+    """
+    blogs = Blog.objects.all().order_by("-published_date")
+    return render(request, 'manage_blogs.html', {'blogs': blogs})
 
 def toggle_blog_status(request, blog_id):
     """
@@ -125,7 +131,7 @@ def toggle_blog_status(request, blog_id):
     blog.active = not blog.active
     blog.save()
     messages.success(request, f'Blog status updated to {"Active" if blog.active else "Inactive"}')
-    return redirect('form')
+    return redirect('manage_blogs')
 
 def edit_blog(request, blog_id):
     """
@@ -135,7 +141,7 @@ def edit_blog(request, blog_id):
         blog = Blog.objects.get(id=blog_id)
     except Blog.DoesNotExist:
         messages.error(request, 'Blog not found!')
-        return redirect('form')
+        return redirect('manage_blogs')
 
     if request.method == "POST":
         data = request.POST
@@ -175,7 +181,7 @@ def edit_blog(request, blog_id):
 
         blog.save()
         messages.success(request, 'Blog updated successfully!')
-        return redirect(reverse(f'{blog.blog_type}_blog_list'))
+        return redirect('manage_blogs')
 
     # Render the edit template for GET requests
     return render(request, 'edit_blog.html', {'blog': blog})
@@ -186,9 +192,8 @@ def delete_blog(request, blog_id):
     """
     try:
         blog = Blog.objects.get(id=blog_id)
-        blog_type = blog.blog_type
         blog.delete()
         messages.success(request, 'Blog deleted successfully!')
     except Blog.DoesNotExist:
         messages.error(request, 'Blog not found!')
-    return redirect(reverse(f'{blog_type}_blog_list'))
+    return redirect('manage_blogs')  
