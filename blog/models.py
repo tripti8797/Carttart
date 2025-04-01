@@ -4,7 +4,7 @@ from django.utils.text import slugify
 
 class Tag(models.Model):
     name = models.CharField(max_length=50, unique=True)
-    slug = models.SlugField(unique=True, blank=True)
+    slug = models.SlugField(unique=False, blank=True)
 
     def save(self, *args, **kwargs):
         if not self.slug:
@@ -27,7 +27,7 @@ class Blog(models.Model):
     ]
 
     title = models.CharField(max_length=255)
-    slug = models.SlugField(unique=True, blank=True)
+    slug = models.SlugField(unique=False, blank=True)
     image = models.ImageField(upload_to="blog/images/blog_images")
     content = models.TextField()
     short_description = models.CharField(max_length=200, blank=True, null=True)
@@ -58,7 +58,7 @@ class Blog(models.Model):
 class Section(models.Model):
     blog = models.ForeignKey(Blog, related_name='sections', on_delete=models.CASCADE)
     title = models.CharField(max_length=255)
-    slug = models.SlugField(unique=True, blank=True)
+    slug = models.SlugField(unique=False, blank=True)
     content = models.TextField()
 
     def save(self, *args, **kwargs):

@@ -1017,9 +1017,7 @@
   
     .Get .nav-item{
       background: white;
-      color: var(--green);
     }
-
     .Get .nav-item a{
       color: var(--green);
     }
@@ -1062,12 +1060,13 @@
       justify-items: center;
       padding-bottom: 2%;
     }
-
-    
     .footer {
       flex-direction: column;
       align-items: center;
       text-align: center;
+    }
+    .footer-logo img {
+      width: 23%;
     }
   
     .footer-section {
@@ -1084,18 +1083,13 @@
       align-items: center;
       text-align: center;
     }
-
-    
-    .footer-logo img {
-      width: 23%;
-    }
-    
+  
   }
   
   @media (max-width: 480px) {
     header{
       padding: 5px;
-      height: 58px;
+      height: 55px;
     }
     .nav-links {
       /* display: flex; */
@@ -1262,7 +1256,7 @@
       font-size: 20px;
     }
     .logo img {
-      width: 33%;
+      width: 30%;
     }
     .sub-menu-item{
       left: -90px;
@@ -1321,20 +1315,16 @@
   
     
     .div1 button{
-      top: 44%;
-      margin-left: -14.5%;
+      top: 36.5%;
     }
     .div2 button{
-      top: 44%;
-      margin-left: -14.5%;
+      top: 36.5%;
     }
     .div3 button{
-      top: 67%;
-      margin-left: -14.5%;
+      top: 40.5%;
     }
     .div4 button{
-      top: 67%;
-      margin-left: -14.5%;
+      top: 40.5%;
     }
   
   }
@@ -1364,20 +1354,16 @@
   
     
     .div1 button{
-      top: 48%;
-      margin-left: -16%;
+      top: 37.3%;
     }
     .div2 button{
-      top: 48%;
-      margin-left: -16%;
+      top: 37.3%;
     }
     .div3 button{
-      top: 69.56%;
-      margin-left: -16%;
+      top: 41.5%;
     }
     .div4 button{
-      top: 69.56%;
-      margin-left: -16%;
+      top: 41.5%;
     }
   
     .div1, .div4{
@@ -1407,20 +1393,20 @@
       height: 250px;
     }
     .div1 button{
-      top: 41%;
-      margin-left: -16.5%;
+      top: 36.1%;
+      left: 60.5%;
     }
     .div2 button{
-      top: 41%;
-      margin-left: -16.5%;
+      top: 36.1%;
+      left: 100%;
     }
     .div3 button{
-      top: 64%;
-      margin-left: -16.5%;
+      top: 40.05%;
+      left: 45%;
     }
     .div4 button{
-      top: 64%;
-      margin-left: -16.5%;
+      top: 40.05%;
+      left: 100%;
     }
     .square-grid h2 {
       font-size: 13px;
