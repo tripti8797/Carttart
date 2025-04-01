@@ -978,7 +978,7 @@
   }
 
   .logo img {
-    width: 69%;
+    width: 21%;
   }
   
   .nav-links.show {
@@ -987,7 +987,7 @@
   }
 
   .hamburger {
-    display: contents;
+    display: block;
   }
 
   .Get .nav-item{

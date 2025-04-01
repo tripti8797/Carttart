@@ -132,24 +132,41 @@ button[type="submit"]:hover {
     .nav-links {
         display: none;
         flex-direction: column;
-        background-color: #2ba24c;
+        /* background-color: #2ba24c; */
         position: absolute;
-        top: 45px;
+        top: 80px;
         right: 0;
         padding: 20px;
         width: 100%;
       }
+
+      .nav-links a {
+        color: white;
+    }
     
+    .Get .nav-item {
+        background: white;
+        color: #19AF62;
+    }
     
-      .nav-links ul {
+    .arrow {
+        border-bottom: solid white;
+        border-right: solid white;
+    }
+
+    .sub-menu-item {
+        top: 31%;
+        background-color: #19AF62;
+    }
+
+    .nav-links ul {
         flex-direction: column;
-        left: 100px;
-        width: 50%;
-    
+        left: 54%;
+        width: 31%;
       }
     
       .nav-links ul li {
-        margin: 10px 0;
+        margin: 0px;
       }
     
       .nav-links.show {
@@ -181,7 +198,7 @@ button[type="submit"]:hover {
     i.fa-regular.fa-message {
         margin-left: 38rem;
     }
-
+ 
     .footer {
         flex-direction: column;
         align-items: center;
@@ -197,15 +214,16 @@ button[type="submit"]:hover {
       }
   
       .footer-container {
-        background:#2ba24c;
+        background:white;
       }
       
+      
       .footer-section1 h3 {
-        color: #f4f4f4;
+        color: #19af62;
       }
       
       .footer-section1 ul li {
-        color: #f4f4f4;
+        color: #19af62;
       }
     
       /* Footer Container Adjustments */
@@ -236,6 +254,9 @@ button[type="submit"]:hover {
       button{
         top: 40%;
       }
+      .footer-logo img {
+        width: 22%;
+    }
 }
 
 @media screen and (max-width: 689px) {
@@ -287,13 +308,14 @@ button[type="submit"]:hover {
     header {
         width: 100%;
     }
-    .nav-links {
-        /* display: flex; */
-        list-style: none;
-        gap: 15px;
-        margin-left: auto;
-        margin-top: 10px;
-        padding: 20px;
+    
+
+      .nav-links {
+        top: 60px;
+      }
+    
+      .sub-menu-item a {
+        font-size: 12px;
       }
       
     form{
@@ -351,6 +373,13 @@ button[type="submit"]:hover {
     header{
         width: 100%;
     }
+    .sub-menu-item a {
+        font-size: 10px;
+    }
+  
+    .nav-links ul {
+      width: 39%;
+  }
 
     form {
         width: 250px;
