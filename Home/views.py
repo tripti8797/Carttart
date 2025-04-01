@@ -7,11 +7,11 @@ def index(request):
 
 # View function for the About page
 def about(request):
-    return render(request, 'maintenance.html')  # Renders the "maintenance.html" template (placeholder)
+    return render(request, 'about.html')  # Renders the "maintenance.html" template (placeholder)
 
 # View function for the Terms and Conditions page
 def termsCond(request):
-    return render(request, 'maintenance.html')  # Renders the "maintenance.html" template (placeholder)
+    return render(request, 't&c.html')  # Renders the "maintenance.html" template (placeholder)
 
 # View function for the Testimonials page
 def testimonials(request):
@@ -27,4 +27,4 @@ def child_policy(request):
 
 # View function for the Privacy Policy page
 def privacy_policy(request):
-    return render(request, 'maintenance.html')  # Renders the "maintenance.html" template (placeholder)
+    return render(request, 'policy.html')  # Renders the "maintenance.html" template (placeholder)

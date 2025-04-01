@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  background-image: url('../images/backdrop.jpg');
+  background-position: bottom;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* About Container */
+.about-container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  /* background-color: #fff; */
+  border-radius: 8px;
+  /* box-shadow: 0 4px 8px rgba(206, 3, 3, 0.1); */
+  /* background-color: #c74803; */
+  /* margin-top: 50px; */
+}
+
+/* Heading Styles */
+.about-heading {
+  text-align: center;
+  font-size: 2.5rem;
+  color: black;
+  margin-bottom: 20px;
+  margin-top: 70px;
+}
+
+.about-section-title {
+  font-size: 2rem;
+  color: black;
+
+  /* border-bottom: 2px solid #0077b6; */
+  padding-bottom: 10px;
+  margin-top: 30px;
+}
+
+/* Content Styling */
+.about-content {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+/* List Styles */
+.about-values-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 20px;
+}
+
+.about-values-list li {
+  font-size: 1.1rem;
+  padding-left: 35px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.about-values-list li::before {
+  content: "•";
+  color: black;
+  font-size: 1.5rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+
+
+/* Button design */
+.explore-button {
+  background-color: rgb(25,175,98); 
+  color: #fff; 
+  text-decoration: none; 
+  font-size: 1rem;
+  font-weight: bold; 
+  padding: 10px 40px; 
+  border-radius: 5px; 
+  transition: background-color 0.3s ease, transform 0.2s ease;  
+  display: inline-block; 
+}
+
+.explore-button:hover {
+  background-color: rgb(17, 118, 66); 
+  transform: scale(1.05); 
+}
+
+.explore-button:active {
+  background-color: rgb(25,175,98); 
+  transform: scale(0.98); 
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .about-heading {
+      font-size: 2rem;
+  }
+
+  .about-section-title {
+      font-size: 1.8rem;
+  }
+
+  .about-content {
+      font-size: 1rem;
+  }
+
+  .about-values-list li {
+      font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-container {
+      padding: 15px;
+  }
+
+  .about-heading {
+      font-size: 1.8rem;
+  }
+
+  .about-section-title {
+      font-size: 1.6rem;
+  }
+
+  .about-content {
+      font-size: 1rem;
+      margin-bottom: 10px;
+  }
+
+  .about-values-list li {
+      font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-heading {
+      font-size: 1.5rem;
+  }
+
+  .about-section-title {
+      font-size: 1.4rem;
+  }
+
+  .about-content {
+      font-size: 0.95rem;
+  }
+
+  .about-values-list li {
+      font-size: 0.95rem;
+  }
+}
+
+
+
+

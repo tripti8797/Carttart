@@ -1,0 +1,62 @@
+{% extends 'base.html' %} 
+{% load static %}
+
+{% block title %}Welcome|Carttart-About Us{% endblock %} 
+{% block logo_image %}{% static 'images/h-g-logo.png' %}{% endblock logo_image %}
+
+{% block content %}
+<link rel="icon" type="image/x-icon" href="/image/favicon.ico.png">
+<link rel="stylesheet" href="{% static 'css/about.css' %}">
+
+  <div class="about-container">
+    <h1 class="about-heading">About Us</h1>
+
+    <p class="about-content">Welcome to <strong>Carttart</strong>, your dynamic gateway to a world of possibilities. At
+      Carttart, we believe in bringing convenience, innovation, and value to your fingertips through a seamless
+      e-commerce experience. We're not just another marketplace; we're a platform that integrates multiple sectors under
+      one roof, giving you access to an array of verticals, from cutting-edge edtech solutions to healthcare essentials,
+      energy innovations, real estate opportunities, and much more.</p>
+
+    <h2 class="about-section-title">Our Vision</h2>
+    <p class="about-content">We envision a world where technology simplifies complexity. Our mission is to create a
+      comprehensive digital hub where individuals and businesses can effortlessly explore and engage with the products
+      and services they need. Carttart aims to redefine how diverse industries are accessed and experienced online,
+      blending efficiency with a user-first approach.</p>
+
+    <h2 class="about-section-title">Why Choose Carttart?</h2>
+    <p class="about-content">Carttart is designed with the modern consumer in mind. By offering a multi-vertical
+      platform, we streamline your journey across industries, making it simple to find the right solutions all in one
+      place. Whether you're a professional, a student, or a business leader, we're committed to empowering your
+      decisions with convenience, reliability, and quality.</p>
+
+    <h3 class="about-values-title">We're driven by three core values:</h3>
+    <ul class="about-values-list">
+      <li><strong>Innovation:</strong> Constantly evolving to meet the changing needs of our customers.</li>
+      <li><strong>Trust:</strong> Delivering transparency and quality in every interaction.</li>
+      <li><strong>Customer-Centricity:</strong> Putting your needs first, every step of the way.</li>
+    </ul>
+
+    <h2 class="about-section-title">What We Offer</h2>
+    <p class="about-content">Carttart provides an extensive range of offerings across different industries to cater to
+      your diverse needs. By combining multiple sectors into one cohesive experience, we ensure you're never far from
+      the solutions you seek.</p>
+    <p class="about-content">Our user-friendly platform makes it simple to navigate between different categories, giving
+      you access to the latest in education, health, energy, real estate, and more — all through a single click.</p>
+
+    <h2 class="about-section-title">Join the Journey</h2>
+    <p class="about-content">At Carttart, we’re not just building a platform; we’re building a community of empowered
+      consumers and innovative businesses. We invite you to join us on this journey as we revolutionize e-commerce and
+      create new opportunities for growth and connection.</p>
+
+    <p class="about-content">
+      Explore Carttart today and discover where simplicity meets endless possibilities.
+      <a href="https://www.carttart.com/" class="explore-button" target="_blank" rel="noopener noreferrer">
+        Explore Carttart
+      </a>
+    </p>
+
+    <!-- <p class="about-content"><strong>Explore Karttart today and discover how simplicity meets endless possibilities.</strong></p> -->
+  </div>
+
+<script src="{% static 'js/about.js' %}"></script>
+{% endblock %}
