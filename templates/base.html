@@ -13,6 +13,9 @@
 
     <!-- Link External CSS -->
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
+
+    <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="{% static 'images/footer-logo.ico' %}">
     
 </head>
 <body>
@@ -79,9 +82,9 @@
                 <ul>
                     <li><a href="{% url 'privacy_policy' %}">Privacy Policy</a></li>
                     <li><a href="{% url 't&c' %}">Terms & Conditions</a></li>
-                    <li><a href="{% url 'privacy_policy' %}">Child Policy</a></li>
-                    <li><a href="{% url 'privacy_policy' %}">Testimonial</a></li>
-                    <li><a href="{% url 'privacy_policy' %}">Career</a></li>
+                    <li><a href="{% url 'maintainence' %}">Child Policy</a></li>
+                    <li><a href="{% url 'maintainence' %}">Testimonial</a></li>
+                    <li><a href="{% url 'maintainence' %}">Career</a></li>
                 </ul>
             </div>
 
@@ -92,6 +95,7 @@
                     <li><a href="https://twitter.com" target="_blank">Twitter <i class="fa-brands fa-twitter"></i></a></li>
                     <li><a href="https://instagram.com" target="_blank">Instagram <i class="fa-brands fa-instagram"></i></a></li>
                     <li><a href="https://linkedin.com" target="_blank">Linkedin <i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="{% url 'login' %}" target="_blank">Login</a></li>
                 </ul>
             </div>
 

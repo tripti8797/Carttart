@@ -10,4 +10,5 @@ urlpatterns = [
     path('career/', views.career, name='career'),  # Maps '/career/' to the career view
     path('child_policy/', views.child_policy, name='child_policy'),  # Maps '/child_policy/' to the child policy view
     path('privacy_policy/', views.privacy_policy, name='privacy_policy'),  # Maps '/privacy_policy/' to the privacy policy view
+    path('maintainence/', views.maintainence, name='maintainence'),  # Maps '/maintainence/' to the maintenance view
 ]

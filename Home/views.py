@@ -28,3 +28,6 @@ def child_policy(request):
 # View function for the Privacy Policy page
 def privacy_policy(request):
     return render(request, 'policy.html')  # Renders the "maintenance.html" template (placeholder)
+
+def maintainence(request):
+    return render(request, 'maintenance.html')  # Renders the "maintenance.html" template (placeholder)
