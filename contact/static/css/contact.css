@@ -132,7 +132,7 @@ button[type="submit"]:hover {
     .nav-links {
         display: none;
         flex-direction: column;
-        /* background-color: #2ba24c; */
+        background-color: #2ba24c;
         position: absolute;
         top: 80px;
         right: 0;

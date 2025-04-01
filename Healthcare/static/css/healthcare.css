@@ -1016,8 +1016,8 @@
     }
   
     .Get .nav-item{
-      background-color: var(--green);
-      color: white;
+      background-color: white;
+        color: var(--green);
     }
     .Get .nav-item a{
       color: var(--green);

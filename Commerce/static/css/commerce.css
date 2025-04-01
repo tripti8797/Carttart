@@ -60,9 +60,9 @@ header.scrolled .arrow {
 }
 
 header.scrolled .Get .nav-item {
-  border: 2px solid var(--yellow);
-  background: var(--yellow);
-  color: white;
+  
+  background: white;
+  color: var(--yellow);
 }
 
 header.scrolled .Get .nav-item a {
@@ -1060,6 +1060,7 @@ h1 {
   
   header.scrolled .sub-menu-item{
     background-color: white;
+    left: -99px;
   }
 
   header.scrolled .nav-links a {

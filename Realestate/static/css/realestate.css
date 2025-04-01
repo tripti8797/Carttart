@@ -65,10 +65,10 @@
   }
   
   header.scrolled .Get .nav-item {
-      border: 2px solid white;
-      background:  var(--red);
-      color: white; 
-  }
+    border: 2px solid white;
+    background: white;
+    color: var(--red);
+}
   
   header.scrolled .Get .nav-item a {
       color: white; 
@@ -994,6 +994,7 @@
     background: white;
     color: var(--red);
   }
+  
   .Get .nav-item a{
     color: var(--red);
   }

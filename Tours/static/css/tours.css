@@ -884,6 +884,7 @@
         
         header.scrolled .sub-menu-item{
           background-color: white;
+          left: -99px;
         }
       
         header.scrolled .nav-links a {
