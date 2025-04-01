@@ -1083,7 +1083,7 @@
         width: 94%;
      
       height: 295px;
-      padding: 2;
+      padding: 2%;
       }
     
       .square-grid{
@@ -1193,7 +1193,7 @@
         width:58%;
       }
       .sub-menu-item{
-        left: -90px;
+        left: -99px;
       }
       /* Adjust the social icons for mobile screens */
       .social-icon i {
@@ -1252,16 +1252,16 @@
     
       
       .div1 button{
-        top: 36.5%;
+        top: 41.5%;
       }
       .div2 button{
-        top: 36.5%;
+        top: 41.5%;
       }
       .div3 button{
-        top: 40.5%;
+        top: 66.5%;
       }
       .div4 button{
-        top: 40.5%;
+        top: 66.5%;
       }
       #profile1{
         width: 100%;
@@ -1293,6 +1293,12 @@
       font-size: 22px;
   }
   
+      .box {
+        flex-direction: column;
+        margin: 2%;
+        width: 94%;
+    }
+
   .box-content h1 {
     font-size: 18px;
   }
@@ -1307,37 +1313,37 @@
         height: 230px;
       }
       .collage{
-        height: 250px;
-        width: 249px;
+        height: 55vh;
+        width: 100%;
       }
       .square-grid h2 {
         font-size: 13px;
         padding: 2%;
       }
       .div1 button{
-        top: 42.3%;
-          left: 67%;
+        top: 39.3%;
+        left: 63%;
       }
       .div2 button{
-        top: 42.3%;
-          left: 102%;
-          width: 30%;
+        top: 39.3%;
+        left: 96%;
+        width: 28%;
       }
       .div3 button{
-        top: 69.5%;
-          left: 36%;
+        top: 62.5%;
+        left: 37%;
       }
       .div4 button{
-        top: 69.5%;
-          left: 100%;
+        top: 62.5%;
+        left: 94%;
       }
     
       .div1, .div4{
-        width: 223px;
+        width: 210px;
       }
     
       .div2, .div3{
-        width: 114px;
+        width: 111px;
       }
     
       .sub-menu-item{
@@ -1364,30 +1370,30 @@
       }
     
       .div2, .div3{
-        width: 97px;
+        width: 93px;
         height: 120px;
       }
       .collage{
-        height: 250px;
-        width: 250px;
+        height: 44vh;
+        width: 100%;
       }
       .div1 button{
-        top: 42.1%;
+        top: 40.1%;
         left: 67.5%
       }
       .div2 button{
-        top: 42.1%;
-        left: 107%;
+        top: 40.1%;
+        left: 104%;
         width: 27%;
       }
       .div3 button{
-        top: 65.05%;
+        top: 63.05%;
           left: 40%;
           width: 28%;
       }
       .div4 button{
-        top: 65.05%;
-          left: 102%;
+        top: 63.05%;
+          left: 101%;
       }
       .square-grid h2 {
         font-size: 13px;

@@ -61,6 +61,11 @@ form {
     position: relative;
 }
 
+.form-group3 .i-place{
+    top: 20px;
+    transform: none;
+}
+
 .form-group4{
     position: relative;
     margin:0 20px;
@@ -76,6 +81,7 @@ input[type="text"], input[type="email"], textarea {
     font-size: 1rem;
     outline: none;
     transition: border-color 0.3s ease;
+    z-index: 1;
 }
 
 
@@ -102,6 +108,8 @@ textarea {
     left: 10px;
     transform: translateY(-50%);
     color: #888;
+    z-index: 2;
+    pointer-events: none;
 }
 
 i.fa-regular.fa-message {
@@ -125,6 +133,10 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background-color: #095804;
 }
+
+
+
+
 
 
 /* Responsive Styles */
@@ -155,15 +167,16 @@ button[type="submit"]:hover {
     }
 
     .sub-menu-item {
-        top: 31%;
-        background-color: #19AF62;
+        left: -99px;
+        top: 109%;
+        background-color: white;
+        box-shadow: 1px 4px 10px rgb(52, 52, 52);
+        
     }
 
-    .nav-links ul {
-        flex-direction: column;
-        left: 54%;
-        width: 31%;
-      }
+    .sub-menu-item li a{
+      color: #19AF62;
+    }
     
       .nav-links ul li {
         margin: 0px;
@@ -307,8 +320,16 @@ button[type="submit"]:hover {
 @media screen and (max-width: 426px) {
     header {
         width: 100%;
+        height: 10vh;
+    }
+
+    .logo img {
+    width: 40%;
     }
     
+    .container{
+        padding: 0;
+    }
 
       .nav-links {
         top: 60px;
@@ -377,9 +398,7 @@ button[type="submit"]:hover {
         font-size: 10px;
     }
   
-    .nav-links ul {
-      width: 39%;
-  }
+    
 
     form {
         width: 250px;

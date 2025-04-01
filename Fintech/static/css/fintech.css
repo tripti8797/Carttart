@@ -42,15 +42,16 @@
   header.scrolled .nav-links a {
       color: var(--blue); 
   }
-  
-  header .sub-menu-item{
-    background-color: var(--blue);
-  }
+ 
   
   header.scrolled .arrow {
       border-color: rgb(71, 145, 238); 
   }
   
+  header.scrolled .sub-menu-item {
+    background-color: var(--blue);
+}
+
   header.scrolled .sub-menu-item a{
     color: white;
   }
@@ -859,9 +860,10 @@
       width: 100%;
     }
     
-    header.scrolled .sub-menu-item{
-      background-color: white;
-    }
+     header .sub-menu-item{
+    background-color: white;
+    color: var(--blue);
+  }
   
     header.scrolled .nav-links a {
       color: white; 

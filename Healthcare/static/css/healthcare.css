@@ -1316,16 +1316,16 @@
   
     
     .div1 button{
-      top: 36.5%;
+      top: 43.5%;
     }
     .div2 button{
-      top: 36.5%;
+      top: 43.5%;
     }
     .div3 button{
-      top: 40.5%;
+      top: 66.5%;
     }
     .div4 button{
-      top: 40.5%;
+      top: 66.5%;
     }
   
   }
@@ -1355,16 +1355,16 @@
   
     
     .div1 button{
-      top: 37.3%;
+      top: 47.3%;
     }
     .div2 button{
-      top: 37.3%;
+      top: 47.3%;
     }
     .div3 button{
-      top: 41.5%;
+      top: 68.5%;
     }
     .div4 button{
-      top: 41.5%;
+      top: 68.5%;
     }
   
     .div1, .div4{
@@ -1394,19 +1394,19 @@
       height: 250px;
     }
     .div1 button{
-      top: 36.1%;
+      top: 40.1%;
       left: 60.5%;
     }
     .div2 button{
-      top: 36.1%;
+      top: 40.1%;
       left: 100%;
     }
     .div3 button{
-      top: 40.05%;
+      top: 63.05%;
       left: 45%;
     }
     .div4 button{
-      top: 40.05%;
+      top: 63.05%;
       left: 100%;
     }
     .square-grid h2 {
