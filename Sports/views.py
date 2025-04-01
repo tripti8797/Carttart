@@ -6,7 +6,7 @@ from django.utils.text import slugify
 # Define the sports view function esports
 def serviceSports(request):
     # Get esports blogs
-    blogs = Blog.objects.filter(active=True, blog_type='sports').order_by("-published_date")
+    blogs = Blog.objects.filter(active=True, blog_type='esports').order_by("-published_date")
     
     # Validate and fix slugs if needed
     for blog in blogs:
@@ -14,4 +14,4 @@ def serviceSports(request):
             blog.slug = slugify(blog.title)
             blog.save()
     
-    return render(request, "sports.html", {"blogs": blogs})
+    return render(request, "esports.html", {"blogs": blogs})
