@@ -50,6 +50,9 @@ def blog_detail(request, slug, blog_type=None):
     })
 
 def form(request):
+    if not request.user.is_superuser:
+        messages.error(request, "You are not authorized to upload blogs.")
+        return redirect('home')
     """
     View to handle the creation of a new blog post.
     """
@@ -117,6 +120,9 @@ def form(request):
     return render(request, 'form.html')
 
 def manage_blogs(request):
+    if not request.user.is_superuser:
+        messages.error(request, "You are not authorized to upload blogs.")
+        return redirect('home')
     """
     View to manage all blogs (list, toggle status, edit, delete)
     """

@@ -6,6 +6,12 @@ from django.contrib import messages
 from django.views import generic
 
 class contactUs(SuccessMessageMixin, generic.CreateView):
+    # if not request.user.is_superuser:
+    #     messages.error(request, "You are not authorized to manage blogs.")
+    #     return redirect('home')
+    """
+    View to handle the contact form submission.
+    """
     form_class = ContactForm  # The form to be used is the ContactForm
     template_name = "contact.html"  # The template to render the contact form
     success_url = "/"  # Redirect to the home page after a successful form submission

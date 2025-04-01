@@ -31,6 +31,7 @@ urlpatterns = [
     path('tours/', include('Tours.urls')),  # Tours app routing
     path('contact/', include('contact.urls')),  # Contact app routing
     path('blog/', include("blog.urls")),  # Blog app routing
+    path('auth/', include("oauth.urls")),  # oauth app routing
 ]
 
 if settings.DEBUG:

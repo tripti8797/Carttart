@@ -148,9 +148,15 @@
             color: #666;
             margin-bottom: 20px;
         }
+        button{
+            margin: 0 auto;
+        }
     </style>
 </head>
 <body>
+    <button>
+        <a href="{% url 'dashboard' %}" class="logout-btn">Go Back</a>
+    </button>
     <div class="container">
         <div class="header">
             <h1>Manage Blogs</h1>

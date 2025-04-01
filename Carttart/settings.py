@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'Tours',
     'contact',
     'blog',
+    'oauth',
 ]
 
 MIDDLEWARE = [
