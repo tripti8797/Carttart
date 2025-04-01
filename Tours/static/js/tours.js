@@ -8,12 +8,12 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Hamburger Menu Toggle
+// Hamburger menu functionality
 const hamburger = document.getElementById('hamburger');
 const navLinks = document.getElementById('nav-links');
 
 hamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
+  navLinks.classList.toggle('show');
 });
 
 

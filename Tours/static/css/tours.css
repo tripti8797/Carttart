@@ -1,6 +1,6 @@
 :root{
     --blue: rgb(89,152, 230);
-  }
+}
   
   /* General Styles */
   * {
@@ -866,85 +866,87 @@
         display: none;
         } */
         
-      header{
-        height: 70px;
-      }
-      .container{
-        padding: 0.4% 0;
-      }
-      .nav-links {
-        display: none;
-        flex-direction: column;
-        background-color: var(--green);
-        position: absolute;
-        top: 70px;
-        right: 0;
-        width: 100%;
-      }
+        header{
+          height: 70px;
+        }
+        .container{
+          padding: 0.4% 0;
+        }
+        .nav-links {
+          display: none;
+          flex-direction: column;
+          background-color: var(--blue);
+          position: absolute;
+          top: 70px;
+          right: 0;
+          width: 100%;
+        }
+        
+        header.scrolled .sub-menu-item{
+          background-color: white;
+        }
       
-      header.scrolled .sub-menu-item{
-        background-color: white;
-      }
-    
-      header.scrolled .nav-links a {
-        color: white; 
-      }
-    
-      header.scrolled .arrow {
-        border: solid white;
-        border-width: 0 2px 2px 0;
-      }
-    
-      header.scrolled .Get .nav-item a {
-        color: var(--green);
-      }
-    
-      header.scrolled .sub-menu-item a {
-        color: var(--green);
-      }
-    
-      .nav-links a{
-        color: white;
-      }
-    
-      .arrow{
-        border: solid white;
-        border-width: 0 2px 2px 0;
-      }
-    
-      .sub-menu-item{
-        background-color: white;
-        left: -99px;
-        flex-direction: column;
-        box-shadow: 1px 4px 10px rgb(52, 52, 52);
-      }
-    
-      header.scrolled .sub-menu-item{
-        box-shadow: 1px 4px 10px rgb(52, 52, 52);
-      }
-      .sub-menu-item li a{
-        color: var(--green);
-      }
-    
-      .logo img {
-        width: 76%;
-      }
+        header.scrolled .nav-links a {
+          color: white; 
+        }
       
-      .nav-links.show {
-        display: flex;
-        padding: 5%;
-      }
-    
-      .hamburger {
-        display: contents;
-      }
-    
-      .Get .nav-item{
-        background: white;
-      }
-      .Get .nav-item a{
-        color: var(--green);
-      }
+        header.scrolled .arrow {
+          border: solid white;
+          border-width: 0 2px 2px 0;
+        }
+      
+        header.scrolled .Get .nav-item a {
+          color: var(--blue);
+        }
+      
+        header.scrolled .sub-menu-item a {
+          color: var(--blue);
+        }
+      
+        .nav-links a{
+          color: white;
+        }
+      
+        .arrow{
+          border: solid white;
+          border-width: 0 2px 2px 0;
+        }
+      
+        .sub-menu-item{
+          background-color: white;
+          left: -99px;
+          flex-direction: column;
+          box-shadow: 1px 4px 10px rgb(52, 52, 52);
+        }
+      
+        header.scrolled .sub-menu-item{
+          box-shadow: 1px 4px 10px rgb(52, 52, 52);
+        }
+        .sub-menu-item li a{
+          color: var(--blue);
+        }
+      
+        .logo img {
+          width: 69%;
+        }
+        
+        .nav-links.show {
+          display: flex;
+          padding: 5%;
+        }
+      
+        .hamburger {
+          display: contents;
+        }
+      
+        .Get .nav-item{
+          background: white;
+          color: var(--blue);
+        }
+        .Get .nav-item a{
+          color: var(--blue);
+        }
+      
     
       .boxcontainer{
         width: 100%;

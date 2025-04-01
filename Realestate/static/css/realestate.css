@@ -1,6 +1,6 @@
 :root{
     --red: rgb(221, 55, 24);
-  }
+}
   
   /* General Styles */
   * {
@@ -831,67 +831,18 @@
 
 @media(max-width:768px){
     
-  header{
-    height: 70px;
-  }
+
   .container{
     padding: 0.4% 0;
   }
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 80px;
-    right: 0;
-    padding: 20px;
-    width: 100%;
-  }
-
-  .nav-links a {
-    color: white;
-}
-
-.Get .nav-item {
-    background: white;
-    color: var(--red);
-}
-
-.arrow {
-    border-bottom: solid white;
-    border-right: solid white;
-}
-
-.sub-menu-item {
-    top: 31%;
-    background-color: var(--red);
-}
-
-.nav-links ul {
-    flex-direction: column;
-    left: 54%;
-    width: 31%;
-  }
-
-  .nav-links ul li {
-    margin: 0px;
-  }
-
-  .nav-links.show {
-    display: flex;
-  }
-
-  .hamburger {
-    display: contents;
-  }
-
-
+ 
   .hero-content h1 {
     font-size: 27px;
     margin-bottom: 20px;
 }
-  .logo img {
+  /* .logo img {
     width: 18%;
-}
+} */
 
 
   .boxcontainer{
@@ -966,7 +917,86 @@
   .footer-logo img {
     width: 23%;
   }
+  header{
+    height: 70px;
+  }
+  .container{
+    padding: 0.4% 0;
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: var(--red);
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+  }
   
+  header.scrolled .sub-menu-item{
+    background-color: white;
+  }
+
+  header.scrolled .nav-links a {
+    color: white; 
+  }
+
+  header.scrolled .arrow {
+    border: solid white;
+    border-width: 0 2px 2px 0;
+  }
+
+  header.scrolled .Get .nav-item a {
+    color: var(--red);
+  }
+
+  header.scrolled .sub-menu-item a {
+    color: var(--red);
+  }
+
+  .nav-links a{
+    color: white;
+  }
+
+  .arrow{
+    border: solid white;
+    border-width: 0 2px 2px 0;
+  }
+
+  .sub-menu-item{
+    background-color: white;
+    left: -99px;
+    flex-direction: column;
+    box-shadow: 1px 4px 10px rgb(52, 52, 52);
+  }
+
+  header.scrolled .sub-menu-item{
+    box-shadow: 1px 4px 10px rgb(52, 52, 52);
+  }
+  .sub-menu-item li a{
+    color: var(--red);
+  }
+
+  .logo img {
+    width: 69%;
+  }
+  
+  .nav-links.show {
+    display: flex;
+    padding: 5%;
+  }
+
+  .hamburger {
+    display: contents;
+  }
+
+  .Get .nav-item{
+    background: white;
+    color: var(--red);
+  }
+  .Get .nav-item a{
+    color: var(--red);
+  }
 }
 
 /* @media(max-width:632px){
