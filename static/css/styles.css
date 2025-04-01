@@ -304,7 +304,7 @@ header {
   margin-top: 0.5rem;
 }
 
-#card-head img {
+#card-head2 img {
   margin-left: 2.5rem;
 }
 
@@ -441,6 +441,7 @@ main {
 .box-img1 img {
   width: 100%;
   height: 100%;
+  margin: 5% 0;
 }
 
 .box-img {
@@ -795,21 +796,6 @@ main {
   /* text-decoration: underline; */
 }
 
-/* .footer-section h3, .footer-section1 h3 {
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-.footer-section ul, .footer-section1 ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-} */
-
-/* .footer-section li, .footer-section1 li {
-  margin-bottom: 8px;
-  font-size: 14px;
-} */
 
 .footer-section a {
   /* text-decoration: none; */
@@ -823,17 +809,6 @@ main {
   /* font-size: 12px; */
 }
 
-/* .footer-logo {
-  display: flex;
-  margin: 10px;
-  flex: 1;
-  text-align: center;
-  justify-content: flex-end;
-}
-
-.footer-logo img {
-  width: 70%;
-} */
 
 .copyright {
   /* text-align: end;
@@ -923,7 +898,7 @@ padding: 0 20px;
     margin-top: 0.4rem;
 }
 
-  #card-head img{
+  #card-head2 img{
     margin-left: 1.7rem;
   }
 
@@ -1186,7 +1161,7 @@ font-size: 12px;
       margin-top: 0.3rem;
     }
 
-    #card-head img{
+    #card-head2 img{
       margin-left: 1.7rem;
     }
 
@@ -1406,9 +1381,6 @@ font-size: 12px;
       font-size: 13px;
     }
 
-    .card-topic p {
-      margin-top: 0.4rem;
-    }
 
     img {
       width: 64%;
@@ -1442,25 +1414,41 @@ font-size: 12px;
     }
 
     .crd{
-      width: 74px;
-      height: 108px;
+      width: 100%;
+      height: 30vh;
     }
 
     .card-container{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
       gap: 1rem;
+      width: 100%;
+      padding: 0 5%;
     }
 
     .card-head{
-      font-size: 6px;
+      font-size: 10px;
       margin: 0.2rem;
     }
 
-    #card-head img {
-      margin-left: 0.6rem;
+    #card-head1 img {
+      margin-left: 2.5rem;
+  }
+
+  #card-head2 img {
+      margin-left: 1rem;
+  }
+
+  #card-head3 img {
+      margin-left: 1.6rem;
+  }
+
+  #card-head4 img {
+      margin-left: 2.5rem;
   }
 
     .card-head img{
-      width: 40px;
+      width: 75px;
       margin-left: 0.2rem;
       margin-top: 0.25rem;
     }
@@ -1480,11 +1468,18 @@ font-size: 12px;
     }
 
     .card-topic h2{
+      font-size: 20px;
       padding: 0 4rem;
+    }
+    
+    .card-topic p {
+      font-size: 15px;
+        margin-top: 0.4rem;
+        padding: 0 2.5%;
     }
 
     .section-header img {
-      width: 27%;
+      width: 10%;
       height: 61%;
   }
 
@@ -1493,12 +1488,13 @@ font-size: 12px;
 }
 
 .card_content h1 {
-  font-size: 9px;
+  font-size: 18px;
+        font-weight: 500;
 }
 
 .card_content p {
-  line-height: 1.4;
-  font-size: 7px;
+  line-height: 1.5;
+        font-size: 12px;
 }
 .card_content {
 gap: 10px;
@@ -1510,18 +1506,35 @@ gap: 1rem;
 
 #marketing-box1 {
 border-top: 2px solid #19AF62;
+width: 100%;
+height: 30vh;
+align-items: center;
+        justify-content: center;
 }
+
 #marketing-box2 {
 border-bottom: 2px solid #19AF62;
+width: 100%;
+height: 30vh;
+align-items: center;
+        justify-content: center;
+}
+
+.marketing-section{
+  padding: 0 2rem;
 }
 
 .business-section, .finance-section {
-height: 234px;
-margin-top: -2rem;
+height: 100%;
+display: block;
 }
 
 #card_content1 {
 padding: 0rem;
+}
+
+#card_content2 {
+  margin: 0;
 }
 
 .section-header, .section-header2 {
@@ -1529,16 +1542,18 @@ margin-bottom: 0px;
 }
 
 .box-img {
-margin: 2.5rem 0px;
-height: 84px;
+margin: 0;
+height: 100%;
+        width: 100%;
 }
 
 .section-title {
-font-size: 11px;
+font-size: 15px;
+padding: 0 0.5rem;
 }
 
 .section-header2 img {
-width: 25%;
+width: 10%;
 height: 60%;
 }
 
@@ -1548,12 +1563,12 @@ height: 120px;
 }
 
 .marketing-box h3 {
-font-size: 8px;
+font-size: 12px;
 }
 
 .marketing-box p {
-font-size: 9px;
-line-height: 10.5px;
+        font-size: 8px;
+        line-height: 12px;
 }
 
 .circle-img img {
@@ -1567,35 +1582,43 @@ height: 30px;
 padding: 5px;
 }
 
-.marketing-box h3 {
-font-size: 6px;
-}
-
-.marketing-box p {
-font-size: 5px;
-line-height: 6.5px;
-}
 
 .marketing-box {
 gap: 6px;
 }
 
+.marketing-grid{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+
+.govt{
+  margin: 3% 0;
+}
 
 .govt-image {
-width: 180px;
-height: 180px;
+width: 100%;
 }
 
 .govt-content h3 {
-font-size: 11px;
+font-size: 14px;
 }
 
 .govt-section {
-height: 407px;
+height: 100%;
+        display: block;
+}
+
+.govt-img-section{
+  justify-self: center;
 }
 
 .grow{
 margin-left: 1rem;
+}
+
+.grow-bottom{
+  margin: 0;
 }
 
 .section-header2, .section-header{
@@ -1610,6 +1633,11 @@ margin-bottom: 0px;
 
   .success-container {
     padding: 5%;
+    display: block;
+}
+
+.success-section{
+  width: 100%;
 }
 
   .success-section img {
@@ -1619,6 +1647,10 @@ margin-bottom: 0px;
 
 .sec-point3{
   width: 10%;
+}
+
+.footer-logo img{
+  width: 30%;
 }
 
 }
@@ -1637,6 +1669,10 @@ header {
   padding: 10px 0;
 }
 
+.slide-container{
+  margin-top: 6rem;
+  margin-bottom: 4rem;
+}
 
 .container {
 width: 100%;
@@ -1648,9 +1684,6 @@ padding: 0 20px;
   height: 208px;
 }
 
-.slide-container {
-  margin: 5rem auto;
-}
 
 img{
   width: 40%;
@@ -1698,42 +1731,11 @@ img{
   margin-top: 5rem;
 }
 
-.crd{
-  width: 74px;
-  height: 108px;
-}
-
-.marketing-section {
-  padding: 0 4rem;
-}
 
 .marketing-grid {
 gap: 9px;
 }
 
-.marketing-section h1 {
-font-size: 9px;
-font-weight: 500;
-}
-
-.card-container{
-  gap: 1rem;
-}
-
-.card-head{
-  font-size: 6px;
-  margin: 0.2rem;
-}
-
-#card-head img {
-  margin-left: 0.6rem;
-}
-
-.card-head img{
-  width: 40px;
-  margin-left: 0.2rem;
-  margin-top: 0.25rem;
-}
 
 .card-img img{
   margin-top: -3.17rem;
@@ -1753,31 +1755,15 @@ font-weight: 500;
   padding: 0 4rem;
 }
 
-.section-header img {
-  width: 27%;
-  height: 61%;
-}
 
 #card_content1 {
 padding-right: 2rem;
 }
 
-.card_content h1 {
-font-size: 9px;
-}
-
-.card_content p {
-line-height: 1.4;
-font-size: 7px;
-}
 .card_content {
 gap: 10px;
 }
 
-.business-section, .finance-section {
-height: 234px;
-margin-top: -2rem;
-}
 
 #card_content1 {
 padding: 0rem;
@@ -1788,29 +1774,11 @@ margin-bottom: 0px;
 }
 
 
-.box-img {
-margin: 2.5rem 0px;
-height: 80px;
-width: 73%;
-}
-
-.section-title {
-font-size: 11px;
-}
-
-.section-header2 img {
-width: 25%;
-height: 60%;
-}
-
 .marketing-box {
 width: 82px;
 height: 120px;
 }
 
-.marketing-box h3 {
-font-size: 8px;
-}
 
 .marketing-box p {
 font-size: 9px;
@@ -1822,31 +1790,10 @@ width: 21px;
 height: 21px;
 }
 
-.circle-img {
-width: 30px;
-height: 30px;
-padding: 5px;
-}
-
-.marketing-box h3 {
-font-size: 6px;
-}
-
-.marketing-box p {
-font-size: 5px;
-line-height: 6.5px;
-}
-
 .marketing-box {
 gap: 6px;
 }
 
-
-.govt-image {
-width: 100px;
-height: 100px;
-margin-top: 0.5rem;
-}
 
 .govt img {
 width: 15px;
@@ -1859,13 +1806,11 @@ margin-top: 0rem;
 font-size: 11px;
 }
 
-.govt-section {
-height: 345px;
+.grow-bottom{
+          margin: 4%;
+        width: 100%;
 }
 
-.grow{
-margin-left: 1rem;
-}
 .grow h1 {
 font-size: 18px;
 }
@@ -1875,28 +1820,16 @@ font-size: 11.6px;
 padding: 0rem 1rem;
 }
 
-.grow-bottom {
-gap: 2rem;
-margin-left: 4rem;
-}
-
-.section-header2, .section-header{
-margin-bottom: 0px;
-  height: 40px;
-}
 
 .section-header h1{
 /* font-size: 14px; */
 font-weight: 500;
 }
 
-.success-section h2 {
-font-size: 14px;
-}
 
 .success-section img {
-width: 85%;
-margin-left: 2rem;
+width: 75%;
+        margin-left: 0.6rem;
 }
 
 .sec-point3{
@@ -1906,6 +1839,26 @@ width: 10%;
 .success-section p {
 font-size: 11px;
 margin-top: 1rem;
+}
+
+.footer-section{
+  justify-items: center;
+}
+
+.footer-section ul{
+  justify-items: center;
+}
+
+.footer-section1{
+  justify-items: center;
+}
+
+.footer-section1 ul{
+  justify-items: center;
+}
+
+.footer-logo{
+  display: block;
 }
 
 }
@@ -2014,7 +1967,7 @@ font-weight: 500;
   margin: 0.2rem;
 }
 
-#card-head img {
+#card-head2 img {
   margin-left: 0.6rem;
 }
 

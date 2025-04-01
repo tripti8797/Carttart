@@ -23,11 +23,6 @@ window.addEventListener('scroll', function () {
   }
 }); 
  
- 
- 
- 
- 
- 
  // Autoslider
 document.addEventListener('DOMContentLoaded', function() {
   const slides = document.querySelectorAll('.slide');

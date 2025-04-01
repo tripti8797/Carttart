@@ -279,7 +279,7 @@ header {
   .footer-logo {
     display: flex;
     margin: 10px;
-    flex: 1;
+    /* flex: 1; */
     text-align: center;
     justify-content: flex-end;
   }
@@ -302,3 +302,8 @@ header {
     margin-top: 1.5rem;
   }
 
+  @media(min-width: 376px) {
+    .footer-logo{
+      flex: 1;
+    }
+  }
