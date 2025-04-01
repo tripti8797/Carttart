@@ -14,4 +14,4 @@ def serviceSports(request):
             blog.slug = slugify(blog.title)
             blog.save()
     
-    return render(request, "esports.html", {"blogs": blogs})
+    return render(request, "sports.html", {"blogs": blogs})
