@@ -251,7 +251,7 @@ header {
 
 /* ============== CARD SECTION ============== */
 .card {
-  font-family: 'Instrument Sans', sans-serif;
+  /* font-family: 'Instrument Sans', sans-serif; */
   margin-top: 10rem;
   width: 100%;
   display: flex;
@@ -268,7 +268,7 @@ header {
 
 .card-topic h2 {
   padding: 0 20rem;
-  font-family: 'Instrument Sans', sans-serif;
+  /* font-family: 'Instrument Sans', sans-serif; */
 }
 
 .card-topic p {
@@ -299,7 +299,7 @@ header {
   font-size: 22px;
   margin: 2rem;
   padding: 10px;
-  font-family: 'Instrument Sans', sans-serif;
+  /* font-family: 'Instrument Sans', sans-serif; */
 }
 
 .card-head img {
@@ -377,7 +377,7 @@ main {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
-  font-family: 'Instrument Sans', sans-serif;
+  /* font-family: 'Instrument Sans', sans-serif; */
 }
 
 .section-header2 {
@@ -420,7 +420,7 @@ main {
 .card_content h1 {
   font-size: 34px;
   margin: 10px 0;
-  font-family: 'Instrument Sans', sans-serif;
+  /* font-family: 'Instrument Sans', sans-serif; */
   font-weight: 500;
   color: #464646;
 }
@@ -590,7 +590,7 @@ main {
 .grow h1 {
   font-size: 34px;
   margin: 10px 0;
-  font-family: 'Instrument Sans', sans-serif;
+  /* font-family: 'Instrument Sans', sans-serif; */
   font-weight: 500;
   color: #34393B;
 }
@@ -658,7 +658,7 @@ main {
 
 .sub-content-para {
   font-size: 12px;
-  font-family: 'Instrument Sans', sans-serif;
+  /* font-family: 'Instrument Sans', sans-serif; */
   font-weight: 500;
   color: #6E7D83;
   padding-top: 5px;
