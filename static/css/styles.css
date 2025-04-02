@@ -477,7 +477,8 @@ main {
 }
 
 #marketing-box1 {
-  border-top: 7px solid var(--green);
+  /* border-top: 7px solid var(--green); */
+  border-bottom: 7px solid var(--green);
   border-radius: 10px;
 }
 
