@@ -24,9 +24,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const cardGrid = document.querySelector(".card-grid");
   let scrollAmount = 0;
   let scrollSpeed = 1; // Adjust for faster/slower movement
-  // let clone = cardGrid.innerHTML; // Clone the card content for seamless looping
-  // cardGrid.innerHTML += clone;
-  // let isPaused = false;
+  let clone = cardGrid.innerHTML; // Clone the card content for seamless looping
+  cardGrid.innerHTML += clone;
+  let isPaused = false;
 
   function autoScroll() {
     if (!isPaused) {
