@@ -25,7 +25,7 @@
       position: fixed;
       top: 0;
       width: 100%;
-      background-color: rgba(255, 255, 255, 0.78)   ;
+      background-color: #fff;
       transition: background-color 0.3s ease;
       z-index: 1000;
       padding: 10px;
@@ -359,7 +359,7 @@
       flex-wrap: nowrap;
       width: 100%;
       gap: inherit;
-    }
+    } 
     
     .container_card_content {
       opacity: 0.7;
@@ -369,7 +369,7 @@
       height: 400px;
       padding: 1rem;
       border: 1px solid rgba(255, 255, 255, 0.3);
-      backdrop-filter: blur(10px); 
+      background-color: rgba(255, 255, 255, 0.5);
   }
   
   .container_card_content2 {
@@ -380,12 +380,11 @@
       height: 400px;
       padding: 1rem;
       border: 1px solid rgba(255, 255, 255, 0.3); 
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
+      background-color: rgba(255, 255, 255, 0.5);
   }
   
     .card-title2, .card-title {
-      font-family: sans-serif;
+      /* font-family: sans-serif; */
       font-weight:500;
       font-size: 25px;
       padding: 10px;
@@ -431,7 +430,7 @@
       text-align: justify;
       margin-left: 20px;
       margin: 20px;
-      font-family: sans-serif;
+      /* font-family: sans-serif; */
     }
     
     .container_card_content{
@@ -508,7 +507,7 @@
     display: flex;
     justify-content: center;
     margin-top: 3rem;
-    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.5);
     border-radius: 10px;
   }
   
@@ -878,7 +877,7 @@
   }
   
   .footer-logo img {
-    width: 70%;
+    width: 55%;
   }
   
   
