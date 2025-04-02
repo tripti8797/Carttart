@@ -447,6 +447,8 @@
     display: flex;
     justify-content: center;
     background-color: rgba(255, 255, 255, 0.5);
+    width: 93%;
+    margin-left: 34px;
   }
   
   .box-content{
@@ -464,7 +466,7 @@
   }
   
   .box-content p{
-    font-size: 18px;
+    font-size: 16px;
     padding: 1rem;
     line-height: 1.9rem;
   }
