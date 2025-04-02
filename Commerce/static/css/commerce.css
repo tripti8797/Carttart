@@ -1,5 +1,5 @@
 :root {
-  --yellow: rgb(247, 193, 36);
+  --yellow: #358ad0;
 }
 
 /* General Styles */
@@ -159,7 +159,7 @@ header.scrolled .sub-menu-item a {
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: rgba(208, 164, 38, 0.8);
+  background-color: rgba(53, 138, 208,0.8);
   padding: 10px;
   border-radius: 5px;
   width: 300px;
@@ -1225,25 +1225,25 @@ h1 {
   }
 
   .div1 button {
-    top: 44.7%;
+    top: 52.7%;
     width: 21%;
     margin-left: -11%;
   }
 
   .div2 button {
-    top: 44.7%;
+    top: 52.7%;
     margin-left: -11%;
     width: 21%;
   }
 
   .div3 button {
-    top: 67.4%;
+    top: 71.9%;
     margin-left: -11%;
     width: 21%;
   }
 
   .div4 button {
-    top: 67.4%;
+    top: 71.9%;
     margin-left: -11%;
   }
 
@@ -1252,7 +1252,7 @@ h1 {
   }
 
   .collage {
-    height: 364px;
+    height: 367px;
     width: 90%;
   }
 
@@ -1336,7 +1336,7 @@ h1 {
   }
 
   .collage {
-    height: 387px;
+    height: 309px;
   }
 
   /* .square-grid{
@@ -1363,25 +1363,25 @@ h1 {
   }
 
   .div1 button {
-    top: 45.7%;
+    top: 60.7%;
     width: 21%;
     margin-left: -11%;
   }
 
   .div2 button {
-    top: 45.7%;
+    top: 60.7%;
     margin-left: -11%;
     width: 21%;
   }
 
   .div3 button {
-    top: 62.7%;
+    top: 74.7%;
     margin-left: -11%;
     width: 21%;
   }
 
   .div4 button {
-    top: 62.7%;
+    top: 74.7%;
     margin-left: -13%;
     width: 21%;
   }
@@ -1434,7 +1434,7 @@ h1 {
   }
 
   .collage {
-    height: 387px;
+    height: 312px;
     width: 92%;
   }
 
@@ -1463,25 +1463,25 @@ h1 {
   }
 
   .div1 button {
-    top: 50.6%;
+    top: 65.6%;
     margin-left: -13%;
     width: 25%;
   }
 
   .div2 button {
-    top: 50.6%;
+    top: 65.6%;
     margin-left: -13%;
     width: 25%;
   }
 
   .div3 button {
-    top: 66%;
+    top: 77.7%;
     margin-left: -11%;
     width: 21%;
   }
 
   .div4 button {
-    top: 66%;
+    top: 77.7%;
     margin-left: -13%;
     width: 25%;
   }

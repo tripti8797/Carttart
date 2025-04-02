@@ -1,7 +1,7 @@
-{% extends 'base.html' %} 
+{% extends 'base.html' %}
 {% load static %}
 
-{% block title %}Welcome|Carttart-E-Sports{% endblock %} 
+{% block title %}Welcome|Carttart-E-Sports{% endblock %}
 {% block logo_image %}{% static 'images/b-f-logo.png' %}{% endblock logo_image %}
 
 
@@ -9,233 +9,258 @@
 <link rel="stylesheet" href="{% static 'css/sports.css' %}" />
 
 
-  <!-- Hero Section with Video Background -->
-  <section class="hero">
-    <video autoplay muted loop id="hero-video">
-      <source src="{% static 'videos/e-sports.mp4' %}" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-    <div class="hero-content">
-      <h1>Providig Hub For Strategy,</h1>
-      <p>Skil and Success in E-Sports.</p>
-    </div>
-  </section>
+<!-- Hero Section with Video Background -->
+<section class="hero">
+  <video autoplay muted loop id="hero-video">
+    <source src="{% static 'videos/e-sports.mp4' %}" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <div class="hero-content">
+    <h1>RISE ,PLAY & CONQUER</h1>
+    <p>Providing Hub For Strategy,Skill and Success</p>
+  </div>
+</section>
 
 
 
-  <!-- MAIN CONTENT2 -->
-  <main id="content">
-    <section class="bakgground">
-      <div class="boxcontainer">
+<!-- MAIN CONTENT2 -->
+<main id="content">
+  <section class="bakgground">
+    <div class="boxcontainer">
 
-        <div class="main-content">
-          <!-- First Image and Content -->
-          <div class="card_main">
-            <div class="container_card">
-              <div class="container_card_content">
-                <h1 class="card-title2"> REAL-TIME STRATEGY GAMES </h1>
-                <h5 class="card-description1">
-                  RTS is a subgenre of strategy video games that does not progress incrementally in turns, but
-                  allows all players to play simultaneously, in "real time". This challenges players to think
-                  strategically and make quick decisions under pressure. It fosters teamwork and
-                  competitive spirit, making it an engaging and rewarding experience. Lorem ipsum, dolor sit amet
-                  consectetur adipisicing elit. Delectus sint obcaecati, ad dignissimos nulla, quas eius neque doloribus
-                  deserunt maxime similique pariatur doloremque eum enim velit itaque quaerat quidem. <Non
-                    class="lorem10"></Non>
-                </h5>
-              </div>
+      <div class="main-content">
+        <!-- First Image and Content -->
+        <div class="card_main">
+          <div class="container_card">
+            <div class="container_card_content">
+              <h1 class="card-title2"> REAL-TIME STRATEGY GAMES </h1>
+              <h5 class="card-description1">
+                RTS is a subgenre of strategy video games that does not progress incrementally in turns, but
+                allows all players to play simultaneously, in "real time". This challenges players to think
+                strategically and make quick decisions under pressure. It fosters teamwork and
+                competitive spirit, making it an engaging and rewarding experience. Esports RTS titles like StarCraft
+                II, Age of Empires, and Warcraft III have built a legacy of intense, high-level competition.
+                Success in RTS games requires mastering macro-management (economy, resource gathering, and expansion)
+                and micro-management (unit control and battle tactics).
+                <Non class="lorem10"></Non>
+              </h5>
+            </div>
+            <div class="container_card_pofilephoto2">
               <div class="container_card_pofilephoto2">
-                <div class="container_card_pofilephoto2">
                 <img src="{% static 'images/esports.jpeg' %}" class="profile-img2" alt="hypermarket" />
               </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Second Image and Content -->
+        <div class="card_main2">
+          <div class="container_card">
+            <div class="container_card_pofilephoto1">
+              <img src="{% static 'images/figh.jpg' %}" class="profile-img2" alt="Fighting" id="card2_img" />
+            </div>
+            <div class="container_card_content2">
+              <h1 class="card-title">FIGHTING</h1>
+              <h5 class="card-description2">
+                Fighting games, are known for their thrilling, fast-paced, and
+                strategic one-on-one matches. These offer a unique blend of strategy, skill, and
+                social interaction, providing engaging gameplay and a strong
+                community experience. The one-on-one nature, focused learning,
+                and rewarding skill-based challenges are the main attractions
+                that draw people to this genre. In esports, fighting games like Street Fighter, Tekken, and Super Smash
+                Bros. have established legendary competitive scenes with global tournaments and passionate fanbases.
+
+
+              </h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- Collage -->
+        <div class="box">
+          <div class="box-content">
+            <h1>MULTIPLAYER ONLINE BATTLE ARENA (MOBA)</h1>
+            <p>MOBA games require a high degree of strategic thinking and
+              planning, as players must coordinate with their teammates,
+              manage resources, and react to dynamic game conditions. Success
+              in MOBA games hinges on effective teamwork and clear
+              communication.
+          </div>
+
+          <div class="collage">
+            <!-- Square Grid -->
+            <div class="square-grid">
+              <!-- Div 1 -->
+              <div class="div1">
+                <img src="{% static 'images/moba.jpg' %}" alt="Image 1">
+                <button class="image-button">Learn More</button>
+              </div>
+              <!-- Div 2 -->
+              <div class="div2">
+                <img src="{% static 'images/moba1.jpg' %}" alt="Image 2">
+                <button class="image-button">Learn More</button>
+              </div>
+              <!-- Div 3 -->
+              <div class="div3">
+                <img src="{% static 'images/moba2.jpeg' %}" alt="Image 3">
+                <button class="image-button">Learn More</button>
+              </div>
+              <!-- Div 4 -->
+              <div class="div4">
+                <img src="{% static 'images/moba3.jpeg' %}" alt="Image 4">
+                <button class="image-button">Learn More</button>
               </div>
             </div>
           </div>
 
-          <!-- Second Image and Content -->
-          <div class="card_main2">
-            <div class="container_card">
-              <div class="container_card_pofilephoto1">
-                <img src="{% static 'images/figh.jpg' %}" class="profile-img2" alt="Fighting" id="card2_img" />
-              </div>
-              <div class="container_card_content2">
-                <h1 class="card-title">FIGHTING</h1>
-                <h5 class="card-description2">
-                  Fighting games, are known for their thrilling, fast-paced, and
-                  strategic one-on-one matches. These offer a unique blend of strategy, skill, and
-                  social interaction, providing engaging gameplay and a strong
-                  community experience. The one-on-one nature, focused learning,
-                  and rewarding skill-based challenges are the main attractions
-                  that draw people to this genre. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
-                  repudiandae nihil porro reprehenderit obcaecati, dicta soluta dignissimos autem omnis iusto aperiam
-                 
-                </h5>
-              </div>
+        </div>
+
+        <!-- third Image and Content -->
+        <div class="card_main2">
+          <div class="container_card">
+            <div class="container_card_pofilephoto1">
+              <img src="{% static 'images/fantasy.jpg' %}" class="profile-img2" alt="Fighting" id="card2_img" />
+            </div>
+            <div class="container_card_content2">
+              <h1 class="card-title">FANTASY SPORTS</h1>
+              <h5 class="card-description2">
+                Fantasy sports in esports bring a new level of excitement, allowing fans to engage with their favorite
+                games beyond just watching. Players build virtual teams using real esports athletes, competing based on
+                their in-game performance.
+
+                It enhances strategic thinking as participants analyze player stats, team dynamics, and match outcomes
+                to make informed decisions.
+                Fantasy esports fosters a deeper connection with the competitive scene, encouraging fans to follow
+                tournaments, player performances, and game updates closely.
+
+
+
+
             </div>
           </div>
-
-          <!-- Collage -->
-          <div class="box">
-            <div class="box-content">
-              <h1>MULTIPLAYER ONLINE BATTLE ARENA (MOBA)</h1>
-              <p>MOBA games require a high degree of strategic thinking and
-                planning, as players must coordinate with their teammates,
-                manage resources, and react to dynamic game conditions. Success
-                in MOBA games hinges on effective teamwork and clear
-                communication. It helps in development of communication skills, as well as the
-                opportunity for competitive play and social interaction with Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Nemo sed quis, suscipit officia quasi nesciunt veniam pariatur incidunt laboriosam
-                nam?</p>
-            </div>
-
-            <div class="collage">
-              <!-- Square Grid -->
-              <div class="square-grid">
-                <!-- Div 1 -->
-                <div class="div1">
-                  <img src="{% static 'images/moba.jpg' %}" alt="Image 1">
-                  <button class="image-button">Learn More</button>
-                </div>
-                <!-- Div 2 -->
-                <div class="div2">
-                  <img src="{% static 'images/moba1.jpg' %}" alt="Image 2">
-                  <button class="image-button">Learn More</button>
-                </div>
-                <!-- Div 3 -->
-                <div class="div3">
-                  <img src="{% static 'images/moba2.jpeg' %}" alt="Image 3">
-                  <button class="image-button">Learn More</button>
-                </div>
-                <!-- Div 4 -->
-                <div class="div4">
-                  <img src="{% static 'images/moba3.jpeg' %}" alt="Image 4">
-                  <button class="image-button">Learn More</button>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-          <!-- third Image and Content -->
-          <div class="card_main2">
-            <div class="container_card">
-              <div class="container_card_pofilephoto1">
-                <img src="{% static 'images/fantasy.jpg' %}" class="profile-img2" alt="Fighting" id="card2_img" />
-              </div>
-              <div class="container_card_content2">
-                <h1 class="card-title">FANTASY SPORTS</h1>
-                <h5 class="card-description2">
-                  quality to convenience, we've got you covered. Redefining your
-                  shopping experience, every step of the way. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Minima repellendus repudiandae odio obcaecati autem deserunt, fugit ab doloribus earum incidunt enim,
-                  voluptatum beatae libero culpa laudantium harum ea. Facere nam voluptatum vero natus libero, possimus
-                  iste explicabo, hic consequuntur, laboriosam temporibus. Ad quia dicta dolor enim distinctio, nam,
-                  
-
-
-              </div>
-            </div>
-          </div>
+        </div>
 
 
 
-          <!-- Fourth Image and Content -->
-          <div class="card_main">
-            <div class="container_card">
-              <div class="container_card_content">
-                <h1 class="card-title2"> CARD GAMES</h1>
-                <h5 class="card-description1">
-                  Shop smarter with personalized options, faster with quick
-                  checkouts, and easier with doorstep delivery. Experience the
-                  convenience of online shopping today! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Laudantium cum error deserunt! Dolores, ducimus maiores quisquam illo eos deleniti earum cum ipsa
-                  aspernatur perspiciatis rerum officiis. Sint provident dicta libero facere inventore dolorem
-                  recusandae eos? Hic tenetur minima, laborum, sunt accusantium provident voluptates dolorem dolore
-            
-                </h5>
-              </div>
-              <div class="container_card_pofilephoto2">
-                <img src="{% static 'images/card.jpg' %}\" class="profile-img2" alt="hypermarket" id="card2_img" />
-              </div>
-            </div>
-          </div>
+        <!-- Fourth Image and Content -->
+        <div class="card_main">
+          <div class="container_card">
+            <div class="container_card_content">
+              <h1 class="card-title2"> CARD GAMES</h1>
+              <h5 class="card-description1">
+                Card games combine strategy, skill, and deep tactical thinking, making them a unique and competitive
+                genre. Players build powerful decks, predict opponents' moves, and adapt strategies in real time to
+                outplay their rivals.
 
-          <!-- Fifth Image and Content -->
-          <div class="card_main2">
-            <div class="container_card">
-              <div class="container_card_pofilephoto1">
-                <img src="{% static 'images/sport.jpg' %}" class="profile-img2" alt="Fighting"id="card2_img" />
-              </div>
-              <div class="container_card_content2">
-                <h1 class="card-title"> SPORTS</h1>
-                <h5 class="card-description2">
-                  quality to convenience, we've got you covered. Redefining your
-                  shopping experience, every step of the way. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Minima repellendus repudiandae odio obcaecati autem deserunt, fugit ab doloribus earum incidunt enim,
-                  voluptatum beatae libero culpa laudantium harum ea. Facere nam voluptatum vero natus libero, possimus
-                  iste explicabo, hic consequuntur, laboriosam temporibus. Ad quia dicta dolor enim distinctio, nam,
+                Success in esports card games requires critical thinking, resource management, and mastery of in-game
+                mechanics.
+                Popular titles like Hearthstone, Legends of Runeterra, and Magic: The Gathering Arena have thriving
+                professional scenes with high-stakes tournaments and global competitions.
+                The genre fosters a dynamic metagame, where new cards, expansions, and balance updates keep gameplay
+                fresh and evolving.
                 
 
 
-              </div>
+
+
+
+
+
+              </h5>
+            </div>
+            <div class="container_card_pofilephoto2">
+              <img src="{% static 'images/card.jpg' %}\" class="profile-img2" alt="hypermarket" id="card2_img" />
             </div>
           </div>
-
-          <!-- Sixth Image and Content -->
-          <div class="card_main">
-            <div class="container_card">
-              <div class="container_card_content">
-                <h1 class="card-title2">BATTLE ROYALE</h1>
-                <h5 class="card-description1">
-                  Shop smarter with personalized options, faster with quick
-                  checkouts, and easier with doorstep delivery. Experience the
-                  convenience of online shopping today! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Laudantium cum error deserunt! Dolores, ducimus maiores quisquam illo eos deleniti earum cum ipsa
-                  aspernatur perspiciatis rerum officiis. Sint provident dicta libero facere inventore dolorem
-                  recusandae eos? Hic tenetur minima, laborum, sunt accusantium provident voluptates dolorem dolore
-        
-                </h5>
-              </div>
-              <div class="container_card_pofilephoto2">
-                <img src="{% static 'images/royale.png' %}" class="profile-img2" alt="hypermarket" id="card2_img" />
-              </div>
-            </div>
-          </div>
-
-
-
-
-
         </div>
+
+        <!-- Fifth Image and Content -->
+        <div class="card_main2">
+          <div class="container_card">
+            <div class="container_card_pofilephoto1">
+              <img src="{% static 'images/sport.jpg' %}" class="profile-img2" alt="Fighting" id="card2_img" />
+            </div>
+            <div class="container_card_content2">
+              <h1 class="card-title"> SPORTS</h1>
+              <h5 class="card-description2">
+                Sports bring the thrill of traditional athletics into the digital world, offering fast-paced and
+                competitive gameplay. Titles like FIFA, NBA 2K, and Rocket League allow players to experience realistic
+                sports action with a virtual twist.
+
+                Esports sports games require precision, strategy, and deep knowledge of real-world sports mechanics to
+                outplay opponents.
+                Competitive leagues and tournaments attract top players worldwide, with professional teams,
+                sponsorships, and major prize pools.
+                The genre bridges the gap between traditional sports and gaming, making it accessible to both gamers and
+                sports fans alike.
+               
+               
+
+
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Sixth Image and Content -->
+        <div class="card_main">
+          <div class="container_card">
+            <div class="container_card_content">
+              <h1 class="card-title2">BATTLE ROYALE</h1>
+              <h5 class="card-description1">
+                Battle Royale games bring high-intensity, last-man-standing action where strategy, survival skills, and
+                quick reflexes are key to victory. Players drop into vast battlegrounds, scavenge for weapons and
+                resources, and fight to be the sole survivor.
+
+                Competitive Battle Royale requires sharp decision-making, positioning awareness, and adaptability as the
+                safe zone shrinks and enemies close in.
+                Top titles like Fortnite, Apex Legends, and PUBG dominate the esports scene with massive tournaments,
+                prize pools, and a dedicated global fanbase.
+                Teams and solo players must master gunplay, movement mechanics, and real-time tactics to outmaneuver
+                opponents and secure victory.
+                
+               </h5>
+            </div>
+            <div class="container_card_pofilephoto2">
+              <img src="{% static 'images/royale.png' %}" class="profile-img2" alt="hypermarket" id="card2_img" />
+            </div>
+          </div>
+        </div>
+
+
+
+
 
       </div>
-    </section>
-  </main>
+
+    </div>
+  </section>
+</main>
 
 
 
-  <!--Dynamic blog Card Section -->
-  <div class="latest-card">
-    <div class="Scroll">
-        <h2>Love Yourself, You Deserve It!</h2>
-        <div class="card-grid">
-            {% for blog in blogs %}
-            <div class="card {% if forloop.first %}active{% endif %}">
-                {% if blog.image %}
-                    <img src="{{ blog.image.url }}" alt="{{ blog.title }}" />
-                {% else %}
-                    <img src="{% static 'images/blog_images/default_blog_image.jpg' %}" alt="{{ blog.title }}" />
-                {% endif %}
-                <div class="card-content">
-                    <h3>{{ blog.title }}</h3>
-                    <p>{{ blog.short_description|default:blog.content|truncatewords:30|safe }}</p>
-                </div>
-                <a href="{% url 'esports_blog_detail' blog.slug %}" class="read-more">Explore More</a>
-            </div>
-            {% endfor %}
+<!--Dynamic blog Card Section -->
+<div class="latest-card">
+  <div class="Scroll">
+    <h2>Love Yourself, You Deserve It!</h2>
+    <div class="card-grid">
+      {% for blog in blogs %}
+      <div class="card {% if forloop.first %}active{% endif %}">
+        {% if blog.image %}
+        <img src="{{ blog.image.url }}" alt="{{ blog.title }}" />
+        {% else %}
+        <img src="{% static 'images/blog_images/default_blog_image.jpg' %}" alt="{{ blog.title }}" />
+        {% endif %}
+        <div class="card-content">
+          <h3>{{ blog.title }}</h3>
+          <p>{{ blog.short_description|default:blog.content|truncatewords:30|safe }}</p>
         </div>
+        <a href="{% url 'esports_blog_detail' blog.slug %}" class="read-more">Explore More</a>
+      </div>
+      {% endfor %}
     </div>
   </div>
+</div>
 
 
 <script src="{% static 'js/sports.js' %}"></script>

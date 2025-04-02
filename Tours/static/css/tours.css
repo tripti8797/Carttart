@@ -1252,16 +1252,19 @@
     
       
       .div1 button{
-        top: 41.5%;
+        top: 42.5%;
+        margin-left: -14%;
       }
       .div2 button{
-        top: 41.5%;
+        top: 42.5%;
+        margin-left: -13%;
       }
       .div3 button{
         top: 66.5%;
       }
       .div4 button{
         top: 66.5%;
+        margin-left: -13%;
       }
       #profile1{
         width: 100%;
@@ -1321,20 +1324,20 @@
         padding: 2%;
       }
       .div1 button{
-        top: 39.3%;
-        left: 63%;
+        top: 41.3%;
+        left: 61%;
       }
       .div2 button{
-        top: 39.3%;
-        left: 96%;
-        width: 28%;
+        top: 41.3%;
+        left: 97%;
+        width: 30%;
       }
       .div3 button{
-        top: 62.5%;
+        top: 64.5%;
         left: 37%;
       }
       .div4 button{
-        top: 62.5%;
+        top: 64.5%;
         left: 94%;
       }
     
@@ -1378,22 +1381,22 @@
         width: 100%;
       }
       .div1 button{
-        top: 40.1%;
-        left: 67.5%
+        top: 42.1%;
+        left: 62.5%;
       }
       .div2 button{
-        top: 40.1%;
-        left: 104%;
+        top: 42.1%;
+        left: 96%;
         width: 27%;
       }
       .div3 button{
-        top: 63.05%;
+        top: 65.05%;
           left: 40%;
           width: 28%;
       }
       .div4 button{
-        top: 63.05%;
-          left: 101%;
+        top: 65.05%;
+        left: 93%;
       }
       .square-grid h2 {
         font-size: 13px;

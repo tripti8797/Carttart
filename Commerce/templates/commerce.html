@@ -1,8 +1,8 @@
-{% extends 'base.html' %} 
+{% extends 'base.html' %}
 {% load static %}
 
-{% block title %}Welcome|Carttart-E-Commerce{% endblock %} 
-{% block logo_image %}{% static 'images/y-logo.png' %}{% endblock logo_image %}
+{% block title %}Welcome|Carttart-E-Commerce{% endblock %}
+{% block logo_image %}{% static 'images/b-f-logo.png' %}{% endblock logo_image %}
 
 
 {% block content %}
@@ -10,221 +10,244 @@
 
 <!-- Hero Section with Video Background -->
 <section class="hero">
-    <video autoplay muted loop id="hero-video">
-      <source src="{% static 'videos/ecommerce.mp4' %}" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-    <div class="hero-content">
-      <h1>Transforming Shopping Experience</h1>
-      <p>with seamless solutions</p>
-    </div>
-  </section>
+  <video autoplay muted loop id="hero-video">
+    <source src="{% static 'videos/ecommerce.mp4' %}" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <div class="hero-content">
+    <h1>Transforming Shopping Experience</h1>
+    <p>with seamless solutions</p>
+  </div>
+</section>
 
 <!-- MAIN CONTENT2 -->
 <main id="content">
-    <section class="bakgground">
-      <div class="boxcontainer">
+  <section class="bakgground">
+    <div class="boxcontainer">
 
-        <div class="main-content">
-          <!-- First Image and Content -->
-          <div class="card_main">
-            <div class="container_card">
-              <div class="container_card_content">
-                <h1 class="card-title2"> E-Commerce </h1>
-                <h5 class="card-description1">
-                  Discover a world of products at your fingertips with e-commerce!
-                  Shop smarter with personalized options, faster with quick
-                  checkouts, and easier with doorstep delivery. Experience the
-                  convenience of online shopping today! Lorem ipsum dolor sit, amet consectetur adipisicing Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo provident amet necessitatibus non veniam pariatur, asperiores dolor sequi impedit in?
-                </h5>
-              </div>
+      <div class="main-content">
+        <!-- First Image and Content -->
+        <div class="card_main">
+          <div class="container_card">
+            <div class="container_card_content">
+              <h1 class="card-title2"> E-Commerce </h1>
+              <h5 class="card-description1">
+                Discover a world of products at your fingertips with e-commerce!
+                Shop smarter with personalized options, faster with quick
+                checkouts, and easier with doorstep delivery. Experience the
+                convenience of online shopping today! Explore a vast selection of high-quality products across various
+                categories, from fashion and electronics to home essentials and more.
+                Enjoy exclusive deals, discounts, and seasonal offers that help you save while you shop.
+                
+              </h5>
+            </div>
+            <div class="container_card_pofilephoto2">
               <div class="container_card_pofilephoto2">
-                <div class="container_card_pofilephoto2">
                 <img src="{% static 'images/ecom.jpeg' %}" class="profile-img2" alt="hypermarket" />
               </div>
-                <!-- <img src="global.png" class="profile-img" alt="Real-Time Strategy" /> -->
+              <!-- <img src="global.png" class="profile-img" alt="Real-Time Strategy" /> -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Second Image and Content -->
+        <div class="card_main2">
+          <div class="container_card">
+            <div class="container_card_pofilephoto1">
+              <img src="{% static 'images/retail.jpg' %}" class="profile-img2" alt="retail" id="card2_img" />
+            </div>
+            <div class="container_card_content2">
+              <h1 class="card-title">RETAIL</h1>
+              <h5 class="card-description2">
+                Retail made simple—bringing the best products closer to you.
+                Shop with ease and find everything you need in one place. From
+                quality to convenience, we've got you covered. Redefining your
+                shopping experience, every step of the way.Discover a carefully curated selection of top brands and
+                trending products tailored to your needs.
+                Enjoy seamless navigation, secure transactions, and fast, reliable delivery straight to your doorstep.
+                Stay ahead with exclusive offers, seasonal sales, and personalized recommendations.
+               
+
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Collage -->
+        <div class="box">
+          <div class="box-content">
+            <h1>DEPARTMENT STORES</h1>
+            <p> Explore everything you need Under one roof where style, Variety
+              and convenience meet At our department stores, Enjoy unbeatable
+              quality, variety, and convenience. Your one-stop destination for
+              all your shopping desires! Discover a wide range of products, from fashion and beauty to home essentials
+              and electronics—all in one place.
+              Shop the latest trends, top brands, and exclusive collections that cater to every taste and lifestyle.
+              Enjoy a seamless shopping experience with well-organized sections, friendly staff, and expert
+              recommendations.
+              Take advantage of exciting discounts, seasonal sales, and membership rewards designed just for you.
+            </p>
+          </div>
+
+          <div class="collage">
+            <!-- Square Grid -->
+            <div class="square-grid">
+              <!-- Div 1 -->
+              <div class="div1">
+                <img src="{% static 'images/departentstore.jpeg' %}" alt="Image 1">
+                <button class="image-button">Learn More</button>
+              </div>
+              <!-- Div 2 -->
+              <div class="div2">
+                <img src="{% static 'images/depart2.jpg' %}" alt="Image 2">
+                <button class="image-button">Learn More</button>
+              </div>
+              <!-- Div 3 -->
+              <div class="div3">
+                <img src="{% static 'images/depart3.jpg' %}" alt="Image 3">
+                <button class="image-button">Learn More</button>
+              </div>
+              <!-- Div 4 -->
+              <div class="div4">
+                <img src="{% static 'images/depart4.jpg' %}" alt="Image 4">
+                <button class="image-button">Learn More</button>
               </div>
             </div>
           </div>
-
-          <!-- Second Image and Content -->
-          <div class="card_main2">
-            <div class="container_card">
-              <div class="container_card_pofilephoto1">
-                <img src="{% static 'images/retail.jpg' %}" class="profile-img2" alt="retail" id="card2_img" />
-              </div>
-              <div class="container_card_content2">
-                <h1 class="card-title">RETAIL</h1>
-                <h5 class="card-description2">
-                  Retail made simple—bringing the best products closer to you.
-                  Shop with ease and find everything you need in one place. From
-                  quality to convenience, we've got you covered. Redefining your
-                  shopping experience, every step of the way. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Minima repellendus repudiandae odio obcaecati autem deserunt, fugit ab doloribus earum incidunt enim,
-                  voluptatum beatae libero culpa laudantium harum ea. Facere nam voluptatum vero natus libero, possimus
-                 
-
-
-              </div>
-            </div>
-          </div>
-
-          <!-- Collage -->
-          <div class="box">
-            <div class="box-content">
-              <h1>DEPARTMENT STORES</h1>
-              <p> Explore everything you need Under one roof where style, Variety
-                and convenience meet At our department stores, Enjoy unbeatable
-                quality, variety, and convenience. Your one-stop destination for
-                all your shopping desires! Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio adipisci
-                ratione cumque asperiores eligendi dolorem! Est hic minima placeat aperiam ut, mollitia molestiae
-                </p>
-            </div>
-
-            <div class="collage">
-              <!-- Square Grid -->
-              <div class="square-grid">
-                <!-- Div 1 -->
-                <div class="div1">
-                  <img src="{% static 'images/departentstore.jpeg' %}" alt="Image 1">
-                  <button class="image-button">Learn More</button>
-                </div>
-                <!-- Div 2 -->
-                <div class="div2">
-                  <img src="{% static 'images/depart2.jpg' %}" alt="Image 2">
-                  <button class="image-button">Learn More</button>
-                </div>
-                <!-- Div 3 -->
-                <div class="div3">
-                  <img src="{% static 'images/depart3.jpg' %}" alt="Image 3">
-                  <button class="image-button">Learn More</button>
-                </div>
-                <!-- Div 4 -->
-                <div class="div4">
-                  <img src="{% static 'images/depart4.jpg' %}" alt="Image 4">
-                  <button class="image-button">Learn More</button>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-          <!-- third Image and Content -->
-          <div class="card_main2">
-            <div class="container_card">
-              <div class="container_card_pofilephoto1">
-                <img src="{% static 'images/speciality store.jpg' %}" class="profile-img2" alt="Fighting" id="card2_img" />
-              </div>
-              <div class="container_card_content2">
-                <h1 class="card-title">SPECIALTY STORE</h1>
-                <h5 class="card-description2">
-                  quality to convenience, we've got you covered. Redefining your
-                  shopping experience, every step of the way. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Minima repellendus repudiandae odio obcaecati autem deserunt, fugit ab doloribus earum incidunt enim,
-                  voluptatum beatae libero culpa laudantium harum ea. Facere nam voluptatum vero natus libero, possimus
-                  iste explicabo, hic consequuntur, laboriosam temporibus. Ad quia dicta dolor enim distinctio, nam,
-                  
-
-
-              </div>
-            </div>
-          </div>
-
-
-
-          <!-- Fourth Image and Content -->
-          <div class="card_main">
-            <div class="container_card">
-              <div class="container_card_content">
-                <h1 class="card-title2">HYPER MARKETS</h1>
-                <h5 class="card-description1">
-                  Shop smarter with personalized options, faster with quick
-                  checkouts, and easier with doorstep delivery. Experience the
-                  convenience of online shopping today! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Laudantium cum error deserunt! Dolores, ducimus maiores quisquam illo eos deleniti earum cum ipsa
-                  aspernatur perspiciatis rerum officiis. Sint provident dicta libero facere inventore dolorem
-                 
-                </h5>
-              </div>
-              <div class="container_card_pofilephoto2">
-                <img src="{% static 'images/HYPER MARKETS.PNG' %}" class="profile-img2" alt="hypermarket" id="card2_img"/>
-              </div>
-            </div>
-          </div>
-
-          <!-- Fifth Image and Content -->
-          <div class="card_main2">
-            <div class="container_card">
-              <div class="container_card_pofilephoto1">
-                <img src="{% static 'images/FACTORY OUTLET.png' %}" class="profile-img2" alt="Fighting"  id="card2_img"/>
-              </div>
-              <div class="container_card_content2">
-                <h1 class="card-title">FACTORY OUTLET</h1>
-                <h5 class="card-description2">
-                  quality to convenience, we've got you covered. Redefining your
-                  shopping experience, every step of the way. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Minima repellendus repudiandae odio obcaecati autem deserunt, fugit ab doloribus earum incidunt enim,
-                  voluptatum beatae libero culpa laudantium harum ea. Facere nam voluptatum vero natus libero, possimus
-                  iste explicabo, hic consequuntur, laboriosam temporibus. Ad quia dicta dolor enim distinctio, nam,
-                  
-                 
-
-
-              </div>
-            </div>
-          </div>
-
-          <!-- Fifth Image and Content -->
-          <div class="card_main">
-            <div class="container_card">
-              <div class="container_card_content">
-                <h1 class="card-title2">RETAIL ANALYTICS</h1>
-                <h5 class="card-description1">
-                  Shop smarter with personalized options, faster with quick
-                  checkouts, and easier with doorstep delivery. Experience the
-                  convenience of online shopping today! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Laudantium cum error deserunt! Dolores, ducimus maiores quisquam illo eos deleniti earum cum ipsa
-                  aspernatur perspiciatis rerum officiis. Sint provident dicta libero facere inventore dolorem
-                 
-                </h5>
-              </div>
-              <div class="container_card_pofilephoto2">
-                <img src="{% static 'images/RETAIL ANALYTICS.jpeg' %}" class="profile-img2" alt="hypermarket" id="card2_img" />
-              </div>
-            </div>
-          </div>
-
 
         </div>
+
+        <!-- third Image and Content -->
+        <div class="card_main2">
+          <div class="container_card">
+            <div class="container_card_pofilephoto1">
+              <img src="{% static 'images/speciality store.jpg' %}" class="profile-img2" alt="Fighting"
+                id="card2_img" />
+            </div>
+            <div class="container_card_content2">
+              <h1 class="card-title">SPECIALTY STORE</h1>
+              <h5 class="card-description2">
+                Quality to convenience, we've got you covered. Redefining your
+                shopping experience, every step of the way. Step into a world of carefully curated products tailored to
+                your unique tastes and needs.
+                Our specialty store brings you exclusive collections, handcrafted items, and premium brands you won’t
+                find anywhere else.
+                Enjoy a personalized shopping experience with expert recommendations and attentive customer service.
+                From niche products to one-of-a-kind finds, we ensure every purchase is special and meaningful.
+
+
+            </div>
+          </div>
+        </div>
+
+
+
+        <!-- Fourth Image and Content -->
+        <div class="card_main">
+          <div class="container_card">
+            <div class="container_card_content">
+              <h1 class="card-title2">HYPER MARKETS</h1>
+              <h5 class="card-description1">
+                Shop smarter with personalized options, faster with quick
+                checkouts, and easier with doorstep delivery. Experience the
+                convenience of online shopping today! Step into a world of endless choices, where variety meets
+                affordability under one roof.
+                From fresh groceries and household essentials to electronics and fashion, find everything you need in
+                one convenient stop.
+                Enjoy bulk discounts, special promotions, and exclusive deals that help you save more on every purchase.
+                Shop in a spacious, well-organized environment with easy navigation for a hassle-free shopping
+                experience.
+              </h5>
+            </div>
+            <div class="container_card_pofilephoto2">
+              <img src="{% static 'images/HYPER MARKETS.PNG' %}" class="profile-img2" alt="hypermarket"
+                id="card2_img" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Fifth Image and Content -->
+        <div class="card_main2">
+          <div class="container_card">
+            <div class="container_card_pofilephoto1">
+              <img src="{% static 'images/FACTORY OUTLET.png' %}" class="profile-img2" alt="Fighting" id="card2_img" />
+            </div>
+            <div class="container_card_content2">
+              <h1 class="card-title">FACTORY OUTLET</h1>
+              <h5 class="card-description2">
+                Shop smarter with unbeatable discounts, premium brands, and incredible deals—experience the savings at
+                our factory outlet today!
+
+                Enjoy exclusive access to top-quality products at factory-direct prices, ensuring the best value for
+                your money.
+                Discover a wide range of apparel, footwear, accessories, and home essentials from your favorite brands
+                at discounted rates.
+                Shop end-of-season collections, surplus stock, and limited-time offers, all at prices lower than retail
+                stores.
+                Experience a budget-friendly shopping spree without compromising on quality or style.
+               
+
+
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Fifth Image and Content -->
+        <div class="card_main">
+          <div class="container_card">
+            <div class="container_card_content">
+              <h1 class="card-title2">RETAIL ANALYTICS</h1>
+              <h5 class="card-description1">
+                Shop smarter with data-driven insights, optimize inventory with real-time tracking, and enhance customer
+                experiences with personalized recommendations.
+
+                Leverage predictive analytics to forecast demand, reduce waste, and maximize profitability effortlessly.
+                Gain a 360-degree view of customer behavior, preferences, and trends to drive smarter business
+                decisions.
+                Streamline operations with AI-powered automation, ensuring efficient stock management and seamless
+                supply chains.
+                Enhance marketing strategies with data-backed campaigns that boost engagement and sales.
+              </h5>
+            </div>
+            <div class="container_card_pofilephoto2">
+              <img src="{% static 'images/RETAIL ANALYTICS.jpeg' %}" class="profile-img2" alt="hypermarket"
+                id="card2_img" />
+            </div>
+          </div>
+        </div>
+
 
       </div>
-    </section>
-  </main>
+
+    </div>
+  </section>
+</main>
 
 
 
-  <!--Dynamic blog Card Section -->
-  <div class="latest-card">
-    <div class="Scroll">
-        <h2>Love Yourself, You Deserve It!</h2>
-        <div class="card-grid">
-            {% for blog in blogs %}
-            <div class="card {% if forloop.first %}active{% endif %}">
-                {% if blog.image %}
-                    <img src="{{ blog.image.url }}" alt="{{ blog.title }}" />
-                {% else %}
-                    <img src="{% static 'images/blog_images/default_blog_image.jpg' %}" alt="{{ blog.title }}" />
-                {% endif %}
-                <div class="card-content">
-                    <h3>{{ blog.title }}</h3>
-                    <p>{{ blog.short_description|default:blog.content|truncatewords:30|safe }}</p>
-                </div>
-                <a href="{% url 'commerce_blog_detail' blog.slug %}" class="read-more">Explore More</a>
-            </div>
-            {% endfor %}
+<!--Dynamic blog Card Section -->
+<div class="latest-card">
+  <div class="Scroll">
+    <h2>Love Yourself, You Deserve It!</h2>
+    <div class="card-grid">
+      {% for blog in blogs %}
+      <div class="card {% if forloop.first %}active{% endif %}">
+        {% if blog.image %}
+        <img src="{{ blog.image.url }}" alt="{{ blog.title }}" />
+        {% else %}
+        <img src="{% static 'images/blog_images/default_blog_image.jpg' %}" alt="{{ blog.title }}" />
+        {% endif %}
+        <div class="card-content">
+          <h3>{{ blog.title }}</h3>
+          <p>{{ blog.short_description|default:blog.content|truncatewords:30|safe }}</p>
         </div>
+        <a href="{% url 'commerce_blog_detail' blog.slug %}" class="read-more">Explore More</a>
+      </div>
+      {% endfor %}
     </div>
   </div>
+</div>
 
 
 <script src="{% static 'js/commerce.js' %}"></script>
