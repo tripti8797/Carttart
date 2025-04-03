@@ -110,6 +110,10 @@ html{
   transform: scale(0.98);
 }
 
+.footer-container {
+  color:rgb(25,175,98);
+}
+
 /* Responsive Design */
 @media (max-width: 1200px) {
   .about-heading {

@@ -26,7 +26,7 @@
       position: fixed;
       top: 0;
       width: 100%;
-      background-color: rgba(255, 255, 255, 0.78);
+      background-color: #fff;
       transition: background-color 0.3s ease;
       z-index: 1000;
       padding: 10px;
@@ -42,15 +42,16 @@
   header.scrolled .nav-links a {
       color: var(--blue); 
   }
-  
-  header .sub-menu-item{
-    background-color: var(--blue);
-  }
+ 
   
   header.scrolled .arrow {
       border-color: rgb(71, 145, 238); 
   }
   
+  header.scrolled .sub-menu-item {
+    background-color: var(--blue);
+}
+
   header.scrolled .sub-menu-item a{
     color: white;
   }
@@ -66,7 +67,6 @@
   }
   
   header.scrolled .Get .nav-item {
-      border: 2px solid white;
       background:  var(--blue);
       color: white; 
   }
@@ -350,7 +350,7 @@
       width: 65%;
       height: 400px;
       padding: 1rem;
-    backdrop-filter: blur(10px);
+      background-color: rgba(255, 255, 255, 0.5);
   }
   
   .container_card_content2 {
@@ -359,11 +359,11 @@
       width: 65%;
       height: 400px;
       padding: 1rem;
-      backdrop-filter: blur(10px);
+      background-color: rgba(255, 255, 255, 0.5);
   }
   
     .card-title2, .card-title {
-      font-family: sans-serif;
+      /* font-family: sans-serif; */
       font-weight:500;
       font-size: 25px;
       padding: 10px;
@@ -406,7 +406,7 @@
       text-align: justify;
       margin-left: 20px;
       margin: 20px;
-      font-family: sans-serif;
+      /* font-family: sans-serif; */
     }
     
     /* .container_card_content{
@@ -443,6 +443,7 @@
   .box{
     display: flex;
     justify-content: center;
+    background-color: rgba(255, 255, 255, 0.5);
   }
   
   .box-content{
@@ -852,55 +853,83 @@
     .nav-links {
       display: none;
       flex-direction: column;
-      position: absolute;
       background-color: var(--blue);
-      top: 80px;
+      position: absolute;
+      top: 70px;
       right: 0;
-      padding: 20px;
       width: 100%;
     }
-
-    .nav-links a {
-      color: white;
+    
+     header .sub-menu-item{
+    background-color: white;
+    color: var(--blue);
   }
   
-  .Get .nav-item {
+    header.scrolled .nav-links a {
+      color: white; 
+    }
+  
+    header.scrolled .arrow {
+      border: solid white;
+      border-width: 0 2px 2px 0;
+    }
+    header.scrolled .Get .nav-item {
       background: white;
       color: var(--blue);
-  }
-  
-  .arrow {
-      border-bottom: solid white;
-      border-right: solid white;
-  }
-
-  .sub-menu-item {
-      top: 31%;
-      background-color: var(--blue);
-  }
-
-  .nav-links ul {
-      flex-direction: column;
-      left: 54%;
-      width: 31%;
     }
   
-    .nav-links ul li {
-      margin: 0px;
+    header.scrolled .Get .nav-item a {
+      color: var(--blue);
+    }
+  
+    header.scrolled .sub-menu-item a {
+      color: var(--blue);
+    }
+  
+    .nav-links a{
+      color: white;
+    }
+  
+    .arrow{
+      border: solid white;
+      border-width: 0 2px 2px 0;
+    }
+  
+    .sub-menu-item{
+      background-color: white;
+      left: -99px;
+      flex-direction: column;
+      box-shadow: 1px 4px 10px rgb(52, 52, 52);
+    }
+  
+    header.scrolled .sub-menu-item{
+      box-shadow: 1px 4px 10px rgb(52, 52, 52);
+    }
+    .sub-menu-item li a{
+      color: var(--blue);
+    }
+  
+    .logo img {
+      width: 72%;
     }
     
-      .nav-links.show {
-        display: flex;
-      }
+    .nav-links.show {
+      display: flex;
+      padding: 5%;
+    }
   
-      .sub-menu:hover{
-        display: contents;
-      }
+    .hamburger {
+      display: block;
+    }
   
-  
-      .hamburger {
-        display: contents;
-      }
+    .Get .nav-item{
+      background: white;
+      color: var(--blue);
+    }
+    .Get .nav-item a{
+      color: var(--blue);
+    }
+
   
     .boxcontainer{
       width: 100%;

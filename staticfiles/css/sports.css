@@ -25,7 +25,7 @@
       position: fixed;
       top: 0;
       width: 100%;
-      background-color: rgba(255, 255, 255,0.78);
+      background-color: #fff;
       transition: background-color 0.3s ease;
       z-index: 1000;
       padding: 10px;
@@ -364,8 +364,7 @@
       height: 400px;
       padding: 1rem;
       border: 1px solid rgba(255, 255, 255, 0.3);
-      backdrop-filter: blur(10px); 
-      -webkit-backdrop-filter: blur(10px);
+      background-color: rgba(255, 255, 255, 0.5);
   }
   
   .container_card_content2 {
@@ -375,12 +374,11 @@
       height: 400px;
       padding: 1rem;
       border: 1px solid rgba(255, 255, 255, 0.3); 
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
+      background-color: rgba(255, 255, 255, 0.5);
   }
   
     .card-title2, .card-title {
-      font-family: sans-serif;
+      /* font-family: sans-serif; */
       font-weight:500;
       font-size: 25px;
       padding: 10px;
@@ -423,7 +421,7 @@
       text-align: justify;
       margin-left: 20px;
       margin: 20px;
-      font-family: sans-serif;
+      /* font-family: sans-serif; */
     }
     
     .container_card_content{
@@ -460,7 +458,7 @@
     display: flex;
     justify-content: center;
     margin-top: 3rem;
-    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.5);
   }
   
   .box-content{
@@ -1052,10 +1050,89 @@
 }
 
 @media(max-width:768px) {
-
-  header {
-    height: 65px;
+  header{
+    height: 70px;
   }
+  .container{
+    padding: 0.4% 0;
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: var(--blue);
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+  }
+  
+  header.scrolled .sub-menu-item{
+    background-color: white;
+    left: -99px;
+  }
+
+  header.scrolled .nav-links a {
+    color: white; 
+  }
+
+  header.scrolled .arrow {
+    border: solid white;
+    border-width: 0 2px 2px 0;
+  }
+
+  header.scrolled .Get .nav-item a {
+    color: var(--blue);
+  }
+
+  header.scrolled .sub-menu-item a {
+    color: var(--blue);
+  }
+
+  .nav-links a{
+    color: white;
+  }
+
+  .arrow{
+    border: solid white;
+    border-width: 0 2px 2px 0;
+  }
+
+  .sub-menu-item{
+    background-color: white;
+    left: -99px;
+    flex-direction: column;
+    box-shadow: 1px 4px 10px rgb(52, 52, 52);
+  }
+
+  header.scrolled .sub-menu-item{
+    box-shadow: 1px 4px 10px rgb(52, 52, 52);
+  }
+  .sub-menu-item li a{
+    color: var(--blue);
+  }
+
+  .logo img {
+    width: 69%;
+  }
+  
+  .nav-links.show {
+    display: flex;
+    padding: 5%;
+  }
+
+  .hamburger {
+    display: contents;
+  }
+
+  .Get .nav-item{
+    background: white;
+    color: var(--blue);
+  }
+  .Get .nav-item a{
+    color: var(--blue);
+  }
+
+ 
 
   .hero-content p {
     font-size: 18px;
@@ -1200,100 +1277,21 @@
     align-items: center;
     text-align: center;
   }
-  header{
-    height: 70px;
-  }
-  .container{
-    padding: 0.4% 0;
-  }
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    background-color: var(--blue);
-    position: absolute;
-    top: 70px;
-    right: 0;
-    width: 100%;
-  }
-  
-  header.scrolled .sub-menu-item{
-    background-color: white;
-  }
-
-  header.scrolled .nav-links a {
-    color: white; 
-  }
-
-  header.scrolled .arrow {
-    border: solid white;
-    border-width: 0 2px 2px 0;
-  }
-
-  header.scrolled .Get .nav-item a {
-    color: var(--blue);
-  }
-
-  header.scrolled .sub-menu-item a {
-    color: var(--blue);
-  }
-
-  .nav-links a{
-    color: white;
-  }
-
-  .arrow{
-    border: solid white;
-    border-width: 0 2px 2px 0;
-  }
-
-  .sub-menu-item{
-    background-color: white;
-    left: -99px;
-    flex-direction: column;
-    box-shadow: 1px 4px 10px rgb(52, 52, 52);
-  }
-
-  header.scrolled .sub-menu-item{
-    box-shadow: 1px 4px 10px rgb(52, 52, 52);
-  }
-  .sub-menu-item li a{
-    color: var(--blue);
-  }
-
-  .logo img {
-    width: 69%;
-  }
-  
-  .nav-links.show {
-    display: flex;
-    padding: 5%;
-  }
-
-  .hamburger {
-    display: contents;
-  }
-
-  .Get .nav-item{
-    background: white;
-    color: var(--blue);
-  }
-  .Get .nav-item a{
-    color: var(--blue);
-  }
+ 
 
 
 
 }
 
 
-@media(max-width: 425px) {
+@media(max-width: 426px) {
   header {
     height: 55px;
     padding: 5px;
   }
 
   .logo img {
-    width: 30%;
+    width: 57%;
   }
   .nav-links {
     /* display: flex; */
@@ -1325,7 +1323,6 @@
   }
 
   .container_card {
-    /* display: block; */
     flex-direction: column;
   }
 
@@ -1384,25 +1381,25 @@
   }
 
   .div1 button {
-    top: 44.4%;
+    top: 35.4%;
     width: 21%;
     margin-left: -11%;
   }
 
   .div2 button {
-    top: 44.4%;
+    top: 35.4%;
     margin-left: -11%;
     width: 21%;
   }
 
   .div3 button {
-    top: 63.4%;
+    top: 57.4%;
     margin-left: -11%;
     width: 21%;
   }
 
   .div4 button {
-    top: 63.4%;
+    top: 57.4%;
     margin-left: -13%;
   }
 
@@ -1469,9 +1466,9 @@
 
 }
 
-@media(max-width:375px) {
+@media(max-width:376px) {
   .logo img{
-    width: 35%;
+    width: 50%;
   }
   header{
     height: 50px;
@@ -1504,7 +1501,7 @@
   }
 
   .collage {
-    height: 387px;
+    height: 309px;
   }
 
   /* .square-grid{
@@ -1531,25 +1528,25 @@
   }
 
   .div1 button {
-    top: 53%;
+    top: 46%;
     width: 21%;
     margin-left: -11%;
   }
 
   .div2 button {
-    top: 53%;
+    top: 46%;
     margin-left: -11%;
     width: 21%;
   }
 
   .div3 button {
-    top: 67.7%;
+    top: 64.7%;
     margin-left: -11%;
     width: 21%;
   }
 
   .div4 button {
-    top: 67.7%;
+    top: 64.7%;
     margin-left: -11%;
     width: 21%;
   }
@@ -1602,7 +1599,7 @@
   }
 
   .collage {
-    height: 387px;
+    height: 302px;
     width: 92%;
   }
 
@@ -1631,25 +1628,25 @@
   }
 
   .div1 button {
-    top: 58%;
+    top: 53%;
     margin-left: -13%;
     width: 25%;
   }
 
   .div2 button {
-    top: 58%;
+    top: 53%;
     margin-left: -13%;
     width: 25%;
   }
 
   .div3 button {
-    top: 71%;
-    margin-left: -13%;
+    top: 70%;
+    margin-left: -12%;
     width: 22%;
   }
 
   .div4 button {
-    top: 71%;
+    top: 70%;
     margin-left: -13%;
     width: 25%;
   }
