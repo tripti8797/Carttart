@@ -680,9 +680,9 @@ main {
   width: 62%;
 }
 
-.success-section img {
+/* .success-section img {
   width: 44%;
-}
+} */
 
 .success-section h2 {
   font-size: 44px;
@@ -2210,4 +2210,44 @@ main{
 body{
   justify-content: center;
   justify-items: center;
+}
+
+.animated-underline {
+  display: inline-block;
+  position: relative;
+  font-size: 24px;
+  font-weight: bold;
+  color: #222;
+  text-decoration: none;
+  padding-bottom: 5px;
+}
+
+.animated-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background: #27ae60;  /* Green color */
+  transition: width 0.4s ease-in-out;
+}
+
+.animated-underline:hover::after {
+  width: 100%;
+}
+
+/* Optional: Animate on page load */
+@keyframes underline-grow {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.animated-underline.loaded::after {
+  width: 100%;
+  animation: underline-grow 1s ease-in-out;
 }

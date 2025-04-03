@@ -277,7 +277,20 @@ button[type="submit"]:hover {
 }
 @media(max-width:320px){
     button[type="submit"] {
-        font-size: 1.1rem;
+        font-size: 1rem;
+    }
+    form {
+        width: 267px;
+    }
+    .box h2 {
+        font-size: 1.3rem;
+    }
+    .box {
+        padding: 17px 40px;
+    }
+    .form-group3 .i-place {
+        left: 5%;
+        top: 10%;
     }
 }
 .background, .main{
