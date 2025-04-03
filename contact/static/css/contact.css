@@ -164,7 +164,7 @@ button[type="submit"]:hover {
     display: flex;
     background-color: rgba(255, 255, 255,0);
     flex-direction: column;
-    padding-top: 4%;
+    padding-top: 3%;
 }
 
 .details{
@@ -208,287 +208,81 @@ button[type="submit"]:hover {
     color: #0c431c;
     font-size: 1.2rem;
 }
+.footer-container {
+    color: rgb(25,175,98);
+}
 
 
-/* Responsive Styles */
-@media screen and (max-width: 769px)  {
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        background-color: #2ba24c;
-        position: absolute;
-        top: 80px;
-        right: 0;
-        padding: 20px;
-        width: 100%;
-      }
-
-      .nav-links a {
-        color: white;
+@media(max-width: 1024px){
+    .main{
+        padding-top: 44px;
     }
-    
-    .Get .nav-item {
-        background: white;
-        color: #19AF62;
-    }
-    
-    .arrow {
-        border-bottom: solid white;
-        border-right: solid white;
-    }
-
-    .sub-menu-item {
-        left: -99px;
-        top: 109%;
-        background-color: white;
-        box-shadow: 1px 4px 10px rgb(52, 52, 52);
-    }
-
-    .sub-menu-item li a{
-      color: #19AF62;
-    }
-    
-      .nav-links ul li {
-        margin: 0px;
-      }
-    
-      .nav-links.show {
-        display: flex;
-      }
-    
-      .hamburger {
-        display: contents;
-      }
-
-    form{
-        width: 650px;
-    }
-    
-    .box{
-        margin-top: 4.5rem;
-        height: 474px;
-        width: 100%;
-    }
-
-    .box h2{
-        font-size: 1.3rem;
-    }
-
-    .box h5{
+    .details h2 {
         font-size: 1.2rem;
     }
-
-    i.fa-regular.fa-message {
-        margin-left: 38rem;
+    .form-group3 .i-place {
+        top: 14%;
+        left: 3%;
     }
- 
-    .footer {
+    .footer-container{
+        margin-top: 0;
+    }
+
+}
+@media(max-width:768px){
+    .main{
         flex-direction: column;
-        align-items: center;
-        text-align: center;
-      }
-    
-      .footer-section {
-        margin-bottom: 20px;
-      }
-    
-      .footer-logo {
-        margin: 40px 0;
-      }
-  
-      .footer-container {
-        background:white;
-      }
-      
-      
-      .footer-section1 h3 {
-        color: #19af62;
-      }
-      
-      .footer-section1 ul li {
-        color: #19af62;
-      }
-    
-      /* Footer Container Adjustments */
-      .footer-container {
-        flex-direction: row;
-        align-items: center;
-        text-align: center;
-      }
-    
-      /* Column Styling for Smaller Screens */
-      .col {
-        flex: 1 1 100%;
-        min-width: 100%;
-        padding: 10px;
-      }
-    
-      /* Social Icons Layout for Small Screens */
-      .social-icons {
-        flex-direction: row;
-        justify-content: center;
-      }
-    
-      .social-icon i {
-        font-size: 18px;
-        padding: 12px;
-      }
-  
-      button{
-        top: 40%;
-      }
-      .footer-logo img {
-        width: 22%;
+    }
+    .contact_info {
+        margin-left: 59px;
     }
 }
-
-@media screen and (max-width: 689px) {
-    form{
-        width: 625px;
+@media(max-width:425px){
+    .box h2 {
+        font-size: 1.5rem;
     }
-
-    i.fa-regular.fa-message {
-        margin-left: 32rem;
+    input[type="text"], input[type="email"], textarea {
+        font-size: 11px;
     }
-
-}
-
-@media screen and (max-width: 700px){
-    form{
-        width: 569px;
+    #icons {
+        font-size: 20px;
     }
-
-    i.fa-regular.fa-message {
-        margin-left: 28rem;
+    .form-group3 .i-place {
+        left: 5%;
     }
-
-}
-
-
-@media screen and (max-width: 600px){
-    form{
-        width: 469px;
+    .contact_info {
+        margin-left: 0;
     }
-
-    i.fa-regular.fa-message {
-        margin-left: 26rem;
-    }
-
-}
-
-@media screen and (max-width: 500px){
-    form{
-        width: 369px;
-    }
-
-    i.fa-regular.fa-message {
-        margin-left: 20rem;
-    }
-
-}
-
-@media screen and (max-width: 426px) {
-    header {
-        width: 100%;
-        height: 10vh;
-    }
-
-    .logo img {
-    width: 40%;
-    }
-    
-    .container{
-        padding: 0;
-    }
-
-      .nav-links {
-        top: 60px;
-      }
-    
-      .sub-menu-item a {
-        font-size: 12px;
-      }
-      
-    form{
-        width: 318px;
-    }
-    .box{
-        width: 100%;
-        height: 584px;
-        margin-top: 3.5rem;
-    }
-    .box h5{
-        font-size: 1rem;
-    }
-    .form-group1, .form-group2 {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
-    
-    i.fa-regular.fa-message {
-        margin-left: 17rem;
-    }
-    
-}
-
-@media screen and (max-width: 376px){
-    header{
-        width: 100%;
-    }
-
-    form {
-        width: 300px;
-    }
-
-    .box{
-        width: 100%;
-        margin-top: 2rem;
-        height:590px;
-    }
-
-    .box h2{
-        font-size: 1.15rem;
-    }
-    
-    .box h5 {
-        font-size: 0.9rem;
-    }
-
-    i.fa-regular.fa-message {
-        margin-left: 16rem;
-    }
-}
-
-@media screen and (max-width: 320px){
-    header{
-        width: 100%;
-    }
-    .sub-menu-item a {
-        font-size: 10px;
-    }
-  
-    
-
-    form {
-        width: 250px;
-    }
-
-    .box{
-        width: 100%;
-        margin-top: 3rem;
-        height: 590px;
-    }
-
-    .box h2{
+    .info_card {
+        width: 88%; 
+     }
+     .details h2 {
         font-size: 1.1rem;
     }
-    
-    .box h5 {
-        font-size: 0.9rem;
-    }
-
-    i.fa-regular.fa-message {
-        margin-left: 13rem;
+    .details p {
+        font-size: 1.1rem;
     }
 }
+@media (max-width: 375px) {
+    #icons {
+        font-size: 17px;
+    }
+    input[type="text"], input[type="email"], textarea {
+        font-size: 10px;
+        padding: 10px 10px 10px 36px;
+    }
+    .details h2 {
+        font-size: 1.0rem;
+    }
+}
+@media(max-width:320px){
+    button[type="submit"] {
+        font-size: 1.1rem;
+    }
+}
+.background, .main{
+    max-width: 1500px;
+    margin: auto;
+}
+
+

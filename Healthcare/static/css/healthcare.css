@@ -782,7 +782,7 @@
   }
   
   /* MEDIA QUERIES FOR RESPONSIVENESS */
-  @media (min-width:4103px) and (max-width:5464px)
+   @media (min-width:4103px) and (max-width:5464px)
   {
    .hero{
      height: 40vh;

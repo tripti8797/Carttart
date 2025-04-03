@@ -1,16 +1,13 @@
-{% extends 'base.html' %} 
-{% load static %} 
-{% block title%}Welcome|Carttart-Getin Touch{%endblock%} 
-{% block logo_image %}{%static 'images/h-g-logo.png'%}{%endblock logo_image %} 
+{% extends 'base.html' %}
+{% load static %}
+{% block title%}Welcome|Carttart-Getin Touch{%endblock%}
+{% block logo_image %}{%static 'images/h-g-logo.png'%}{%endblock logo_image %}
 {% block content %}
-<link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
   integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-  crossorigin="anonymous"
-  referrerpolicy="no-referrer" />
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <link rel="stylesheet" href="{% static 'css/contact.css' %}" />
 <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
@@ -18,96 +15,85 @@
 
 <div class="background">
   <div class="gradient_overlay">
-<div class="main">
-    <div class="contact_info">
-    <div class="info_card">
-        <div class="contact_icon"><i class="fas fa-phone"></i></div>
-        <div class="details">
-        <h2>Have a query? Call us now.</h2>
-        <p>+91 9355032333</p>
-        </div>
-    </div>
-    <div class="info_card">
-        <div class="contact_icon"><i class="fa fa-envelope-o"></i></div>
-        <div class="details">
-        <h2>Need help? Drop an E-mail.</h2>
-        <p> info@carttart.com</p>
-        </div>
-    </div>
-    <div class="info_card">
-        <div class="contact_icon"><i class="fas fa-map-pin"></i></div>
-        <div class="details">
-        <h2>Visit Us!</h2>
-        <p>G1, Plot no. A-61, Sector-16,
-Noida, Gautam Buddh Nagar, U.P.- 201301</p>
-</div>
-    </div>
-    </div>
-    <div class="box">
-      <h5>Send Message</h5>
-      <h2>
-        We’d love to hear from you!
-       
-      </h2>
+    <div class="main">
+      <div class="box">
+        <h5>Send Message</h5>
+        <h2>
+          We’d love to hear from you!
 
-      <form method="post" action="{% url 'contact' %}">
-        {% csrf_token %}
-        <div class="form-group1">
-          <div class="name">
-            <input type="text" id="name" name="name" placeholder="Your Name" />
-            <div class="i-place">
-              <i id="icons" class="fa-solid fa-user"></i>
+        </h2>
+
+        <form method="post" action="{% url 'contact' %}">
+          {% csrf_token %}
+          <div class="form-group1">
+            <div class="name">
+              <input type="text" id="name" name="name" placeholder="Your Name" />
+              <div class="i-place">
+                <i id="icons" class="fa-solid fa-user"></i>
+              </div>
+            </div>
+            <div class="email">
+              <input type="email" id="email" name="email" placeholder="Your Email" />
+              <div class="i-place">
+                <i id="icons" class="fa-regular fa-envelope"></i>
+              </div>
             </div>
           </div>
-          <div class="email">
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Your Email" />
-            <div class="i-place">
-              <i id="icons" class="fa-regular fa-envelope"></i>
+
+          <div class="form-group2">
+            <div class="phone">
+              <input type="text" id="phone" name="phone" placeholder="Your Phone No." />
+              <div class="i-place">
+                <i id="icons" class="fa-solid fa-phone"></i>
+              </div>
+            </div>
+            <div class="subject">
+              <input type="text" id="subject" name="subject" placeholder="Subject" />
+              <div class="i-place">
+                <i id="icons" class="fa-solid fa-user"></i>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="form-group2">
-          <div class="phone">
-            <input
-              type="text"
-              id="phone"
-              name="phone"
-              placeholder="Your Phone No." />
+          <div class="form-group3">
             <div class="i-place">
-              <i id="icons" class="fa-solid fa-phone"></i>
+              <i id="icons" class="fa-regular fa-message"></i>
             </div>
+            <textarea name="message" placeholder="Message"></textarea>
           </div>
-          <div class="subject">
-            <input
-              type="text"
-              id="subject"
-              name="subject"
-              placeholder="Subject" />
-            <div class="i-place">
-              <i id="icons" class="fa-solid fa-user"></i>
-            </div>
-          </div>
-        </div>
 
-        <div class="form-group3">
-          <div class="i-place">
-            <i id="icons" class="fa-regular fa-message"></i>
+          <div class="form-group4">
+            <button type="submit" id="send-msg">Send Message</button>
           </div>
-          <textarea name="message" placeholder="Message"></textarea>
+        </form>
+      </div>
+      <div class="contact_info">
+        <div class="info_card">
+          <div class="contact_icon"><i class="fas fa-phone"></i></div>
+          <div class="details">
+            <h2>Have a query? Call us now.</h2>
+            <p>+91 9355032333</p>
+          </div>
         </div>
+        <div class="info_card">
+          <div class="contact_icon"><i class="fa fa-envelope-o"></i></div>
+          <div class="details">
+            <h2>Need help? Drop an E-mail.</h2>
+            <p> info@carttart.com</p>
+          </div>
+        </div>
+        <div class="info_card">
+          <div class="contact_icon"><i class="fas fa-map-pin"></i></div>
+          <div class="details">
+            <h2>Visit Us!</h2>
+            <p>G1, Plot no. A-61, Sector-16,
+              Noida, Gautam Buddh Nagar, U.P.- 201301</p>
+          </div>
+        </div>
+      </div>
 
-        <div class="form-group4">
-          <button type="submit" id="send-msg">Send Message</button>
-        </div>
-      </form>
     </div>
+
   </div>
-
-</div>
-<script src="{% static '/js/script.js' %}"></script>
-{% endblock content %}
+  <script src="{% static '/js/script.js' %}"></script>
+  {% endblock content %}
