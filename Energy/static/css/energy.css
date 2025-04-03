@@ -713,6 +713,25 @@
   }
   /* energy */
   /* MEDIA QUERIES FOR RESPONSIVENESS */
+  @media (min-width:4103px) and (max-width:5464px)
+  {
+   .hero{
+     height: 40vh;
+   }
+  }
+  @media (min-width:2733px) and (max-width:4102px) 
+  {
+    .hero{
+      height: 40vh;
+    }
+  }
+  @media (min-width:2052px) and (max-width:2732px)
+  {
+    .hero{
+      height: 40vh;
+    }
+  }
+  
  @media(max-width: 1024px){
   .card-description1, .card-description2 {
     font-size: 14px;
@@ -1297,4 +1316,18 @@
     padding: 0.3rem;
     width: 95px;
   }
+}
+
+.container, .boxcontainer, .main-content, .footer, .box{
+  max-width: 1500px;
+}
+ .hero{
+  max-width: 1500px;
+  margin: auto;
+ }
+.boxcontainer, .main-content{
+  justify-self: center;
+}
+.box{
+  justify-self: center;
 }

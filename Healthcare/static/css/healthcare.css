@@ -21,16 +21,6 @@
     }
   
   /* Navbar Styles */
-  header {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background-color: #fff;
-      transition: background-color 0.3s ease;
-      z-index: 1000;
-      padding: 10px;
-      height: 80px;
-  }
   
   header.scrolled {
       background-color: rgb(255, 255, 255);
@@ -99,7 +89,7 @@
   header.scrolled .Get .nav-item a:hover {
       color: white;
   } */
-  
+/*   
   .container {
       display: flex;
       justify-content: space-between;
@@ -107,7 +97,7 @@
       max-width: 90%;
       margin: 0 auto;
       padding: 0 20px;
-  }
+  } */
   
   .logo img {
       width: 150px;
@@ -792,6 +782,25 @@
   }
   
   /* MEDIA QUERIES FOR RESPONSIVENESS */
+  @media (min-width:4103px) and (max-width:5464px)
+  {
+   .hero{
+     height: 40vh;
+   }
+  }
+  @media (min-width:2733px) and (max-width:4102px) 
+  {
+    .hero{
+      height: 40vh;
+    }
+  }
+  @media (min-width:2052px) and (max-width:2732px)
+  {
+    .hero{
+      height: 40vh;
+    }
+  }
+  
   @media(max-width: 1024px){
     .box{
       display: block;
@@ -1293,4 +1302,15 @@
     }
   }
   
+ 
   
+  .container, .boxcontainer, .main-content, .footer{
+    max-width: 1500px;
+  }
+   .hero{
+    max-width: 1500px;
+    margin: auto;
+   }
+  .boxcontainer, .main-content{
+    justify-self: center;
+  }
