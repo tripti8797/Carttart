@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     background-color: #f9f9f9;
     padding: 20px;
     background-image: url('../images/backdrop.jpg');
@@ -10,19 +10,31 @@
     scroll-behavior: smooth;
 }
 
+.background{
+    background-image: url('../images/background2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.gradient_overlay{
+background: linear-gradient(to left,rgba(52, 52, 52, 0.4), rgba(52, 52, 52, 0.4));
+    padding: 5% 4%;
+    justify-items: center;
+}
+
 .box {
     font-family: Georgia, 'Times New Roman', Times, serif;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #fff;
-    padding: 40px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 30px 40px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
+    max-width: 750px;
     width: 100%;
     text-align: center;
-    height: 500px;
+    /* height: 500px; */
     margin-top: 2rem;
 }
 
@@ -44,12 +56,13 @@ form {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 710px;
+    width: 95%;
 }
 
 .form-group1, .form-group2 {
     display: flex;
     gap: 20px;
+    /* height: 10vh; */
 }
 
 .form-group1 > div, .form-group2 > div {
@@ -61,6 +74,13 @@ form {
     position: relative;
 }
 
+.form-group3 .i-place{
+        top: 10%;
+    transform: none;
+    left: 1%;
+    width: 3%;
+}
+
 .form-group4{
     position: relative;
     margin:0 20px;
@@ -68,23 +88,30 @@ form {
     justify-content: center;
 }
 
+#icons{
+    font-size: x-large;
+}
+
 input[type="text"], input[type="email"], textarea {
     width: 100%;
-    padding: 10px 10px 10px 40px;
+    padding: 10px 10px 10px 50px;
     border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 1rem;
+    border-radius: 10px;
+    font-size: 1.3rem;
     outline: none;
     transition: border-color 0.3s ease;
+    z-index: 1;
+    height: 100%;
 }
 
 
 form .form-group3 textarea {
     resize: none;
-    height: 110px;
+    height: 30vh;
     color: #999;
     text-align: justify;
     font-family: Arial, Helvetica, sans-serif;
+    padding: 19px 10px 10px 50px;
 }
 
 input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
@@ -102,12 +129,15 @@ textarea {
     left: 10px;
     transform: translateY(-50%);
     color: #888;
+    z-index: 2;
+    pointer-events: none;
+    width: 7%;
 }
 
-i.fa-regular.fa-message {
+/* i.fa-regular.fa-message {
     margin-top: 4rem;
     margin-left: 41rem;
-}
+} */
 
 /* Button Styles */
 button[type="submit"] {
@@ -115,15 +145,68 @@ button[type="submit"] {
     color: #fff;
     border: none;
     padding: 12px 20px;
-    border-radius: 5px;
-    font-size: 1rem;
+    border-radius: 10px;
+    font-size: 1.3rem;
     cursor: pointer;
     /* margin-top: 8rem; */
     transition: background-color 0.3s ease;
+    /* margin: 2%; */
 }
 
 button[type="submit"]:hover {
     background-color: #095804;
+}
+
+.main{
+    display: flex;
+}
+.contact_info{
+    display: flex;
+    background-color: rgba(255, 255, 255,0);
+    flex-direction: column;
+    padding-top: 4%;
+}
+
+.details{
+    align-content: center;
+}
+
+.heading{
+        color: white;
+    font-size: 10vh;
+    padding: 4%;
+    padding-bottom: 2%;
+}
+
+.info_card{
+    display: flex;
+    flex: 1;
+    margin: 3% 7%;
+    background-color: white;
+    padding: 2%;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+    width: 75%;
+    background-color: rgba(255, 255, 255,0.9);
+}
+
+.contact_icon{
+    font-size: 2rem;
+    align-content: center;
+    margin: 6%;
+    color: #0c431c;
+}
+
+.details h2{
+    margin: 2%;
+    color: #22813d;
+    font-size: 1.5rem;
+}
+
+.details p{
+    margin: 3%;
+    color: #0c431c;
+    font-size: 1.2rem;
 }
 
 
@@ -134,22 +217,39 @@ button[type="submit"]:hover {
         flex-direction: column;
         background-color: #2ba24c;
         position: absolute;
-        top: 45px;
+        top: 80px;
         right: 0;
         padding: 20px;
         width: 100%;
       }
+
+      .nav-links a {
+        color: white;
+    }
     
+    .Get .nav-item {
+        background: white;
+        color: #19AF62;
+    }
     
-      .nav-links ul {
-        flex-direction: column;
-        left: 100px;
-        width: 50%;
-    
-      }
+    .arrow {
+        border-bottom: solid white;
+        border-right: solid white;
+    }
+
+    .sub-menu-item {
+        left: -99px;
+        top: 109%;
+        background-color: white;
+        box-shadow: 1px 4px 10px rgb(52, 52, 52);
+    }
+
+    .sub-menu-item li a{
+      color: #19AF62;
+    }
     
       .nav-links ul li {
-        margin: 10px 0;
+        margin: 0px;
       }
     
       .nav-links.show {
@@ -181,7 +281,7 @@ button[type="submit"]:hover {
     i.fa-regular.fa-message {
         margin-left: 38rem;
     }
-
+ 
     .footer {
         flex-direction: column;
         align-items: center;
@@ -197,15 +297,16 @@ button[type="submit"]:hover {
       }
   
       .footer-container {
-        background:#2ba24c;
+        background:white;
       }
       
+      
       .footer-section1 h3 {
-        color: #f4f4f4;
+        color: #19af62;
       }
       
       .footer-section1 ul li {
-        color: #f4f4f4;
+        color: #19af62;
       }
     
       /* Footer Container Adjustments */
@@ -236,6 +337,9 @@ button[type="submit"]:hover {
       button{
         top: 40%;
       }
+      .footer-logo img {
+        width: 22%;
+    }
 }
 
 @media screen and (max-width: 689px) {
@@ -286,14 +390,23 @@ button[type="submit"]:hover {
 @media screen and (max-width: 426px) {
     header {
         width: 100%;
+        height: 10vh;
     }
-    .nav-links {
-        /* display: flex; */
-        list-style: none;
-        gap: 15px;
-        margin-left: auto;
-        margin-top: 10px;
-        padding: 20px;
+
+    .logo img {
+    width: 40%;
+    }
+    
+    .container{
+        padding: 0;
+    }
+
+      .nav-links {
+        top: 60px;
+      }
+    
+      .sub-menu-item a {
+        font-size: 12px;
       }
       
     form{
@@ -351,6 +464,11 @@ button[type="submit"]:hover {
     header{
         width: 100%;
     }
+    .sub-menu-item a {
+        font-size: 10px;
+    }
+  
+    
 
     form {
         width: 250px;
