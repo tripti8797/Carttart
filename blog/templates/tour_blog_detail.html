@@ -98,7 +98,7 @@
                     <div class="recent-blog-content">
                         <h3>{{ recent_blog.title }}</h3>
                         <p>{{ recent_blog.short_description|default:recent_blog.content|truncatewords:15|safe }}</p>
-                        <a href="{% url 'tour_blog_detail' recent_blog.slug %}" class="read-more">Read Guide</a>
+                        <a href="{% url 'blog:tour_blog_detail' recent_blog.slug %}" class="read-more">Read Guide</a>
                     </div>
                 </div>
                 {% endfor %}

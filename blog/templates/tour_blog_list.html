@@ -26,7 +26,7 @@
                 </div>
                 <div class="blog-content">
                     <p class="blog-text">{{ blog.short_description|default:blog.content|truncatewords:30|safe }}</p>
-                    <a href="{% url 'tour_blog_detail' blog.slug %}" class="read-more" aria-label="Read more about {{ blog.title }}">Read Guide</a>
+                    <a href="{% url 'blog:tour_blog_detail' blog.slug %}" class="read-more" aria-label="Read more about {{ blog.title }}">Read Guide</a>
                 </div>
             </div>
             {% endfor %}
