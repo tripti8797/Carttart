@@ -10,25 +10,45 @@
     <link rel="stylesheet" href="{% static 'css/formstyle.css' %}">
     <!-- CKEditor Script -->
     <script src="https://cdn.ckeditor.com/4.16.2/standard/ckeditor.js"></script>
-   
+    <style>
+        .styled-button {
+            background-color: #6c757d;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .styled-button a {
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+        }
+        .form-button {
+            display: flex
+        ;
+            align-items: baseline;
+            justify-content: space-between;
+        }
+    </style>
 </head>
 <body>
-    <button>
-        <a href="{% url 'dashboard' %}" class="logout-btn">Go Back</a>
-    </button>
     <div class="container">
         <!-- Blog Creation Form -->
         <div class="form-card">
-            <a href="{% url 'manage_blogs' %}" class="back-btn">← Back to Manage Blogs</a>
+<!-- filepath: c:\Users\kesha\OneDrive\Desktop\cartart\carttart\blog\templates\form.html -->
+           <div class="form-button">
+            <div>
+                <a href="{% url 'blog:manage_blogs' %}" class="back-btn">← Back to Manage Blogs</a>
+            </div>
+            <button class="styled-button">
+                <a href="{% url 'dashboard' %}" class="logout-btn">Go Back to Dashboard →</a>
+            </button>
+           </div>
             <h1>Create a Blog Post</h1>
             
-            {% if messages %}
-                {% for message in messages %}
-                    <div class="alert alert-{{ message.tags }}">
-                        {{ message }}
-                    </div>
-                {% endfor %}
-            {% endif %}
+         
             
             <form method="POST" enctype="multipart/form-data">
                 {% csrf_token %}

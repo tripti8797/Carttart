@@ -1,0 +1,48 @@
+{% extends 'employee_dashboard.html' %}
+{% load static %}
+
+{% block content %}
+<div class="dashboard-section">
+  <div class="section-header">
+    <h2><i class="fas fa-book-open"></i> My Blogs</h2>
+    <a href="{% url 'blog:form' %}" class="btn btn-primary">
+      <i class="fas fa-plus"></i> New Blog
+    </a>
+  </div>
+
+  <div class="blog-cards">
+    {% for blog in blogs %}
+    <div class="card mb-3">
+      <div class="card-body">
+        <div class="d-flex justify-content-between">
+          <div>
+            <h5 class="card-title">{{ blog.title }}</h5>
+            <p class="card-text">
+              <small class="text-muted">
+                Status: <span class="badge bg-{{ blog.active|yesno:'success,danger' }}">
+                  {{ blog.active|yesno:"Active,Inactive" }}
+                </span>
+                | Last updated: {{ blog.updated_at|date:"M d, Y" }}
+              </small>
+            </p>
+          </div>
+          <div class="btn-group">
+            <a href="{% url 'blog:edit_blog' blog.id %}" class="btn btn-sm btn-primary">
+              <i class="fas fa-edit"></i> Edit
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% empty %}
+    <div class="text-center py-5">
+      <i class="fas fa-book-open fa-3x text-muted mb-3"></i>
+      <h4>You haven't created any blogs yet</h4>
+      <a href="{% url 'blog:form' %}" class="btn btn-primary mt-3">
+        <i class="fas fa-plus"></i> Create Your First Blog
+      </a>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}

@@ -126,3 +126,12 @@ body {
     background: #5a6268;
     color: #fff;
 }
+.cke_notification_message{
+display: none;
+}
+.cke_notification_close{
+    display: none;
+}
+.cke_notification_warning{
+    display: none;
+}

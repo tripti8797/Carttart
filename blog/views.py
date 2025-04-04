@@ -10,7 +10,7 @@ def blog_list(request, blog_type=None):
     """
     if blog_type not in dict(Blog.BLOG_TYPE_CHOICES).keys():
         messages.error(request, 'Invalid blog type!')
-        return redirect('form')
+        return redirect('blog:form')
     
     blogs = Blog.objects.filter(active=True, blog_type=blog_type).order_by("-published_date")
     
@@ -31,7 +31,7 @@ def blog_detail(request, slug, blog_type=None):
     """
     if blog_type not in dict(Blog.BLOG_TYPE_CHOICES).keys():
         messages.error(request, 'Invalid blog type!')
-        return redirect('form')
+        return redirect('blog:form')
     
     blog = get_object_or_404(Blog, slug=slug, blog_type=blog_type)
     recent_blogs = Blog.objects.filter(
@@ -114,7 +114,7 @@ def form(request):
                 )
 
         messages.success(request, 'Blog created successfully!')
-        return redirect('manage_blogs')
+        return redirect('blog:manage_blogs')
 
     # Render the form template for GET requests
     return render(request, 'form.html')
@@ -137,7 +137,7 @@ def toggle_blog_status(request, blog_id):
     blog.active = not blog.active
     blog.save()
     messages.success(request, f'Blog status updated to {"Active" if blog.active else "Inactive"}')
-    return redirect('manage_blogs')
+    return redirect('blog:manage_blogs')
 
 def edit_blog(request, blog_id):
     """
@@ -147,7 +147,7 @@ def edit_blog(request, blog_id):
         blog = Blog.objects.get(id=blog_id)
     except Blog.DoesNotExist:
         messages.error(request, 'Blog not found!')
-        return redirect('manage_blogs')
+        return redirect('blog:manage_blogs')
 
     if request.method == "POST":
         data = request.POST
@@ -187,7 +187,7 @@ def edit_blog(request, blog_id):
 
         blog.save()
         messages.success(request, 'Blog updated successfully!')
-        return redirect('manage_blogs')
+        return redirect('blog:manage_blogs')
 
     # Render the edit template for GET requests
     return render(request, 'edit_blog.html', {'blog': blog})
@@ -202,4 +202,4 @@ def delete_blog(request, blog_id):
         messages.success(request, 'Blog deleted successfully!')
     except Blog.DoesNotExist:
         messages.error(request, 'Blog not found!')
-    return redirect('manage_blogs')  
+    return redirect('blog:manage_blogs')  

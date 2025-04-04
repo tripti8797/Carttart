@@ -1,0 +1,44 @@
+<!-- filepath: c:\Users\kesha\OneDrive\Desktop\cartart\carttart\admindash\templates\contact_messages_list.html -->
+{% extends 'superadmin_dashboard.html' %}
+
+{% block content %}
+<div class="content-section" data-page-name="contact_messages">
+    <h2>Contact Messages</h2>
+    <input type="text" id="searchMessages" placeholder="Search messages..." onkeyup="searchMessages(event)" />
+    <div class="table-responsive">
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Subject</th>
+                <th>Date</th>
+                <th>Message Preview</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="contactMessagesBody">
+            {% for message in messages %}
+            <tr data-id="{{ message.id }}">
+                <td>{{ message.name }}</td>
+                <td>{{ message.email }}</td>
+                <td>{{ message.phone }}</td>
+                <td>{{ message.subject }}</td>
+                <td>{{ message.submission_date|date:"M d, Y H:i" }}</td>
+                <td>{{ message.message|truncatewords:10 }}</td>
+                <td>
+                    <button class="btn view-btn" onclick="viewMessage({{ message.id }})">View</button>
+                    <button class="btn delete-btn" onclick="deleteMessage({{ message.id }})">Delete</button>
+                </td>
+            </tr>
+            {% empty %}
+            <tr>
+                <td colspan="7">No messages found</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+</div>
+{% endblock %}

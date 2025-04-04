@@ -1,0 +1,93 @@
+{% extends "superadmin_dashboard.html" %}
+{% load static %}
+
+{% block content %}
+<div class="content-section">
+    <h3><i class="fas fa-user-edit"></i> Edit Profile</h3>
+    
+    <form method="POST" enctype="multipart/form-data" class="profile-form">
+        {% csrf_token %}
+        
+        <div class="profile-image-section">
+            <div class="current-avatar">
+                {% if request.user.profile_picture %}
+                    <img src="{{ request.user.profile_picture.url }}" class="avatar-image">
+                {% else %}
+                    <div class="default-avatar">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                {% endif %}
+            </div>
+            <label class="avatar-upload-btn">
+                <input type="file" name="profile_picture" accept="image/*" style="display: none;">
+                <i class="fas fa-camera"></i> Change Photo
+            </label>
+        </div>
+        
+        <div class="form-row">
+            <div class="input-group">
+                <label for="id_username">Username</label>
+                <input type="text" id="id_username" value="{{ request.user.username }}" readonly>
+            </div>
+            <div class="input-group">
+                <label for="id_email">Email</label>
+                <input type="email" id="id_email" name="email" value="{{ request.user.email }}" required>
+            </div>
+        </div>
+        
+        <div class="form-row">
+            <div class="input-group">
+                <label for="id_full_name">Full Name</label>
+                <input type="text" id="id_full_name" name="full_name" value="{{ request.user.full_name }}" required>
+            </div>
+            <div class="input-group">
+                <label for="id_phone">Phone Number</label>
+                <input type="tel" id="id_phone" name="phone" value="{{ request.user.phone_number|default:'' }}">
+            </div>
+        </div>
+        
+        <div class="input-group">
+            <label for="id_bio">Bio</label>
+            <textarea id="id_bio" name="bio" rows="3">{{ request.user.bio|default:'' }}</textarea>
+        </div>
+        
+        <div class="form-actions">
+            <button type="submit" class="btn save-btn">
+                <i class="fas fa-save"></i> Save Changes
+            </button>
+            <a href="{% url 'superadmin_dashboard' %}" class="btn cancel-btn">
+                <i class="fas fa-times"></i> Cancel
+            </a>
+        </div>
+    </form>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const avatarInput = document.querySelector('input[name="profile_picture"]');
+    const avatarImage = document.querySelector('.avatar-image');
+    const defaultAvatar = document.querySelector('.default-avatar');
+    
+    if (avatarInput) {
+        avatarInput.addEventListener('change', function(e) {
+            if (e.target.files && e.target.files[0]) {
+                const reader = new FileReader();
+                
+                reader.onload = function(event) {
+                    if (avatarImage) {
+                        avatarImage.src = event.target.result;
+                    } else {
+                        const img = document.createElement('img');
+                        img.src = event.target.result;
+                        img.className = 'avatar-image';
+                        defaultAvatar.parentNode.replaceChild(img, defaultAvatar);
+                    }
+                };
+                
+                reader.readAsDataURL(e.target.files[0]);
+            }
+        });
+    }
+});
+</script>
+{% endblock %}

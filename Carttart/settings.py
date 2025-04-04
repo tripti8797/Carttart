@@ -45,7 +45,11 @@ INSTALLED_APPS = [
     'contact',
     'blog',
     'oauth',
+    'admindash',
 ]
+
+AUTH_USER_MODEL = 'oauth.User'
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

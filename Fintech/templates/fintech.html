@@ -223,7 +223,7 @@ Enjoy enhanced security with encryption and authentication features that protect
                     <h3>{{ blog.title }}</h3>
                     <p>{{ blog.short_description|default:blog.content|truncatewords:30|safe }}</p>
                 </div>
-                <a href="{% url 'fintech_blog_detail' blog.slug %}" class="read-more">Explore More</a>
+                <a href="{% url 'blog:fintech_blog_detail' blog.slug %}" class="read-more">Explore More</a>
             </div>
             {% endfor %}
         </div>

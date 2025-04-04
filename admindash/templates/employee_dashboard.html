@@ -1,0 +1,152 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Dashboard</title>
+    <link rel="stylesheet" href="{% static 'dashboard.css' %}" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="dashboard-container">
+      <!-- Header Section -->
+      <header class="header">
+        <a href="/">
+          <img src="{% static 'images/home.png' %}" class="home-image" alt="Home" />
+        </a>
+        <div class="dropdown" id="userDropdown">
+          <span class="fa fa-user-circle"></span>
+          <span id="username">{{ request.user.username }}</span>
+          <span class="dropdown-icon">
+            <i class="fas fa-chevron-down icon-toggle"></i>
+          </span>
+          <div class="dropdown-content">
+            <a href="#"><span class="fas fa-pen"></span> Edit</a>
+            <a href="{% url 'logout' %}"><span class="fas fa-sign-out-alt"></span> Logout</a>
+          </div>
+        </div>
+      </header>
+
+      <!-- Main Container -->
+      <div class="main-container">
+        <!-- Sidebar Section -->
+        <aside class="sidebar">
+          <div class="sidebar-header">
+            <span class="fa fa-user-circle"></span>
+            <h3>Employee</h3>
+          </div>
+          <nav>
+            <ul class="nav-menu">
+              <!-- Dashboard Item -->
+              <li data-page-name="dashboard" class="nav-item">
+                <a class="nav-link" href="#">
+                  <span class="fas fa-tachometer-alt"></span>
+                  <p class="nav-text">Dashboard</p>
+                </a>
+              </li>
+
+              <!-- Employee Dropdown -->
+              <li class="nav-item dropdown-toggle" data-menu="employee-menu">
+                <span class="fas fa-user-tie"></span>
+                <p class="nav-text">Employee</p>
+                <span class="dropdown-icon">
+                  <i class="fas fa-chevron-right icon-toggle"></i>
+                </span>
+              </li>
+              <ul class="dropdown-menu" id="employee-menu">
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'blog:form' %}">  <!-- Changed to blog app URL -->
+                      <span class="fas fa-plus-circle"></span>
+                      <p class="nav-subtext">Add Blog</p>
+                  </a>
+                </li>
+                <li data-page-name="manage_blog_form" class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span class="fas fa-list"></span>
+                    <p class="nav-subtext">Blog List</p>
+                  </a>
+                </li>
+                <li data-page-name="contact_messages" class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span class="fas fa-envelope"></span>
+                    <p class="nav-subtext">Contact Messages</p>
+                  </a>
+                </li>
+              </ul>
+            </ul>
+          </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main id="content">
+          <!-- Dashboard Section -->
+          <section class="content-section" data-page-name="dashboard">
+            <h3>Dashboard</h3>
+            <div class="dashboard-grid">
+              <div class="dashboard-card">
+                <p>Total Blogs</p>
+                <h4 id="totalBlogs">0</h4>
+              </div>
+            </div>
+          </section>
+
+          <!-- Add Blog Form Section -->
+          <section class="content-section hidden" data-page-name="add_blog_form">
+            <h3>Add Blog</h3>
+            <form id="blogForm" method="POST" action="{% url 'add_blog' %}">
+              {% csrf_token %}
+              <div class="form-row">
+                <div class="input-group">
+                  <label for="blog_title">Blog Title</label>
+                  <input
+                    type="text"
+                    id="blog_title"
+                    name="blog_title"
+                    placeholder="Enter Blog Title"
+                    required
+                  />
+                </div>
+                <div class="input-group">
+                  <label for="blog_author">Author</label>
+                  <input
+                    type="text"
+                    id="blog_author"
+                    name="blog_author"
+                    placeholder="Enter Author Name"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="input-group">
+                <label for="blog_content">Content</label>
+                <textarea
+                  id="blog_content"
+                  name="blog_content"
+                  placeholder="Enter Blog Content"
+                  required
+                ></textarea>
+              </div>
+              <div class="buttons">
+                <button type="submit" class="btn save-btn">Save</button>
+                <button type="button" class="btn cancel-btn" data-target="dashboard">
+                  Cancel
+                </button>
+              </div>
+            </form>
+          </section>
+        </main>
+      </div>
+    </div>
+    <script src="{% static 'dashboard.js' %}"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        document.getElementById("username").textContent = "{{ request.user.username }}";
+      });
+    </script>
+  </body>
+</html>

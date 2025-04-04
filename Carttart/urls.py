@@ -30,8 +30,9 @@ urlpatterns = [
     path('sports/', include('Sports.urls')),  # Sports app routing
     path('tours/', include('Tours.urls')),  # Tours app routing
     path('contact/', include('contact.urls')),  # Contact app routing
-    path('blog/', include("blog.urls")),  # Blog app routing
+    path('blog/', include(('blog.urls', 'blog'), namespace='blog')),  # Blog app routing
     path('auth/', include("oauth.urls")),  # oauth app routing
+    path('dashboard/', include("admindash.urls")),  # Dashboard app routing
 ]
 
 if settings.DEBUG:

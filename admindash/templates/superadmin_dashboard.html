@@ -1,0 +1,123 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="{% static 'css/dashboard.css' %}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  </head>
+
+  <body>
+    <div class="dashboard-container">
+      <!-- Header Section -->
+      <header class="header">
+        <a href="{% url 'home' %}"><img src="{% static 'images/home.png' %}" class="home-image" alt="Home" /></a>
+        <div class="dropdown" id="userDropdown">
+          <span class="fa fa-user-circle"></span>
+          <span id="username">{{ request.user.username }}</span>
+          <span class="dropdown-icon"><i class="fas fa-chevron-down icon-toggle"></i></span>
+          <div class="dropdown-content">
+            <a href="{% url 'edit_profile' %}"><span class="fas fa-pen"></span> Edit</a>
+            <a href="{% url 'logout' %}"><span class="fas fa-sign-out-alt"></span> Logout</a>
+          </div>
+        </div>
+      </header>
+
+      <!-- Main Container -->
+      <div class="main-container">
+        <!-- Sidebar Section -->
+        <aside class="sidebar">
+          <div class="sidebar-header">
+            <span class="fa fa-user-circle"></span>
+            <h3>Super Admin</h3>
+          </div>
+          <nav>
+            <ul class="nav-menu">
+              <li class="nav-item {% if request.resolver_match.url_name == 'superadmin_dashboard' %}active{% endif %}">
+                <a class="nav-link" href="{% url 'superadmin_dashboard' %}">
+                  <span class="fas fa-tachometer-alt"></span>
+                  <p class="nav-text">Dashboard</p>
+                </a>
+              </li>
+              <li class="nav-item dropdown-toggle" data-menu="employee-menu">
+                <div class="empp">
+                  <span class="fas fa-user-tie"></span>
+                  <p class="nav-text">Employee</p>
+                </div>
+                <span class="dropdown-icon"><i class="fas fa-chevron-right icon-toggle"></i></span>
+              </li>
+              <ul class="dropdown-menu" id="employee-menu">
+                <li class="nav-item {% if request.resolver_match.url_name == 'create_employee' %}active{% endif %}">
+                  <a class="nav-link" href="{% url 'create_employee' %}">
+                    <span class="fas fa-user-plus"></span>
+                    <p class="nav-subtext">Add Employee</p>
+                  </a>
+                </li>
+                <li class="nav-item {% if request.resolver_match.url_name == 'manage_employees' %}active{% endif %}">
+                  <a class="nav-link" href="{% url 'manage_employees' %}">
+                    <span class="fas fa-users"></span>
+                    <p class="nav-subtext">Employee List</p>
+                  </a>
+                </li>
+              </ul>
+              <li class="nav-item dropdown-toggle" data-menu="blog-menu">
+                <div class="empp">
+                  <span class="fas fa-user-tie"></span>
+                  <p class="nav-text">Manage blog</p>
+                </div>
+                <span class="dropdown-icon"><i class="fas fa-chevron-right icon-toggle"></i></span>
+              </li>
+              <ul class="dropdown-menu" id="blog-menu">
+                <li class="nav-item {% if request.resolver_match.url_name == 'form' %}active{% endif %}">
+                  <a class="nav-link" href="{% url 'blog:form' %}">
+                    <span class="fas fa-plus-circle"></span>
+                    <p class="nav-subtext">Add Blog</p>
+                  </a>
+                </li>
+                <li class="nav-item {% if request.resolver_match.url_name == 'manage_blogs' %}active{% endif %}">
+                  <a class="nav-link" href="{% url 'blog:manage_blogs' %}">
+                    <span class="fas fa-list"></span>
+                    <p class="nav-subtext">Blog List</p>
+                  </a>
+                </li>
+              </ul>
+              <li class="nav-item {% if request.resolver_match.url_name == 'contact_messages_list' %}active{% endif %}">
+                <a class="nav-link" href="{% url 'contact_messages_list' %}">
+                  <span class="fas fa-envelope"></span>
+                  <p class="nav-subtext">Contact Messages</p>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main id="content">
+          {% block content %}
+            <div class="dashboard-stats">
+              <div class="stat-card">
+                <h3>Task Force</h3>
+                <div class="stat-value">{{ total_blogs }}</div>
+                <p class="stat-label">Total Blogs</p>
+              </div>
+
+              <div class="stat-card">
+                <h3>Data Base</h3>
+                <div class="stat-value">{{ total_employees }}</div>
+                <p class="stat-label">Total Employees</p>
+              </div>
+            </div>
+
+            <div class="user-info">
+              <h3>User name</h3>
+              <p>{{ request.user.username }}</p>
+            </div>
+          {% endblock %}
+        </main>
+      </div>
+    </div>
+    <script src="{% static 'js/dashboard.js' %}"></script>
+  </body>
+</html>

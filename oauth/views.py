@@ -1,54 +1,42 @@
-from django.shortcuts import render, get_object_or_404, redirect
+from django.shortcuts import render, redirect
 from django.contrib import messages
+from django.contrib.auth import login as auth_login, logout
+from django.contrib.auth.decorators import login_required
+from .forms import UserLoginForm
+from .models import User
 
-# Hardcoded credentials
-CREDENTIALS = {
-    "SAD00001": "Carttart@1234",
-}
-def login_view(request):
-    context = {"error": None}
-    
-    if request.method == 'POST':
-        username = request.POST.get('username')
-        password = request.POST.get('password')
-        
-        # Check if credentials match
-        if username in CREDENTIALS and CREDENTIALS[username] == password:
-            # If credentials match, render the dashboard template
-            return render(request, 'dashboard.html', {'username': username})
-        else:
-            # If credentials don't match, show error
-            context["error"] = "Invalid username or password"
-    
-    # Render the login template
-    return render(request, 'login.html', context)
+def user_login(request):
+    if request.user.is_authenticated:
+        if request.user.is_superadmin:
+            return redirect('superadmin_dashboard')
+        return redirect('employee_dashboard')
 
-
-from django.core.paginator import Paginator
-from contact.models import ContactMessage
-
-def contact_messages_view(request):
-    all_messages = ContactMessage.objects.all().order_by('-submission_date')
+    if request.method == "POST":
+        form = UserLoginForm(request.POST)
+        if form.is_valid():
+            username = form.cleaned_data['username']
+            password = form.cleaned_data['password']
+            
+            try:
+                user = User.objects.get(username=username)
+                if user.check_password(password):
+                    auth_login(request, user)
+                    messages.success(request, f"Welcome back, {user.full_name}!")
+                    
+                    if user.is_superadmin:
+                        return redirect('superadmin_dashboard')
+                    return redirect('employee_dashboard')
+                else:
+                    messages.error(request, "Invalid credentials")
+            except User.DoesNotExist:
+                messages.error(request, "User does not exist")
+    else:
+        form = UserLoginForm()
     
-    # Pagination
-    paginator = Paginator(all_messages, 10)  # Show 10 messages per page
-    page = request.GET.get('page')
-    contact_messages = paginator.get_page(page)
-    
-    return render(request, 'getintouch.html', {
-        'contact_messages': contact_messages,
-    })
-    
-def delete_message(request, message_id):
-    if request.method == 'POST':
-        message = get_object_or_404(ContactMessage, id=message_id)
-        message.delete()
-        messages.success(request, "Message deleted successfully")
-        # Redirect to the page that shows all messages
-        return redirect('contact_messages_view')  # Replace with your actual view name
-    # If not POST, redirect to messages page
-    return redirect('contact_messages_view')
+    return render(request, 'login.html', {'form': form})
 
-def dashboard(request):
-    # Render the dashboard template
-    return render(request, 'dashboard.html')
+@login_required
+def logout_view(request):
+    logout(request)
+    messages.success(request, "You have been logged out successfully.")
+    return redirect('login')

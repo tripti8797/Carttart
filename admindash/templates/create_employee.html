@@ -1,0 +1,44 @@
+<!-- filepath: c:\Users\kesha\OneDrive\Desktop\cartart\carttart\admindash\templates\create_employee.html -->
+{% extends "superadmin_dashboard.html" %}
+{% load static %}
+
+{% block content %}
+<div class="content-section">
+    <h3><i class="fas fa-user-plus"></i> Add Employee</h3>
+    
+    <form method="POST" class="employee-form">
+        {% csrf_token %}
+        
+        <div class="form-row">
+            <div class="input-group">
+                <label for="id_email">Email</label>
+                {{ form.email }}
+            </div>
+            <div class="input-group">
+                <label for="id_full_name">Full Name</label>
+                {{ form.full_name }}
+            </div>
+        </div>
+        
+        <div class="form-row">
+            <div class="input-group">
+                <label for="id_password">Password</label>
+                {{ form.password }}
+            </div>
+            <div class="input-group">
+                <label for="id_password2">Confirm Password</label>
+                {{ form.password2 }}
+            </div>
+        </div>
+        
+        <div class="form-actions">
+            <button type="submit" class="btn save-btn">
+                <i class="fas fa-save"></i> Create Employee
+            </button>
+            <a href="{% url 'manage_employees' %}" class="btn cancel-btn">
+                <i class="fas fa-times"></i> Cancel
+            </a>
+        </div>
+    </form>
+</div>
+{% endblock %}
