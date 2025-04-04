@@ -232,7 +232,7 @@ header {
 }
 
 .footer-section h3 {
-  font-size: 25px;
+  font-size: 23px;
   margin-bottom: 11%;
 
 }
@@ -244,8 +244,8 @@ header {
 }
 
 .footer-section ul li {
-  margin-bottom: 8px;
-  font-size: 18px;
+  margin-bottom: 5px;
+  font-size: 15px;
 }
 
 .footer-section1 {
@@ -287,11 +287,11 @@ header {
   text-align: center;
   justify-content: flex-end;
   padding-top: 38px;
-  text-align-last: right;
+  /* text-align-last: right; */
 }
 
 .footer-logo img {
-  width: 60%;
+  width: 55%;
 }
 
 
@@ -310,12 +310,12 @@ header {
 .fixed_footer{
   display: flex;
   justify-content: space-between;
-  /* padding: 3%; */
+  padding: 1.5%;
   padding-top: 1% ;
   width: 95%;
 }
 .fixed_footer p{
-  font-size: 18px;
+  font-size: 12px;
 }
 
 .media_section{
