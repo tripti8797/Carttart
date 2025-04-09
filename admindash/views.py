@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from oauth.decorators import superadmin_required
@@ -116,3 +116,12 @@ def delete_employee(request, employee_id):
     except User.DoesNotExist:
         messages.error(request, "Employee not found.")
     return redirect('manage_employees')
+
+def view_message(request, id):
+    message = get_object_or_404(ContactMessage, pk=id)
+    return render(request, 'view_message.html', {'message': message})
+
+def delete_message(request, id):
+    message = get_object_or_404(ContactMessage, pk=id)
+    message.delete()
+    return redirect('contact_messages_list')
