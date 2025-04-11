@@ -6,6 +6,7 @@
 
 {% block content %}
 <link rel="stylesheet" href="{% static 'css/styles.css' %}"/>
+<link rel="stylesheet" href="{% static 'css/slider.css' %}"/>
 <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 
 <!-- Slider -->
@@ -197,9 +198,24 @@
       <h1>Effortless Company Formation & Regulatory Success!</h1>
       <p>Starting a business can be overwhelming, but with our expert assistance, you can establish your company smoothly and ensure compliance with all legal regulations. We provide end-to-end support in company formation, business registration, taxation, and company secretary services. Whether you're a startup or an established business looking to restructure, our services ensure that your business stays compliant, risk-free, and legally sound.</p>
     </div>
-    <div class="box-img1">
-      <img src="{% static 'images/Group 11.svg' %}" alt="Business Formation">
-    </div>
+    <section class="servicesss-section">
+      <div class="servicesss-card green">
+        <h3>Company Formation</h3>
+        <img src="{% static 'images/city.png' %}" alt="Company Formation">
+      </div>
+      <div class="servicesss-card yellow">
+        <h3>Taxation & Compliance</h3>
+        <img src="{% static 'images/taxes.png' %}" alt="Taxation & Compliance">
+      </div>
+      <div class="servicesss-card blue">
+        <h3>Legal Documentation</h3>
+        <img src="{% static 'images/compliant.png' %}"  alt="Legal Documentation">
+      </div>
+      <div class="servicesss-card red">
+        <h3>Strategic guidance</h3>
+        <img src="{% static 'images/planning.png' %}"  alt="Strategic guidance">
+      </div>
+    </section>
   </section>
 
   <section class="finance-section">
@@ -303,6 +319,69 @@
     </div>
   </section>
 </main>
+<!-- companies sliderss -->
+<div class="company-slide-container">
+  <div class="company-slide-section-title">
+    <h2>Our Trusted Partners</h2>
+  </div>
+
+  <div class="company-slide-logo-slider-container">
+    <div class="company-slide-logo-track">
+      <!-- Original logos -->
+      <div class="company-slide-logo-slide">
+        <img src="{% static 'images/airbnb.png' %}" alt="Airbnb" />
+      </div>
+      <div class="company-slide-logo-slide">
+        <img src="{% static 'images/huawei.png' %}" alt="Huawei" />
+      </div>
+      <div class="company-slide-logo-slide">
+        <img src="{% static 'images/logo.png' %}" alt="Varun Beverages" />
+      </div>
+      <div class="company-slide-logo-slide">
+        <img src="{% static 'images/samsung (1).png' %}" alt="Samsung" />
+      </div>
+      <div class="company-slide-logo-slide">
+        <img src="{% static 'images/airbnb.png' %}" alt="Microsoft" />
+      </div>
+      <div class="company-slide-logo-slide">
+        <img src="{% static 'images/huawei.png' %}" alt="Google" />
+      </div>
+      <div class="company-slide-logo-slide">
+        <img src="{% static 'images/logo.png' %}" alt="Apple" />
+      </div>
+      <div class="company-slide-logo-slide">
+        <img src="{% static 'images/samsung (1).png' %}" alt="Tesla" />
+      </div>
+
+      <!-- Duplicate logos for seamless scrolling effect -->
+      <div class="company-slide-logo-slide">
+        <img src="{% static 'images/airbnb.png' %}" alt="Airbnb" />
+      </div>
+      <div class="company-slide-logo-slide">
+        <img src="{% static 'images/huawei.png' %}" alt="Huawei" />
+      </div>
+      <div class="company-slide-logo-slide">
+        <img src="{% static 'images/logo.png' %}" alt="Varun Beverages" />
+      </div>
+      <div class="company-slide-logo-slide">
+        <img src="{% static 'images/samsung (1).png' %}" alt="Samsung" />
+      </div>
+      <div class="company-slide-logo-slide">
+        <img src="{% static 'images/airbnb.png' %}" alt="Microsoft" />
+      </div>
+      <div class="company-slide-logo-slide">
+        <img src="{% static 'images/huawei.png' %}" alt="Google" />
+      </div>
+      <div class="company-slide-logo-slide">
+        <img src="{% static 'images/logo.png' %}" alt="Apple" />
+      </div>
+      <div class="company-slide-logo-slide">
+        <img src="{% static 'images/samsung (1).png' %}" alt="Tesla" />
+      </div>
+    </div>
+  </div>
+</div>
+
 
 <div class="grow">
   <h1>Lets Grow Business Together!</h1>

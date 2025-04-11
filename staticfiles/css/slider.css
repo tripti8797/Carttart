@@ -1,0 +1,113 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+.company-slide-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.company-slide-section-title {
+  text-align: center;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.company-slide-section-title h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #016505;
+  position: relative;
+  display: inline-block;
+}
+
+.company-slide-section-title h2:after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #90e647, #20b425);
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+.company-slide-logo-slider-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 40px 0;
+}
+
+.company-slide-logo-track {
+  display: flex;
+  width: max-content; /* Allow content to determine width */
+  animation: company-slide-scroll 30s linear infinite;
+}
+
+@keyframes company-slide-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); /* Only move to half to create seamless effect */
+  }
+}
+
+.company-slide-logo-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 57px;
+}
+
+.company-slide-logo-slide img {
+  max-width: 160px;
+  height: auto;
+  max-height: 80px;
+  filter: grayscale(100%);
+  opacity: 0.6;
+  transition: all 0.3s ease;
+}
+
+.company-slide-logo-slide:hover img {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+/* Pause animation on hover */
+.company-slide-logo-track:hover {
+  animation-play-state: paused;
+}
+
+@media (max-width: 768px) {
+  .company-slide-logo-slide img {
+    max-width: 140px;
+  }
+  
+  .company-slide-logo-slide {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .company-slide-logo-slide img {
+    max-width: 120px;
+  }
+  
+  .company-slide-logo-slide {
+    padding: 0 10px;
+  }
+}

@@ -170,11 +170,7 @@
   .sub-menu:hover .sub-menu-item {
       display: flex;
   }
-  
-  .sub-menu-item li {
-      padding: 8px 0;
-  }
-  
+
   .sub-menu-item a {
       color: white;
       text-decoration: none; /* Remove underline by default */
@@ -702,116 +698,31 @@
   
   /* Footer Styles */
   .footer-container {
-  /* background: linear-gradient(to top, rgb(9, 35, 66), rgb(89, 152, 230)); */
-  box-shadow: 0 10px 24px #000000;
-  background-color: white;
-  padding: 20px 10px;
   color:  var(--blue);
-  margin-top: 3rem;
   }
-  
-  .footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    max-width: 90%;
-    margin: auto;
-    flex-wrap: wrap;
-    padding: 0 1%;
-  }
-  
-  .footer-section {
-    flex: 1;
-    min-width: 150px;
-    margin: 10px;
-  }
-  .footer-section a {
-    text-decoration: none; /* Remove underline */
-    color: var(--blue); /* Custom color for links */
-    font-size: 14px;
-  }
-  
-  .footer-section1 a {
-    text-decoration: none;
-    color: var(--blue);
-    font-size: 12px;
-  }
-  
-  .footer-section h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
-  }
-  
-  .footer-section ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .footer-section ul li {
-    margin-bottom: 8px;
-    font-size: 14px;
-  }
-  
-  .footer-section1 {
-    flex: 1;
-    min-width: 150px;
-    margin: 10px;
-  }
-  
-  .footer-section1 h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-  
-  .head{
-    color:  var(--blue);
-    text-decoration: underline;
-  }
-  
-  
-  .footer-section1 ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .footer-section1 ul li {
-    margin-bottom: 8px;
-    font-size: 14px;
-    color: var(--blue);
-  }
-  
-  .footer-logo {
-    display: flex;
-    margin: 10px;
-    flex: 1;
-    text-align: center;
-    justify-content: flex-end;
-  }
-  
-  .footer-logo img {
-    width: 70%;
-  }
-  
-  
-  /* Copyright Section */
-  .copyright {
-    text-align: end;
-    background-color: rgb(255, 255, 255, 0.9);
-    padding: 10px 10px;
-    color: var(--blue);
-    font-size: 12px;
-    /* margin-top: 20px; */
-    text-align: end;
-    background-size: 100%;
-    margin-top: 1.5rem;
-  }
-  
-  
   
   
      /* MEDIA QUERIES FOR RESPONSIVENESS */
+
+     @media (min-width:4103px) and (max-width:5464px)
+     {
+      .hero{
+        height: 40vh;
+      }
+     }
+     @media (min-width:2733px) and (max-width:4102px) 
+     {
+       .hero{
+         height: 40vh;
+       }
+     }
+     @media (min-width:2052px) and (max-width:2732px)
+     {
+       .hero{
+         height: 40vh;
+       }
+     }
+     
      @media(max-width: 1024px){
       .box{
         display: block;
@@ -985,31 +896,6 @@
         justify-items: center;
         padding-bottom: 2%;
       }
-      .footer {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-      }
-      .footer-logo img {
-        width: 23%;
-      }
-    
-      .footer-section {
-        margin-bottom: 20px;
-      }
-    
-      .footer-logo {
-        margin: 40px 0;
-      }
-    
-      /* Footer Container Adjustments */
-      .footer-container {
-        flex-direction: row;
-        align-items: center;
-        text-align: center;
-      }
-    
-      
     }
     
     @media (max-width: 480px) {
@@ -1146,12 +1032,6 @@
         text-align: center;
         line-height: 1.5rem;
       }
-    
-      /* Footer Text and Links Font Adjustment */
-      .copyright {
-        font-size: 10px;
-      }
-    
       .useful-links li a {
         font-size: 14px;
       }
@@ -1178,6 +1058,9 @@
         top: 67.5%;
           left: 92%;
       }
+      .image-button{
+      display: none;
+    }
     
       .return { 
         text-align: center;
@@ -1199,11 +1082,6 @@
         padding: 15px;
       }
     
-      /* Footer Text and Links Font Adjustment */
-      .copyright {
-        font-size: 10px;
-      }
-    
       .useful-links li a {
         font-size: 14px;
       }
@@ -1217,14 +1095,13 @@
         button { 
         top: 25.5%;
       }
-    
-      /* adjust footer logo */
-      .footer-container img{
-      width: 35%;
-      }
+  
       #profile1 {
         width: 350px;
         margin-left: -7%;
+    }
+    .image-button{
+      display: none;
     }
     }
       
@@ -1250,19 +1127,20 @@
     
       
       .div1 button{
-        top: 42.5%;
+        top: 28.75%;
         margin-left: -14%;
       }
       .div2 button{
-        top: 42.5%;
-        margin-left: -13%;
+        top: 28.75%;
+        margin-left: -15%;
       }
       .div3 button{
-        top: 66.5%;
+        top: 31.6%;
+        margin-left: -13%;
       }
       .div4 button{
-        top: 66.5%;
-        margin-left: -13%;
+        top: 31.6%;
+        margin-left: -15%;
       }
       #profile1{
         width: 100%;
@@ -1379,22 +1257,22 @@
         width: 100%;
       }
       .div1 button{
-        top: 42.1%;
-        left: 62.5%;
+        top: 27.9%;
+        left: 60.5%;
       }
       .div2 button{
-        top: 42.1%;
-        left: 96%;
+        top: 27.9%;
+        left: 100%;
         width: 27%;
       }
       .div3 button{
-        top: 65.05%;
-          left: 40%;
+        top: 30.56%;
+          left: 31%;
           width: 28%;
       }
       .div4 button{
-        top: 65.05%;
-        left: 93%;
+        top: 30.56%;
+        left: 91%;
       }
       .square-grid h2 {
         font-size: 13px;
@@ -1429,3 +1307,18 @@
     }
     
     
+
+
+    .container, .boxcontainer, .main-content, .footer{
+      max-width: 1500px;
+    }
+     .hero{
+      max-width: 1500px;
+      margin: auto;
+     }
+    .boxcontainer, .main-content{
+      justify-self: center;
+    }
+    .fixed_footer{
+      background-color: var(--blue);
+    }

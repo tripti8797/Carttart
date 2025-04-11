@@ -1,7 +1,16 @@
 :root{
     --blue: rgb(71,145,238);
 }
-  
+.footer-section a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: var(--blue);
+  transition: width 0.3s ease;
+}
   /* General Styles */
   * {
       margin: 0;
@@ -167,9 +176,7 @@
       display: flex;
   }
   
-  .sub-menu-item li {
-      padding: 8px 0;
-  }
+
   
   .sub-menu-item a {
       color: white;
@@ -1555,4 +1562,10 @@
  }
 .boxcontainer, .main-content{
   justify-self: center;
+}
+.fixed_footer{
+  background-color: var(--blue);
+}
+.footer-section a {
+  color: var(--blue) !important;
 }

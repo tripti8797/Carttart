@@ -7,21 +7,334 @@
   integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
   crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+  
+  :root {
+    --primary: #19AF62;
+    --primary-dark: #1e7d64;
+    --primary-light: #e6f7f2;
+    --secondary: #19AF62;
+    --text: #2d3748;
+    --text-light: #718096;
+    --bg: #f8fafc;
+    --white: #ffffff;
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    --transition: all 0.3s ease;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .background {
+  background-color: white;
+  color: var(--text);
+  line-height: 1.6;
+  background-image: radial-gradient(circle at 10% 20%, rgba(44, 150, 120, 0.05) 0%, transparent 20%), radial-gradient(circle at 90% 80%, rgba(255, 126, 95, 0.07) 0%, transparent 20%);
+  background-attachment: fixed;
+  width: 100%;
+}
+  
+  .gradient_overlay {
+    width: 100%;
+    padding: 60px 20px;
+  }
+  
+  .main {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-between;
+    margin-top: 4%;
+  }
+  
+  .box {
+    flex: 1;
+    min-width: 350px;
+    background: var(--white);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    position: relative;
+    overflow: hidden;
+    transition: var(--transition);
+  }
+  
+  .box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  }
+  
+  .box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
+  }
+  
+  .box h5 {
+    color: var(--primary);
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .box h5::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 40px;
+    height: 3px;
+    background: var(--secondary);
+    border-radius: 2px;
+  }
+  
+  .box h2 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    color: var(--text);
+    line-height: 1.3;
+  }
+  
+  .form-group1, .form-group2 {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 25px;
+  }
+  
+  .name, .email, .phone, .subject {
+    flex: 1;
+    position: relative;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 14px 16px;
+    padding-left: 45px;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    font-size: 1rem;
+    transition: var(--transition);
+    background-color: #f9fafb;
+    color: var(--text);
+  }
+  
+  input:focus, textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+    background-color: var(--white);
+    box-shadow: 0 0 0 4px rgba(44, 150, 120, 0.1);
+  }
+  
+  .i-place {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-light);
+    transition: var(--transition);
+  }
+  
+  .form-group3 {
+    position: relative;
+  }
 
-<link rel="stylesheet" href="{% static 'css/contact.css' %}" />
-<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-
+  .form-group3 .i-place {
+    position: absolute;
+    left: 15px;
+    top: 15px; /* Adjust this value to align vertically */
+    transform: none; /* Remove translateY(-50%) for better alignment */
+    color: var(--text-light);
+    transition: var(--transition);
+  }
+  
+  textarea {
+    height: 150px;
+    resize: vertical;
+    padding-left: 45px;
+  }
+  
+  .form-group4 {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 3%;
+  }
+  
+  #send-msg {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    color: white;
+    border: none;
+    padding: 14px 30px;
+    font-size: 1rem;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: var(--transition);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    box-shadow: 0 4px 10px rgba(44, 150, 120, 0.2);
+  }
+  
+  #send-msg:hover {
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(44, 150, 120, 0.3);
+  }
+  
+  #send-msg:active {
+    transform: translateY(0);
+  }
+  
+  #send-msg::after {
+    content: "\f1d8";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+  }
+  
+  .contact_info {
+    flex: 0 0 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  
+  .info_card {
+    background: var(--white);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    position: relative;
+    overflow: hidden;
+    transition: var(--transition);
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  
+  .info_card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  }
+  
+  .info_card::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle, var(--primary-light) 0%, transparent 70%);
+    opacity: 0.6;
+    border-radius: 50%;
+    transform: translate(30%, 30%);
+    z-index: 0;
+  }
+  
+  .contact_icon {
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary-light);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary);
+    font-size: 1.2rem;
+    transition: var(--transition);
+    box-shadow: 0 5px 15px rgba(44, 150, 120, 0.15);
+    flex-shrink: 0;
+  }
+  
+  .info_card:hover .contact_icon {
+    transform: rotate(360deg) scale(1.1);
+    background-color: var(--primary);
+    color: var(--white);
+  }
+  
+  .details {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .details h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  
+  .details p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+  
+  .floating-shape {
+    position: absolute;
+    border-radius: 50%;
+    z-index: 0;
+  }
+  
+  .shape-1 {
+    width: 100px;
+    height: 100px;
+    background: rgba(44, 150, 120, 0.05);
+    top: -30px;
+    left: -30px;
+  }
+  
+  .shape-2 {
+    width: 80px;
+    height: 80px;
+    background: rgba(255, 126, 95, 0.05);
+    bottom: -20px;
+    right: -20px;
+  }
+  
+  .animate-in {
+    animation: fadeSlideUp 0.6s ease forwards;
+    opacity: 0;
+  }
+  
+  @keyframes fadeSlideUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @media (max-width: 768px) {
+    .form-group1, .form-group2 {
+      flex-direction: column;
+      gap: 15px;
+    }
+    
+    .box, .contact_info {
+      min-width: 100%;
+    }
+  }
+</style>
 
 <div class="background">
   <div class="gradient_overlay">
     <div class="main">
-      <div class="box">
+      <div class="box animate-in">
+        <div class="floating-shape shape-1"></div>
+        <div class="floating-shape shape-2"></div>
+        
         <h5>Send Message</h5>
-        <h2>
-          We’d love to hear from you!
-
-        </h2>
+        <h2>We'd love to hear from you!</h2>
 
         <form method="post" action="{% url 'contact' %}">
           {% csrf_token %}
@@ -50,7 +363,7 @@
             <div class="subject">
               <input type="text" id="subject" name="subject" placeholder="Subject" />
               <div class="i-place">
-                <i id="icons" class="fa-solid fa-user"></i>
+                <i id="icons" class="fa-solid fa-tag"></i>
               </div>
             </div>
           </div>
@@ -67,22 +380,25 @@
           </div>
         </form>
       </div>
+      
       <div class="contact_info">
-        <div class="info_card">
+        <div class="info_card animate-in" style="animation-delay: 0.1s;">
           <div class="contact_icon"><i class="fas fa-phone"></i></div>
           <div class="details">
             <h2>Have a query? Call us now.</h2>
             <p>+91 9355032333</p>
           </div>
         </div>
-        <div class="info_card">
-          <div class="contact_icon"><i class="fa fa-envelope-o"></i></div>
+        
+        <div class="info_card animate-in" style="animation-delay: 0.2s;">
+          <div class="contact_icon"><i class="fa-regular fa-envelope"></i></div>
           <div class="details">
             <h2>Need help? Drop an E-mail.</h2>
-            <p> info@carttart.com</p>
+            <p>info@carttart.com</p>
           </div>
         </div>
-        <div class="info_card">
+        
+        <div class="info_card animate-in" style="animation-delay: 0.3s;">
           <div class="contact_icon"><i class="fas fa-map-pin"></i></div>
           <div class="details">
             <h2>Visit Us!</h2>
@@ -91,9 +407,37 @@
           </div>
         </div>
       </div>
-
     </div>
-
   </div>
-  <script src="{% static '/js/script.js' %}"></script>
-  {% endblock content %}
+  
+  <script>
+    // Animate elements when they come into view
+    document.addEventListener('DOMContentLoaded', function() {
+      const animateElements = document.querySelectorAll('.animate-in');
+      
+      animateElements.forEach(element => {
+        element.style.opacity = '1';
+      });
+      
+      // Input focus animation
+      const inputs = document.querySelectorAll('input, textarea');
+      
+      inputs.forEach(input => {
+        input.addEventListener('focus', function() {
+          const iconPlace = this.parentElement.querySelector('.i-place');
+          if (iconPlace) {
+            iconPlace.style.color = 'var(--primary)';
+          }
+        });
+        
+        input.addEventListener('blur', function() {
+          const iconPlace = this.parentElement.querySelector('.i-place');
+          if (iconPlace && !this.value) {
+            iconPlace.style.color = 'var(--text-light)';
+          }
+        });
+      });
+    });
+  </script>
+</div>
+{% endblock content %}

@@ -84,7 +84,7 @@
   /* .Get .nav-item a:hover {
       color: #5b5e5c;
   } */
-  
+ 
   .container {
       display: flex;
       justify-content: space-between;
@@ -148,7 +148,7 @@
       position: absolute;
       top: 100%;
       left: 0;
-      background-color: rgba(221, 55, 24, 0.7);
+      background-color: rgba(221, 55, 24, 0.8);
       padding: 10px;
       border-radius: 5px;
       width: 300px;
@@ -159,9 +159,7 @@
       display: flex;
   }
   
-  .sub-menu-item li {
-      padding: 8px 0;
-  }
+
   
   .sub-menu-item a {
       color: white;
@@ -680,116 +678,35 @@
   
   /* Footer Styles */
   .footer-container {
-    /* background: linear-gradient(to top, #b6b5b5, #ffffff); */
-    background-color: #f7f7f7;
-    padding: 20px 10px;
-    color: var(--red);
-    margin-top: 3rem;
-    box-shadow: 0 10px 24px #000000;
-  
-  }
-  
-  .footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    max-width: 90%;
-    margin: auto;
-    flex-wrap: wrap;
-    padding: 0 1%;
-  }
-  
-  .footer-section {
-    flex: 1;
-    min-width: 150px;
-    margin: 10px;
-  }
-  .footer-section a {
-    text-decoration: none; /* Remove underline */
-    color: var(--red); /* Custom color for links */
-    font-size: 14px;
-  }
-  
-  .footer-section1 a {
-    text-decoration: none;
-    color: var(--red);
-    font-size: 12px;
-  }
-  
-  .footer-section h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
-  }
-  
-  .footer-section ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .footer-section ul li {
-    margin-bottom: 8px;
-    font-size: 14px;
-  }
-  
-  .footer-section1 {
-    flex: 1;
-    min-width: 150px;
-    margin: 10px;
-  }
-  
-  .footer-section1 h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-  
-  .head{
-    color: var(--red);
-    text-decoration: underline;
-  }
-  
-  
-  .footer-section1 ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .footer-section1 ul li {
-    margin-bottom: 8px;
-    font-size: 14px;
     color: var(--red);
   }
   
-  .footer-logo {
-    display: flex;
-    margin: 10px;
-    flex: 1;
-    text-align: center;
-    justify-content: flex-end;
+  /* MEDIA QUERIES FOR RESPONSIVENESS */
+  /* @media (max-width: 2560px) {
+    .hero{
+      height: 49vh;
+    }
+  } */
+  @media (min-width:4103px) and (max-width:5464px)
+  {
+   .hero{
+     height: 40vh;
+   }
+  }
+  @media (min-width:2733px) and (max-width:4102px) 
+  {
+    .hero{
+      height: 40vh;
+    }
+  }
+  @media (min-width:2052px) and (max-width:2732px)
+  {
+    .hero{
+      height: 40vh;
+    }
   }
   
-  .footer-logo img {
-    width: 70%;
-  }
-  
-  
-  /* Copyright Section */
-  .copyright {
-    text-align: end;
-    /* background-color: rgba(193, 190, 190, 0.9); */
-    padding: 10px 10px;
-    color: var(--red);
-    font-size: 12px;
-    /* margin-top: 20px; */
-    text-align: end;
-    background-size: 100%;
-    margin-top: 1.5rem;
-  }
-
-
-  
-    /* MEDIA QUERIES FOR RESPONSIVENESS */
+ 
  @media(max-width: 1024px){
   .card-description1, .card-description2 {
     font-size: 14px;
@@ -886,33 +803,6 @@
   .card{
     justify-items: center;
     padding-bottom: 2%;
-  }
-
-  
-  .footer {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .footer-section {
-    margin-bottom: 20px;
-  }
-
-  .footer-logo {
-    margin: 40px 0;
-  }
-
-  /* Footer Container Adjustments */
-  .footer-container {
-    flex-direction: row;
-    align-items: center;
-    text-align: center;
-  }
-
-  
-  .footer-logo img {
-    width: 23%;
   }
   header{
     height: 70px;
@@ -1135,12 +1025,6 @@
     text-align: center;
     line-height: 1.5rem;
   }
-
-  /* Footer Text and Links Font Adjustment */
-  .copyright {
-    font-size: 10px;
-  }
-
   .useful-links li a {
     font-size: 14px;
   }
@@ -1151,7 +1035,7 @@
     min-width: 100%;
   }
 
-  .div1 button{
+  /* .div1 button{
     top: 37%;
   }
   .div2 button{
@@ -1162,7 +1046,7 @@
   }
   .div4 button{
     top: 41%;
-  }
+  } */
 
   .return { 
     text-align: center;
@@ -1184,11 +1068,6 @@
     padding: 15px;
   }
 
-  /* Footer Text and Links Font Adjustment */
-  .copyright {
-    font-size: 10px;
-  }
-
   .image-text {
     top: 12px;
     left: 9px;
@@ -1206,15 +1085,9 @@
     min-width: 100%;
   }
 
-    button { 
-    top: 25.5%;
+  .image-button{
+    margin-top: 6.5rem;
   }
-
-  /* adjust footer logo */
-  .footer-container img{
-  width: 35%;
-  }
-
 }
   
   
@@ -1239,7 +1112,7 @@
   } */
 
   
-  .div1 button{
+  /* .div1 button{
     top: 34%;
     margin-left: -14.5%;
   }
@@ -1254,7 +1127,7 @@
   .div4 button{
     top: 61%;
     margin-left: -14.5%;
-  }
+  } */
 
   .card_main2 {
     justify-content: space-between;
@@ -1271,6 +1144,9 @@
   margin-top: 1rem;
   font-size: 20px;
 
+}
+.image-button{
+  display: none;
 }
 }
 
@@ -1300,7 +1176,7 @@
 
 
   
-  .div1 button{
+  /* .div1 button{
     top: 37%;
     margin-left: -16%;
   }
@@ -1315,7 +1191,7 @@
   .div4 button{
     top: 62.56%;
     margin-left: -16%;
-  }
+  } */
 
   .div1, .div4{
     width: 234px;
@@ -1348,7 +1224,10 @@
   .collage{
     height: 250px;
   }
-  .div1 button{
+  .hero{
+    height: 250px;
+   }
+  /* .div1 button{
     top: 30%;
     margin-left: -16.5%;
   }
@@ -1363,7 +1242,7 @@
   .div4 button{
     top: 57%;
     margin-left: -16.5%;
-  }
+  } */
   .square-grid h2 {
     font-size: 13px;
     padding: 2%;
@@ -1386,5 +1265,30 @@
   .image-button{
     padding: 0.3rem;
     width: 95px;
+    
+    margin-top: 5.5rem;
+    margin-left: -15%;
   }
 }
+
+
+
+
+
+.container, .boxcontainer, .main-content, .footer, .box{
+  max-width: 1500px;
+}
+ .hero{
+  max-width: 1500px;
+  margin: auto;
+ }
+.boxcontainer, .main-content{
+  justify-self: center;
+}
+.box{
+  justify-self: center;
+}
+.fixed_footer{
+  background-color: var(--red);
+}
+

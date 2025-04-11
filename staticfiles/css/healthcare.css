@@ -21,16 +21,6 @@
     }
   
   /* Navbar Styles */
-  header {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background-color: #fff;
-      transition: background-color 0.3s ease;
-      z-index: 1000;
-      padding: 10px;
-      height: 80px;
-  }
   
   header.scrolled {
       background-color: rgb(255, 255, 255);
@@ -99,7 +89,7 @@
   header.scrolled .Get .nav-item a:hover {
       color: white;
   } */
-  
+/*   
   .container {
       display: flex;
       justify-content: space-between;
@@ -107,7 +97,7 @@
       max-width: 90%;
       margin: 0 auto;
       padding: 0 20px;
-  }
+  } */
   
   .logo img {
       width: 150px;
@@ -169,10 +159,7 @@
       display: flex;
   }
   
-  .sub-menu-item li {
-      padding: 8px 0;
-  }
-  
+
   .sub-menu-item a {
       color: white;
       text-decoration: none; /* Remove underline by default */
@@ -788,116 +775,29 @@
   
   /* Footer Styles */
   .footer-container {
-    /* background: linear-gradient(to top, rgb(0, 41, 36), rgb(0, 108, 95)); */
-    box-shadow: 0 10px 24px #000000;
-    background-color: white;
-    padding: 20px 10px;
-    color: var(--green);
-    margin-top: 3rem;
-  }
-  
-  .footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    max-width: 90%;
-    margin: auto;
-    flex-wrap: wrap;
-    padding: 0 1%;
-  }
-  
-  .footer-section {
-    flex: 1;
-    min-width: 150px;
-    margin: 10px;
-  }
-  .footer-section a {
-    text-decoration: none; /* Remove underline */
-    color: var(--green); /* Custom color for links */
-    font-size: 14px;
-  }
-  
-  .footer-section1 a {
-    text-decoration: none;
-    color: var(--green);
-    font-size: 12px;
-  }
-  
-  .footer-section h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
-  }
-  
-  .footer-section ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .footer-section ul li {
-    margin-bottom: 8px;
-    font-size: 14px;
-  }
-  
-  .footer-section1 {
-    flex: 1;
-    min-width: 150px;
-    margin: 10px;
-  }
-  
-  .footer-section1 h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-  
-  .head{
-    color: var(--green);
-    text-decoration: underline;
-  }
-  
-  
-  .footer-section1 ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .footer-section1 ul li {
-    margin-bottom: 8px;
-    font-size: 14px;
     color: var(--green);
   }
-  
-  .footer-logo {
-    display: flex;
-    margin: 10px;
-    flex: 1;
-    text-align: center;
-    justify-content: flex-end;
-  }
-  
-  .footer-logo img {
-    width: 55%;
-  }
-  
-  
-  /* Copyright Section */
-  .copyright {
-    text-align: end;
-    /* background-color: rgb(255, 255, 255, 0.9); */
-    padding: 10px 10px;
-    color: var(--green);
-    font-size: 12px;
-    /* margin-top: 20px; */
-    text-align: end;
-    background-size: 100%;
-    margin-top: 1.5rem;
-  }
-  
-  
-  
   
   /* MEDIA QUERIES FOR RESPONSIVENESS */
+   @media (min-width:4103px) and (max-width:5464px)
+  {
+   .hero{
+     height: 40vh;
+   }
+  }
+  @media (min-width:2733px) and (max-width:4102px) 
+  {
+    .hero{
+      height: 40vh;
+    }
+  }
+  @media (min-width:2052px) and (max-width:2732px)
+  {
+    .hero{
+      height: 40vh;
+    }
+  }
+  
   @media(max-width: 1024px){
     .box{
       display: block;
@@ -1060,30 +960,7 @@
       justify-items: center;
       padding-bottom: 2%;
     }
-    .footer {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-    .footer-logo img {
-      width: 23%;
-    }
-  
-    .footer-section {
-      margin-bottom: 20px;
-    }
-  
-    .footer-logo {
-      margin: 40px 0;
-    }
-  
-    /* Footer Container Adjustments */
-    .footer-container {
-      flex-direction: row;
-      align-items: center;
-      text-align: center;
-    }
-  
+    
   }
   
   @media (max-width: 480px) {
@@ -1219,11 +1096,6 @@
       line-height: 1.5rem;
     }
   
-    /* Footer Text and Links Font Adjustment */
-    .copyright {
-      font-size: 10px;
-    }
-  
     .useful-links li a {
       font-size: 14px;
     }
@@ -1267,10 +1139,6 @@
       padding: 15px;
     }
   
-    /* Footer Text and Links Font Adjustment */
-    .copyright {
-      font-size: 10px;
-    }
   
     .useful-links li a {
       font-size: 14px;
@@ -1284,11 +1152,6 @@
   
       button { 
       top: 25.5%;
-    }
-  
-    /* adjust footer logo */
-    .footer-container img{
-    width: 35%;
     }
   
   }
@@ -1325,6 +1188,9 @@
     }
     .div4 button{
       top: 66.5%;
+    }
+    .image-button{
+      display: none;
     }
   
   }
@@ -1433,4 +1299,15 @@
     }
   }
   
+ 
   
+  .container, .boxcontainer, .main-content, .footer{
+    max-width: 1500px;
+  }
+   .hero{
+    max-width: 1500px;
+    margin: auto;
+   }
+  .boxcontainer, .main-content{
+    justify-self: center;
+  }

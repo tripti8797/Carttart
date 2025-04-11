@@ -1,6 +1,10 @@
 :root {
     --green: rgb(25,175,98);
   }
+  .footer-section a {
+    color: var(--green) !important;
+  }
+  
   
   /* General Styles */
   * {
@@ -159,10 +163,7 @@
       display: flex;
   }
   
-  .sub-menu-item li {
-      padding: 8px 0;
-  }
-  
+
   .sub-menu-item a {
       color: white;
       text-decoration: none; /* Remove underline by default */

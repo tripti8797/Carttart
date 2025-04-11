@@ -64,12 +64,12 @@
 
     <!-- Footer -->
     <div class="footer-container" id="footer">
-        <footer class="footer">
+        <div class="footer">
             <div class="footer-section">
                 <h3 class="head">Useful Links</h3>
                 <ul>
                     <li><a href="{% url 'healthcare' %}">Health Care</a></li>
-                    <li><a href="{% url 'realestate' %}">Realstate</a></li>
+                    <li><a href="{% url 'realestate' %}">Real Estate</a></li>
                     <li><a href="{% url 'fintech' %}">Fintech</a></li>
                     <li><a href="{% url 'energy' %}">Energy</a></li>
                     <li><a href="{% url 'commerce' %}">E-Commerce</a></li>
@@ -84,19 +84,19 @@
                     <li><a href="{% url 'privacy_policy' %}">Privacy Policy</a></li>
                     <li><a href="{% url 't&c' %}">Terms & Conditions</a></li>
                     <li><a href="{% url 'maintainence' %}">Child Policy</a></li>
-                    <li><a href="{% url 'maintainence' %}">Testimonial</a></li>
-                    <li><a href="{% url 'maintainence' %}">Career</a></li>
+                    <li><a href="{% url 'maintainence' %}">Testimonials</a></li>
+                    <li><a href="{% url 'maintainence' %}">Careers</a></li>
                 </ul>
             </div>
 
             <div class="footer-section">
-                <h3 class="head">Feedback</h3>
+                <h3 class="head">Connect With Us</h3>
                 <ul>
-                    <li><a href="https://facebook.com" target="_blank">Facebook <i class="fa-brands fa-facebook"></i></a></li>
-                    <li><a href="https://twitter.com" target="_blank">Twitter <i class="fa-brands fa-twitter"></i></a></li>
-                    <li><a href="https://instagram.com" target="_blank">Instagram <i class="fa-brands fa-instagram"></i></a></li>
-                    <li><a href="https://linkedin.com" target="_blank">Linkedin <i class="fa-brands fa-linkedin"></i></a></li>
-                    <li><a href="{% url 'login' %}" target="_blank">Login</a></li>
+                    <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+                    <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+                    <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+                    <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+                    <li><a href="{% url 'login' %}">Login / Register</a></li>
                 </ul>
             </div>
 
@@ -105,25 +105,20 @@
                 <ul>
                     <li><strong>Phone:</strong> +91 9355032333</li>
                     <li><strong>Email:</strong> info@carttart.com</li>
-                    <li id="address"><strong>Address:</strong> G1, Plot no. A-61, Sector-16,
-                    Noida, Gautam Buddh Nagar, U.P.- 201301</li>
+                    <li id="address"><strong>Address:</strong> G1, Plot no. A-61, Sector-16, Noida, Gautam Buddh Nagar, U.P.- 201301</li>
                 </ul>
             </div>
-            <div class="footer-logo">
+            
+            <div class="footer-section footer-logo">
                 <a href="#navbar"><img src="{% static 'images/footer-logo.png' %}" alt="Footer Logo"></a>
             </div>
-        </footer>
-
+        </div>
         <div class="fixed_footer">
             <p>© 2024 Carttart Commerce (P).Ltd. All rights reserved.</p>
-            <!-- <div class="media_icons">
-              <img src="{% static 'images/facebook_logo.png' %}" alt="Facebook" />
-              <img src="{% static 'images/X.png' %}" alt="X" />
-              <img src="{% static 'images/instagram_logo.png' %}" alt="Instagram" />
-            </div> -->
-          </div>
+        </div>
     </div>
 
+   
 
     <script src="{% static 'js/script.js' %}"></script>
 </body>

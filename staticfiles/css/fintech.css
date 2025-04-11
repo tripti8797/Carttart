@@ -155,10 +155,6 @@
       display: flex;
   }
   
-  .sub-menu-item li {
-      padding: 8px 0;
-  }
-  
   .sub-menu-item a {
       color: white;
       text-decoration: none; /* Remove underline by default */
@@ -703,114 +699,30 @@
   
   /* Footer Styles */
   .footer-container {
-    background-color: #f7f7f7;
-    padding: 20px 10px;
-    color: var(--blue);
-    margin-top: 3rem;
-    box-shadow: 0 10px 24px #000000;
-  
-  }
-  
-  .footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    max-width: 90%;
-    margin: auto;
-    flex-wrap: wrap;
-    padding: 0 1%;
-  }
-  
-  .footer-section {
-    flex: 1;
-    min-width: 150px;
-    margin: 10px;
-  }
-  .footer-section a {
-    text-decoration: none; /* Remove underline */
-    color: var(--blue); /* Custom color for links */
-    font-size: 14px;
-  }
-  
-  .footer-section1 a {
-    text-decoration: none;
-    color: var(--blue);
-    font-size: 12px;
-  }
-  
-  .footer-section h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
-  }
-  
-  .footer-section ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .footer-section ul li {
-    margin-bottom: 8px;
-    font-size: 14px;
-  }
-  
-  .footer-section1 {
-    flex: 1;
-    min-width: 150px;
-    margin: 10px;
-  }
-  
-  .footer-section1 h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-  
-  .head{
-    color: var(--blue);
-    text-decoration: underline;
-  }
-  
-  
-  .footer-section1 ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .footer-section1 ul li {
-    margin-bottom: 8px;
-    font-size: 14px;
     color: var(--blue);
   }
   
-  .footer-logo {
-    display: flex;
-    margin: 10px;
-    flex: 1;
-    text-align: center;
-    justify-content: flex-end;
-  }
-  
-  .footer-logo img {
-    width: 70%;
-  }
-  
-  
-  /* Copyright Section */
-  .copyright {
-    text-align: end;
-    /* background-color: rgba(193, 190, 190, 0.9); */
-    padding: 10px 10px;
-    color: var(--blue);
-    font-size: 12px;
-    /* margin-top: 20px; */
-    text-align: end;
-    background-size: 100%;
-    margin-top: 1.5rem;
-  }
-
 /* fintech */
   /* MEDIA QUERIES FOR RESPONSIVENESS */
+  @media (min-width:4103px) and (max-width:5464px)
+  {
+   .hero{
+     height: 40vh;
+   }
+  }
+  @media (min-width:2733px) and (max-width:4102px) 
+  {
+    .hero{
+      height: 40vh;
+    }
+  }
+  @media (min-width:2052px) and (max-width:2732px)
+  {
+    .hero{
+      height: 40vh;
+    }
+  }
+  
   @media(max-width: 1024px){
     .box {
       display: flex;
@@ -929,6 +841,9 @@
     .Get .nav-item a{
       color: var(--blue);
     }
+    .hero-content h1{
+      font-size: 40px;
+    }
 
   
     .boxcontainer{
@@ -976,33 +891,6 @@
     .card{
       justify-items: center;
       padding-bottom: 2%;
-    }
-
-    
-    .footer {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-  
-    .footer-section {
-      margin-bottom: 20px;
-    }
-  
-    .footer-logo {
-      margin: 40px 0;
-    }
-  
-    /* Footer Container Adjustments */
-    .footer-container {
-      flex-direction: row;
-      align-items: center;
-      text-align: center;
-    }
-
-    
-    .footer-logo img {
-      width: 23%;
     }
     
   }
@@ -1140,10 +1028,7 @@
       line-height: 1.5rem;
     }
   
-    /* Footer Text and Links Font Adjustment */
-    .copyright {
-      font-size: 10px;
-    }
+   
   
     .useful-links li a {
       font-size: 14px;
@@ -1188,11 +1073,6 @@
       padding: 15px;
     }
   
-    /* Footer Text and Links Font Adjustment */
-    .copyright {
-      font-size: 10px;
-    }
-  
     .useful-links li a {
       font-size: 14px;
     }
@@ -1206,12 +1086,6 @@
       button { 
       top: 25.5%;
     }
-  
-    /* adjust footer logo */
-    .footer-container img{
-    width: 35%;
-    }
-  
   }
     
     
@@ -1268,6 +1142,9 @@
     margin-top: 1rem;
     font-size: 20px;
   
+  }
+  .image-button{
+    display: none;
   }
 }
   
@@ -1384,4 +1261,22 @@
       padding: 0.3rem;
       width: 95px;
     }
+  }
+
+
+  .container, .boxcontainer, .main-content, .footer, .box{
+    max-width: 1500px;
+  }
+   .hero{
+    max-width: 1500px;
+    margin: auto;
+   }
+  .boxcontainer, .main-content{
+    justify-self: center;
+  }
+  .box{
+    justify-self: center;
+  }
+  .fixed_footer{
+    background-color: var(--blue);
   }
