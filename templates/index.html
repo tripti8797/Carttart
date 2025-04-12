@@ -222,8 +222,8 @@
     <div class="box-img">
       <img class="business-image" src="{% static 'images/card-2.svg' %}" alt="Finance Work">
     </div>
-    <div class="card_content" id="card_content2">
-      <div class="section-header2">
+    <div class="card_content card_content2 header2" id="card_content2">
+      <div class="section-header2  header2">
         <img src="{% static 'images/point-2.png' %}" alt="business-icon">
         <h2 class="section-title">Financial Management & Advisory</h2>
       </div>
@@ -402,49 +402,34 @@
 </div>
 
 <!-- Success -->
-<div class="success-container">
-  <div class="success-section">
-    <h2 class="animated-underline ">Proven Success<br> Measurable Impact</h2>
-    <!-- <img src="{% static 'images/line.png' %}" alt="line"> -->
-    <p>Numbers speak louder than words! Our expert consulting services have transformed businesses, optimized strategies, sustainable growth.</p>
-  </div>
-
-  <div class="stats-section">
-    <div class="stat-box">
-      <div class="blue">
-        <h4>2K+</h4>
-      </div>
-      <div class="blu">
-        <p>Businesses Transformed with Our Expert Consulting</p>
-      </div>
+    <div class="success-container">
+        <div class="proven-box">
+            <h1>Proven Success Measurable Impact</h1>
+            <p>Numbers speak louder than words! Our expert consulting services have transformed businesses, optimized strategies, and delivered sustainable growth.</p>
+        </div>
+        
+        <div class="ratings-box">
+            <div class="stat-box" style="--order: 1;">
+                <div class="stat-number">2K+</div>
+                <div class="stat-text">Businesses Transformed with Our Expert Consulting</div>
+            </div>
+            
+            <div class="stat-box" style="--order: 2;">
+                <div class="stat-number">4.8/5</div>
+                <div class="stat-text">Client Satisfaction Rating Across All Services</div>
+            </div>
+            
+            <div class="stat-box" style="--order: 3;">
+                <div class="stat-number">90%</div>
+                <div class="stat-text">Success Rate in Business Growth & Strategy Execution</div>
+            </div>
+            
+            <div class="stat-box" style="--order: 4;">
+                <div class="stat-number">100%</div>
+                <div class="stat-text">Compliance & Risk Management Assurance</div>
+            </div>
+        </div>
     </div>
-
-    <div class="stat-box">
-      <div class="yellow">
-        <h4>90%</h4>
-      </div>
-      <div class="ylo">
-        <p>Success Rate in Business Growth & Strategy Execution</p>
-      </div>
-    </div>
-    <div class="stat-box">
-      <div class="green">
-        <h4>4.8/5</h4>
-      </div>
-      <div class="grn">
-        <p>Client Satisfaction Rating Across All Services</p>
-      </div>
-    </div>
-    <div class="stat-box">
-      <div class="red">
-        <h4>100%</h4>
-      </div>
-      <div class="rd">
-        <p>Compliance & Risk Management Assurance</p>
-      </div>
-    </div>
-  </div>
-</div>
-
 <script src="{% static 'js/script.js' %}"></script>
+<script src="{% static 'js/success.js' %}"></script>
 {% endblock %}

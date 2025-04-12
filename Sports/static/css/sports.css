@@ -1,5 +1,5 @@
 :root{
-    --blue: rgb(71,145,238);
+    --blue: #4791ee;
 }
 .footer-section a::after {
   content: '';
@@ -10,6 +10,10 @@
   height: 2px;
   background-color: var(--blue);
   transition: width 0.3s ease;
+}
+.fized{
+  background-color: var(--blue);
+  width: 100%;
 }
   /* General Styles */
   * {
@@ -1554,10 +1558,10 @@
 
 
 .container, .boxcontainer, .main-content, .footer{
-  max-width: 1500px;
+  max-width: 1400px;
 }
  .hero{
-  max-width: 1500px;
+  max-width: 1400px;
   margin: auto;
  }
 .boxcontainer, .main-content{

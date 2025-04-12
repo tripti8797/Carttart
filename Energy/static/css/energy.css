@@ -14,6 +14,10 @@
   background-color: var(--green); /* Color of the underline */
   transition: width 0.3s ease; /* Smooth animation for width */
 }
+.fized{
+  background-color: var(--green);
+  width: 100%;
+}
   /* General Styles */
   * {
       margin: 0;
@@ -1329,10 +1333,10 @@
 }
 
 .container, .boxcontainer, .main-content, .footer, .box{
-  max-width: 1500px;
+  max-width: 1400px;
 }
  .hero{
-  max-width: 1500px;
+  max-width: 1400px;
   margin: auto;
  }
 .boxcontainer, .main-content{

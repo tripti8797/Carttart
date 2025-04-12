@@ -1,5 +1,5 @@
 :root{
-    --red: rgb(221, 55, 24);
+    --red: #dd3718;
 }
   
   /* General Styles */
@@ -1276,10 +1276,10 @@
 
 
 .container, .boxcontainer, .main-content, .footer, .box{
-  max-width: 1500px;
+  max-width: 1400px;
 }
  .hero{
-  max-width: 1500px;
+  max-width: 1400px;
   margin: auto;
  }
 .boxcontainer, .main-content{
@@ -1312,4 +1312,8 @@
 
 .footer-section a:hover::after {
   width: 100%; /* Expand the underline to full width on hover */
+}
+.fized{
+  background-color: var(--red);
+  width: 100%;
 }

@@ -4,6 +4,10 @@
   .footer-section a {
     color: var(--green) !important;
   }
+  .fized{
+    background-color: var(--green);
+    width: 100%;
+  }
   
   
   /* General Styles */
@@ -1306,10 +1310,10 @@
  
   
   .container, .boxcontainer, .main-content, .footer{
-    max-width: 1500px;
+    max-width: 1400px;
   }
    .hero{
-    max-width: 1500px;
+    max-width: 1400px;
     margin: auto;
    }
   .boxcontainer, .main-content{

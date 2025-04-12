@@ -22,8 +22,20 @@ window.addEventListener('scroll', function () {
     arrowElement.classList.remove('scrolled');
   }
 }); 
- 
- // Autoslider
+
+document.addEventListener("DOMContentLoaded", function () {
+  const header = document.querySelector("header");
+
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 50) {
+      header.classList.add("scrolled"); // Add the 'scrolled' class when scrolling down
+    } else {
+      header.classList.remove("scrolled"); // Remove the 'scrolled' class when at the top
+    }
+  });
+});
+
+// Autoslider
 document.addEventListener('DOMContentLoaded', function() {
   const slides = document.querySelectorAll('.slide');
   const sections = document.querySelectorAll('.section');

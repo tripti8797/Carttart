@@ -9,44 +9,57 @@
     background-color: #f8f9fa;
     color: #212529;
   }
-  
   .company-slide-container {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
-    padding: 40px 20px;
-  }
-  
+    padding: 40px 0px;
+      /* Add a semi-transparent gradient background to the container */
+  background: linear-gradient(120deg, rgba(255, 255, 255, 0.8) 0%, rgba(240, 255, 240, 0.9) 100%);
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  margin-block: 2rem;
+}
+
+
   .company-slide-section-title {
     text-align: center;
     margin-bottom: 50px;
     position: relative;
   }
   
+  /* Add a glowing effect to the section title */
   .company-slide-section-title h2 {
     font-size: 2.5rem;
     font-weight: 700;
-    color: #016505;
+    color: #6E7D83; /* Changed to grayish */
     position: relative;
     display: inline-block;
+    text-shadow: 0 2px 10px rgba(110, 125, 131, 0.2); /* Adjusted shadow */
   }
   
-  .company-slide-section-title h2:after {
-    content: "";
-    position: absolute;
-    width: 60px;
-    height: 4px;
-    background: linear-gradient(90deg, #90e647, #20b425);
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    border-radius: 2px;
-  }
+ /* Make the underline more distinctive */
+ .company-slide-section-title h2:after {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #9CA3AF, #6E7D83, #9CA3AF); /* Grayish gradient */
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
+  box-shadow: 0 2px 8px rgba(32, 180, 37, 0.3);
+}
+
   
   .company-slide-logo-slider-container {
     width: 100%;
     overflow: hidden;
     position: relative;
     padding: 40px 0;
+    /* Add a subtle gradient to the slider area */
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.9));
+    border-radius: 10px;
   }
   
   .company-slide-logo-track {
@@ -80,7 +93,7 @@
     transition: all 0.3s ease;
   }
   
-  .company-slide-logo-slide:hover img {
+  .company-slide-logo-slide img:hover {
     filter: grayscale(0%);
     opacity: 1;
     transform: scale(1.05);
@@ -89,6 +102,12 @@
   /* Pause animation on hover */
   .company-slide-logo-track:hover {
     animation-play-state: paused;
+  }
+  @media (max-width: 1200px) {
+    .company-slide-container {
+      padding: 40px 15px;
+  }
+    
   }
   
   @media (max-width: 768px) {
@@ -103,11 +122,10 @@
   
   @media (max-width: 480px) {
     .company-slide-logo-slide img {
-      max-width: 120px;
+      max-width: 52px;
     }
     
     .company-slide-logo-slide {
       padding: 0 10px;
     }
   }
-  

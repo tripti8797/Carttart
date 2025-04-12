@@ -1,4 +1,5 @@
 /* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 * {
     margin: 0;
@@ -30,6 +31,11 @@ header {
     box-shadow: 0 -10px 24px #000000;
 }
 
+header.scrolled {
+  background-color: rgba(255, 255, 255, 0.6); /* Fallback for older browsers */
+  backdrop-filter: blur(10px); /* Modern browsers */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+}
 
 .Get .nav-item {
     background: #19AF62;
@@ -433,12 +439,6 @@ padding: 0 20px;
   .image-container{
     height: 208px;
   }
-  
-  
-  img{
-    width: 40%;
-  }
-  
   .image-overlay{
     left: 17px;
     margin-bottom: 0rem;
@@ -475,7 +475,7 @@ padding: 0 20px;
 }
 
 .container{
-  max-width: 1500px;
+  max-width: 1400px;
 }
 /* .footer-container{
   position: absolute;
@@ -497,7 +497,7 @@ padding: 0 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  max-width: 1200px; /* Reduced max-width for more compact layout */
+ max-width: 1400px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -587,8 +587,11 @@ padding: 0 20px;
   transform: scale(1.05);
 }
 
+.fized{
+  background-color: var(--green);
+  width: 100%;
+}
 .fixed_footer {
-  background-color: var(--green); /* Original color */
   color: white;
   text-align: left;
   padding: 10px 15px;
@@ -596,6 +599,9 @@ padding: 0 20px;
   font-size: 14px;
   position: relative;
   margin-top: 15px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 10px 15px;
 }
 
 .fixed_footer p {
@@ -654,6 +660,8 @@ padding: 0 20px;
   .footer-section a, .footer-section ul li {
     font-size: 14px;
   }
+
+  
 }
 
 @media (max-width: 768px) {
@@ -697,9 +705,6 @@ padding: 0 20px;
 }
 
 @media (max-width: 575px) {
-  .footer-section {
-    width: 100% !important;
-  }
   
   .footer-logo img {
     width: 100px;
