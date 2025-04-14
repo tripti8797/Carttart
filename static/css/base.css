@@ -713,3 +713,20 @@ padding: 0 20px;
 .footer-section a {
   color: var(--green) !important;
 }
+.profile-img:hover,
+.profile-img2:hover {
+ transform: scale(1.1);
+}
+.profile-img2 {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  height: 400px;
+  transition: transform 0.3s ease;
+}
+div#card_content2 {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.card_content{
+  background-color: rgba(255, 255, 255, 0.5);
+}

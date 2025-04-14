@@ -388,20 +388,23 @@
       margin-bottom: 10px;
       background-repeat: no-repeat;
       background-size: contain;
+      background: linear-gradient(90deg, #3498db, #2ecc71);
+      color: white;
+      padding: 12px 56px;
+      border-radius: 5px;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+      font-size: 42px;
+      width: fit-content;
     }
     
     .card-title2 {
-      color: var(--green);
       text-align: left;
-      padding-left: 0px;
     }
     
-    .card-title {
-      color: var(--green);
+    .card-title2 {
       text-align: right;
       background-position: right;
-      padding-right: 20px;
-    
+      margin-bottom: 3%;
     }
     
     h1 {
@@ -484,7 +487,82 @@
     padding: 1rem;
     line-height: 1.9rem;
   }
-  
+  .box-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem;
+    position: relative; /* Needed for positioning */
+    z-index: 1; /* Keep content above background */
+    transition: all 0.4s ease; /* Smooth transition */
+    border-radius: 8px; /* Optional rounded corners */
+    overflow: hidden; /* Contain everything */
+    margin-block: 26px;
+}
+
+/* Energy background image (hidden by default) */
+.box-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'); /* Energy theme image */
+    background-size: cover;
+    background-position: center;
+    opacity: 0; /* Start invisible */
+    transition: opacity 0.4s ease;
+    z-index: -1; /* Behind content */
+}
+
+/* Show energy image on hover */
+.box-content:hover::before {
+    opacity: 0.8; /* Adjust transparency */
+}
+
+/* Semi-transparent overlay for better text readability */
+.box-content::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.3); /* Dark overlay */
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: -1;
+}
+
+.box-content:hover::after {
+    opacity: 1; /* Show overlay on hover */
+}
+
+/* Your original text styles - now with hover effects */
+.box-content h1 {
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    transition: all 0.4s ease;
+    text-shadow: none;
+}
+
+.box-content p {
+    font-size: 16px;
+    padding: 1rem;
+    line-height: 1.9rem;
+    transition: all 0.4s ease;
+}
+
+/* Optional: Enhance text visibility on hover */
+.box-content:hover h1 {
+    text-shadow: 0 1px 3px rgba(0,0,0,0.5); /* Better contrast */
+    color: #fff; /* White text on hover */
+}
+
+.box-content:hover p {
+    color: #fff; /* White text on hover */
+}
   /* Collage Container */
   .collage {
     width: 100%;

@@ -7,6 +7,7 @@
 {% block content %}
 <link rel="stylesheet" href="{% static 'css/healthcare.css' %}" />
 <link rel="stylesheet" href="{% static 'css/slider.css' %}">
+<link rel="stylesheet" href="{% static 'css/selector.css' %}">
 <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 
  <!-- Hero Section with Video Background -->
@@ -20,6 +21,51 @@
       <p>Your Trusted Partner In Healthcare.</p>
     </div>
   </section>
+    <!-- Section Selector -->
+    <div class="section-selector">
+      <div class="section" data-image="solar-slider.jpg">
+        <div class="sec-img">
+          <img src="{% static 'images/health-insurance 1.svg' %}" alt="Health Insurance">
+        </div>
+        <div class="sec-text">Healthcare</div>
+      </div>
+      <div class="section" data-image="hydro-slider.jpg">
+        <div class="sec-img">
+          <img src="{% static 'images/price 1.svg' %}" alt="price">
+        </div>
+        <div class="sec-text">Realestate</div>
+      </div>
+      <div class="section" data-image="wind-slider.jpg">
+        <div class="sec-img">
+          <img src="{% static 'images/bag 1.svg' %}" alt="bag">
+        </div>
+        <div class="sec-text">Fintech</div>
+      </div>
+      <div class="section" data-image="electromagnetic-slider.jpg">
+        <div class="sec-img">
+          <img src="{% static 'images/factory 1.svg' %}" alt="factory">
+        </div>
+        <div class="sec-text">Energy</div>
+      </div>
+      <div class="section" data-image="chemical-slider.jpg">
+        <div class="sec-img">
+          <img src="{% static 'images/grocery-store 1.svg' %}" alt="grocery-store">
+        </div>
+        <div class="sec-text">E-Commerce</div>
+      </div>
+      <div class="section" data-image="electromagnetic-slider.jpg">
+        <div class="sec-img">
+          <img src="{% static 'images/game-console 1.svg' %}" alt="game">
+        </div>
+        <div class="sec-text">E-Sports</div>
+      </div>
+      <div class="section" data-image="chemical-slider.jpg">
+        <div class="sec-img">
+          <img src="{% static 'images/traveling 1.svg' %}" alt="travel">
+        </div>
+        <div class="sec-text">Tours&Travels</div>
+      </div>
+    </div>
 
   <!-- MAIN CONTENT2 -->
   <main id="content">
@@ -58,7 +104,7 @@
                 <img src="{% static 'images/bio1.jpg' %}" class="profile-img" alt="Fighting" />
               </div>
               <div class="container_card_content2">
-                <h1 class="card-title">LIFE SCIENCE</h1>
+                <h1 class="card-title1">LIFE SCIENCE</h1>
                 <h5 class="card-description2">
                   Life Science is the study of living organisms, including
                   their structure, function, growth, and evolution. It
@@ -67,71 +113,6 @@
                   disciplines like biology, zoology, and genetics,
                   contributing to advancements in healthcare, agriculture, and
                   environmental conservation.
-                </h5>
-              </div>
-            </div>
-          </div>
-          <!-- Collage -->
-          <div class="box">
-            <div class="box-content">
-              <h1>SERVICES WE OFFER</h1>
-              <p>
-                We offer a comprehensive range of services designed to meet your
-                healthcare needs, including laboratory tests that provide essential
-                diagnostic information, a selection of medications to support your
-                treatment, and the ability to place orders with a valid prescription.
-                Additionally, our online doctor consultation service allows you to
-                connect with healthcare professionals conveniently, ensuring you
-                receive expert advice and guidance from the comfort of your home.
-              </p>
-            </div>
-
-            <div class="collage">
-              <!-- Square Grid -->
-              <div class="square-grid">
-                <!-- Div 1 -->
-                <div class="div1">
-                  <h2>LAB TESTS</h2>
-                  <img src="{% static 'images/lab_test3.jpg' %}" alt="Lab Tests" />
-                  <button class="image-button">Learn More</button>
-                </div>
-                <!-- Div 2 -->
-                <div class="div2">
-                  <h2>MEDICINES</h2>
-                  <img src="{% static 'images/med.jpg' %}" alt="Medicines" />
-                  <button class="image-button">Learn More</button>
-                </div>
-                <!-- Div 3 -->
-                <div class="div3">
-                  <h2>ONLINE DOCTOR CONSULTATION</h2>
-                  <img src="{% static 'images/odc.jpg' %}" alt="Online Doctor Consultation" />
-                  <button class="image-button">Learn More</button>
-                </div>
-                <!-- Div 4 -->
-                <div class="div4">
-                  <h2>ORDER WITH PRESCRIPTION</h2>
-                  <img src="{% static 'images/owp2.jpg' %}" alt="Order With Prescription" />
-                  <button class="image-button">Learn More</button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-          <!-- Third Image and Content -->
-          <div class="card_main2">
-            <div class="container_card">
-              <div class="container_card_pofilephoto1" id="pc_image">
-                <img src="{% static 'images/personal_care.jpg' %}" class="profile-img" alt="Fighting" />
-              </div>
-              <div class="container_card_content2">
-                <h1 class="card-title">PERSONAL CARE</h1>
-                <h5 class="card-description2">
-                  Personal care is about nurturing your well-being with products
-                  designed for every need, from skincare to hygiene. Explore
-                  solutions for women, men, babies, and oral health, ensuring
-                  comprehensive care for all. Prioritize health and confidence
-                  with tailored personal care essentials.
                 </h5>
               </div>
             </div>
@@ -167,7 +148,7 @@
                 <img src="{% static 'images/ayurvedic_care3.jpg' %}" class="profile-img" alt="Fighting" />
               </div>
               <div class="container_card_content2">
-                <h1 class="card-title">AYURVEDIC CARE</h1>
+                <h1 class="card-title3">AYURVEDIC CARE</h1>
                 <h5 class="card-description2">
                   Ayurvedic care brings the essence of nature and tradition to
                   your wellness journey with herbal, holistic remedies. Experience
@@ -183,7 +164,7 @@
           <div class="card_main">
             <div class="container_card">
               <div class="container_card_content">
-                <h1 class="card-title2">FITNESS</h1>
+                <h1 class="card-title4">FITNESS</h1>
                 <h5 class="card-description1">
                   Fitness is about achieving balance and strength through a
                   healthy, active lifestyle. Fuel your goals with top-quality
@@ -201,11 +182,74 @@
             </div>
           </div>
 
-
+  <!-- Third Image and Content -->
+  <div class="card_main2">
+    <div class="container_card">
+      <div class="container_card_pofilephoto1" id="pc_image">
+        <img src="{% static 'images/personal_care.jpg' %}" class="profile-img" alt="Fighting" />
+      </div>
+      <div class="container_card_content2">
+        <h1 class="card-title5">PERSONAL CARE</h1>
+        <h5 class="card-description2">
+          Personal care is about nurturing your well-being with products
+          designed for every need, from skincare to hygiene. Explore
+          solutions for women, men, babies, and oral health, ensuring
+          comprehensive care for all. Prioritize health and confidence
+          with tailored personal care essentials.
+        </h5>
+      </div>
+    </div>
+  </div>
         </div>
+            <!-- Collage -->
+    <div class="box">
+      <div class="box-content">
+        <h1>SERVICES WE OFFER</h1>
+        <p>
+          We offer a comprehensive range of services designed to meet your
+          healthcare needs, including laboratory tests that provide essential
+          diagnostic information, a selection of medications to support your
+          treatment, and the ability to place orders with a valid prescription.
+          Additionally, our online doctor consultation service allows you to
+          connect with healthcare professionals conveniently, ensuring you
+          receive expert advice and guidance from the comfort of your home.
+        </p>
+      </div>
+
+      <div class="collage">
+        <!-- Square Grid -->
+        <div class="square-grid">
+          <!-- Div 1 -->
+          <div class="div1">
+            <h2>LAB TESTS</h2>
+            <img src="{% static 'images/lab_test3.jpg' %}" alt="Lab Tests" />
+            <button class="image-button">Learn More</button>
+          </div>
+          <!-- Div 2 -->
+          <div class="div2">
+            <h2>MEDICINES</h2>
+            <img src="{% static 'images/med.jpg' %}" alt="Medicines" />
+            <button class="image-button">Learn More</button>
+          </div>
+          <!-- Div 3 -->
+          <div class="div3">
+            <h2>ONLINE DOCTOR CONSULTATION</h2>
+            <img src="{% static 'images/odc.jpg' %}" alt="Online Doctor Consultation" />
+            <button class="image-button">Learn More</button>
+          </div>
+          <!-- Div 4 -->
+          <div class="div4">
+            <h2>ORDER WITH PRESCRIPTION</h2>
+            <img src="{% static 'images/owp2.jpg' %}" alt="Order With Prescription" />
+            <button class="image-button">Learn More</button>
+          </div>
+        </div>
+      </div>
+    </div>
       </div>
     </section>
   </main>
+
 <!-- partners-slider -->
 <div class="company-slide-container">
   <div class="company-slide-section-title">
@@ -289,6 +333,7 @@
         </div>
         {% endfor %}
       </div>
+
   </div>
 </div>
 

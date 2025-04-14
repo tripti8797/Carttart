@@ -408,22 +408,21 @@
       background-repeat: no-repeat;
       background-size: contain;
       font-weight: 700;
+      font-size: 33px;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+      padding: 12px 56px;
+      width: fit-content;
+      background: linear-gradient(90deg, rgba(89,152,230,1), rgba(30,103,197,1));
+      color: white;
     }
     
     .card-title2 {
-      background-image: url('../images/blue.png');
-      color: var(--blue);
       text-align: left;
-      padding-left: 0;
     }
     
     .card-title {
-      background-image: url('../images/green.png');
-      color: var(--blue);
       text-align: right;
       background-position: right;
-      padding-right: 20px;
-    
     }
     
     h1 {
@@ -488,8 +487,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
-    padding: 3rem;
     padding-left: 0;
   }
   
@@ -504,7 +501,80 @@
     padding: 1rem;
     line-height: 1.9rem;
   }
-  
+  .box-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 0;
+    position: relative;
+    z-index: 1;
+    transition: all 0.5s ease;
+    overflow: hidden;
+    background-color: #fff;
+    margin-block: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+}
+
+/* Travel background image */
+.box-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('https://images.unsplash.com/photo-1501554728187-ce583db33af7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: -1;
+}
+
+/* Dark overlay for better text visibility */
+.box-content::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.3);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: -1;
+}
+
+.box-content:hover::before {
+    opacity: 0.8;
+}
+
+.box-content:hover::after {
+    opacity: 0.6;
+}
+
+/* Text styling */
+.box-content h1 {
+    color: var(--blue);
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    transition: all 0.5s ease;
+}
+
+.box-content p {
+    font-size: 18px;
+    padding: 1rem;
+    line-height: 1.9rem;
+    transition: all 0.5s ease;
+}
+
+/* Text color change on hover */
+.box-content:hover h1,
+.box-content:hover p {
+    color: #fff;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
   /* Collage Container */
   .collage {
     width: 100%;
@@ -1340,3 +1410,7 @@
     .fixed_footer{
       background-color: var(--blue);
     }
+     /*------------------------- seclector-------------- */
+ .sec-text{
+  color: var(--blue);
+}

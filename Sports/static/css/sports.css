@@ -397,26 +397,25 @@
       margin-bottom: 10px;
       background-repeat: no-repeat;
       background-size: contain;
+      font-size: 33px;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+      padding: 12px 56px;
+      width: fit-content;
+      background: linear-gradient(135deg, #358ad0, #4ea1e0, #8fd1ff);
+      color: white;
     }
     
     .card-title2 {
-      color: var(--blue);
       text-align: left;
-      padding-left: 0;
+
     }
     
     .card-title {
-      color: var(--blue);
       text-align: right;
       background-position: right;
-      padding-right: 20px;
     
     }
-    
-    h1 {
-      margin-left: 20px;
-    }
-    
+
     .card-description1{
       color: black;
     }
@@ -491,6 +490,90 @@
     padding: 1rem;
     line-height: 1.9rem;
   }
+  .box-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem;
+    position: relative; /* Needed for positioning */
+    z-index: 1; /* Keep content above background */
+    transition: all 0.5s ease; /* Smooth transition */
+    border-radius: 8px; /* Optional rounded corners */
+    overflow: hidden; /* Contain everything */
+    background-color: #fff; /* Fallback background */
+    margin-block: 19px;
+}
+
+/* Sports background image (hidden by default) */
+.box-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* Football/Soccer */
+background-image: url('https://images.unsplash.com/photo-1574629810360-7efbbe195018?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+
+
+/* Running */
+ /* Sports theme image */
+    background-size: cover;
+    background-position: center;
+    opacity: 0; /* Start invisible */
+    transition: opacity 0.5s ease;
+    z-index: -1; /* Behind content */
+}
+
+/* Show sports image on hover */
+.box-content:hover::before {
+    opacity: 0.8; /* Adjust transparency */
+}
+
+/* Semi-transparent overlay for better text readability */
+.box-content::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.4); /* Dark overlay */
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: -1;
+}
+
+.box-content:hover::after {
+    opacity: 0.7; /* Show overlay on hover */
+}
+
+/* Your original text styles */
+.box-content h1 {
+    color: var(--blue);
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    transition: all 0.5s ease;
+    text-shadow: none;
+}
+
+.box-content p {
+    font-size: 18px;
+    padding: 1rem;
+    line-height: 1.9rem;
+    transition: all 0.5s ease;
+    color: #333; /* Default text color */
+}
+
+/* Enhance text visibility on hover */
+.box-content:hover h1 {
+    color: #fff; /* White text on hover */
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5); /* Better contrast */
+}
+
+.box-content:hover p {
+    color: #fff; /* White text on hover */
+}
   
   /* Collage Container */
   .collage {
@@ -1572,4 +1655,8 @@
 }
 .footer-section a {
   color: var(--blue) !important;
+}
+ /*------------------------- seclector-------------- */
+ .sec-text{
+  color: var(--blue);
 }

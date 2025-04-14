@@ -402,31 +402,29 @@ header.scrolled .sub-menu-item a {
 .card-title {
   font-family: sans-serif;
   font-weight: 500;
-  font-size: 25px;
   padding: 10px;
   border-radius: 10px;
   margin-bottom: 10px;
   background-repeat: no-repeat;
   background-size: contain;
+  font-size: 42px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  padding: 12px 56px;
+  width: fit-content;
+  background: linear-gradient(135deg, #358ad0, #4ea1e0, #8fd1ff);
+  color: white;
 }
 
 .card-title2 {
-  color: var(--yellow);
   text-align: left;
-  padding-left: 0;
 }
 
 .card-title {
-  color: var(--yellow);
   text-align: right;
   background-position: right;
-  padding-right: 20px;
 
 }
 
-h1 {
-  margin-left: 20px;
-}
 
 .card-description1 {
   color: black;
@@ -505,6 +503,88 @@ h1 {
   font-size: 16px;
   padding: 1rem;
   line-height: 1.9rem;
+}
+.box-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem;
+  position: relative; /* Needed for positioning */
+  z-index: 1; /* Keep content above background */
+  transition: all 0.4s ease; /* Smooth transition */
+  border-radius: 8px; /* Optional rounded corners */
+  overflow: hidden; /* Contain everything */
+  background-color: #fff; /* Fallback background */
+  margin-block: 19px;
+}
+
+/* E-commerce background image (hidden by default) */
+.box-content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'); /* E-commerce theme image */
+  background-size: cover;
+  background-position: center;
+  opacity: 0; /* Start invisible */
+  transition: opacity 0.4s ease;
+  z-index: -1; /* Behind content */
+}
+
+/* Show e-commerce image on hover */
+.box-content:hover::before {
+  opacity: 0.8; /* Adjust transparency */
+}
+
+/* Semi-transparent overlay for better text readability */
+.box-content::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.3); /* Dark overlay */
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: -1;
+}
+
+.box-content:hover::after {
+  opacity: 0.6; /* Show overlay on hover */
+      
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Your original text styles */
+.box-content h1 {
+  /* color: var(--yellow); */
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  transition: all 0.4s ease;
+  text-shadow: none;
+  font-size: 30px;
+}
+
+.box-content p {
+  font-size: 16px;
+  padding: 1rem;
+  line-height: 1.9rem;
+  transition: all 0.4s ease;
+  color: #333; /* Default text color */
+}
+
+/* Enhance text visibility on hover */
+.box-content:hover h1 {
+  text-shadow: 0 1px 3px rgba(0,0,0,0.5); /* Better contrast */
+  color: #fff; /* White text on hover */
+}
+
+.box-content:hover p {
+  color: #fff; /* White text on hover */
 }
 
 /* Collage Container */
@@ -789,8 +869,11 @@ h1 {
 
   .card-title2,
   .card-title {
+    color: white;
+    text-align: right;
+    background-position: right;
+    padding-left: 20px;
 
-    font-size: 22px;
   }
 
   .card_main {
@@ -1403,3 +1486,7 @@ h1 {
 .fixed_footer {
   background-color: var(--yellow);
 }
+  /*------------------------- seclector-------------- */
+  .sec-text{
+    color: var(--yellow);
+  }
