@@ -2039,3 +2039,7 @@ div#card_content2 {
 .section-header {
   margin-bottom: 12px;
 }
+.company-slide-container {
+  background: linear-gradient(#19af62, transparent);
+}
+

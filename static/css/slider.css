@@ -12,9 +12,9 @@
   .company-slide-container {
     max-width: 1400px;
     margin: 0 auto;
-    padding: 40px 0px;
+    padding: 12px 0px;
       /* Add a semi-transparent gradient background to the container */
-  background: linear-gradient(120deg, rgba(255, 255, 255, 0.8) 0%, rgba(240, 255, 240, 0.9) 100%);
+     
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
   margin-block: 2rem;
@@ -30,8 +30,8 @@
   /* Add a glowing effect to the section title */
   .company-slide-section-title h2 {
     font-size: 2.5rem;
-    font-weight: 700;
-    color: #6E7D83; /* Changed to grayish */
+    font-weight: 900;
+    color: #ffff;
     position: relative;
     display: inline-block;
     text-shadow: 0 2px 10px rgba(110, 125, 131, 0.2); /* Adjusted shadow */
@@ -43,7 +43,7 @@
   position: absolute;
   width: 80px;
   height: 4px;
-  background: linear-gradient(90deg, #9CA3AF, #6E7D83, #9CA3AF); /* Grayish gradient */
+  background: #ffff;
   bottom: -10px;
   left: 50%;
   transform: translateX(-50%);
@@ -56,10 +56,11 @@
     width: 100%;
     overflow: hidden;
     position: relative;
-    padding: 40px 0;
+    padding: 30px 0;
     /* Add a subtle gradient to the slider area */
-    background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.9));
     border-radius: 10px;
+    background-color: #ffff;
+    margin-top: -16px;
   }
   
   .company-slide-logo-track {

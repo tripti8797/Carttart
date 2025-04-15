@@ -1,5 +1,6 @@
 :root{
     --blue: #4791ee;
+    --blue-gradient:linear-gradient(120deg, #1879dd , transparent);
 }
 .footer-section a {
   color: var(--blue) !important;
@@ -369,17 +370,18 @@
       border-radius: 9px;
       width: 65%;
       height: 400px;
-      padding: 1rem;
+      padding: 3rem;
       background-color: rgba(255, 255, 255, 0.5);
+      padding-top: 0px;
   }
-  
   .container_card_content2 {
-      text-align: center;
-      border-radius: 9px;
-      width: 65%;
-      height: 400px;
-      padding: 1rem;
-      background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    border-radius: 9px;
+    width: 65%;
+    height: 400px;
+    padding: 3rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding-top: 0px;
   }
   
     .card-title2, .card-title {
@@ -803,6 +805,37 @@
     color: var(--blue);
   }
   
+  .container, .boxcontainer, .main-content, .footer, .box{
+    max-width: 1400px;
+  }
+   .hero{
+    max-width: 1346px;
+    margin: auto;
+   }
+  .boxcontainer, .main-content{
+    justify-self: center;
+  }
+  .box{
+    justify-self: center;
+    max-width: 1328px;
+  }
+  .fixed_footer{
+    background-color: var(--blue);
+  }
+  /*------------------------- seclector-------------- */
+.sec-text{
+  color: var(--blue);
+}
+.card-title2 {
+  font-size: 40px;
+  font-weight: bolder;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+.card-title{
+  font-size: 40px;
+  font-weight: bolder;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
 /* fintech */
   /* MEDIA QUERIES FOR RESPONSIVENESS */
   @media (min-width:4103px) and (max-width:5464px)
@@ -827,12 +860,37 @@
   @media(max-width: 1024px){
     .box {
       display: flex;
+      flex-direction: column;
       justify-items: center;
       align-items: center;
   }
+  .boxcontainer {
+    margin-top: 3%;
+}
+.card-title2 {
+  padding: 26px;
+  font-size: 26px;
+}
+.card-title {
+  padding: 26px;
+  font-size: 26px;
+}
+.box-content {
+  width: 64%;
+}
+.card-description1, .card-description2 {
+  font-size: 14px;
+}
+
+  .hero {
+    max-width: 947px;
+  }
     .box-content p {
-      text-align: center;
+      text-align: left;
       padding: 0.1rem;
+    }
+    .box-content h1 {
+      margin-left: 0rem;
     }
     .div1{
       width: 417px;
@@ -872,6 +930,10 @@
       right: 0;
       width: 100%;
     }
+    .container_card {
+
+      margin-top: 62px;
+  }
     
      header .sub-menu-item{
     background-color: white;
@@ -882,6 +944,9 @@
       color: white; 
     }
   
+    .container_card_content {
+      padding: 1rem;
+    }
     header.scrolled .arrow {
       border: solid white;
       border-width: 0 2px 2px 0;
@@ -945,23 +1010,29 @@
     .hero-content h1{
       font-size: 40px;
     }
-
+    .card_main2 {
+      padding: 0px;
+    }
   
     .boxcontainer{
-      width: 100%;
+      width: 95%;
       margin: 0;
     }
-    .card-description1, .card-description2{
-      text-align: center;
+    .card-description1{
+      text-align: right;
+      font-size: 14px;
+    }
+   .card-description2{
+      text-align: left;
       font-size: 14px;
     }
     .container_card_content, .container_card_content2{
       width: 100%;
     }
+    
     .card-title, .card-title2{
       text-align: center;
       margin: 0;
-      padding-bottom: 0;
     }
 
     .box {
@@ -971,6 +1042,7 @@
   }
 
     .box-content{
+      width: 87%;
       padding: 3rem;
       padding-bottom: 0;
     }
@@ -1019,16 +1091,7 @@
       margin-top: 0;
     } */
   
-    .card-title2{
-      padding: 10px;
-      padding-left: 20px;
-    }
-  
-    .card-title2,
-    .card-title {
-      background-size: 100%;
-      font-size: 17px;
-    }
+    
   
     .card-description1, .card-description2 {
       font-size: 12px;
@@ -1068,8 +1131,9 @@
     }
   
     .square-grid{
+      margin-left: 6%;
       height: 100%;
-        width: 100%;
+        width: 87%;
         gap: 0.4rem;
         padding: 0.2rem;
     }
@@ -1080,13 +1144,13 @@
     }
   
     .div1, .div4{
-          width: 255px;
+      width: 209px;
       height: 140px;
     }
   
     .div2, .div3{
       height: 140px;
-      width: 132px;
+      width: 110px;
     }
   
     .container_card_pofilephoto1{
@@ -1210,6 +1274,11 @@
       display: block;
     } */
   
+    .card-title2 {
+      /* margin-left: 40px; */
+ 
+      margin-bottom: 17px;
+  }
     
     .div1 button{
       top: 44%;
@@ -1222,6 +1291,11 @@
     .div3 button{
       top: 67%;
       margin-left: -14.5%;
+    }
+    .headd {
+      display: flex
+  ;
+      justify-content: center;
     }
     .div4 button{
       top: 67%;
@@ -1293,13 +1367,14 @@
     }
   
     .div1, .div4{
-      width: 234px;
+      width: 209px;
+      height: 140px;
     }
   
     .div2, .div3{
-      width: 112px;
+      height: 140px;
+      width: 110px;
     }
-  
     .sub-menu-item{
       left: -104px;
     }
@@ -1311,15 +1386,22 @@
       font-size: 11px;
   }
 
-    .div1, .div4{
-      width: 197px;
-      height: 120px;
-    }
-  
-    .div2, .div3{
-      width: 96px;
-      height: 120px;
-    }
+  .div1, .div4{
+    width: 165px;
+    height: 112px;
+  }
+
+  .div2, .div3{
+    height: 119px;
+    width: 98px;
+  }
+  .square-grid {
+    margin-left: 6%;
+    height: 100%;
+    width: 87%;
+    gap: 2px;
+    padding: 0px;
+}
     .collage{
       height: 250px;
     }
@@ -1364,34 +1446,6 @@
     }
   }
 
-
-  .container, .boxcontainer, .main-content, .footer, .box{
-    max-width: 1400px;
-  }
-   .hero{
-    max-width: 1400px;
-    margin: auto;
-   }
-  .boxcontainer, .main-content{
-    justify-self: center;
-  }
-  .box{
-    justify-self: center;
-  }
-  .fixed_footer{
-    background-color: var(--blue);
-  }
-  /*------------------------- seclector-------------- */
-.sec-text{
-  color: var(--blue);
-}
-.card-title2 {
-  font-size: 40px;
-  font-weight: bolder;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-}
-.card-title{
-  font-size: 40px;
-  font-weight: bolder;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  .company-slide-container {
+    background: linear-gradient(#4791ee, transparent);
 }
