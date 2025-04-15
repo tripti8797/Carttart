@@ -3,7 +3,15 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+:root {
+  --green: #19af62;
+  --white: #ffffff;
+  --light-gray: #f7f7f7;
+  --medium-gray: #d6d4d4;
+  --dark-gray: #6e7d83;
+  --text-color: #353c3f;
+  --shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
 body {
   font-family: 'Poppins', sans-serif;
   background-color: #f4f4f4;

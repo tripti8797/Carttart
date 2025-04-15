@@ -24,48 +24,68 @@
 </section>
   <!-- Section Selector -->
   <div class="section-selector">
-    <div class="section" data-image="solar-slider.jpg">
-      <div class="sec-img">
-        <img src="{% static 'images/health-insurance 1.svg' %}" alt="Health Insurance">
+    <a href="{% url 'healthcare' %}" class="section-link">
+      <div class="section" data-image="solar-slider.jpg">
+        <div class="sec-img">
+          <img src="{% static 'images/health-insurance-blue.png' %}" alt="Health Insurance">
+        </div>
+        <div class="sec-text">Healthcare</div>
       </div>
-      <div class="sec-text">Healthcare</div>
-    </div>
-    <div class="section" data-image="hydro-slider.jpg">
-      <div class="sec-img">
-        <img src="{% static 'images/price 1.svg' %}" alt="price">
+    </a>
+    
+    <a href="{% url 'realestate' %}" class="section-link">
+      <div class="section" data-image="hydro-slider.jpg">
+        <div class="sec-img">
+          <img src="{% static 'images/price-blue.png' %}" alt="price">
+        </div>
+        <div class="sec-text">Realestate</div>
       </div>
-      <div class="sec-text">Realestate</div>
-    </div>
-    <div class="section" data-image="wind-slider.jpg">
-      <div class="sec-img">
-        <img src="{% static 'images/bag 1.svg' %}" alt="bag">
+    </a>
+    
+    <a href="{% url 'fintech' %}" class="section-link">
+      <div class="section" data-image="wind-slider.jpg">
+        <div class="sec-img">
+          <img src="{% static 'images/money-bag-blue.png' %}" alt="bag">
+        </div>
+        <div class="sec-text">Fintech</div>
       </div>
-      <div class="sec-text">Fintech</div>
-    </div>
-    <div class="section" data-image="electromagnetic-slider.jpg">
-      <div class="sec-img">
-        <img src="{% static 'images/factory 1.svg' %}" alt="factory">
+    </a>
+    
+    <a href="{% url 'energy' %}" class="section-link">
+      <div class="section" data-image="electromagnetic-slider.jpg">
+        <div class="sec-img">
+          <img src="{% static 'images/factory-blue.png' %}" alt="factory">
+        </div>
+        <div class="sec-text">Energy</div>
       </div>
-      <div class="sec-text">Energy</div>
-    </div>
-    <div class="section" data-image="chemical-slider.jpg">
-      <div class="sec-img">
-        <img src="{% static 'images/grocery-store 1.svg' %}" alt="grocery-store">
+    </a>
+    
+    <a href="{% url 'commerce' %}" class="section-link">
+      <div class="section" data-image="chemical-slider.jpg">
+        <div class="sec-img">
+          <img src="{% static 'images/grocery-store-blue.png' %}" alt="grocery-store">
+        </div>
+        <div class="sec-text">E-Commerce</div>
       </div>
-      <div class="sec-text">E-Commerce</div>
-    </div>
-    <div class="section" data-image="electromagnetic-slider.jpg">
-      <div class="sec-img">
-        <img src="{% static 'images/game-console 1.svg' %}" alt="game">
+    </a>
+    
+    <a href="{% url 'sports' %}" class="section-link">
+      <div class="section" data-image="game-control-blue.png">
+        <div class="sec-img">
+          <img src="{% static 'images/game-control-blue.png' %}" alt="game">
+        </div>
+        <div class="sec-text">E-Sports</div>
       </div>
-      <div class="sec-text">E-Sports</div>
-    </div>
-    <div class="section" data-image="chemical-slider.jpg">
-      <div class="sec-img">
-        <img src="{% static 'images/traveling 1.svg' %}" alt="travel">
+    </a>
+    
+    <a href="{% url 'tours' %}" class="section-link">
+      <div class="section" data-image="chemical-slider.jpg">
+        <div class="sec-img">
+          <img src="{% static 'images/aeroplane-blue.png' %}" alt="travel">
+        </div>
+        <div class="sec-text">Tours&Travels</div>
       </div>
-      <div class="sec-text">Tours&Travels</div>
-    </div>
+    </a>
   </div>
 <!-- MAIN CONTENT2 -->
 <main id="content">
@@ -77,7 +97,9 @@
         <div class="card_main">
           <div class="container_card">
             <div class="container_card_content">
+             <div class="headd-left">
               <h1 class="card-title2"> E-Commerce </h1>
+             </div>
               <h5 class="card-description1">
                 Discover a world of products at your fingertips with e-commerce!
                 Shop smarter with personalized options, faster with quick
@@ -104,7 +126,9 @@
               <img src="{% static 'images/retail.jpg' %}" class="profile-img2" alt="retail" id="card2_img" />
             </div>
             <div class="container_card_content2">
+             <div class="headd">
               <h1 class="card-title">RETAIL</h1>
+             </div>
               <h5 class="card-description2">
                 Retail made simple—bringing the best products closer to you.
                 Shop with ease and find everything you need in one place. From
@@ -120,80 +144,18 @@
           </div>
         </div>
 
-        <!-- Collage -->
-        <div class="box">
-          <div class="box-content">
-            <h1>DEPARTMENT STORES</h1>
-            <p> Explore everything you need Under one roof where style, Variety
-              and convenience meet At our department stores, Enjoy unbeatable
-              quality, variety, and convenience. Your one-stop destination for
-              all your shopping desires! Discover a wide range of products, from fashion and beauty to home essentials
-              and electronics—all in one place.
-              Shop the latest trends, top brands, and exclusive collections that cater to every taste and lifestyle.
-              Enjoy a seamless shopping experience with well-organized sections, friendly staff, and expert
-              recommendations.
-              Take advantage of exciting discounts, seasonal sales, and membership rewards designed just for you.
-            </p>
-          </div>
+       
 
-          <div class="collage">
-            <!-- Square Grid -->
-            <div class="square-grid">
-              <!-- Div 1 -->
-              <div class="div1">
-                <img src="{% static 'images/departentstore.jpeg' %}" alt="Image 1">
-                <button class="image-button">Learn More</button>
-              </div>
-              <!-- Div 2 -->
-              <div class="div2">
-                <img src="{% static 'images/depart2.jpg' %}" alt="Image 2">
-                <button class="image-button">Learn More</button>
-              </div>
-              <!-- Div 3 -->
-              <div class="div3">
-                <img src="{% static 'images/depart3.jpg' %}" alt="Image 3">
-                <button class="image-button">Learn More</button>
-              </div>
-              <!-- Div 4 -->
-              <div class="div4">
-                <img src="{% static 'images/depart4.jpg' %}" alt="Image 4">
-                <button class="image-button">Learn More</button>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <!-- third Image and Content -->
-        <div class="card_main2">
-          <div class="container_card">
-            <div class="container_card_pofilephoto1">
-              <img src="{% static 'images/speciality store.jpg' %}" class="profile-img2" alt="Fighting"
-                id="card2_img" />
-            </div>
-            <div class="container_card_content2">
-              <h1 class="card-title">SPECIALTY STORE</h1>
-              <h5 class="card-description2">
-                Quality to convenience, we've got you covered. Redefining your
-                shopping experience, every step of the way. Step into a world of carefully curated products tailored to
-                your unique tastes and needs.
-                Our specialty store brings you exclusive collections, handcrafted items, and premium brands you won’t
-                find anywhere else.
-                Enjoy a personalized shopping experience with expert recommendations and attentive customer service.
-                From niche products to one-of-a-kind finds, we ensure every purchase is special and meaningful.
-
-
-            </div>
-          </div>
-        </div>
-
+     
 
 
         <!-- Fourth Image and Content -->
         <div class="card_main">
           <div class="container_card">
             <div class="container_card_content">
+             <div class="headd-left">
               <h1 class="card-title2">HYPER MARKETS</h1>
+             </div>
               <h5 class="card-description1">
                 Shop smarter with personalized options, faster with quick
                 checkouts, and easier with doorstep delivery. Experience the
@@ -220,7 +182,9 @@
               <img src="{% static 'images/FACTORY OUTLET.png' %}" class="profile-img2" alt="Fighting" id="card2_img" />
             </div>
             <div class="container_card_content2">
-              <h1 class="card-title">FACTORY OUTLET</h1>
+           <div class="headd">
+            <h1 class="card-title">FACTORY OUTLET</h1>
+           </div>
               <h5 class="card-description2">
                 Shop smarter with unbeatable discounts, premium brands, and incredible deals—experience the savings at
                 our factory outlet today!
@@ -244,7 +208,9 @@
         <div class="card_main">
           <div class="container_card">
             <div class="container_card_content">
+             <div class="headd-left">
               <h1 class="card-title2">RETAIL ANALYTICS</h1>
+             </div>
               <h5 class="card-description1">
                 Shop smarter with data-driven insights, optimize inventory with real-time tracking, and enhance customer
                 experiences with personalized recommendations.
@@ -263,7 +229,74 @@
             </div>
           </div>
         </div>
+           <!-- third Image and Content -->
+           <div class="card_main2">
+            <div class="container_card">
+              <div class="container_card_pofilephoto1">
+                <img src="{% static 'images/speciality store.jpg' %}" class="profile-img2" alt="Fighting"
+                  id="card2_img" />
+              </div>
+              <div class="container_card_content2">
+              <div class="headd">
+                <h1 class="card-title">SPECIALTY STORE</h1>
+              </div>
+                <h5 class="card-description2">
+                  Quality to convenience, we've got you covered. Redefining your
+                  shopping experience, every step of the way. Step into a world of carefully curated products tailored to
+                  your unique tastes and needs.
+                  Our specialty store brings you exclusive collections, handcrafted items, and premium brands you won’t
+                  find anywhere else.
+                  Enjoy a personalized shopping experience with expert recommendations and attentive customer service.
+                  From niche products to one-of-a-kind finds, we ensure every purchase is special and meaningful.
+  
+  
+              </div>
+            </div>
+          </div>
+  
+ <!-- Collage -->
+ <div class="box">
+  <div class="box-content">
+    <h1>DEPARTMENT STORES</h1>
+    <p> Explore everything you need Under one roof where style, Variety
+      and convenience meet At our department stores, Enjoy unbeatable
+      quality, variety, and convenience. Your one-stop destination for
+      all your shopping desires! Discover a wide range of products, from fashion and beauty to home essentials
+      and electronics—all in one place.
+      Shop the latest trends, top brands, and exclusive collections that cater to every taste and lifestyle.
+      Enjoy a seamless shopping experience with well-organized sections, friendly staff, and expert
+      recommendations.
+      Take advantage of exciting discounts, seasonal sales, and membership rewards designed just for you.
+    </p>
+  </div>
 
+  <div class="collage">
+    <!-- Square Grid -->
+    <div class="square-grid">
+      <!-- Div 1 -->
+      <div class="div1">
+        <img src="{% static 'images/departentstore.jpeg' %}" alt="Image 1">
+        <button class="image-button">Learn More</button>
+      </div>
+      <!-- Div 2 -->
+      <div class="div2">
+        <img src="{% static 'images/depart2.jpg' %}" alt="Image 2">
+        <button class="image-button">Learn More</button>
+      </div>
+      <!-- Div 3 -->
+      <div class="div3">
+        <img src="{% static 'images/depart3.jpg' %}" alt="Image 3">
+        <button class="image-button">Learn More</button>
+      </div>
+      <!-- Div 4 -->
+      <div class="div4">
+        <img src="{% static 'images/depart4.jpg' %}" alt="Image 4">
+        <button class="image-button">Learn More</button>
+      </div>
+    </div>
+  </div>
+
+</div>
 
       </div>
 

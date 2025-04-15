@@ -425,9 +425,7 @@
       background-position: right;
     }
     
-    h1 {
-      margin-left: 20px;
-    }
+  
     
     .card-description1{
       color: black;
@@ -524,7 +522,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('https://images.unsplash.com/photo-1501554728187-ce583db33af7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+
     background-size: cover;
     background-position: center;
     opacity: 0;
@@ -540,7 +538,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0,0,0,0.3);
+    background: rgba(0,0,0,0.7);
     opacity: 0;
     transition: opacity 0.5s ease;
     z-index: -1;
@@ -548,10 +546,12 @@
 
 .box-content:hover::before {
     opacity: 0.8;
+    background: rgba(0,0,0,0.7);
+    background-image: url('https://images.unsplash.com/photo-1501554728187-ce583db33af7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
 }
 
 .box-content:hover::after {
-    opacity: 0.6;
+    opacity: 1;
 }
 
 /* Text styling */
@@ -559,6 +559,7 @@
     color: var(--blue);
     margin-bottom: 1rem;
     margin-left: 1rem;
+    font-size: 40px;
     transition: all 0.5s ease;
 }
 
@@ -1413,4 +1414,14 @@
      /*------------------------- seclector-------------- */
  .sec-text{
   color: var(--blue);
+}
+.card-title2 {
+  font-size: 40px;
+  font-weight: bolder;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+.card-title{
+  font-size: 40px;
+  font-weight: bolder;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }

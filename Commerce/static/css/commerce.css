@@ -554,9 +554,9 @@ header.scrolled .sub-menu-item a {
 }
 
 .box-content:hover::after {
-  opacity: 0.6; /* Show overlay on hover */
+  opacity: 0.7; /* Show overlay on hover */
       
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 /* Your original text styles */
@@ -1490,3 +1490,106 @@ header.scrolled .sub-menu-item a {
   .sec-text{
     color: var(--yellow);
   }
+  .card-title2 {
+  font-size: 40px;
+  font-weight: bolder;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+.card-title{
+  font-size: 40px;
+  font-weight: bolder;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+.box {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+}
+
+.box-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem;
+  position: relative;
+  z-index: 1;
+  transition: all 0.4s ease;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff; /* Default white background */
+  margin-block: 19px;
+}
+
+/* E-commerce background image (hidden by default) */
+.box-content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+  background-size: cover;
+  background-position: center;
+  opacity: 0; /* Completely hidden initially */
+  transition: opacity 0.4s ease;
+  z-index: -1;
+}
+
+/* Dark overlay (hidden by default) */
+.box-content::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.9); /* Dark overlay */
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: -1;
+}
+
+/* Show both image and overlay on hover */
+.box-content:hover::before {
+  opacity: 1; /* Show image */
+}
+
+.box-content:hover::after {
+  opacity: 1; /* Show dark overlay */
+}
+
+/* Text styles */
+.box-content h1 {
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  color: var(--yellow); /* Yellow by default */
+  position: relative;
+  z-index: 2;
+  transition: color 0.3s ease;
+  font-size: 40px;
+    font-weight: 600;
+}
+
+.box-content p {
+  font-size: 18px;
+  padding: 1rem;
+  line-height: 1.9rem;
+  color: #333; /* Dark by default */
+  position: relative;
+  z-index: 2;
+  transition: color 0.3s ease;
+}
+
+/* Change text color on hover for better visibility */
+.box-content:hover h1 {
+  color: var(--yellow); /* Brighter yellow on hover */
+  text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+}
+
+.box-content:hover p {
+  color: #fff; /* White on hover */
+  text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}

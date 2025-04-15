@@ -22,48 +22,68 @@
 </section>
     <!-- Section Selector -->
     <div class="section-selector">
-        <div class="section" data-image="solar-slider.jpg">
-          <div class="sec-img">
-            <img src="{% static 'images/health-insurance 1.svg' %}" alt="Health Insurance">
+        <a href="{% url 'healthcare' %}" class="section-link">
+          <div class="section" data-image="solar-slider.jpg">
+            <div class="sec-img">
+              <img src="{% static 'images/redheathinsurance.png' %}" alt="Health Insurance">
+            </div>
+            <div class="sec-text">Healthcare</div>
           </div>
-          <div class="sec-text">Healthcare</div>
-        </div>
-        <div class="section" data-image="hydro-slider.jpg">
-          <div class="sec-img">
-            <img src="{% static 'images/price 1.svg' %}" alt="price">
+        </a>
+        
+        <a href="{% url 'realestate' %}" class="section-link">
+          <div class="section" data-image="hydro-slider.jpg">
+            <div class="sec-img">
+              <img src="{% static 'images/price.png' %}" alt="price">
+            </div>
+            <div class="sec-text">Realestate</div>
           </div>
-          <div class="sec-text">Realestate</div>
-        </div>
-        <div class="section" data-image="wind-slider.jpg">
-          <div class="sec-img">
-            <img src="{% static 'images/bag 1.svg' %}" alt="bag">
+        </a>
+        
+        <a href="{% url 'fintech' %}" class="section-link">
+          <div class="section" data-image="wind-slider.jpg">
+            <div class="sec-img">
+              <img src="{% static 'images/money-bag.png' %}" alt="bag">
+            </div>
+            <div class="sec-text">Fintech</div>
           </div>
-          <div class="sec-text">Fintech</div>
-        </div>
-        <div class="section" data-image="electromagnetic-slider.jpg">
-          <div class="sec-img">
-            <img src="{% static 'images/factory 1.svg' %}" alt="factory">
+        </a>
+        
+        <a href="{% url 'energy' %}" class="section-link">
+          <div class="section" data-image="electromagnetic-slider.jpg">
+            <div class="sec-img">
+              <img src="{% static 'images/energy-red.png' %}" alt="factory">
+            </div>
+            <div class="sec-text">Energy</div>
           </div>
-          <div class="sec-text">Energy</div>
-        </div>
-        <div class="section" data-image="chemical-slider.jpg">
-          <div class="sec-img">
-            <img src="{% static 'images/grocery-store 1.svg' %}" alt="grocery-store">
+        </a>
+        
+        <a href="{% url 'commerce' %}" class="section-link">
+          <div class="section" data-image="chemical-slider.jpg">
+            <div class="sec-img">
+              <img src="{% static 'images/redgrocery-store.png' %}" alt="grocery-store">
+            </div>
+            <div class="sec-text">E-Commerce</div>
           </div>
-          <div class="sec-text">E-Commerce</div>
-        </div>
-        <div class="section" data-image="electromagnetic-slider.jpg">
-          <div class="sec-img">
-            <img src="{% static 'images/game-console 1.svg' %}" alt="game">
+        </a>
+        
+        <a href="{% url 'sports' %}" class="section-link">
+          <div class="section" data-image="electromagnetic-slider.jpg">
+            <div class="sec-img">
+              <img src="{% static 'images/game-control-red.png' %}" alt="game">
+            </div>
+            <div class="sec-text">E-Sports</div>
           </div>
-          <div class="sec-text">E-Sports</div>
-        </div>
-        <div class="section" data-image="chemical-slider.jpg">
-          <div class="sec-img">
-            <img src="{% static 'images/traveling 1.svg' %}" alt="travel">
+        </a>
+        
+        <a href="{% url 'tours' %}" class="section-link">
+          <div class="section" data-image="chemical-slider.jpg">
+            <div class="sec-img">
+              <img src="{% static 'images/aeroplane-red.png' %}" alt="travel">
+            </div>
+            <div class="sec-text">Tours&Travels</div>
           </div>
-          <div class="sec-text">Tours&Travels</div>
-        </div>
+        </a>
       </div>
 
 <!-- MAIN CONTENT -->
@@ -75,7 +95,9 @@
                 <div class="card_main">
                     <div class="container_card">
                         <div class="container_card_content">
+                          <div class="headd-left">
                             <h1 class="card-title2">RESIDENTIAL APARTMENT</h1>
+                          </div>
                             <h5 class="card-description1">
                                 Residential apartments offer modern living with state-of-the-art amenities, 
                                 providing comfort, security, and convenience. These properties are designed 
@@ -96,7 +118,9 @@
                             <img src="{% static 'images/builder-2.png' %}" class="profile-img2" alt="Builder Floors">
                         </div>
                         <div class="container_card_content2">
+                          <div class="headd">
                             <h1 class="card-title">INDEPENDENT / BUILDER FLOORS</h1>
+                          </div>
                             <h5 class="card-description2">
                                 Independent floors, also known as builder floors, are standalone residential units within a 
                                 small, low-rise building (typically 2-4 floors), where each floor is a separate property. 
@@ -113,7 +137,10 @@
                 <div class="card_main">
                     <div class="container_card">
                         <div class="container_card_content">
-                            <h1 class="card-title2">RESIDENTIAL LAND</h1>
+                         <div class="headd-left">
+                          <h1 class="card-title2">RESIDENTIAL LAND</h1>
+                         </div>
+
                             <h5 class="card-description1">
                                 Residential land provides a prime opportunity for buyers looking to build 
                                 their dream home or make a strategic investment. With flexible development 
@@ -134,7 +161,9 @@
                             <img src="{% static 'images/villa-4.png' %}" class="profile-img2" alt="Independent Villas">
                         </div>
                         <div class="container_card_content2">
-                            <h1 class="card-title">INDEPENDENT HOUSE / VILLAS</h1>
+                            <div class="headd">
+                              <h1 class="card-title">INDEPENDENT HOUSE / VILLAS</h1>
+                            </div>
                             <h5 class="card-description2">
                                 Independent houses, or villas, are standalone residential properties with private land, 
                                 offering maximum privacy, space, and customization freedom. These homes are designed 
@@ -151,7 +180,9 @@
                 <div class="card_main">
                     <div class="container_card">
                         <div class="container_card_content">
-                            <h1 class="card-title2">1 RK / STUDIO APARTMENTS</h1>
+                         <div class="headd-left">
+                          <h1 class="card-title2">1 RK / STUDIO APARTMENTS</h1>
+                         </div>
                             <h5 class="card-description1">
                                 1RK (One Room Kitchen) and studio apartments are compact, single-room living 
                                 spaces designed for individuals or couples seeking affordable, low-maintenance 
@@ -172,7 +203,9 @@
                             <img src="{% static 'images/farmhouses-6.jpg' %}" class="profile-img2" alt="Farmhouses">
                         </div>
                         <div class="container_card_content2">
+                          <div class="headd">
                             <h1 class="card-title">FARMHOUSES</h1>
+                          </div>
                             <h5 class="card-description2">
                                 Farmhouses are countryside residential properties, often set on large plots 
                                 of agricultural or semi-rural land, offering a peaceful retreat from city life. 
@@ -183,49 +216,50 @@
                     </div>
                 </div>
             </div>
+            
+<!-- Collage -->
+<div class="box">
+  <div class="box-content">
+      <h1>REALESTATE</h1>
+      <p>
+          Real estate is a dynamic and ever-evolving industry that offers
+          lucrative opportunities for investors, buyers, and sellers alike.
+          Whether it's residential, commercial, or industrial properties, 
+          the market thrives on strategic planning, expert consulting, and 
+          innovative marketing approaches.
+      </p>
+  </div>
+
+  <div class="collage">
+      <!-- Square Grid -->
+      <div class="square-grid">
+          <!-- Div 1 -->
+          <div class="div1">
+              <img src="{% static 'images/realestate-collage1.png' %}" alt="Real Estate Collage 1">
+              <button class="image-button">Learn More</button>
+          </div>
+          <!-- Div 2 -->
+          <div class="div2">
+              <img src="{% static 'images/realestate-collage2.png' %}" alt="Real Estate Collage 2">
+              <button class="image-button">Learn More</button>
+          </div>
+          <!-- Div 3 -->
+          <div class="div3">
+              <img src="{% static 'images/realestate-collage3.png' %}" alt="Real Estate Collage 3">
+              <button class="image-button">Learn More</button>
+          </div>
+          <!-- Div 4 -->
+          <div class="div4">
+              <img src="{% static 'images/realestate-collage4.png' %}" alt="Real Estate Collage 4">
+              <button class="image-button">Learn More</button>
+          </div>
+      </div>
+  </div>
+</div>
         </div>
     </section>
 </main>
 
-<!-- Collage -->
-<div class="box">
-    <div class="box-content">
-        <h1>REALESTATE</h1>
-        <p>
-            Real estate is a dynamic and ever-evolving industry that offers
-            lucrative opportunities for investors, buyers, and sellers alike.
-            Whether it's residential, commercial, or industrial properties, 
-            the market thrives on strategic planning, expert consulting, and 
-            innovative marketing approaches.
-        </p>
-    </div>
-
-    <div class="collage">
-        <!-- Square Grid -->
-        <div class="square-grid">
-            <!-- Div 1 -->
-            <div class="div1">
-                <img src="{% static 'images/realestate-collage1.png' %}" alt="Real Estate Collage 1">
-                <button class="image-button">Learn More</button>
-            </div>
-            <!-- Div 2 -->
-            <div class="div2">
-                <img src="{% static 'images/realestate-collage2.png' %}" alt="Real Estate Collage 2">
-                <button class="image-button">Learn More</button>
-            </div>
-            <!-- Div 3 -->
-            <div class="div3">
-                <img src="{% static 'images/realestate-collage3.png' %}" alt="Real Estate Collage 3">
-                <button class="image-button">Learn More</button>
-            </div>
-            <!-- Div 4 -->
-            <div class="div4">
-                <img src="{% static 'images/realestate-collage4.png' %}" alt="Real Estate Collage 4">
-                <button class="image-button">Learn More</button>
-            </div>
-        </div>
-    </div>
-</div>
 <!-- partners-slider -->
 <div class="company-slide-container">
     <div class="company-slide-section-title">

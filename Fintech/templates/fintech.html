@@ -23,48 +23,68 @@
 </section>
   <!-- Section Selector -->
   <div class="section-selector">
-    <div class="section" data-image="solar-slider.jpg">
-      <div class="sec-img">
-        <img src="{% static 'images/health-insurance 1.svg' %}" alt="Health Insurance">
+    <a href="{% url 'healthcare' %}" class="section-link">
+      <div class="section" data-image="solar-slider.jpg">
+        <div class="sec-img">
+          <img src="{% static 'images/health-insurance-blue.png' %}" alt="Health Insurance">
+        </div>
+        <div class="sec-text">Healthcare</div>
       </div>
-      <div class="sec-text">Healthcare</div>
-    </div>
-    <div class="section" data-image="hydro-slider.jpg">
-      <div class="sec-img">
-        <img src="{% static 'images/price 1.svg' %}" alt="price">
+    </a>
+    
+    <a href="{% url 'realestate' %}" class="section-link">
+      <div class="section" data-image="hydro-slider.jpg">
+        <div class="sec-img">
+          <img src="{% static 'images/price-blue.png' %}" alt="price">
+        </div>
+        <div class="sec-text">Realestate</div>
       </div>
-      <div class="sec-text">Realestate</div>
-    </div>
-    <div class="section" data-image="wind-slider.jpg">
-      <div class="sec-img">
-        <img src="{% static 'images/bag 1.svg' %}" alt="bag">
+    </a>
+    
+    <a href="{% url 'fintech' %}" class="section-link">
+      <div class="section" data-image="wind-slider.jpg">
+        <div class="sec-img">
+          <img src="{% static 'images/money-bag-blue.png' %}" alt="bag">
+        </div>
+        <div class="sec-text">Fintech</div>
       </div>
-      <div class="sec-text">Fintech</div>
-    </div>
-    <div class="section" data-image="electromagnetic-slider.jpg">
-      <div class="sec-img">
-        <img src="{% static 'images/factory 1.svg' %}" alt="factory">
+    </a>
+    
+    <a href="{% url 'energy' %}" class="section-link">
+      <div class="section" data-image="electromagnetic-slider.jpg">
+        <div class="sec-img">
+          <img src="{% static 'images/factory-blue.png' %}" alt="factory">
+        </div>
+        <div class="sec-text">Energy</div>
       </div>
-      <div class="sec-text">Energy</div>
-    </div>
-    <div class="section" data-image="chemical-slider.jpg">
-      <div class="sec-img">
-        <img src="{% static 'images/grocery-store 1.svg' %}" alt="grocery-store">
+    </a>
+    
+    <a href="{% url 'commerce' %}" class="section-link">
+      <div class="section" data-image="chemical-slider.jpg">
+        <div class="sec-img">
+          <img src="{% static 'images/grocery-store-blue.png' %}" alt="grocery-store">
+        </div>
+        <div class="sec-text">E-Commerce</div>
       </div>
-      <div class="sec-text">E-Commerce</div>
-    </div>
-    <div class="section" data-image="electromagnetic-slider.jpg">
-      <div class="sec-img">
-        <img src="{% static 'images/game-console 1.svg' %}" alt="game">
+    </a>
+    
+    <a href="{% url 'sports' %}" class="section-link">
+      <div class="section" data-image="game-control-blue.png">
+        <div class="sec-img">
+          <img src="{% static 'images/game-control-blue.png' %}" alt="game">
+        </div>
+        <div class="sec-text">E-Sports</div>
       </div>
-      <div class="sec-text">E-Sports</div>
-    </div>
-    <div class="section" data-image="chemical-slider.jpg">
-      <div class="sec-img">
-        <img src="{% static 'images/traveling 1.svg' %}" alt="travel">
+    </a>
+    
+    <a href="{% url 'tours' %}" class="section-link">
+      <div class="section" data-image="chemical-slider.jpg">
+        <div class="sec-img">
+          <img src="{% static 'images/aeroplane-blue.png' %}" alt="travel">
+        </div>
+        <div class="sec-text">Tours&Travels</div>
       </div>
-      <div class="sec-text">Tours&Travels</div>
-    </div>
+    </a>
   </div>
 <!-- MAIN CONTENT -->
 <main id="content">
@@ -78,7 +98,9 @@
                             <img src="{% static 'images/payment-1.jpg' %}" class="profile-img2" alt="Digital payment illustration">
                         </div>
                         <div class="container_card_content">
+                          <div class="headd">
                             <h1 class="card-title2">DIGITAL PAYMENT</h1>
+                          </div>
                             <h5 class="card-description1">
                                 Digital payment systems have revolutionized how we conduct financial transactions 
                                 in the modern era. These innovative platforms enable seamless money transfers, 
@@ -94,7 +116,9 @@ Enjoy enhanced security with encryption and authentication features that protect
                 <div class="card_main2">
                     <div class="container_card">
                         <div class="container_card_content2">
-                            <h1 class="card-title">DIGITAL BANKING</h1>
+                       <div class="headd-left">
+                        <h1 class="card-title">DIGITAL BANKING</h1>
+                       </div>
                             <h5 class="card-description2">
                                 Digital banking has transformed traditional financial services into accessible, 
                                 24/7 solutions available through smartphones and computers. These platforms provide 
@@ -117,7 +141,9 @@ Enjoy enhanced security with encryption and authentication features that protect
                             <img src="{% static 'images/crypto-3.png' %}" class="profile-img2" alt="Cryptocurrency illustration">
                         </div>
                         <div class="container_card_content">
+                           <div class="headd">
                             <h1 class="card-title2">CRYPTOCURRENCY</h1>
+                           </div>
                             <h5 class="card-description1">
                                 Cryptocurrency is a digital or virtual currency that uses blockchain technology for secure, 
                                 decentralized transactions. Unlike traditional money, it operates without central banks, 
@@ -132,7 +158,9 @@ Enjoy enhanced security with encryption and authentication features that protect
                 <div class="card_main2">
                     <div class="container_card">
                         <div class="container_card_content2">
+                          <div class="headd-left">
                             <h1 class="card-title">INVESTMENT PLATFORM</h1>
+                          </div>
                             <h5 class="card-description2">
                                 Investment platforms like Robinhood, ETrade, and mutual fund apps democratize wealth-building 
                                 by offering easy access to stocks, bonds, ETFs, and cryptocurrencies.With user-friendly interfaces and low or zero commission fees, investing has never been more accessible for beginners and seasoned traders alike.
@@ -154,7 +182,9 @@ Enjoy enhanced security with encryption and authentication features that protect
                             <img src="{% static 'images/insurance-5.png' %}" class="profile-img2" alt="Insurance technology illustration">
                         </div>
                         <div class="container_card_content">
+                           <div class="headd">
                             <h1 class="card-title2">INSURANCE</h1>
+                           </div>
                             <h5 class="card-description1">
                                 The insurance industry is evolving with digital innovations like AI, IoT, and big data. 
                                 Insurtech companies offer personalized policies, instant claims processing, and usage-based 
@@ -170,7 +200,9 @@ Enjoy enhanced security with encryption and authentication features that protect
                 <div class="card_main2">
                     <div class="container_card">
                         <div class="container_card_content2">
-                            <h1 class="card-title">DIGITAL LENDING</h1>
+                        <div class="headd-left">
+                          <h1 class="card-title">DIGITAL LENDING</h1>
+                        </div>
                             <h5 class="card-description2">
                                 Digital lending platforms use AI, machine learning, and big data to streamline loan approvals, 
                                 reducing paperwork and processing time.With instant eligibility checks and automated underwriting, borrowers can access funds quickly without the hassle of traditional banking procedures.
@@ -193,7 +225,9 @@ Enjoy enhanced security with encryption and authentication features that protect
                             <img src="{% static 'images/accounting-5.png' %}" class="profile-img2" alt="Accounting software illustration">
                         </div>
                         <div class="container_card_content">
-                            <h1 class="card-title2">ACCOUNTING AND BOOKING</h1>
+                         <div class="headd">
+                          <h1 class="card-title2">ACCOUNTING AND BOOKING</h1>
+                         </div>
                             <h5 class="card-description1">
                                 Modern accounting and booking software automates financial record-keeping, reducing 
                                 human errors and improving efficiency.Cloud-based solutions ensure secure data storage and accessibility from anywhere, making financial management more convenient.

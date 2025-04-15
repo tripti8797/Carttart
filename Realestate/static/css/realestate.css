@@ -1366,10 +1366,11 @@
 .container, .boxcontainer, .main-content, .footer, .box{
   max-width: 1400px;
 }
- .hero{
-  max-width: 1400px;
+.hero {
+  max-width: 1350px;
   margin: auto;
- }
+}
+
 .boxcontainer, .main-content{
   justify-self: center;
 }
@@ -1409,4 +1410,18 @@
 /*------------------------- seclector-------------- */
 .sec-text{
   color: var(--red);
+}
+.section-selector {
+  max-width: 1200px;
+}
+
+.card-title2 {
+  font-size: 32px;
+  font-weight: bolder;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+.card-title{
+  font-size: 32px;
+  font-weight: bolder;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }

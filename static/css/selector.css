@@ -45,7 +45,7 @@
   
   .sec-img img {
     max-width: 100%;
-    height: auto;
+    height: 100%;
   }
   
   .sec-text {
@@ -144,3 +144,6 @@
       font-size: 4px;
     }
   }
+  a.section-link {
+    text-decoration: none;
+}

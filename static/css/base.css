@@ -730,3 +730,41 @@ div#card_content2 {
 .card_content{
   background-color: rgba(255, 255, 255, 0.5);
 }
+.profile-img{
+  transition: transform 0.3s ease;
+}
+.description2{
+  text-align: right;
+}
+
+/* hedaing---right */
+.headd {
+  display: flex
+;
+  justify-content: end;
+  width: 97%;
+}
+/* hedaing---left */
+.headd-left{
+  display: flex;
+  justify-content: start;
+  width: 97%;
+}
+h5.card-description1 {
+  margin-left: 0px;
+}
+
+/* background color */
+
+.box-content:hover::before {
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black overlay */
+}
+.bakgground {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.box-content p {
+  font-size: 18px;
+ 
+}

@@ -25,48 +25,68 @@
 </section>
   <!-- Section Selector -->
   <div class="section-selector">
-    <div class="section" data-image="solar-slider.jpg">
-      <div class="sec-img">
-        <img src="{% static 'images/health-insurance 1.svg' %}" alt="Health Insurance">
+    <a href="{% url 'healthcare' %}" class="section-link">
+      <div class="section" data-image="solar-slider.jpg">
+        <div class="sec-img">
+          <img src="{% static 'images/health-insurance-blue.png' %}" alt="Health Insurance">
+        </div>
+        <div class="sec-text">Healthcare</div>
       </div>
-      <div class="sec-text">Healthcare</div>
-    </div>
-    <div class="section" data-image="hydro-slider.jpg">
-      <div class="sec-img">
-        <img src="{% static 'images/price 1.svg' %}" alt="price">
+    </a>
+    
+    <a href="{% url 'realestate' %}" class="section-link">
+      <div class="section" data-image="hydro-slider.jpg">
+        <div class="sec-img">
+          <img src="{% static 'images/price-blue.png' %}" alt="price">
+        </div>
+        <div class="sec-text">Realestate</div>
       </div>
-      <div class="sec-text">Realestate</div>
-    </div>
-    <div class="section" data-image="wind-slider.jpg">
-      <div class="sec-img">
-        <img src="{% static 'images/bag 1.svg' %}" alt="bag">
+    </a>
+    
+    <a href="{% url 'fintech' %}" class="section-link">
+      <div class="section" data-image="wind-slider.jpg">
+        <div class="sec-img">
+          <img src="{% static 'images/money-bag-blue.png' %}" alt="bag">
+        </div>
+        <div class="sec-text">Fintech</div>
       </div>
-      <div class="sec-text">Fintech</div>
-    </div>
-    <div class="section" data-image="electromagnetic-slider.jpg">
-      <div class="sec-img">
-        <img src="{% static 'images/factory 1.svg' %}" alt="factory">
+    </a>
+    
+    <a href="{% url 'energy' %}" class="section-link">
+      <div class="section" data-image="electromagnetic-slider.jpg">
+        <div class="sec-img">
+          <img src="{% static 'images/factory-blue.png' %}" alt="factory">
+        </div>
+        <div class="sec-text">Energy</div>
       </div>
-      <div class="sec-text">Energy</div>
-    </div>
-    <div class="section" data-image="chemical-slider.jpg">
-      <div class="sec-img">
-        <img src="{% static 'images/grocery-store 1.svg' %}" alt="grocery-store">
+    </a>
+    
+    <a href="{% url 'commerce' %}" class="section-link">
+      <div class="section" data-image="chemical-slider.jpg">
+        <div class="sec-img">
+          <img src="{% static 'images/grocery-store-blue.png' %}" alt="grocery-store">
+        </div>
+        <div class="sec-text">E-Commerce</div>
       </div>
-      <div class="sec-text">E-Commerce</div>
-    </div>
-    <div class="section" data-image="electromagnetic-slider.jpg">
-      <div class="sec-img">
-        <img src="{% static 'images/game-console 1.svg' %}" alt="game">
+    </a>
+    
+    <a href="{% url 'sports' %}" class="section-link">
+      <div class="section" data-image="game-control-blue.png">
+        <div class="sec-img">
+          <img src="{% static 'images/game-control-blue.png' %}" alt="game">
+        </div>
+        <div class="sec-text">E-Sports</div>
       </div>
-      <div class="sec-text">E-Sports</div>
-    </div>
-    <div class="section" data-image="chemical-slider.jpg">
-      <div class="sec-img">
-        <img src="{% static 'images/traveling 1.svg' %}" alt="travel">
+    </a>
+    
+    <a href="{% url 'tours' %}" class="section-link">
+      <div class="section" data-image="chemical-slider.jpg">
+        <div class="sec-img">
+          <img src="{% static 'images/aeroplane-blue.png' %}" alt="travel">
+        </div>
+        <div class="sec-text">Tours&Travels</div>
       </div>
-      <div class="sec-text">Tours&Travels</div>
-    </div>
+    </a>
   </div>
 
 
@@ -80,7 +100,9 @@
         <div class="card_main">
           <div class="container_card">
             <div class="container_card_content">
+            <div class="headd-left">
               <h1 class="card-title2"> REAL-TIME STRATEGY GAMES </h1>
+            </div>
               <h5 class="card-description1">
                 RTS is a subgenre of strategy video games that does not progress incrementally in turns, but
                 allows all players to play simultaneously, in "real time". This challenges players to think
@@ -107,7 +129,9 @@
               <img src="{% static 'images/figh.jpg' %}" class="profile-img2" alt="Fighting" id="card2_img" />
             </div>
             <div class="container_card_content2">
-              <h1 class="card-title">FIGHTING</h1>
+           <div class="headd">
+            <h1 class="card-title">FIGHTING</h1>
+           </div>
               <h5 class="card-description2">
                 Fighting games, are known for their thrilling, fast-paced, and
                 strategic one-on-one matches. These offer a unique blend of strategy, skill, and
@@ -123,70 +147,9 @@
           </div>
         </div>
 
-        <!-- Collage -->
-        <div class="box">
-          <div class="box-content">
-            <h1>MULTIPLAYER ONLINE BATTLE ARENA (MOBA)</h1>
-            <p>MOBA games require a high degree of strategic thinking and
-              planning, as players must coordinate with their teammates,
-              manage resources, and react to dynamic game conditions. Success
-              in MOBA games hinges on effective teamwork and clear
-              communication.
-          </div>
+   
 
-          <div class="collage">
-            <!-- Square Grid -->
-            <div class="square-grid">
-              <!-- Div 1 -->
-              <div class="div1">
-                <img src="{% static 'images/moba.jpg' %}" alt="Image 1">
-                <button class="image-button">Learn More</button>
-              </div>
-              <!-- Div 2 -->
-              <div class="div2">
-                <img src="{% static 'images/moba1.jpg' %}" alt="Image 2">
-                <button class="image-button">Learn More</button>
-              </div>
-              <!-- Div 3 -->
-              <div class="div3">
-                <img src="{% static 'images/moba2.jpeg' %}" alt="Image 3">
-                <button class="image-button">Learn More</button>
-              </div>
-              <!-- Div 4 -->
-              <div class="div4">
-                <img src="{% static 'images/moba3.jpeg' %}" alt="Image 4">
-                <button class="image-button">Learn More</button>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <!-- third Image and Content -->
-        <div class="card_main2">
-          <div class="container_card">
-            <div class="container_card_pofilephoto1">
-              <img src="{% static 'images/fantasy.jpg' %}" class="profile-img2" alt="Fighting" id="card2_img" />
-            </div>
-            <div class="container_card_content2">
-              <h1 class="card-title">FANTASY SPORTS</h1>
-              <h5 class="card-description2">
-                Fantasy sports in esports bring a new level of excitement, allowing fans to engage with their favorite
-                games beyond just watching. Players build virtual teams using real esports athletes, competing based on
-                their in-game performance.
-
-                It enhances strategic thinking as participants analyze player stats, team dynamics, and match outcomes
-                to make informed decisions.
-                Fantasy esports fosters a deeper connection with the competitive scene, encouraging fans to follow
-                tournaments, player performances, and game updates closely.
-
-
-
-
-            </div>
-          </div>
-        </div>
-
+     
 
 
         <!-- Fourth Image and Content -->
@@ -228,7 +191,9 @@
               <img src="{% static 'images/sport.jpg' %}" class="profile-img2" alt="Fighting" id="card2_img" />
             </div>
             <div class="container_card_content2">
+             <div class="headd">
               <h1 class="card-title"> SPORTS</h1>
+             </div>
               <h5 class="card-description2">
                 Sports bring the thrill of traditional athletics into the digital world, offering fast-paced and
                 competitive gameplay. Titles like FIFA, NBA 2K, and Rocket League allow players to experience realistic
@@ -253,7 +218,9 @@
         <div class="card_main">
           <div class="container_card">
             <div class="container_card_content">
-              <h1 class="card-title2">BATTLE ROYALE</h1>
+           <div class="headd-left">
+            <h1 class="card-title2">BATTLE ROYALE</h1>
+           </div>
               <h5 class="card-description1">
                 Battle Royale games bring high-intensity, last-man-standing action where strategy, survival skills, and
                 quick reflexes are key to victory. Players drop into vast battlegrounds, scavenge for weapons and
@@ -273,7 +240,71 @@
             </div>
           </div>
         </div>
+           <!-- third Image and Content -->
+           <div class="card_main2">
+            <div class="container_card">
+              <div class="container_card_pofilephoto1">
+                <img src="{% static 'images/fantasy.jpg' %}" class="profile-img2" alt="Fighting" id="card2_img" />
+              </div>
+              <div class="container_card_content2">
+            <div class="headd">
+              <h1 class="card-title">FANTASY SPORTS</h1>
+            </div>
+                <h5 class="card-description2">
+                  Fantasy sports in esports bring a new level of excitement, allowing fans to engage with their favorite
+                  games beyond just watching. Players build virtual teams using real esports athletes, competing based on
+                  their in-game performance.
+  
+                  It enhances strategic thinking as participants analyze player stats, team dynamics, and match outcomes
+                  to make informed decisions.
+                  Fantasy esports fosters a deeper connection with the competitive scene, encouraging fans to follow
+                  tournaments, player performances, and game updates closely.
+  
+  
+  
+  
+              </div>
+            </div>
+          </div>
+  
+     <!-- Collage -->
+     <div class="box">
+      <div class="box-content">
+        <h1>MULTIPLAYER ONLINE BATTLE ARENA (MOBA)</h1>
+        <p>MOBA games require a high degree of strategic thinking and
+          planning, as players must coordinate with their teammates,
+          manage resources, and react to dynamic game conditions. Success
+          in MOBA games hinges on effective teamwork and clear
+          communication.
+      </div>
 
+      <div class="collage">
+        <!-- Square Grid -->
+        <div class="square-grid">
+          <!-- Div 1 -->
+          <div class="div1">
+            <img src="{% static 'images/moba.jpg' %}" alt="Image 1">
+            <button class="image-button">Learn More</button>
+          </div>
+          <!-- Div 2 -->
+          <div class="div2">
+            <img src="{% static 'images/moba1.jpg' %}" alt="Image 2">
+            <button class="image-button">Learn More</button>
+          </div>
+          <!-- Div 3 -->
+          <div class="div3">
+            <img src="{% static 'images/moba2.jpeg' %}" alt="Image 3">
+            <button class="image-button">Learn More</button>
+          </div>
+          <!-- Div 4 -->
+          <div class="div4">
+            <img src="{% static 'images/moba3.jpeg' %}" alt="Image 4">
+            <button class="image-button">Learn More</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
 
 
 

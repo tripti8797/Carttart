@@ -23,48 +23,68 @@
 </section>
   <!-- Section Selector -->
   <div class="section-selector">
-    <div class="section" data-image="solar-slider.jpg">
-      <div class="sec-img">
-        <img src="{% static 'images/health-insurance 1.svg' %}" alt="Health Insurance">
+    <a href="{% url 'healthcare' %}" class="section-link">
+      <div class="section" data-image="solar-slider.jpg">
+        <div class="sec-img">
+          <img src="{% static 'images/health-insurance 1.svg' %}" alt="Health Insurance">
+        </div>
+        <div class="sec-text">Healthcare</div>
       </div>
-      <div class="sec-text">Healthcare</div>
-    </div>
-    <div class="section" data-image="hydro-slider.jpg">
-      <div class="sec-img">
-        <img src="{% static 'images/price 1.svg' %}" alt="price">
+    </a>
+    
+    <a href="{% url 'realestate' %}" class="section-link">
+      <div class="section" data-image="hydro-slider.jpg">
+        <div class="sec-img">
+          <img src="{% static 'images/price 1.svg' %}" alt="price">
+        </div>
+        <div class="sec-text">Realestate</div>
       </div>
-      <div class="sec-text">Realestate</div>
-    </div>
-    <div class="section" data-image="wind-slider.jpg">
-      <div class="sec-img">
-        <img src="{% static 'images/bag 1.svg' %}" alt="bag">
+    </a>
+    
+    <a href="{% url 'fintech' %}" class="section-link">
+      <div class="section" data-image="wind-slider.jpg">
+        <div class="sec-img">
+          <img src="{% static 'images/bag 1.svg' %}" alt="bag">
+        </div>
+        <div class="sec-text">Fintech</div>
       </div>
-      <div class="sec-text">Fintech</div>
-    </div>
-    <div class="section" data-image="electromagnetic-slider.jpg">
-      <div class="sec-img">
-        <img src="{% static 'images/factory 1.svg' %}" alt="factory">
+    </a>
+    
+    <a href="{% url 'energy' %}" class="section-link">
+      <div class="section" data-image="electromagnetic-slider.jpg">
+        <div class="sec-img">
+          <img src="{% static 'images/factory 1.svg' %}" alt="factory">
+        </div>
+        <div class="sec-text">Energy</div>
       </div>
-      <div class="sec-text">Energy</div>
-    </div>
-    <div class="section" data-image="chemical-slider.jpg">
-      <div class="sec-img">
-        <img src="{% static 'images/grocery-store 1.svg' %}" alt="grocery-store">
+    </a>
+    
+    <a href="{% url 'commerce' %}" class="section-link">
+      <div class="section" data-image="chemical-slider.jpg">
+        <div class="sec-img">
+          <img src="{% static 'images/grocery-store 1.svg' %}" alt="grocery-store">
+        </div>
+        <div class="sec-text">E-Commerce</div>
       </div>
-      <div class="sec-text">E-Commerce</div>
-    </div>
-    <div class="section" data-image="electromagnetic-slider.jpg">
-      <div class="sec-img">
-        <img src="{% static 'images/game-console 1.svg' %}" alt="game">
+    </a>
+    
+    <a href="{% url 'sports' %}" class="section-link">
+      <div class="section" data-image="electromagnetic-slider.jpg">
+        <div class="sec-img">
+          <img src="{% static 'images/game-console 1.svg' %}" alt="game">
+        </div>
+        <div class="sec-text">E-Sports</div>
       </div>
-      <div class="sec-text">E-Sports</div>
-    </div>
-    <div class="section" data-image="chemical-slider.jpg">
-      <div class="sec-img">
-        <img src="{% static 'images/traveling 1.svg' %}" alt="travel">
-      </div>
-      <div class="sec-text">Tours&Travels</div>
-    </div>
+    </a>
+    
+    <a href="{% url 'tours' %}" class="section-link">
+        <div class="section" data-image="chemical-slider.jpg">
+          <div class="sec-img">
+            <img src="{% static 'images/traveling 1.svg' %}" alt="travel">
+          </div>
+          <div class="sec-text">Tours&Travels</div>
+        </div>
+      </a>
   </div>
 <!-- MAIN CONTENT2 -->
 <main id="content">
@@ -75,7 +95,9 @@
                 <div class="card_main">
                     <div class="container_card">
                         <div class="container_card_content">
-                            <h1 class="card-title2"> GLOBAL ENERGY </h1>
+                        <div class="headd-left">
+                          <h1 class="card-title2"> GLOBAL ENERGY </h1>
+                        </div>
                             <h5 class="card-description1">
                                 Global Energy represents the interconnected network of energy
                                 production, distribution, and consumption that powers economies
@@ -108,7 +130,9 @@
                                 alt="Electrical Energy" />
                         </div>
                         <div class="container_card_content2">
+                           <div class="headd">
                             <h1 class="card-title">ELECTRICAL ENERGY</h1>
+                           </div>
                             <h5 class="card-description2">
                                 Electrical energy is the lifeblood of modern society, powering everything 
                                 from homes and businesses to cutting-edge technologies like electric vehicles 
@@ -129,7 +153,9 @@
                 <div class="card_main">
                     <div class="container_card">
                         <div class="container_card_content">
-                            <h1 class="card-title2">  THERMAL ENERGY </h1>
+                         <div class="headd-left">
+                          <h1 class="card-title2">  THERMAL ENERGY </h1>
+                         </div>
                             <h5 class="card-description1">
                                 Thermal energy is the total kinetic energy of particles within a substance, resulting from 
                                 their movement. It increases with temperature and is transferred through conduction, 
@@ -160,7 +186,9 @@
                                 alt="Chemical Energy" />
                         </div>
                         <div class="container_card_content2">
-                            <h1 class="card-title">CHEMICAL ENERGY</h1>
+                         <div class="headd">
+                          <h1 class="card-title">CHEMICAL ENERGY</h1>
+                         </div>
                             <h5 class="card-description2">
                                 Chemical energy is stored in the bonds of atoms and molecules, 
                                 released during chemical reactions. It is found in fuels like 
@@ -182,7 +210,9 @@
                 <div class="card_main">
                     <div class="container_card">
                         <div class="container_card_content">
+                           <div class="headd-left">
                             <h1 class="card-title2">FOSSIL FUEL</h1>
+                           </div>
                             <h5 class="card-description1">
                                 Fossil fuels, including coal, oil, and natural gas, formed from ancient organic 
                                 matter over millions of years. They are the primary energy source for electricity, 
@@ -214,7 +244,9 @@
                                 alt="Nuclear Energy" />
                         </div>
                         <div class="container_card_content2">
+                           <div class="headd">
                             <h1 class="card-title">NUCLEAR ENERGY</h1>
+                           </div>
                             <h5 class="card-description2">
                                 Nuclear energy comes from the nucleus of atoms, released through fission or fusion. 
                                 In nuclear fission, heavy elements like uranium split, producing massive energy used 

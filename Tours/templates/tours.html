@@ -22,59 +22,104 @@
   </section>
   <!-- Section Selector -->
   <div class="section-selector">
-    <div class="section" data-image="solar-slider.jpg">
-      <div class="sec-img">
-        <img src="{% static 'images/health-insurance 1.svg' %}" alt="Health Insurance">
+    <a href="{% url 'healthcare' %}" class="section-link">
+      <div class="section" data-image="solar-slider.jpg">
+        <div class="sec-img">
+          <img src="{% static 'images/health-insurance-blue.png' %}" alt="Health Insurance">
+        </div>
+        <div class="sec-text">Healthcare</div>
       </div>
-      <div class="sec-text">Healthcare</div>
-    </div>
-    <div class="section" data-image="hydro-slider.jpg">
-      <div class="sec-img">
-        <img src="{% static 'images/price 1.svg' %}" alt="price">
+    </a>
+    
+    <a href="{% url 'realestate' %}" class="section-link">
+      <div class="section" data-image="hydro-slider.jpg">
+        <div class="sec-img">
+          <img src="{% static 'images/price-blue.png' %}" alt="price">
+        </div>
+        <div class="sec-text">Realestate</div>
       </div>
-      <div class="sec-text">Realestate</div>
-    </div>
-    <div class="section" data-image="wind-slider.jpg">
-      <div class="sec-img">
-        <img src="{% static 'images/bag 1.svg' %}" alt="bag">
+    </a>
+    
+    <a href="{% url 'fintech' %}" class="section-link">
+      <div class="section" data-image="wind-slider.jpg">
+        <div class="sec-img">
+          <img src="{% static 'images/money-bag-blue.png' %}" alt="bag">
+        </div>
+        <div class="sec-text">Fintech</div>
       </div>
-      <div class="sec-text">Fintech</div>
-    </div>
-    <div class="section" data-image="electromagnetic-slider.jpg">
-      <div class="sec-img">
-        <img src="{% static 'images/factory 1.svg' %}" alt="factory">
+    </a>
+    
+    <a href="{% url 'energy' %}" class="section-link">
+      <div class="section" data-image="electromagnetic-slider.jpg">
+        <div class="sec-img">
+          <img src="{% static 'images/factory-blue.png' %}" alt="factory">
+        </div>
+        <div class="sec-text">Energy</div>
       </div>
-      <div class="sec-text">Energy</div>
-    </div>
-    <div class="section" data-image="chemical-slider.jpg">
-      <div class="sec-img">
-        <img src="{% static 'images/grocery-store 1.svg' %}" alt="grocery-store">
+    </a>
+    
+    <a href="{% url 'commerce' %}" class="section-link">
+      <div class="section" data-image="chemical-slider.jpg">
+        <div class="sec-img">
+          <img src="{% static 'images/grocery-store-blue.png' %}" alt="grocery-store">
+        </div>
+        <div class="sec-text">E-Commerce</div>
       </div>
-      <div class="sec-text">E-Commerce</div>
-    </div>
-    <div class="section" data-image="electromagnetic-slider.jpg">
-      <div class="sec-img">
-        <img src="{% static 'images/game-console 1.svg' %}" alt="game">
+    </a>
+    
+    <a href="{% url 'sports' %}" class="section-link">
+      <div class="section" data-image="game-control-blue.png">
+        <div class="sec-img">
+          <img src="{% static 'images/game-control-blue.png' %}" alt="game">
+        </div>
+        <div class="sec-text">E-Sports</div>
       </div>
-      <div class="sec-text">E-Sports</div>
-    </div>
-    <div class="section" data-image="chemical-slider.jpg">
-      <div class="sec-img">
-        <img src="{% static 'images/traveling 1.svg' %}" alt="travel">
+    </a>
+    
+    <a href="{% url 'tours' %}" class="section-link">
+      <div class="section" data-image="chemical-slider.jpg">
+        <div class="sec-img">
+          <img src="{% static 'images/aeroplane-blue.png' %}" alt="travel">
+        </div>
+        <div class="sec-text">Tours&Travels</div>
       </div>
-      <div class="sec-text">Tours&Travels</div>
-    </div>
+    </a>
   </div>
   <!-- MAIN CONTENT2 -->
   <main id="content">
     <section class="bakgground">
       <div class="boxcontainer">
         <div class="main-content">
+          
+      <!-- Third Image and Content -->
+      <div class="card_main2">
+        <div class="container_card">
+          <div class="container_card_pofilephoto1" id="pc_image">
+            <img src="{% static 'images/hotels.png' %}" class="profile-img2" alt="Fighting" />
+          </div>
+          <div class="container_card_content2">
+         <div class="headd">
+          <h1 class="card-title">HOTELS</h1>
+         </div>
+            <h5 class="card-description2">
+              Experience comfort and luxury with our handpicked selection of
+              hotels. Whether you're looking for a cozy retreat or a lavish
+              stay, we offer accommodations that cater to every traveler’s
+              needs.Choose from a wide range of hotels, from budget-friendly stays to world-class resorts, all carefully selected for quality and comfort.
+              Enjoy breathtaking views, premium amenities, and exceptional hospitality that make your stay truly unforgettable.
+              Seamlessly book hotels with exclusive deals, flexible options, and instant confirmation for a hassle-free travel experience.
+             
+            </h5>
+          </div>
+        </div>
+      </div>
           <!-- First Image and Content -->
           <div class="card_main">
             <div class="container_card">
               <div class="container_card_content">
-                <h1 class="card-title2">PRIVATE TOURS</h1>
+           <div class="headd-left">
+            <h1 class="card-title2">PRIVATE TOURS</h1>
+           </div>
                 <h5 class="card-description1">
                   Craft your journey, discover your destination. Private
                   tours, your way.Experience luxury and personalized attention
@@ -102,7 +147,9 @@
                 <img src="{% static 'images/walk_tour2.jpg' %}" class="profile-img2" alt="Walk Tour" />
               </div>
               <div class="container_card_content2">
-                <h1 class="card-title">WALK TOURS</h1>
+            <div class="headd">
+              <h1 class="card-title">WALK TOURS</h1>
+            </div>
                 <h5 class="card-description2">
                   Step into the heart of your destination with our engaging
                   walking tours. Explore hidden gems, iconic landmarks, and
@@ -117,9 +164,100 @@
               </div>
             </div>
           </div>
-        
-        
+      
 
+
+      <!-- Forth Image and Content -->
+      <div class="card_main">
+        <div class="container_card">
+          <div class="container_card_content">
+          <div class="headd-left">
+            <h1 class="card-title2">WILDLIFE TOURS</h1>
+          </div>
+            <h5 class="card-description1">
+              Get up close with nature on our thrilling wildlife tours.
+              Witness the majesty of wildlife in their natural habitat, from
+              safaris to bird watching, we ensure an unforgettable adventure.Explore breathtaking national parks, lush jungles, and serene reserves teeming with diverse flora and fauna.
+              Experience guided safaris led by expert naturalists who bring you closer to rare and exotic wildlife species.
+              Capture stunning moments of nature’s wonders, from roaring lions and towering elephants to colorful tropical birds.
+              Enjoy eco-friendly travel options that promote conservation and responsible tourism while immersing yourself in nature.
+             
+            </h5>
+          </div>
+          <div id="sc_image" class="container_card_pofilephoto2">
+            <div class="profile-img">
+              <img src="{% static 'images/wildlife.jpg' %}" class="profile-img2" alt="Fighting" />
+            </div>
+            <!-- <img src="global.png" class="profile-img" alt="Real-Time Strategy" /> -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Fifth Image and Content -->
+      <div class="card_main2">
+        <div class="container_card">
+          <div id="ac_image" class="container_card_pofilephoto1">
+            <img src="{% static 'images/TS.jpg' %}" class="profile-img2" alt="Fighting" />
+          </div>
+          <div class="container_card_content2">
+          <div class="headd">
+            <h1 class="card-title">TRAVEL SERVICES</h1>
+          </div>
+            <h5 class="card-description2">
+              Let us turn your dream vacation into reality! With expert
+              planning and hassle-free arrangements, your perfect trip is just
+              a click away. From exotic getaways to cultural explorations, we craft personalized travel experiences tailored to your preferences.
+              Enjoy seamless bookings for flights, hotels, tours, and activities, all in one place.
+              Our travel experts ensure stress-free itineraries, so you can focus on making memories while we handle the details.
+              Discover exclusive deals, special packages, and curated travel plans designed to fit every budget and travel style.
+            </h5>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sixth Image and Content -->
+      <div class="card_main">
+        <div class="container_card">
+          <div class="container_card_content">
+          <div class="headd-left">
+            <h1 class="card-title2">HOLIDAY PACKAGES</h1>
+          </div>
+            <h5 class="card-description1">
+              Escape to paradise with our all-inclusive holiday packages
+              designed for relaxation and adventure. From breathtaking
+              destinations to seamless itineraries, our packages offer the
+              perfect blend of comfort, luxury, and excitement. Enjoy
+              top-notch accommodations, guided activities, and everything you
+              need for a stress-free vacation. Explore stunning beaches, vibrant cities, and exotic landscapes with carefully curated travel experiences.
+              Indulge in world-class dining, spa treatments, and thrilling excursions tailored to your preferences.
+              Enjoy hassle-free travel with pre-arranged transfers, expert guides, and 24/7 customer support for a worry-free journey.
+            </h5>
+          </div>
+          <div class="container_card_pofilephoto2">
+            <div class="profile-img">
+              <img src="{% static 'images/holiday.jpeg' %}" class="profile-img2" alt="Fighting" />
+            </div>
+            <!-- <img src="global.png" class="profile-img" alt="Real-Time Strategy" /> -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Seventh Image and Content -->
+      <div class="card_main2">
+        <div class="container_card">
+          <div id="ac_image" class="container_card_pofilephoto1">
+            <img src="{% static 'images/guide.jpg' %}" class="profile-img2" alt="Fighting" />
+          </div>
+          <div class="container_card_content2">
+           <div class="headd">
+            <h1 class="card-title">TRAVEL GUIDE</h1>
+           </div>
+            <h5 class="card-description2">
+              Our professional guides help you explore every destination in a more meaningful way. They’ll share fascinating stories, local legends, and hidden gems that you might otherwise miss. Guides also assist with planning the best excursions, must-see attractions, top activities, and personalized itineraries tailored to your time and interests. From navigating local culture to recommending the best food spots and shopping areas, they’re your go-to travel companions for a smooth, enriching, and unforgettable journey.
+            </h5>
+          </div>
+        </div>
+      </div>
       <!-- Collage -->
       <div class="box">
         <div class="box-content">
@@ -155,112 +293,6 @@
           </div>
         </div>
       </div>
-
-      <!-- Third Image and Content -->
-      <div class="card_main2">
-        <div class="container_card">
-          <div class="container_card_pofilephoto1" id="pc_image">
-            <img src="{% static 'images/hotels.png' %}" class="profile-img2" alt="Fighting" />
-          </div>
-          <div class="container_card_content2">
-            <h1 class="card-title">HOTELS</h1>
-            <h5 class="card-description2">
-              Experience comfort and luxury with our handpicked selection of
-              hotels. Whether you're looking for a cozy retreat or a lavish
-              stay, we offer accommodations that cater to every traveler’s
-              needs.Choose from a wide range of hotels, from budget-friendly stays to world-class resorts, all carefully selected for quality and comfort.
-              Enjoy breathtaking views, premium amenities, and exceptional hospitality that make your stay truly unforgettable.
-              Seamlessly book hotels with exclusive deals, flexible options, and instant confirmation for a hassle-free travel experience.
-             
-            </h5>
-          </div>
-        </div>
-      </div>
-
-      <!-- Forth Image and Content -->
-      <div class="card_main">
-        <div class="container_card">
-          <div class="container_card_content">
-            <h1 class="card-title2">WILDLIFE TOURS</h1>
-            <h5 class="card-description1">
-              Get up close with nature on our thrilling wildlife tours.
-              Witness the majesty of wildlife in their natural habitat, from
-              safaris to bird watching, we ensure an unforgettable adventure.Explore breathtaking national parks, lush jungles, and serene reserves teeming with diverse flora and fauna.
-              Experience guided safaris led by expert naturalists who bring you closer to rare and exotic wildlife species.
-              Capture stunning moments of nature’s wonders, from roaring lions and towering elephants to colorful tropical birds.
-              Enjoy eco-friendly travel options that promote conservation and responsible tourism while immersing yourself in nature.
-             
-            </h5>
-          </div>
-          <div id="sc_image" class="container_card_pofilephoto2">
-            <div class="profile-img">
-              <img src="{% static 'images/wildlife.jpg' %}" class="profile-img2" alt="Fighting" />
-            </div>
-            <!-- <img src="global.png" class="profile-img" alt="Real-Time Strategy" /> -->
-          </div>
-        </div>
-      </div>
-
-      <!-- Fifth Image and Content -->
-      <div class="card_main2">
-        <div class="container_card">
-          <div id="ac_image" class="container_card_pofilephoto1">
-            <img src="{% static 'images/TS.jpg' %}" class="profile-img2" alt="Fighting" />
-          </div>
-          <div class="container_card_content2">
-            <h1 class="card-title">TRAVEL SERVICES</h1>
-            <h5 class="card-description2">
-              Let us turn your dream vacation into reality! With expert
-              planning and hassle-free arrangements, your perfect trip is just
-              a click away. From exotic getaways to cultural explorations, we craft personalized travel experiences tailored to your preferences.
-              Enjoy seamless bookings for flights, hotels, tours, and activities, all in one place.
-              Our travel experts ensure stress-free itineraries, so you can focus on making memories while we handle the details.
-              Discover exclusive deals, special packages, and curated travel plans designed to fit every budget and travel style.
-            </h5>
-          </div>
-        </div>
-      </div>
-
-      <!-- Sixth Image and Content -->
-      <div class="card_main">
-        <div class="container_card">
-          <div class="container_card_content">
-            <h1 class="card-title2">HOLIDAY PACKAGES</h1>
-            <h5 class="card-description1">
-              Escape to paradise with our all-inclusive holiday packages
-              designed for relaxation and adventure. From breathtaking
-              destinations to seamless itineraries, our packages offer the
-              perfect blend of comfort, luxury, and excitement. Enjoy
-              top-notch accommodations, guided activities, and everything you
-              need for a stress-free vacation. Explore stunning beaches, vibrant cities, and exotic landscapes with carefully curated travel experiences.
-              Indulge in world-class dining, spa treatments, and thrilling excursions tailored to your preferences.
-              Enjoy hassle-free travel with pre-arranged transfers, expert guides, and 24/7 customer support for a worry-free journey.
-            </h5>
-          </div>
-          <div class="container_card_pofilephoto2">
-            <div class="profile-img">
-              <img src="{% static 'images/holiday.jpeg' %}" class="profile-img2" alt="Fighting" />
-            </div>
-            <!-- <img src="global.png" class="profile-img" alt="Real-Time Strategy" /> -->
-          </div>
-        </div>
-      </div>
-
-      <!-- Seventh Image and Content -->
-      <div class="card_main2">
-        <div class="container_card">
-          <div id="ac_image" class="container_card_pofilephoto1">
-            <img src="{% static 'images/guide.jpg' %}" class="profile-img2" alt="Fighting" />
-          </div>
-          <div class="container_card_content2">
-            <h1 class="card-title">TRAVEL GUIDE</h1>
-            <h5 class="card-description2">
-              Our professional guides help you explore every destination in a more meaningful way. They’ll share fascinating stories, local legends, and hidden gems that you might otherwise miss. Guides also assist with planning the best excursions, must-see attractions, top activities, and personalized itineraries tailored to your time and interests. From navigating local culture to recommending the best food spots and shopping areas, they’re your go-to travel companions for a smooth, enriching, and unforgettable journey.
-            </h5>
-          </div>
-        </div>
-      </div>
-
       </div>
       </div>
     </section>
