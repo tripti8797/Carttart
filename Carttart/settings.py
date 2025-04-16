@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'blog',
     'oauth',
     'admindash',
+    'clientlogo',
 ]
 
 AUTH_USER_MODEL = 'oauth.User'

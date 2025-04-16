@@ -25,7 +25,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #2c3e50;
+  background-color: #19af62;
   color: white;
   padding: 12px 25px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
@@ -36,8 +36,6 @@ body {
 .header .home-image {
   width: 40px;
   height: 40px;
-  border-radius: 50%;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
 }
 
@@ -113,7 +111,7 @@ body {
 /* Sidebar Styles */
 .sidebar {
   width: 260px;
-  background-color: #34495e;
+  background-color: #19af62;
   color: white;
   height: 100%;
   overflow-y: auto;
@@ -126,7 +124,7 @@ body {
   align-items: center;
   gap: 12px;
   padding: 20px;
-  background-color: #2c3e50;
+  background-color: #19af62;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -158,7 +156,7 @@ body {
 }
 
 .nav-item.active {
-  background-color: #3498db;
+  background-color: #284c10;
 }
 
 .nav-link {
@@ -255,7 +253,7 @@ body {
   border-radius: 8px;
   padding: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-  border-top: 4px solid #2c3e50;
+  border-top: 4px solid #19af62;;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -386,7 +384,7 @@ input:focus, textarea:focus, select:focus {
 }
 
 .data-table th {
-  background-color: #2c3e50;
+  background-color: #1a4d33;
   color: white;
   font-weight: 600;
   padding: 12px 15px;
@@ -396,8 +394,13 @@ input:focus, textarea:focus, select:focus {
 .data-table td {
   padding: 12px 15px;
   border-bottom: 1px solid #eee;
-  background-color: lightblue;
+  /* background-color: lightblue; */
+  border-block: 1px solid grey;
 }
+tr {
+  border-inline: 1px solid gray;
+}
+
 
 .data-table tr:nth-child(even) {
   background-color: #f8f9fa;
@@ -686,7 +689,7 @@ strong {
 
 .view-btn{
     border: none;
-    padding: 8px;
+    padding: 8px 20px;
     border-radius: 8px;
     background-color: green;
     color: white;
@@ -694,9 +697,9 @@ strong {
 
 .delete-btn{
     border: none;
-    padding: 8px;
+    padding: 8px 20px;
     border-radius: 8px;
-    background-color: red;
+    background-color: rgb(196 39 39);
     color: white;
 }
 

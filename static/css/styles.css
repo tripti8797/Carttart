@@ -390,7 +390,7 @@ div#card_content2 {
 
 .section-title {
   color: var(--green);
-  font-size: 2.2rem;
+  font-size: 32px;
   font-weight: 550;
   padding: 0 1rem;
 }
@@ -539,7 +539,7 @@ div#card_content2 {
 /* Grow Section */
 .grow {
   width: 100%;
-  max-width: 1400px;
+  max-width: 1360px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1168,6 +1168,12 @@ div#card_content2 {
     justify-content: center; /* Added for better centering */
   }
 
+  div#card_content2 {
+    padding-right: 7px;
+  }
+  .marketing-section {
+    padding-inline: 24px;
+}
   .crd {
     width: 212px;
     height: 260px;
@@ -1354,7 +1360,7 @@ div#card_content2 {
     min-height: 288px; /* Added minimum height */
     gap: 0.7rem;
     margin-top: 1rem;
-    width: 97%;
+    width: 93%;
   }
 .success-container{
   padding-inline: 15px;
@@ -1362,6 +1368,9 @@ div#card_content2 {
   /* Success section adjustments */
   .success-section h2 {
     font-size: 24px;
+  }
+  .success-container {
+    width: 96%;
   }
 
   .success-section p {
@@ -1396,8 +1405,9 @@ div#card_content2 {
     font-size: 9px;
   }
   .govt-section{       
-     padding-inline: 15px;
+     padding-inline: 18px;
     }
+    
 
 }
 /* ============== MEDIA QUERIES ============== */
@@ -1413,6 +1423,9 @@ div#card_content2 {
 
   .hamburger {
     display: block;
+  }
+  .section-selector {
+    margin-top: -3rem;
   }
 
   .nav-links {
@@ -1434,6 +1447,10 @@ div#card_content2 {
     background: var(--white);
     color: var(--green);
   }
+  .card {
+    margin-top: 0rem;
+  }
+ 
 
   .arrow {
     border-bottom: solid var(--white);
@@ -1453,7 +1470,7 @@ div#card_content2 {
   }
 
   .logo img {
-    width: 20%;
+    width: 25%;
   }
 
   .nav-links.show {
@@ -1480,8 +1497,8 @@ div#card_content2 {
   }
 
   .card-head img {
-    width: 80px;
-    margin: 0.3rem auto;
+    width: 84px;
+        margin: 0px auto;
   }
 
   .card-para {
@@ -1529,9 +1546,11 @@ div#card_content2 {
     margin-top: 1rem;
   }
   .business-section {
+    padding-block: 0px;
     flex-direction: column;
   }
   .govt-section {
+    padding-block: 0px;
     flex-direction: column;
   }
   .marketing-grid{
@@ -1588,7 +1607,11 @@ div#card_content2 {
   flex-direction: row-reverse;
 }
 .header2 h1 {
+  font-size: 15px;
   text-align: right;
+}
+div#card_content1 {
+  gap: 12px;
 }
 .header2 h2{
   text-align: right;
@@ -1615,6 +1638,13 @@ div#card_content2 {
   div#card_content2 {
     gap: 16px;
     margin-top: 1rem;
+}
+.card-topic h2 {
+  padding: 0 4rem;
+}
+.slide-container {
+  margin: 4rem auto;
+  
 }
 }
 @media (max-width: 425px) {
@@ -1646,6 +1676,10 @@ div#card_content2 {
     left: 17px;
     margin-bottom: 0;
   }
+  .slide img {
+    width: 94%;
+    margin-inline: 14px;
+}
 
   .overlay-text {
     font-size: 0.8rem;
@@ -1667,7 +1701,12 @@ div#card_content2 {
     padding: 0.2rem;
     font-size: 6px;
   }
-
+  .slide-container {
+    margin-top: 57px;
+}
+.card-topic h2 {
+  padding: 0 2rem;
+}
   .sec-img {
     height: 39px;
     margin-bottom: 5px;
@@ -1852,6 +1891,9 @@ div#card_content2 {
   .finance-section {
     flex-direction: column-reverse;
   }
+  .card-topic h2 {
+    padding: 0 4rem;
+}
 }
 @media (max-width: 400px) {
   .crd{
@@ -1860,6 +1902,7 @@ div#card_content2 {
   .card-img {
     top: 40px;
   }
+  
 }
 
 @media (max-width: 375px) {
@@ -1982,7 +2025,7 @@ div#card_content2 {
   .section-selector {
     padding: 4px;
     height: 55px;
-    width: 93%;
+    width: 81%;
   }
 
   .section {

@@ -1,9 +1,11 @@
 from django.shortcuts import render  # Import the render function to render HTML templates
 from django.http import HttpResponse  # Import HttpResponse (not used in this file but generally useful for returning responses)
+from clientlogo.models import ClientLogo  # Import the ClientLogo model to fetch client logos
 
 # View function for the home page
 def index(request):
-    return render(request, 'index.html')  # Renders the "index.html" template
+    logos = ClientLogo.objects.all()  # ✅ Properly fetches all ClientLogo objects
+    return render(request, 'index.html', {"logos": logos})
 
 # View function for the About page
 def about(request):

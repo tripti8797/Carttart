@@ -41,7 +41,7 @@
                   <p class="nav-text">Dashboard</p>
                 </a>
               </li>
-              <li class="nav-item dropdown-toggle" data-menu="employee-menu">
+              <!-- <li class="nav-item dropdown-toggle" data-menu="employee-menu">
                 <div class="empp">
                   <span class="fas fa-user-tie"></span>
                   <p class="nav-text">Employee</p>
@@ -61,7 +61,7 @@
                     <p class="nav-subtext">Employee List</p>
                   </a>
                 </li>
-              </ul>
+              </ul> -->
               <li class="nav-item dropdown-toggle" data-menu="blog-menu">
                 <div class="empp">
                   <span class="fas fa-pen-nib"></span>
@@ -83,10 +83,31 @@
                   </a>
                 </li>
               </ul>
+              <li class="nav-item dropdown-toggle" data-menu="clientlogo-menu">
+                <div class="empp">
+                  <span class="fas fa-pen-nib"></span>
+                  <p class="nav-text">Manage client logo</p>
+                </div>
+                <span class="dropdown-icon"><i class="fas fa-chevron-right icon-toggle"></i></span>
+              </li>
+              <ul class="dropdown-menu" id="clientlogo-menu">
+                <li class="nav-item {% if request.resolver_match.url_name == 'logo_slider' %}active{% endif %}">
+                  <a class="nav-link" href="{% url 'logo_slider' %}">
+                    <span class="fas fa-list"></span>
+                    <p class="nav-subtext">Logo Slider</p>
+                  </a>
+                </li>
+                <li class="nav-item {% if request.resolver_match.url_name == 'upload_logo' %}active{% endif %}">
+                  <a class="nav-link" href="{% url 'upload_logo' %}">
+                    <span class="fas fa-plus-circle"></span>
+                    <p class="nav-subtext">Upload Logo</p>
+                  </a>
+                </li>
+              </ul>
               <li class="nav-item {% if request.resolver_match.url_name == 'contact_messages_list' %}active{% endif %}">
                 <a class="nav-link" href="{% url 'contact_messages_list' %}">
                   <span class="fas fa-envelope"></span>
-                  <p class="nav-subtext">Contact Messages</p>
+                  <p class="nav-text">Contact Messages</p>
                 </a>
               </li>
             </ul>

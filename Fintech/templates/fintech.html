@@ -226,7 +226,7 @@ Enjoy enhanced security with encryption and authentication features that protect
                         </div>
                         <div class="container_card_content">
                          <div class="headd">
-                          <h1 class="card-title2">ACCOUNTING AND BOOKING</h1>
+                          <h1 class="card-title2">ACCOUNTING</h1>
                          </div>
                             <h5 class="card-description1">
                                 Modern accounting and booking software automates financial record-keeping, reducing 
@@ -260,92 +260,61 @@ Enjoy enhanced security with encryption and authentication features that protect
             <!-- Budgeting -->
             <div class="div1">
                 <img src="{% static 'images/budgeting.png' %}" alt="Budgeting concepts">
-                <div class="image-text">Budgeting</div>
+                
                 <button class="image-button">Learn More</button>
             </div>
             <!-- Saving -->
             <div class="div2">
                 <img src="{% static 'images/saving.png' %}" alt="Saving strategies">
-                <div class="image-text">Saving</div>
+                
                 <button class="image-button">Learn More</button>
             </div>
             <!-- Tax Literacy -->
             <div class="div3">
                 <img src="{% static 'images/tax.webp' %}" alt="Tax education">
-                <div class="image-text">Tax Literacy</div>
+               
                 <button class="image-button">Learn More</button>
             </div>
             <!-- Debt Management -->
             <div class="div4">
                 <img src="{% static 'images/debt.png' %}" alt="Debt management">
-                <div class="image-text">Debt Management</div>
+               
                 <button class="image-button">Learn More</button>
             </div>
         </div>
     </div>
 </div>
-<!-- partners-slider -->
-<div class="company-slide-container">
+
+
+
+  <div class="company-slide-container">
     <div class="company-slide-section-title">
       <h2>Our Trusted Partners</h2>
     </div>
   
     <div class="company-slide-logo-slider-container">
       <div class="company-slide-logo-track">
-        <!-- Original logos -->
-        <div class="company-slide-logo-slide">
-          <img src="{% static 'images/airbnb.png' %}" alt="Airbnb" />
-        </div>
-        <div class="company-slide-logo-slide">
-          <img src="{% static 'images/huawei.png' %}" alt="Huawei" />
-        </div>
-        <div class="company-slide-logo-slide">
-          <img src="{% static 'images/logo.png' %}" alt="Varun Beverages" />
-        </div>
-        <div class="company-slide-logo-slide">
-          <img src="{% static 'images/samsung (1).png' %}" alt="Samsung" />
-        </div>
-        <div class="company-slide-logo-slide">
-          <img src="{% static 'images/airbnb.png' %}" alt="Microsoft" />
-        </div>
-        <div class="company-slide-logo-slide">
-          <img src="{% static 'images/huawei.png' %}" alt="Google" />
-        </div>
-        <div class="company-slide-logo-slide">
-          <img src="{% static 'images/logo.png' %}" alt="Apple" />
-        </div>
-        <div class="company-slide-logo-slide">
-          <img src="{% static 'images/samsung (1).png' %}" alt="Tesla" />
-        </div>
+        {% for logo in logos %}
+          <div class="company-slide-logo-slide">
+            <img src="{{ logo.logo.url }}" alt="{{ logo.name }}" />
+          </div>
+        {% empty %}
+          <div class="company-slide-logo-slide">
+            <p>No logos available.</p>
+          </div>
+        {% endfor %}
   
-        <!-- Duplicate logos for seamless scrolling effect -->
-        <div class="company-slide-logo-slide">
-          <img src="{% static 'images/airbnb.png' %}" alt="Airbnb" />
-        </div>
-        <div class="company-slide-logo-slide">
-          <img src="{% static 'images/huawei.png' %}" alt="Huawei" />
-        </div>
-        <div class="company-slide-logo-slide">
-          <img src="{% static 'images/logo.png' %}" alt="Varun Beverages" />
-        </div>
-        <div class="company-slide-logo-slide">
-          <img src="{% static 'images/samsung (1).png' %}" alt="Samsung" />
-        </div>
-        <div class="company-slide-logo-slide">
-          <img src="{% static 'images/airbnb.png' %}" alt="Microsoft" />
-        </div>
-        <div class="company-slide-logo-slide">
-          <img src="{% static 'images/huawei.png' %}" alt="Google" />
-        </div>
-        <div class="company-slide-logo-slide">
-          <img src="{% static 'images/logo.png' %}" alt="Apple" />
-        </div>
-        <div class="company-slide-logo-slide">
-          <img src="{% static 'images/samsung (1).png' %}" alt="Tesla" />
-        </div>
+        <!-- Optional: Duplicate logos again for seamless scrolling -->
+        {% for logo in logos %}
+          <div class="company-slide-logo-slide">
+            <img src="{{ logo.logo.url }}" alt="{{ logo.name }}" />
+          </div>
+        {% endfor %}
       </div>
     </div>
   </div>
+
+
  <!--Dynamic blog Card Section -->
  <div class="latest-card">
     <div class="Scroll">

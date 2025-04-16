@@ -33,6 +33,7 @@ urlpatterns = [
     path('blog/', include(('blog.urls', 'blog'), namespace='blog')),  # Blog app routing
     path('auth/', include("oauth.urls")),  # oauth app routing
     path('dashboard/', include("admindash.urls")),  # Dashboard app routing
+    path('clientlogo/', include('clientlogo.urls')),  # Client logo app routing
 ]
 
 if settings.DEBUG:

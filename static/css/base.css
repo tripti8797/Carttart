@@ -782,3 +782,6 @@ h5.card-description1 {
     justify-content: center;
   }
 }
+.image-button{
+  font-size: 13px !important;
+}

@@ -303,69 +303,36 @@
     </div>
   </section>
 </main>
-<!-- partners-slider -->
-<div class="company-slide-container">
+
+ <!-- dynamic-partner-slider -->
+   
+
+ <div class="company-slide-container">
   <div class="company-slide-section-title">
     <h2>Our Trusted Partners</h2>
   </div>
 
   <div class="company-slide-logo-slider-container">
     <div class="company-slide-logo-track">
-      <!-- Original logos -->
-      <div class="company-slide-logo-slide">
-        <img src="{% static 'images/airbnb.png' %}" alt="Airbnb" />
-      </div>
-      <div class="company-slide-logo-slide">
-        <img src="{% static 'images/huawei.png' %}" alt="Huawei" />
-      </div>
-      <div class="company-slide-logo-slide">
-        <img src="{% static 'images/logo.png' %}" alt="Varun Beverages" />
-      </div>
-      <div class="company-slide-logo-slide">
-        <img src="{% static 'images/samsung (1).png' %}" alt="Samsung" />
-      </div>
-      <div class="company-slide-logo-slide">
-        <img src="{% static 'images/airbnb.png' %}" alt="Microsoft" />
-      </div>
-      <div class="company-slide-logo-slide">
-        <img src="{% static 'images/huawei.png' %}" alt="Google" />
-      </div>
-      <div class="company-slide-logo-slide">
-        <img src="{% static 'images/logo.png' %}" alt="Apple" />
-      </div>
-      <div class="company-slide-logo-slide">
-        <img src="{% static 'images/samsung (1).png' %}" alt="Tesla" />
-      </div>
+      {% for logo in logos %}
+        <div class="company-slide-logo-slide">
+          <img src="{{ logo.logo.url }}" alt="{{ logo.name }}" />
+        </div>
+      {% empty %}
+        <div class="company-slide-logo-slide">
+          <p>No logos available.</p>
+        </div>
+      {% endfor %}
 
-      <!-- Duplicate logos for seamless scrolling effect -->
-      <div class="company-slide-logo-slide">
-        <img src="{% static 'images/airbnb.png' %}" alt="Airbnb" />
-      </div>
-      <div class="company-slide-logo-slide">
-        <img src="{% static 'images/huawei.png' %}" alt="Huawei" />
-      </div>
-      <div class="company-slide-logo-slide">
-        <img src="{% static 'images/logo.png' %}" alt="Varun Beverages" />
-      </div>
-      <div class="company-slide-logo-slide">
-        <img src="{% static 'images/samsung (1).png' %}" alt="Samsung" />
-      </div>
-      <div class="company-slide-logo-slide">
-        <img src="{% static 'images/airbnb.png' %}" alt="Microsoft" />
-      </div>
-      <div class="company-slide-logo-slide">
-        <img src="{% static 'images/huawei.png' %}" alt="Google" />
-      </div>
-      <div class="company-slide-logo-slide">
-        <img src="{% static 'images/logo.png' %}" alt="Apple" />
-      </div>
-      <div class="company-slide-logo-slide">
-        <img src="{% static 'images/samsung (1).png' %}" alt="Tesla" />
-      </div>
+      <!-- Optional: Duplicate logos again for seamless scrolling -->
+      {% for logo in logos %}
+        <div class="company-slide-logo-slide">
+          <img src="{{ logo.logo.url }}" alt="{{ logo.name }}" />
+        </div>
+      {% endfor %}
     </div>
   </div>
 </div>
-
 
 <!--Dynamic blog Card Section -->
 <div class="latest-card">
