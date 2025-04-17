@@ -1,4 +1,5 @@
 /* oracle.css */
+
 *, ::after, ::before {
     box-sizing: border-box;
 }
@@ -176,7 +177,7 @@ body {
     margin-bottom: 20px;
 }
 
-p {
+.ERP p {
     font-family: 'Poppins', sans-serif;
     display: block;
     margin-block-start: 1em;

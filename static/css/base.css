@@ -491,6 +491,7 @@ padding: 0 20px;
   box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.05);
   margin-top: 60px;
   width: 100%;
+  z-index: 2000;
 }
 
 .footer {
@@ -716,7 +717,6 @@ padding: 0 20px;
 }
 .profile-img2 {
   width: 100%;
-  object-fit: cover;
   border-radius: 10px;
   height: 400px;
   transition: transform 0.3s ease;
@@ -784,4 +784,8 @@ h5.card-description1 {
 }
 .image-button{
   font-size: 13px !important;
+}
+a {
+  text-decoration: none;
+  color: white;
 }

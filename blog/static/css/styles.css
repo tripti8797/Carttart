@@ -2,14 +2,25 @@
     --primary-color: #007bff;
     --secondary-color: #0056b3;
     --font-family: 'Poppins', sans-serif;
+    --black: #000;
+    --green: #19af62;
+    --white: #ffffff;
+    --light-gray: #f7f7f7;
+    --medium-gray: #d6d4d4;
+    --dark-gray: #6e7d83;
+    --text-color: #353c3f;
+    --shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
+
 
 body {
     font-family: var(--font-family);
     background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
     color: #333;
 }
-
+.fixed_footer{
+    background-color: var(--black);
+}
 .container {
     width: 90%;
     max-width: 1200px;

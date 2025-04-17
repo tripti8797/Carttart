@@ -1,28 +1,26 @@
+{% extends 'base.html' %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ blog.title }}</title>
-    <link rel="stylesheet" href="{% static 'css/tour.css' %}">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-</head>
-<body>
+
+{% block title %}
+    {{ blog.title }}
+    {% block logo_image %}{% static 'images/h-g-logo.png' %}{% endblock logo_image %}
+{% endblock %}
+
+
+{% block content %}
     <!-- Table of Contents -->
     <div class="toc">
         <h3>Table of Contents</h3>
         <ul>
             {% for section in blog.sections.all %}
                 <li><a href="#{{ section.slug }}">{{ section.title }}</a></li>
-            {% endfor %}
+            {% endfor %}    
         </ul>
     </div>
 
     <!-- Blog Content -->
-    <div class="tour-body">
-        <div class="tour-mid1">
+    <div class="oracle-body">
+        <div class="oracle-mid1">
             <div class="one">
                 <p class="see">{{ blog.short_description }}</p>
                 <div class="obttns">
@@ -36,11 +34,11 @@
             </div>
         </div>
 
-        <div class="tour-middle">
+        <div class="oracle-middle">
             <!-- Blog Sections -->
-            <div class="tour-middle-part2">
+            <div class="oracle-middle-part2">
                 <section class="part2-section1">
-                    <div class="tour-guide">
+                    <div class="ERP">
                         <h2 class="rw-ptitle">{{ blog.title }}</h2>
                         <p>{{ blog.content|safe }}</p>
                     </div>
@@ -49,7 +47,7 @@
                 <!-- Dynamic Sections -->
                 {% for section in blog.sections.all %}
                     <section id="{{ section.slug }}" class="part2-section1">
-                        <div class="tour-guide">
+                        <div class="ERP">
                             <h2>{{ section.title }}</h2>
                             <p>{{ section.content|safe }}</p>
                         </div>
@@ -81,9 +79,9 @@
             </div>
         </div>
 
-        <!-- Recent Tours Section -->
-        <div class="recent-tours">
-            <h2>MORE TOUR GUIDES</h2>
+        <!-- Recent Issues Section -->
+        <div class="recent-issues">
+            <h2>More Blog</h2>
             <div class="recent-blogs-grid">
                 {% for recent_blog in recent_blogs %}
                 <div class="recent-blog-card">
@@ -98,12 +96,11 @@
                     <div class="recent-blog-content">
                         <h3>{{ recent_blog.title }}</h3>
                         <p>{{ recent_blog.short_description|default:recent_blog.content|truncatewords:15|safe }}</p>
-                        <a href="{% url 'blog:tour_blog_detail' recent_blog.slug %}" class="read-more">Read Guide</a>
+                        <a href="{% url 'blog:healthcare_blog_detail' recent_blog.slug %}" class="read-more">Read More</a>
                     </div>
                 </div>
                 {% endfor %}
             </div>
         </div>
     </div>
-</body>
-</html>
+{% endblock %}
