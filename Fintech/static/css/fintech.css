@@ -362,8 +362,10 @@
       align-items: center;
       flex-wrap: nowrap;
       width: 100%;
-      gap: inherit;
+      justify-content: space-around;
     }
+    
+    
     
     .container_card_content {
       text-align: center;
@@ -457,16 +459,14 @@
     
     .profile-img {
       width: 100%;
-      object-fit: cover;
       border-radius: 10px;
-      height: 400px;
+      height: 350px;
     }
   
     .profile-img2 {
       width: 100%;
-      object-fit: cover;
       border-radius: 10px;
-      height: 400px;
+      height: 350px;
     }
   
   
