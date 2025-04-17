@@ -11,6 +11,15 @@ height: 2px;
 background-color: var(--blue);
 transition: width 0.3s ease;
 }
+.footer-section h3.head{
+  color: var(--blue);
+}
+.footer-section h3.head::after{
+  background-color: var(--blue);
+}
+.footer-section ul li{
+  color: var(--blue);
+}
 .fized{
 background-color: var(--blue);
 width: 100%;

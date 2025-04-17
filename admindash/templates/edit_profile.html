@@ -45,6 +45,10 @@
                 <input type="tel" id="id_phone" name="phone" value="{{ request.user.phone_number|default:'' }}">
             </div>
         </div>
+
+        <a href="{% url 'change_password' %}" class="btn save-btn">
+            <i class="fas fa-user-edit"></i> change password
+        </a>
         
         <div class="input-group">
             <label for="id_bio">Bio</label>
@@ -58,6 +62,8 @@
             <a href="{% url 'superadmin_dashboard' %}" class="btn cancel-btn">
                 <i class="fas fa-times"></i> Cancel
             </a>
+
+           
         </div>
     </form>
 </div>

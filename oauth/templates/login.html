@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Login | Carttart Commerce - Art for cart</title>
+<!-- Favicon -->
+{% include 'favicon.html' %}
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
@@ -138,12 +141,7 @@
         }
 
         .password-toggle {
-            position: absolute;
-            right: 15px;
-            top: 50%;
-            transform: translateY(-50%);
-            cursor: pointer;
-            color: var(--text-light);
+        
         }
 
         .form-options {
@@ -307,16 +305,16 @@
         
         {% if messages %}
             {% for message in messages %}
-            <div class="alert alert-{{ message.tags }}">
+            <!-- <div class="alert alert-{{ message.tags }}">
                 {{ message }}
-            </div>
+            </div> -->
             {% endfor %}
         {% endif %}
         
         <form method="post">
             {% csrf_token %}
             <div class="form-group">
-                <label for="id_username">Email Address</label>
+                <label for="id_username">User ID</label>
                 <div class="input-wrapper">
                     <i class="fas fa-envelope"></i>
                     <input type="text" id="id_username" name="username" class="form-control" placeholder="Enter your email" required>
@@ -341,15 +339,15 @@
     </div>
 
     <script>
-        // Toggle password visibility
-        const togglePassword = document.getElementById('togglePassword');
-        const password = document.getElementById('id_password');
+        // // Toggle password visibility
+        // const togglePassword = document.getElementById('togglePassword');
+        // const password = document.getElementById('id_password');
         
-        togglePassword.addEventListener('click', function() {
-            const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
-            password.setAttribute('type', type);
-            this.classList.toggle('fa-eye-slash');
-        });
+        // togglePassword.addEventListener('click', function() {
+        //     const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+        //     password.setAttribute('type', type);
+        //     this.classList.toggle('fa-eye-slash'); // Toggles between eye and eye-slash icons
+        // });
     </script>
 </body>
 </html>

@@ -1,77 +1,10 @@
-<!-- clientlogo/templates/clientlogo/upload.html -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Upload Client Logo</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            background: linear-gradient(135deg, #eaefec);
-            min-height: 100vh;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .upload-card {
-            max-width: 650px;
-            width: 100%;
-            background: #ffffff;
-            border-radius: 20px;
-            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
-            padding: 40px;
-        }
-        h2 {
-            font-weight: 700;
-            color: #333333;
-        }
-        .form-label {
-            font-weight: 600;
-            color: #555;
-        }
-        .form-control, .form-select {
-            border-radius: 12px;
-            padding: 10px;
-            font-size: 16px;
-            border: 1px solid #ddd;
-        }
-        .btn-primary {
-            background-color: #198754;
-            border-color: #198754;
-            font-weight: 600;
-            padding: 8px 24px;
-            border-radius: 10px;
-            transition: 0.3s;
-        }
-        .btn-primary:hover {
-            background-color: #fb8c00;
-            border-color: #198754;
-        }
-        .btn-secondary {
-            background-color: #198754;
-            border-color: #198754;
-            font-weight: 600;
-            padding: 8px 24px;
-            border-radius: 10px;
-        }
-        .btn-secondary:hover {
-            background-color: #fb8c00;
-            border-color: #198754;
-        }
-        .alert-success {
-            font-weight: 500;
-            color: #155724;
-            background-color: #d4edda;
-            border: 1px solid #c3e6cb;
-            border-radius: 8px;
-        }
-    </style>
-</head>
-<body>
+{% extends "superadmin_dashboard.html" %}
+{% load static %}
+
+{% block content %}
+<div class="upload-container">
     <div class="upload-card">
-        <h2 class="text-center mb-4">🚀 Upload Client Logo</h2>
+        <h3 class="text-center mb-4">🚀 Upload Client Logo</h3>
 
         {% if success %}
         <div class="alert alert-success text-center" role="alert">
@@ -91,13 +24,90 @@
                 </div>
             {% endfor %}
 
-            <!-- Buttons in one aligned row -->
-            <div class="d-flex justify-content-between mt-4">
-                <button type="submit" class="btn btn-primary">Upload</button>
-                <a href="{% url 'logo_slider' %}" class="btn btn-secondary">Back to Slider</a>
-                <a href="{% url 'dashboard' %}" class="btn btn-secondary">Back to Admin Portal</a>
+            <!-- Button row -->
+            <div class="text-center mt-5">
+                <button type="submit" class="btn btn-upload-logo mx-2">Upload</button>
+                <a href="{% url 'logo_slider' %}" class="btn btn-back-slider mx-2">Back to Slider</a>
+                <a href="{% url 'dashboard' %}" class="btn btn-back-slider mx-2">Back to Admin Portal</a>
             </div>
         </form>
     </div>
-</body>
-</html>
+</div>
+
+<style>
+    /* Wrapper for center alignment */
+    .upload-container {
+        display: flex;
+        justify-content: center;
+        padding: 60px 15px;
+    }
+
+    /* Card styling for the upload section */
+    .upload-card {
+        background-color: #ffffff;
+        padding: 40px;
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        width: 100%;
+        max-width: 700px;
+    }
+
+    /* Title styling */
+    h3 {
+        font-weight: 700;
+        color: #333;
+    }
+
+    /* Form label styling */
+    .form-label {
+        font-weight: 600;
+        color: #555;
+    }
+
+    .form-control, .form-select {
+        border-radius: 12px;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+    }
+
+    /* Button styles for Upload logo */
+    .btn-upload-logo {
+        background-color: #198754 !important;
+        color: white !important;
+        border: none;
+        padding: 10px 25px;
+        border-radius: 10px;
+        font-weight: 600;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn-upload-logo:hover {
+        background-color: #146c43 !important;
+    }
+
+    /* Button styles for Back to Slider and Back to Admin Portal */
+    .btn-back-slider {
+        background-color: #198754 !important;
+        color: white !important;
+        border: none;
+        padding: 10px 25px;
+        border-radius: 10px;
+        font-weight: 600;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn-back-slider:hover {
+        background-color: #146c43 !important;
+    }
+
+    /* Success alert styling */
+    .alert-success {
+        font-weight: 500;
+        color: #155724;
+        background-color: #d4edda;
+        border: 1px solid #c3e6cb;
+        border-radius: 8px;
+    }
+</style>
+{% endblock %}

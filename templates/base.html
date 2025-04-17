@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}{% endblock %}</title>
+    <title>{% block title %}Welcome | Carttart Commerce - Art for cart{% endblock title %}</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
@@ -16,7 +16,8 @@
     <link rel="stylesheet" href="{% static 'css/oracle.css' %}">
 
     <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="{% static 'images/footer-logo.ico' %}">
+    {% include 'favicon.html' %} 
+   
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
     
 </head>

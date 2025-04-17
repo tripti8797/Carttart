@@ -3,6 +3,23 @@
 }
 .footer-section a {
   color: var(--yellow) !important;
+}.footer-section h3.head{
+  color: var(--yellow);
+}
+.footer-section h3.head::after{
+  background-color: var(--yellow);
+}
+.footer-section ul li{
+  color: var(--yellow);
+}
+.footer-section h3.head{
+  color: var(--blue);
+}
+.footer-section h3.head::after{
+  background-color: var(--blue);
+}
+.footer-section ul li{
+  color: var(--blue);
 }
 .fized{
   background-color: var(--yellow);

@@ -769,6 +769,15 @@
   .footer-container {
     color: var(--red);
   }
+  .footer-section h3.head{
+    color: var(--red);
+  }
+  .footer-section h3.head::after{
+    background-color: var(--red);
+  }
+  .footer-section ul li{
+    color: var(--red);
+  }
   
 .container, .boxcontainer, .main-content, .footer, .box{
   max-width: 1400px;
