@@ -1450,3 +1450,6 @@
   .company-slide-container {
     background: linear-gradient(#4791ee, transparent);
 }
+.footer-section h3.head::after {
+  background-color: var(--blue);
+}

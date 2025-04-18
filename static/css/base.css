@@ -525,6 +525,7 @@ padding: 0 20px;
   bottom: 0;
   width: 40px;
   height: 2px;
+
   background-color: var(--green);
 }
 
@@ -633,13 +634,18 @@ padding: 0 20px;
 .footer-section:nth-child(2), 
 .footer-section:nth-child(3) {
   width: 18%;
+  color: var(--primary)
 }
+
 
 .footer-section:nth-child(4) {
   width: 24%;
-  color: var(--green);
+  color: var(--primary)
 }
-
+.footer-section h3.head {
+   color: var(--green); 
+  
+}
 .footer-section.footer-logo {
   width: 22%;
   margin-bottom: 10px;

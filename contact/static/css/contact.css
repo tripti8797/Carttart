@@ -1,3 +1,8 @@
+root{
+    --primary: #19af62;
+   
+}
+
 .contact {
     display: flex;
     justify-content: center;
@@ -9,6 +14,7 @@
     background-position: bottom;
     scroll-behavior: smooth;
 }
+
 
 .background{
     background-image: url('../images/background2.jpg');
@@ -297,5 +303,7 @@ button[type="submit"]:hover {
     max-width: 1500px;
     margin: auto;
 }
-
+.footer-section h3.head::after {
+    background-color: var(--primary);
+}
 

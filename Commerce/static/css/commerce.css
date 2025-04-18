@@ -1663,6 +1663,9 @@ header.scrolled .sub-menu-item a {
 .company-slide-container {
   background: linear-gradient(#358ad0, transparent);
 }
+.footer-section h3.head::after {
+  background-color: var(--yellow);
+}
 
 
 

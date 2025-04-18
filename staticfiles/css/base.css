@@ -537,7 +537,7 @@ padding: 0 20px;
 .footer-section ul li {
   font-size: 16px; /* Increased font size for list items */
   margin-bottom: 5px; /* Reduced spacing between items */
-  color: #19AF62;
+  color: var(--secondary);
 }
 
 .footer-section a {
