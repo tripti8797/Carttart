@@ -913,6 +913,14 @@
     .card{
       justify-items: center;
     }
+    .box-content h1 {
+    
+      font-size: 48px;
+  }
+  .hero {
+    max-width: 955px;
+    margin-block: 72px;
+  }
   }
   
   @media(max-width:768px){
@@ -1067,6 +1075,10 @@
       justify-items: center;
       padding-bottom: 2%;
     }
+    .hero {
+      max-width: 730px;
+      margin-block: 72px;
+  }
     
   }
   
@@ -1264,12 +1276,12 @@
       margin-left: 0;
     }
     .hero-content p{
-      margin-bottom: 0;
-      font-size: 10px;
+      margin-bottom: 18px;
+      font-size: 12px;
     }
     .hero-content h1{
       margin-bottom: 5px;
-      font-size: 13px;
+      font-size: 18px;
     }
 
     /* .container_card{
@@ -1303,6 +1315,10 @@
       top: 67%;
       margin-left: -14.5%;
     }
+    .hero {
+      max-width: 400px;
+      margin-block: 61px;
+  }
 
     .card_main2 {
       justify-content: space-between;
@@ -1341,12 +1357,22 @@
     .hero-content{
       max-width: 57%;
     }
+    .hero {
+      margin: auto;
+      margin-block: 54px;
+      max-width: 350px;
+  }
     .container_card_pofilephoto2{
       height: 195px;
     }
     .container_card_pofilephoto1{
       height: 230px;
     }
+    .card-title, .card-title2 {
+      text-align: center;
+      margin: 0;
+      margin-bottom: 20px;
+  }
 
 
   
@@ -1426,6 +1452,10 @@
     .square-grid h2 {
       font-size: 13px;
       padding: 2%;
+    }
+    .hero {
+      max-width: 298px;
+      margin-block: 52px
     }
     .sub-menu-item{
       left: -105px;

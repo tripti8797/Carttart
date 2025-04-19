@@ -1081,6 +1081,12 @@ header.scrolled .sub-menu-item{
   padding: 3rem;
   padding-bottom: 0;
 }
+.hero {
+  max-width: 1355px;
+  margin: auto;
+  border-radius: 20px;
+  margin-block: 72px;
+}
 .box-content h1{
   text-align: center;
 }
@@ -1105,6 +1111,15 @@ header.scrolled .sub-menu-item{
 }
 .hero-content h1 {
   font-size: 36px;
+}
+.profile-img2 {
+  width: 100%;
+  object-fit: fill;
+  border-radius: 10px;
+  height: 381px;
+}
+.profile-img {
+  object-fit: contain;
 }
 
 }
@@ -1213,7 +1228,7 @@ padding: 0;
 
 .profile-img{
   height: 100%;
-  width: 86%;
+  width: 56%;
 }
 
 .profile-img2{
@@ -1300,6 +1315,7 @@ width: auto;
   top: 25.5%;
 }
 
+
 }
 
 
@@ -1342,9 +1358,13 @@ h1.card-title2 {
   font-size: 20px;
   padding: 10px;
   margin-inline: 24%;
+  margin-bottom: 20px;
 }
 .container_card_content {
   margin-top: 5%;
+}
+.latest-card h2 {
+  font-size: 30px;
 }
 .card-title1 {
 padding: 10px;
@@ -1366,6 +1386,21 @@ font-size: 23px;
 padding: 10px;
 margin-inline: 20%;
 }
+.hero {
+  max-width: 395px;
+  margin: auto;
+  border-radius: 20px;
+  margin-block: 57px;
+}
+.section-selector {
+  padding: 0px;
+  height: 76px;
+  width: 84%;
+  margin-top: -6.5rem;
+}
+
+
+
 }
 
 @media(max-width: 376px){
@@ -1380,6 +1415,7 @@ header{
 }
 .hero{
   height: 40vh;
+  max-width: 350px;
 }
 .hero-content{
   max-width: 57%;
@@ -1476,6 +1512,11 @@ h5.card-description1 {
 }
 h5.card-description2 {
 margin-inline: 14%;
+}
+.hero{
+  margin-block: 52px;
+  max-width: 304px;
+
 }
 .profile-img {
 height: 89%;

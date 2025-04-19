@@ -11,7 +11,7 @@
     color: #212529;
   }
   .company-slide-container {
-    max-width: 1400px;
+    max-width: 1349px;
     margin: 0 auto;
     padding: 12px 0px;
       /* Add a semi-transparent gradient background to the container */
@@ -107,7 +107,7 @@
   }
   @media (max-width: 1200px) {
     .company-slide-container {
-      max-width: 989px;
+      max-width: 953px;
       padding: 40px 15px;
   }
     

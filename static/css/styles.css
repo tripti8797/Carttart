@@ -1407,6 +1407,9 @@ div#card_content2 {
   .govt-section{       
      padding-inline: 18px;
     }
+    .section-selector {
+      margin-top: -3rem;
+    }
     
 
 }
@@ -1633,10 +1636,10 @@ div#card_content1 {
 .section-title {
   font-size: 16px;
 }
-.card_content h1 {
-  font-size: 13px;
-  margin: 0px 4px
-}
+    .card_content h1 {
+        font-size: 13px;
+        margin: 1px 0;
+    }
 }
 @media (max-width: 500px) {
   .section-selector {
@@ -1784,7 +1787,7 @@ div#card_content1 {
     padding: 0 2.5%;
   }
 .section-selector{
-  margin-top: -2.5rem;
+  margin-top: -1.5rem;
 }
   .section-header img {
     width: 10%;
@@ -1929,7 +1932,7 @@ div#card_content1 {
   
 }
 
-@media (max-width: 375px) {
+@media (max-width: 376px) {
   header {
     max-width: 375px !important;
   }
@@ -1954,12 +1957,13 @@ div#card_content1 {
   .section-selector {
     padding: 4px;
     height: 56px;
-    width: 93%;
+    width: 80%;
   }
+  
 
   .section {
     padding: 0.2rem;
-    font-size: 5px;
+    font-size: 6px;
   }
 
   .sec-img {
@@ -2050,6 +2054,12 @@ div#card_content1 {
     padding: 4px;
     height: 55px;
     width: 81%;
+  }
+  .section-title {
+    font-size: 15px;
+  }
+  .card_content h1 {
+    font-size: 13px;
   }
 
   .section {

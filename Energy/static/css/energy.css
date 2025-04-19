@@ -1057,7 +1057,10 @@ header.scrolled .sub-menu-item{
 }
 .hero{
     max-width: 728px;
+    margin: auto;
+    margin-block: 72px;
 }
+
 .hero-content h1 {
   font-size: 36px;
 }
@@ -1343,6 +1346,11 @@ font-size: 23px;
 padding: 10px;
 margin-inline: 20%;
 }
+.hero {
+  max-width: 406px;
+  margin: auto;
+  margin-block: 56px;
+}
 }
 
 @media(max-width: 376px){
@@ -1367,6 +1375,11 @@ header{
 }
 .container_card_pofilephoto1{
   height: 230px;
+}
+.hero {
+  max-width: 349px;
+  margin: auto;
+  margin-block: 52px;
 }
 
 
@@ -1464,6 +1477,11 @@ margin-inline: 14%;
 .profile-img {
 height: 89%;
 width: 55%;
+}
+.hero {
+  max-width: 303px;
+  margin: auto;
+  margin-block: 52px;
 }
 }
 

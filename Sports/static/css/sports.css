@@ -1136,6 +1136,10 @@ h1.card-title {
 font-size: 26px;
 padding: 26px;
 }
+.hero {
+  max-width: 955px;
+  margin-block: 72px;
+}
 }
 
 @media(max-width:768px){
@@ -1213,7 +1217,8 @@ header.scrolled .sub-menu-item{
 
 .Get .nav-item{
   background-color: white;
-    color: var(--green);
+    
+  color: var(--blue);
 }
 .Get .nav-item a{
   color: var(--green);
@@ -1280,6 +1285,20 @@ font-size: 13px;
 font-size: 13px;
 margin-right: 0px;
 text-align: end;
+}
+.hero {
+  max-width: 730px;
+  margin-block: 72px;
+}
+.nav-links {
+  display: none;
+  flex-direction: column;
+  background-color: var(--green);
+  position: absolute;
+  top: 70px;
+  right: 0;
+  width: 100%;
+  background: #4791ee;
 }
 }
 
@@ -1450,7 +1469,7 @@ width: auto;
   font-size: 20px;
 }
 .logo img {
-  width: 30%;
+  width: 40%;
 }
 .sub-menu-item{
   left: -90px;
@@ -1504,8 +1523,8 @@ h1{
   margin-left: 0;
 }
 .hero-content p{
-  margin-bottom: 0;
-  font-size: 10px;
+  margin-bottom: 33px;
+  font-size: 15px;
 }
 .hero-content h1{
   margin-bottom: 5px;
@@ -1558,6 +1577,11 @@ h1.card-title5 {
 font-size: 23px;
 padding: 10px;
 margin-inline: 20%;
+}
+.hero {
+  margin: auto;
+  margin-block: 60px;
+  max-width: 402px;
 }
 }
 
@@ -1617,12 +1641,22 @@ header{
 .div2, .div3 {
 width: 93px;
 }
+.hero {
+  margin: auto;
+  margin-block: 54px;
+  max-width: 350px;
+}
 }
 
 @media(max-width: 321px){
 .div1, .div4{
   width: 170px;
   height: 120px;
+}
+.hero {
+  margin: auto;
+  margin-block: 52px;
+  max-width: 297px;
 }
 
 .div2, .div3{
@@ -1684,6 +1718,11 @@ width: 55%;
 .profile-img2 {
   margin-top: 16px;
 }
+.hero-content {
+  max-width: 57%;
+  margin-bottom: -9%;
+}
+
 }
 .company-slide-container {
   background: linear-gradient(#4791ee, transparent);

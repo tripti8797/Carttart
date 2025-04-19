@@ -785,7 +785,7 @@
 .hero {
   max-width: 1350px;
   margin: auto;
-  margin-block: 165px;
+  margin-block: 82px;
 }
 
 .boxcontainer, .main-content{
@@ -893,7 +893,7 @@
 }
 .card-title {
 padding: 18px 68px;
-font-size: 26px;
+font-size: 25px;
 }
 .card-title2 {
   padding: 23px;
@@ -941,6 +941,11 @@ font-size: 26px;
   .boxcontainer{
     width: 90%;
     margin: 37px;
+  }
+  .hero {
+   
+    margin: auto;
+    margin-block: 72px
   }
  
   .card-description1, .card-description2{
@@ -1121,6 +1126,12 @@ font-size: 26px;
     background-size: 100%;
     font-size: 17px;
   }
+  .hero {
+    margin: auto;
+    margin-block: 60px;
+    max-width: 402px;
+}
+
 
   .card-description1, .card-description2 {
     font-size: 12px;
@@ -1298,12 +1309,12 @@ font-size: 26px;
     margin-left: 0;
   }
   .hero-content p{
-    margin-bottom: 0;
+    margin-bottom: 21px;
     font-size: 10px;
   }
   .hero-content h1{
     margin-bottom: 5px;
-    font-size: 25px;
+    font-size: 20px;
   }
   
 
@@ -1427,6 +1438,11 @@ font-size: 26px;
   .sub-menu-item{
     left: -104px;
   }
+  .hero {
+    margin: auto;
+    margin-block: 54px;
+    max-width: 350px;
+}
 }
 
 @media(max-width: 321px){
@@ -1488,8 +1504,8 @@ font-size: 26px;
     width: 98%;
   }
   .box-content p {
-    padding: 1rem;
-    font-size: 14px;
+   
+    font-size: 12px;
     line-height: 1rem;
   }
   .image-button{
@@ -1499,6 +1515,11 @@ font-size: 26px;
     margin-top: 5.5rem;
     margin-left: -15%;
   }
+  .hero {
+    margin: auto;
+    margin-block: 52px;
+    max-width: 297px;
+}
 }
 .company-slide-container {
   background: linear-gradient(#dd3718, transparent);

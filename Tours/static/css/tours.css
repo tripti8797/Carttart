@@ -1004,6 +1004,10 @@ h1.card-title {
 font-size: 26px;
 padding: 26px;
 }
+.hero {
+  max-width: 955px;
+  margin-block: 72px;
+}
 }
 
 @media(max-width:768px){
@@ -1081,7 +1085,7 @@ header.scrolled .sub-menu-item{
 
 .Get .nav-item{
   background-color: white;
-    color: var(--green);
+    color: var(--blue);
 }
 .Get .nav-item a{
   color: var(--green);
@@ -1149,6 +1153,20 @@ font-size: 13px;
 margin-right: 0px;
 text-align: end;
 }
+.hero {
+  max-width: 730px;
+  margin-block: 72px;
+}
+.nav-links {
+  display: none;
+  flex-direction: column;
+  background-color: var(--green);
+  position: absolute;
+  top: 70px;
+  right: 0;
+  width: 100%;
+  background: #4791ee;
+}
 }
 
 @media (max-width: 480px) {
@@ -1188,7 +1206,7 @@ header{
 
 .card-description1, .card-description2 {
   font-size: 12px;
-  padding: 0 2%;
+ 
   text-align: center;
   margin-top: 0;
 }
@@ -1372,8 +1390,8 @@ h1{
   margin-left: 0;
 }
 .hero-content p{
-  margin-bottom: 0;
-  font-size: 10px;
+  margin-bottom: 20px;
+  font-size: 13px;
 }
 .hero-content h1{
   margin-bottom: 5px;
@@ -1426,6 +1444,11 @@ h1.card-title5 {
 font-size: 23px;
 padding: 10px;
 margin-inline: 20%;
+}
+.hero {
+  margin: auto;
+  margin-block: 60px;
+  max-width: 402px;
 }
 }
 
@@ -1484,6 +1507,11 @@ header{
 }
 .div2, .div3 {
 width: 93px;
+}
+.hero {
+  margin: auto;
+  margin-block: 54px;
+  max-width: 350px;
 }
 }
 
@@ -1548,6 +1576,11 @@ margin-inline: 14%;
 .profile-img {
 height: 89%;
 width: 55%;
+}
+.hero {
+  margin: auto;
+  margin-block: 52px;
+  max-width: 297px;
 }
 }
 .company-slide-container {
