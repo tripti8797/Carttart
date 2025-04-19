@@ -21,6 +21,9 @@ body {
 html{
   scroll-behavior: smooth;
 }
+b{
+  color: #000;
+}
 
 /* end header */
 .mincontent {

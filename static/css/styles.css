@@ -115,7 +115,7 @@ header {
   overflow: hidden;
   position: relative;
   border: 2px solid #ccc;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 .slide {
@@ -1530,7 +1530,7 @@ div#card_content2 {
   }
 
   #card_content2 {
-    padding: 0.5rem;
+    padding: 11px;
   }
 
   .govt-image {
@@ -1558,6 +1558,17 @@ div#card_content2 {
   }
   div#card_content2 {
     gap: 12px;
+}
+.slide-container {
+
+  width: 97%;
+  max-width: 1400px;
+  margin: 7rem auto;
+  margin-top: 73px;
+}
+.card_content {
+
+  width: 96%;
 }
 }
 
@@ -1618,6 +1629,13 @@ div#card_content1 {
 }
 .header2 p{
   text-align: right;
+}
+.section-title {
+  font-size: 16px;
+}
+.card_content h1 {
+  font-size: 13px;
+  margin: 0px 4px
 }
 }
 @media (max-width: 500px) {
@@ -1685,6 +1703,7 @@ div#card_content1 {
     font-size: 0.8rem;
     margin-bottom: 8px;
   }
+  
 
   .explore-button {
     padding: 4px 6px;
@@ -1894,6 +1913,11 @@ div#card_content1 {
   .card-topic h2 {
     padding: 0 4rem;
 }
+.image-container {
+  width: 93%;
+  margin-inline: 3.5%;
+}
+
 }
 @media (max-width: 400px) {
   .crd{

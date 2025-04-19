@@ -831,6 +831,7 @@ header.scrolled .sub-menu-item a {
  .hero{
   max-width: 1333px;
   margin: auto;
+  margin-block: 82px;
  }
 .boxcontainer, .main-content{
   justify-self: center;
@@ -1666,6 +1667,10 @@ header.scrolled .sub-menu-item a {
 .footer-section h3.head::after {
   background-color: var(--yellow);
 }
-
+.company-slide-logo-tracks {
+  display: flex;
+  width: max-content; /* Allow content to determine width */
+  animation: company-slide-scroll 15s linear infinite; /* Reduced duration for faster speed */
+}
 
 

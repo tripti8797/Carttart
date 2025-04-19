@@ -67,7 +67,7 @@
   .company-slide-logo-track {
     display: flex;
     width: max-content; /* Allow content to determine width */
-    animation: company-slide-scroll 15s linear infinite; /* Reduced duration for faster speed */
+    animation: company-slide-scroll 75s linear infinite; /* Reduced duration for faster speed */
   }
   
   @keyframes company-slide-scroll {

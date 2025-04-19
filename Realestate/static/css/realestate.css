@@ -785,6 +785,7 @@
 .hero {
   max-width: 1350px;
   margin: auto;
+  margin-block: 165px;
 }
 
 .boxcontainer, .main-content{
@@ -1502,7 +1503,9 @@ font-size: 26px;
 .company-slide-container {
   background: linear-gradient(#dd3718, transparent);
 }
-
-
-
+.company-slide-logo-tracks {
+  display: flex;
+  width: max-content; /* Allow content to determine width */
+  animation: company-slide-scroll 15s linear infinite; /* Reduced duration for faster speed */
+}
 

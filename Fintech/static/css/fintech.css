@@ -812,6 +812,7 @@
    .hero{
     max-width: 1346px;
     margin: auto;
+    margin-block: 82px;
    }
   .boxcontainer, .main-content{
     justify-self: center;
@@ -1452,4 +1453,9 @@
 }
 .footer-section h3.head::after {
   background-color: var(--blue);
+}
+.company-slide-logo-tracks {
+  display: flex;
+  width: max-content; /* Allow content to determine width */
+  animation: company-slide-scroll 15s linear infinite; /* Reduced duration for faster speed */
 }

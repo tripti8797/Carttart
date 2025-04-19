@@ -7,9 +7,11 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: poppins, sans-serif;
 }
 
 body {
+    background: #dddddd;
     width: 100vw;
     height: 100vh;
     overflow-x: hidden;
@@ -26,6 +28,7 @@ body {
     background-color: white;
     padding-top: 80px; /* Adjust based on navbar height */
     margin-left: 300px; /* Space for TOC */
+    box-shadow: 4px 2px 1px 10px rgba(0, 0, 0, 0.1);
 }
 
 .oracle-navbar {
@@ -46,6 +49,8 @@ body {
 }
 
 .see {
+    font-weight: 900;
+    font-family: 'Poppins';
     margin-left: 7%;
     margin-inline: 35px;
     line-height: 53px;
@@ -98,6 +103,7 @@ body {
 }
 
 .oracle-mid1 {
+    margin-top: 2px;
     display: flex;
     background-color: rgb(176, 204, 243);
     padding: 20px 6%;
@@ -114,7 +120,7 @@ body {
 .blog-image {
     width: 100%;
     height: auto;
-    border-radius: 8px;
+    border-radius: 40px;
 }
 
 .obttns {
@@ -281,7 +287,7 @@ html {
 
 .tags span {
     display: inline-block;
-    background-color: #007bff;
+    background-color: #8d939a;
     color: white;
     padding: 5px 10px;
     border-radius: 20px;
@@ -291,7 +297,7 @@ html {
 
 .toc {
     position: fixed;
-    top: 200px;
+    top: 127px;
     left: 20px;
     width: 250px;
     background: #fff;
@@ -318,7 +324,7 @@ html {
 
 .toc ul li a {
     text-decoration: none;
-    color: #007bff;
+    color: #598bde;
     font-weight: 600;
 }
 
@@ -413,10 +419,10 @@ html {
 }
 
 .read-more {
-    color: #007bff;
+    color: #1c7be0;
     text-decoration: none;
     font-weight: 600;
-    font-size: 0.9rem;
+    font-size: 16px;
 }
 
 .read-more:hover {
