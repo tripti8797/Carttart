@@ -18,7 +18,7 @@ class ClientLogo(models.Model):
     sector = models.CharField(max_length=50, choices=SECTOR_CHOICES, default='other')
 
     def __str__(self):
-        return self.section
+        return self.sector
 
     def save(self, *args, **kwargs):
         super().save(*args, **kwargs)
