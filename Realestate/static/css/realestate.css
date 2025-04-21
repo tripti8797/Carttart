@@ -113,6 +113,7 @@
   }
   
   .nav-links a {
+    font-family: 'Poppins';
       text-decoration: none;
       color: var(--red);
       font-size: 18px;
@@ -409,7 +410,7 @@
     .card-description1, .card-description2 {
       font-size: 17px;
       line-height: 1.5;
-      font-weight: 200;
+      font-weight: 400;
       text-align: justify;
       margin-left: 20px;
       margin: 20px;
@@ -825,6 +826,13 @@
 }
 
 /*------------------------- seclector-------------- */
+.section.new-section {
+  border-radius: 8px;
+    padding: 11px 45px;
+  cursor: pointer;
+  
+  border:1px solid var(--red);
+}
 .sec-text{
   color: var(--red);
 }
@@ -1084,6 +1092,10 @@ font-size: 25px;
   
   .Get .nav-item a{
     color: var(--red);
+  }
+  .section.new-section {
+    border-radius: 8px;
+    padding: 3px 37px;
   }
 }
 
@@ -1380,6 +1392,10 @@ font-size: 25px;
 ;
   justify-content: center;
   width: 97%;
+}
+.section.new-section {
+  border-radius: 8px;
+  padding: 3px 16px;
 }
 }
 

@@ -138,6 +138,7 @@
   }
   
   .nav-links a {
+    font-family: 'Poppins';
       text-decoration: none;
       color: var(--blue);
       font-size: 18px;
@@ -226,6 +227,14 @@
       cursor: pointer;
       display: none;
   }
+  .section.new-section {
+    border-radius: 8px;
+      padding: 11px 52px;
+    cursor: pointer;
+    
+    border:1px solid var(--blue);
+  }
+  
   
   /* Hero Section Styles */
   .hero {
@@ -373,7 +382,7 @@
       width: 65%;
       height: 400px;
       padding: 3rem;
-      background-color: rgba(255, 255, 255, 0.5);
+     
       padding-top: 0px;
       padding-inline: 0px;
   }
@@ -383,7 +392,7 @@
     width: 65%;
     height: 400px;
     padding: 3rem;
-    background-color: rgba(255, 255, 255, 0.5);
+    /* background-color: rgba(255, 255, 255, 0.5); */
     padding-top: 0px;
   }
   
@@ -436,7 +445,7 @@
     .card-description1, .card-description2 {
       font-size: 17px;
       line-height: 1.5;
-      font-weight: 200;
+      font-weight: 400;
       text-align: justify;
       margin-left: 20px;
       margin: 20px;
@@ -1079,6 +1088,10 @@
       max-width: 730px;
       margin-block: 72px;
   }
+  .section.new-section {
+    border-radius: 8px;
+    padding: 3px 37px;
+  }
     
   }
   
@@ -1265,6 +1278,11 @@
       button { 
       top: 25.5%;
     }
+    .card_main2 {
+      justify-content: space-between;
+       padding: 0px; 
+       margin-top: 0rem; 
+    }
   }
     
     
@@ -1339,6 +1357,10 @@
   .image-button{
     display: none;
   }
+  .section.new-section {
+    border-radius: 8px;
+    padding: 3px 16px;
+}
 }
   
   @media(max-width: 376px){

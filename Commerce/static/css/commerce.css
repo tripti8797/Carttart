@@ -156,6 +156,7 @@ header.scrolled .sub-menu-item a {
 }
 
 .nav-links a {
+  font-family: 'Poppins';
   text-decoration: none;
   color: var(--yellow);
   font-size: 18px;
@@ -255,6 +256,14 @@ header.scrolled .sub-menu-item a {
   cursor: pointer;
   display: none;
 }
+.section.new-section {
+  border-radius: 8px;
+    padding: 11px 35px;
+  cursor: pointer;
+  
+  border:1px solid var(--yellow);
+}
+
 
 /* Hero Section Styles */
 .hero {
@@ -402,7 +411,7 @@ header.scrolled .sub-menu-item a {
   height: 400px;
   padding: 1rem;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  background-color: rgba(255, 255, 255, 0.5);
+ 
 }
 
 .container_card_content2 {
@@ -412,7 +421,7 @@ header.scrolled .sub-menu-item a {
   height: 400px;
   padding: 1rem;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  background-color: rgba(255, 255, 255, 0.5);
+ 
 }
 
 .card-title2,
@@ -455,7 +464,7 @@ header.scrolled .sub-menu-item a {
 .card-description2 {
   font-size: 17px;
   line-height: 1.5;
-  font-weight: 200;
+  font-weight: 400;
   text-align: justify;
   margin-left: 20px;
   margin: 20px;
@@ -1284,6 +1293,10 @@ header.scrolled .sub-menu-item a {
   .Get .nav-item a{
     color: var(--yellow);
   }
+  .section.new-section {
+    border-radius: 8px;
+    padding: 3px 37px;
+  }
 
 }
 
@@ -1490,6 +1503,15 @@ header.scrolled .sub-menu-item a {
     margin: 0;
     padding: 0;
   }
+  .section.new-section {
+    border-radius: 8px;
+    padding: 3px 9px;
+}
+.card_main2 {
+  justify-content: space-between;
+   padding: 0px; 
+   margin-top: 0rem; 
+}
 
 }
 

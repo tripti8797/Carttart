@@ -126,6 +126,7 @@ header.scrolled .Get .nav-item a:hover {
 }
 
 .nav-links a {
+  font-family: 'Poppins';
     text-decoration: none;
     color: var(--green);
     font-size: 18px;
@@ -292,7 +293,16 @@ header.scrolled .Get .nav-item a:hover {
 .btn:hover {
     background-color: var(--green);
 }
+/* section--- */
 
+
+.section.new-section {
+  border-radius: 8px;
+    padding: 11px 40px;
+  cursor: pointer;
+  
+  border:1px solid var(--green);
+}
 
 
 
@@ -461,6 +471,9 @@ align-items: center;
 width: 452px;
   }
   h5.card-description2 {
+    line-height: 1.6;
+    font-size: 18px;
+    font-weight: 400;
     margin-right: 15px;
 }
   .card-title3 {

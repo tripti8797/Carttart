@@ -133,6 +133,7 @@ header.scrolled .Get .nav-item a {
 }
 
 .nav-links a {
+  font-family: 'Poppins';
     text-decoration: none;
     color: var(--green);
     font-size: 18px;
@@ -223,6 +224,21 @@ header.scrolled .Get .nav-item a {
     cursor: pointer;
     display: none;
 }
+.section.new-section {
+  border-radius: 8px;
+    padding: 11px 40px;
+  cursor: pointer;
+  
+  border:1px solid var(--yellow);
+}
+.section.new-section {
+  border-radius: 8px;
+    padding: 11px 54px;
+  cursor: pointer;
+  
+  border:1px solid var(--green);
+}
+
 
 /* Hero Section Styles */
 .hero {
@@ -369,7 +385,7 @@ header.scrolled .Get .nav-item a {
     width: 65%;
     height: 400px;
     padding: 1rem;
-    background-color: rgba(255, 255, 255, 0.5);
+    /* background-color: rgba(255, 255, 255, 0.5); */
 }
 
 .container_card_content2 {
@@ -378,7 +394,7 @@ header.scrolled .Get .nav-item a {
     width: 65%;
     height: 400px;
     padding: 1rem;
-    background-color: rgba(255, 255, 255, 0.5);
+ 
 }
 
   .card-title2, .card-title {
@@ -421,7 +437,7 @@ header.scrolled .Get .nav-item a {
   .card-description1, .card-description2 {
     font-size: 17px;
     line-height: 1.5;
-    font-weight: 200;
+    font-weight: 400;
     text-align: justify;
     margin-left: 20px;
     margin: 20px;
@@ -1071,6 +1087,10 @@ h5.card-description1 {
 .card-description1, .card-description2 {
 font-size: 13px;
 }
+.section.new-section {
+  border-radius: 8px;
+  padding: 3px 37px;
+}
 }
 
 @media (max-width: 480px) {
@@ -1280,6 +1300,11 @@ padding: 26px;
 font-size: 20px;
 padding: 10px;
 }
+.card_main2 {
+  justify-content: space-between;
+   padding: 0px; 
+   margin-top: 0rem; 
+}
 }
 
 
@@ -1350,6 +1375,10 @@ margin-inline: 20%;
   max-width: 406px;
   margin: auto;
   margin-block: 56px;
+}
+.section.new-section {
+  border-radius: 8px;
+  padding: 3px 16px;
 }
 }
 
