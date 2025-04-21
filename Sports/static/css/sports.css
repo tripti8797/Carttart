@@ -1210,10 +1210,10 @@ header.scrolled .sub-menu-item{
   box-shadow: 1px 4px 10px rgb(52, 52, 52);
 }
 .sub-menu-item li a{
-  color: var(--green);
+  color: #FF0000;
 }
 .logo img {
-  width: 80%;
+  width: 18%;
 }
 
 .nav-links.show {
