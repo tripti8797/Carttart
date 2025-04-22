@@ -698,7 +698,7 @@ header.scrolled .Get .nav-item a:hover {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 2rem;
-    color: var(--blue);
+    color:#dd3718;
   }
   
   .card-grid {
@@ -1216,11 +1216,14 @@ header{
   margin-bottom: 4%;
 }
 
-.card-description1, .card-description2 {
-  font-size: 12px;
- 
-  text-align: center;
-  margin-top: 0;
+
+  .card-description2 {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 0;
+    font-weight: 500;
+    font-family: 'Poppins';
+
 }
 
 .container_card {
@@ -1281,7 +1284,7 @@ padding: 0;
 }
 
 .container_card_pofilephoto2{
-  justify-content: center;
+ 
   height: 270px;
 }
 
@@ -1390,6 +1393,13 @@ padding: 10px;
 }
 h5.card-description1 {
 text-align: center;
+
+  font-size: 14px;
+  text-align: center;
+  margin-top: 0;
+  font-weight: 500;
+  font-family: 'Poppins';
+
 }
 }
 
@@ -1533,6 +1543,9 @@ width: 93px;
   border-radius: 8px;
   padding: 7px 8px;
 }
+.container_card {
+   margin-top: 0%; 
+}
 }
 
 @media(max-width: 321px){
@@ -1595,7 +1608,7 @@ margin-inline: 14%;
 }
 .profile-img {
 height: 89%;
-width: 55%;
+width: 90%;
 }
 .hero {
   margin: auto;
@@ -1606,6 +1619,15 @@ width: 55%;
   border-radius: 8px;
   padding: 4px 11px;
 }
+.container_card_pofilephoto2 {
+  /* flex: 1; */
+  display: flex
+;
+ 
+  height: 400px;
+}
+
+
 }
 .company-slide-container {
   background: linear-gradient(#dd3718, transparent);

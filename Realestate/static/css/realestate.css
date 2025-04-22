@@ -354,7 +354,7 @@
       width: 65%;
       height: 400px;
       padding: 1rem;
-      background-color: rgba(255, 255, 255, 0.5);
+      
   }
   
   .container_card_content2 {
@@ -363,7 +363,7 @@
       width: 65%;
       height: 400px;
       padding: 1rem;
-      background-color: rgba(255, 255, 255, 0.5);
+     
   }
   
     .card-title2, .card-title {
@@ -1397,6 +1397,24 @@ font-size: 25px;
   border-radius: 8px;
   padding: 3px 16px;
 }
+h5.card-description1 {
+  line-height: 1.6;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: poppins;
+  margin-left: 0px;
+  width: 100%;
+}
+.card-description2 {
+  font-family: 'Poppins';
+  font-size: 14px;
+  font-weight: 400;
+  padding: 0 2%;
+  text-align: center;
+  margin-top: 0;
+  width: 87%;
+  line-height: 1.6;
+}
 }
 
 
@@ -1458,6 +1476,10 @@ font-size: 25px;
     margin: auto;
     margin-block: 54px;
     max-width: 350px;
+}
+.boxcontainer {
+  width: 90%;
+  margin: 0px; 
 }
 }
 

@@ -1129,11 +1129,19 @@ header{
 }
 
 .card-description1, .card-description2 {
-  font-size: 12px;
+  font-family: poppins;
+   font-size: 14px;
   padding: 0 2%;
   text-align: center;
   margin-top: 0;
+  width: 94%;
 }
+  h5.card-description1 {
+      width: 100%;
+      font-family: 'Poppins';
+      margin-left: 0px;
+      font-size: 14px;
+  }
 
 .container_card {
   flex-direction: column;
@@ -1497,12 +1505,7 @@ width: 93px;
   padding: 0.3rem;
   width: 95px;
 }
-h5.card-description1 {
-  margin-inline: 15%;
-}
-h5.card-description2 {
-margin-inline: 14%;
-}
+
 .profile-img {
 height: 89%;
 width: 55%;

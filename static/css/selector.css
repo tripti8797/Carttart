@@ -80,6 +80,10 @@
     .section-selector {
       margin-top: -8rem;
   }
+  .sec-text {
+    font-size: 12px;
+    font-weight: 500;
+  }
 }
   
   @media (max-width: 500px) {
@@ -122,7 +126,7 @@
           font-size: 7px;
       }
       .sec-img img {
-        height: 88%;
+        height: 72%;
         width: 63%;
     }
     .container_card {
@@ -133,6 +137,11 @@
 }
 .section-selector {
   margin-top: -6rem;
+}
+.card_main2 {
+ 
+   padding: 0px; 
+   margin-top: 0rem; 
 }
 }
   

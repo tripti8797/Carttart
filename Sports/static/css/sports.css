@@ -947,13 +947,13 @@ background-image: url('https://images.unsplash.com/photo-1574629810360-7efbbe195
     color: var(--purple);
   }
   .card-title2 {
-    color: black;
+    color:white;
     font-size: 40px;
     font-weight: bolder;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
   }
   .card-title{
-    color: black;
+    color: white;
     font-size: 40px;
     font-weight: bolder;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
@@ -1353,8 +1353,8 @@ header{
 }
 
 .card-description1, .card-description2 {
-  font-size: 12px;
-  padding: 0 2%;
+  font-size: 14px;
+  padding: 0%;
   text-align: center;
   margin-top: 0;
 }
@@ -1526,6 +1526,8 @@ padding: 10px;
 }
 h5.card-description1 {
 text-align: center;
+font-size: 14px;
+width:100%;
 }
 .card_main2 {
   justify-content: space-between;
@@ -1729,12 +1731,8 @@ width: 93px;
   padding: 0.3rem;
   width: 95px;
 }
-h5.card-description1 {
-  margin-inline: 15%;
-}
-h5.card-description2 {
-margin-inline: 14%;
-}
+
+
 .profile-img {
 height: 89%;
 width: 55%;
@@ -1742,9 +1740,14 @@ width: 55%;
 .profile-img2 {
   margin-top: 16px;
 }
+
 .hero-content {
   max-width: 57%;
   margin-bottom: -9%;
+}
+.hero-content p {
+  margin-bottom: 33px;
+  font-size: 12px;
 }
 
 }
