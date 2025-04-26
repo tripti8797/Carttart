@@ -52,7 +52,10 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 ROOT_URLCONF = 'Carttart.urls'
 
@@ -110,8 +113,8 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [BASE_DIR / 'static']      # during development
-STATIC_ROOT = BASE_DIR / 'staticfiles'        # for collectstatic in Docker/Production
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # This is where collectstatic puts files
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]       # for collectstatic in Docker/Production
 
 # Media files (user uploads)
 MEDIA_URL = '/media/'
