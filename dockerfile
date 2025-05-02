@@ -25,4 +25,6 @@ COPY . /app/
 EXPOSE 8000
 
 # Command to run the application (e.g., start Django development server)
-CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+# CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+
+CMD ["sh", "run_docker.sh"]
