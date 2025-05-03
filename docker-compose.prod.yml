@@ -4,7 +4,7 @@ services:
   carttart:
     build: 
       context: .
-      dockerfile: dockerfile.dev  # Use Dockerfile.prod or Dockerfile.dev based on ENV
+      dockerfile: dockerfile.prod  # Use Dockerfile.prod or Dockerfile.dev based on ENV
     # command: gunicorn Carttart.wsgi:application --bind 0.0.0.0:8000
     command: >
       sh -c "python manage.py collectstatic --noinput &&
@@ -12,7 +12,7 @@ services:
     volumes:
       - .:/code
     ports:
-      - "8005:8000"  # Exposing port 8000 for web access
+      - "80:80"  # Exposing port 8000 for web access
     env_file:
       - .env
 
